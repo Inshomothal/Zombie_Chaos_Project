@@ -1,0 +1,30 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:supply_crate",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/supply_crates/supply_crate",
+            "dropped":"textures/entity/supply_crates/supply_crate_dropped"
+         },
+         "geometry":{
+            "default":"geometry.supply_crate"
+         },
+         "animations":{
+            "stand":"animation.supply_crate.stand",
+            "true_zombie_controller":"controller.animation.true_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "true_zombie_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.supply_crate"
+         ]
+      }
+   }
+}

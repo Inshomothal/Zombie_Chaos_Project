@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:stone_longsword"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " D ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobblestone"
+      },
+      "D": {
+        "item": "minecraft:stone"
+      }
+    },
+    "result": {
+      "item": "pixel:stone_longsword"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rat.walk": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"Tail": {
+					"rotation": {
+						"0.0": [0, 7.5, 0],
+						"0.24": [0, -7.5, 0],
+						"0.52": [0, 7.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

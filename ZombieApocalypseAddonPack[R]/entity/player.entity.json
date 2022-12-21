@@ -1,0 +1,1614 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "materials": {
+        "default": "entity_alphatest",
+        "cape": "entity_alphatest",
+        "animated": "player_animated"
+      },
+      "textures": {
+        "default": "textures/entity/steve",
+        "cape": "textures/entity/cape_invisible",
+
+        //3D Combat Addon
+        "wooden_glaive": "textures/entity/wooden_glaive",
+        "stone_glaive": "textures/entity/stone_glaive",
+        "iron_glaive": "textures/entity/iron_glaive",
+        "golden_glaive": "textures/entity/golden_glaive",
+        "diamond_glaive": "textures/entity/diamond_glaive",
+        "netherite_glaive": "textures/entity/netherite_glaive",
+        "wooden_spear": "textures/entity/wooden_spear",
+        "stone_spear": "textures/entity/stone_spear",
+        "iron_spear": "textures/entity/iron_spear",
+        "golden_spear": "textures/entity/golden_spear",
+        "diamond_spear": "textures/entity/diamond_spear",
+        "netherite_spear": "textures/entity/netherite_spear",
+        "iron_rapier": "textures/entity/iron_rapier_short",
+        "golden_rapier": "textures/entity/golden_rapier_short",
+        "diamond_rapier": "textures/entity/diamond_rapier_short",
+        "netherite_rapier": "textures/entity/netherite_rapier_short",
+        "wooden_lance": "textures/entity/wooden_lance",
+        "stone_lance": "textures/entity/stone_lance",
+        "iron_lance": "textures/entity/iron_lance",
+        "golden_lance": "textures/entity/golden_lance",
+        "diamond_lance": "textures/entity/diamond_lance",
+        "netherite_lance": "textures/entity/netherite_lance",
+        "wooden_halberd": "textures/entity/wooden_halberd",
+        "stone_halberd": "textures/entity/stone_halberd",
+        "iron_halberd": "textures/entity/iron_halberd",
+        "golden_halberd": "textures/entity/golden_halberd",
+        "diamond_halberd": "textures/entity/diamond_halberd",
+        "netherite_halberd": "textures/entity/netherite_halberd",
+        "wooden_dagger": "textures/entity/wooden_dagger",
+        "stone_dagger": "textures/entity/stone_dagger",
+        "iron_dagger": "textures/entity/iron_dagger",
+        "golden_dagger": "textures/entity/golden_dagger",
+        "diamond_dagger": "textures/entity/diamond_dagger",
+        "netherite_dagger": "textures/entity/netherite_dagger",
+        "brown_dagger_scabbard": "textures/entity/brown_dagger_scabbard",
+        "shield_back": "textures/entity/shield_back",
+        "grey_longsword_scabbard": "textures/entity/grey_longsword_scabbard",
+        "black_greatsword_scabbard": "textures/entity/black_greatsword_sheathe",
+        "wooden_longsword": "textures/entity/wooden_longsword",
+        "stone_longsword": "textures/entity/stone_longsword",
+        "iron_longsword": "textures/entity/iron_longsword",
+        "golden_longsword": "textures/entity/golden_longsword",
+        "diamond_longsword": "textures/entity/diamond_longsword",
+        "netherite_longsword": "textures/entity/netherite_longsword",
+        "wooden_katana": "textures/entity/wooden_katana",
+        "stone_katana": "textures/entity/stone_katana",
+        "iron_katana": "textures/entity/iron_katana",
+        "golden_katana": "textures/entity/golden_katana",
+        "diamond_katana": "textures/entity/diamond_katana",
+        "netherite_katana": "textures/entity/netherite_katana",
+        "iron_odachi": "textures/entity/odachi",
+        "wooden_katana_wakizashi": "textures/entity/wooden_katana_wakizashi",
+        "stone_katana_wakizashi": "textures/entity/stone_katana_wakizashi",
+        "iron_katana_wakizashi": "textures/entity/iron_katana_wakizashi",
+        "golden_katana_wakizashi": "textures/entity/golden_katana_wakizashi",
+        "diamond_katana_wakizashi": "textures/entity/diamond_katana",
+        "netherite_katana_wakizashi": "textures/entity/netherite_katana_wakizashi",
+        "tsuba_kaku": "textures/entity/katana/tsuba/kaku_gata",
+        "tsuba_maru": "textures/entity/katana/tsuba/maru_gata",
+        "tsuba_oval": "textures/entity/katana/tsuba/oval",
+        "tsuba_normal": "textures/entity/iron_katana",
+        "wooden_mace": "textures/entity/wooden_mace",
+        "stone_mace": "textures/entity/stone_mace",
+        "iron_mace": "textures/entity/iron_mace",
+        "golden_mace": "textures/entity/golden_mace",
+        "diamond_mace": "textures/entity/diamond_mace",
+        "netherite_mace": "textures/entity/netherite_mace",
+        "bec_de_corbin": "textures/entity/bec_de_corbin",
+        "wooden_saber": "textures/entity/wooden_saber",
+        "stone_saber": "textures/entity/stone_saber",
+        "iron_saber": "textures/entity/iron_saber",
+        "golden_saber": "textures/entity/golden_saber",
+        "diamond_saber": "textures/entity/diamond_saber",
+        "netherite_saber": "textures/entity/netherite_saber",
+        "wooden_katar": "textures/entity/wooden_katar",
+        "stone_katar": "textures/entity/stone_katar",
+        "iron_katar": "textures/entity/iron_katar",
+        "golden_katar": "textures/entity/golden_katar",
+        "diamond_katar": "textures/entity/diamond_katar",
+        "polehammer": "textures/entity/pole_hammer",
+        "giant_mace": "textures/entity/giant_mace",
+        "netherite_katar": "textures/entity/netherite_katar",
+        "red_katar_scabbard": "textures/entity/red_katar_sheathe",
+        "red_medium_trail": "textures/entity/red_medium_trail",
+        "stone_greatsword": "textures/entity/stone_greatsword",
+        "iron_greatsword": "textures/entity/iron_greatsword",
+        "netherite_greatsword": "textures/entity/netherite_greatsword",
+
+        //Zombie Apocalypes Addon
+        "crosshair_pistol": "textures/entity/player_visuals/crosshair_pistol",
+        "crosshair_submachine": "textures/entity/player_visuals/crosshair_submachine",
+        "crosshair_assult": "textures/entity/player_visuals/crosshair_assult",
+        "crosshair_launcher": "textures/entity/player_visuals/crosshair_launcher",
+        "crosshair_sniper": "textures/entity/player_visuals/crosshair_sniper"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.custom",
+        "cape": "geometry.cape",
+        "medium_trail": "geometry.medium_trail",
+        "katana": "geometry.katana_player",
+        "katana_dt": "geometry.katana_dt_animate",
+        "longbow": "geometry.longbow_animator",
+        "back_glaive": "geometry.glaive_back",
+        "back_spear": "geometry.spear_back",
+        "back_lance": "geometry.lance_back",
+        "back_halberd": "geometry.halberd_back",
+        "back_longsword": "geometry.longsword_back",
+        "back_greatsword": "geometry.greatsword_back",
+        "back_shield": "geometry.shield_back",
+        "back_polehammer": "geometry.polehammer_back",
+        "back_katar": "geometry.katar_back",
+        "back_katar_offhand": "geometry.katar_offhand_back",
+        "back_giant_mace": "geometry.giant_mace_back",
+        "back_mace": "geometry.mace_back",
+        "back_bec_de_corbin": "geometry.bec_de_corbin_back",
+        "back_saber": "geometry.sabre_sheathed",
+        "saber_scabbard": "geometry.sabre_sheathe",
+        "katar_scabbard": "geometry.katar_sheathe",
+        "katar_off_scabbard": "geometry.katar_sheathe_offhand",
+        "greatsword_scabbard": "geometry.greatsword_sheathe",
+        "longsword_scabbard": "geometry.longsword_scabbard",
+        "back_longsword_offhand": "geometry.longsword_back_offhand",
+        "longsword_offhand_scabbard": "geometry.longsword_scabbard_offhand",
+        "back_dagger": "geometry.dagger_sheathed",
+        "dagger_scabbard": "geometry.dagger_sheath",
+        "back_dagger_offhand": "geometry.dagger_sheathed_offhand",
+        "back_odachi_first": "geometry.odachi_first",
+        "back_odachi_second": "geometry.odachi_second",
+        "back_odachi_third": "geometry.odachi_third",
+        "back_katana_wakizashi_first": "geometry.katana_wakizashi_first",
+        "back_katana_wakizashi_second": "geometry.katana_wakizashi_second",
+        "back_katana_wakizashi_third": "geometry.katana_wakizashi_third",
+        "back_katana_first": "geometry.katana_first",
+        "back_katana_second": "geometry.katana_second",
+        "back_katana_third": "geometry.katana_third",
+        "back_rapier": "geometry.rapier_sheathe",
+        "back_tsuba_maru": "geometry.tsuba_maru_gata_first",
+        "back_tsuba_oval": "geometry.tsuba_oval_first",
+        "back_tsuba_kaku": "geometry.tsuba_kaku_gata_first",
+        "back_tsuba_normal": "geometry.normal_tsuba_first",
+        "back_tsuba_maru2": "geometry.tsuba_maru_gata_second",
+        "back_tsuba_oval2": "geometry.tsuba_oval_second",
+        "back_tsuba_kaku2": "geometry.tsuba_kaku_gata_second",
+        "back_tsuba_normal2": "geometry.normal_tsuba_second",
+        "back_tsuba_maru3": "geometry.tsuba_maru_gata_third",
+        "back_tsuba_oval3": "geometry.tsuba_oval_third",
+        "back_tsuba_kaku3": "geometry.tsuba_kaku_gata_third",
+        "back_tsuba_normal3": "geometry.normal_tsuba_third",
+        "dagger_offhand_scabbard": "geometry.dagger_sheath_offhand",
+        "combat": "geometry.better_player",
+        "rotator": "geometry.right_hand_rotator",
+        "katana_wakizashi": "geometry.katana_wakizashi_anim",
+        "rapier_trail": "geometry.rapier_trail_anim",
+        "greatsword_trail": "geometry.trail_greatsword_anim",
+
+        //Zombie Apocalypes Addon
+        "crosshair_pistol": "geometry.crosshair_pistol",
+        "crosshair_submachine": "geometry.crosshair_submachine",
+        "crosshair_assult": "geometry.crosshair_assult",
+        "crosshair_launcher": "geometry.crosshair_launcher",
+        "crosshair_sniper": "geometry.crosshair_sniper"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "initialize": [
+          "variable.is_holding_right = 0.0;",
+          "variable.is_blinking = 0.0;",
+          "variable.last_blink_time = 0.0;",
+          "variable.hand_bob = 0.0;"
+        ],
+        "pre_animation": [
+          "variable.helmet_layer_visible = 1.0;",
+          "variable.leg_layer_visible = 1.0;",
+          "variable.boot_layer_visible = 1.0;",
+          "variable.chest_layer_visible = 1.0;",
+          "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+          "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+
+          "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+          "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
+          "variable.saber = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_saber');",
+          "variable.longsword = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_longsword');",
+          "variable.longswordoh = query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_longsword');",
+          "variable.wakizashi_oh = query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_wakizashi');",
+          "variable.axe = query.get_equipped_item_name=='wood_axe'||query.get_equipped_item_name=='stone_axe'||query.get_equipped_item_name=='iron_axe'||query.get_equipped_item_name=='gold_axe'||query.get_equipped_item_name=='diamond_axe'||query.get_equipped_item_name=='netherite_axe';",
+          "variable.sword = query.get_equipped_item_name=='wood_sword'||query.get_equipped_item_name=='stone_sword'||query.get_equipped_item_name=='iron_sword'||query.get_equipped_item_name=='gold_sword'||query.get_equipped_item_name=='diamond_sword'||query.get_equipped_item_name=='netherite_sword';",
+          "variable.halberd = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_halberd');",
+          "variable.rapier = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_rapier');",
+          "variable.dagger = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_dagger');",
+          "variable.dagger_left = query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_dagger');",
+          "variable.katana = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_katana');",
+          "variable.odachi = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_odachi');",
+          "variable.katar_left = query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_katar');",
+          "variable.spear = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_spear');",
+          "variable.lance = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_lance');",
+          "variable.glaive = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_glaive');",
+          "variable.mace = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_mace');",
+          "variable.katana_wakizashi = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_wakizashi');",
+          "variable.katar = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_katar');",
+          "variable.longbow = query.get_equipped_item_name=='longbow';",
+          "variable.greatsword = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_greatsword');",
+          "variable.giant_mace = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_giant_mace');",
+          "variable.zweihander = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_zweihander');",
+          "variable.bec_de_corbin = query.get_equipped_item_name=='bec_de_corbin';",
+          "variable.bec_de_corbin_back = query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_bec_hammer');",
+          "variable.random = math.random_integer(0,1);",
+          "variable.random_4 = math.random_integer(0,3);",
+          "variable.random_3 = math.random_integer(0,2);",
+          "variable.pole_hammer = query.is_item_name_any('slot.weapon.mainhand',0,'pixel:pole_hammer');",
+          "variable.combat_mode = q.get_equipped_item_name(0, 1) == '';",
+          "variable.shield_off = q.get_equipped_item_name(1) == 'shield';",
+          "variable.two_handed = variable.spear||variable.katana||variable.longsword||variable.halberd||variable.glaive||variable.giant_mace||variable.bec_de_corbin||variable.bec_de_corbin_back||variable.pole_hammer;",
+          "variable.weaponslol = variable.spear||variable.katana||variable.longsword||variable.dagger||variable.saber||variable.lance||variable.bec_de_corbin||variable.bec_de_corbin_back||variable.dagger_left||variable.halberd||variable.glaive||variable.mace||variable.katana_wakizashi||variable.longbow||variable.pole_hammer||variable.katar||variable.katar_left||variable.greatsword||variable.wakizashi_oh||variable.rapier||variable.giant_mace||variable.zweihander;",
+          "variable.offhander = variable.longswordoh||variable.dagger_left||variable.wakizashi_oh||variable.katar_left||variable.shield_off;",
+          "variable.no_sheaths = query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rdsmtsb');",
+          "variable.no_waki = query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi') && variable.katana_wakizashi||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rdsmtsb');",
+          "variable.no_odachi= query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rndtsb');",
+
+          //Zombie Apocalyps Addon
+          "variable.crosshair_pistol = query.get_equipped_item_name('main_hand') == 'glock17' || query.get_equipped_item_name('main_hand') == 'glock19' || query.get_equipped_item_name('main_hand') == 'baretta_92fs' || query.get_equipped_item_name('main_hand') == 'dbs' || query.get_equipped_item_name('main_hand') == 'flare_gun';",
+          "variable.crosshair_submachine = query.get_equipped_item_name('main_hand') == 'mac_11' || query.get_equipped_item_name('main_hand') == 'micro_uzi' || query.get_equipped_item_name('main_hand') == 'micro_uzi_suppressor';",
+          "variable.crosshair_assult = query.get_equipped_item_name('main_hand') == 'scar_h_sand' || query.get_equipped_item_name('main_hand') == 'scar_h_black' || query.get_equipped_item_name('main_hand') == 'm416';",
+          "variable.crosshair_launcher = query.get_equipped_item_name('main_hand') == 'rpg_26';",
+          "variable.crosshair_sniper = query.get_equipped_item_name('main_hand') == 'awm';",
+          "variable.pistol = query.get_equipped_item_name('main_hand') == 'glock17' || query.get_equipped_item_name('main_hand') == 'glock19' || query.get_equipped_item_name('main_hand') == 'baretta_92fs' || query.get_equipped_item_name('main_hand') == 'flare_gun' || query.get_equipped_item_name('main_hand') == 'dbs' || query.get_equipped_item_name('main_hand') == 'flash_light';",
+          "variable.submachine = query.get_equipped_item_name('main_hand') == 'mac_11' || query.get_equipped_item_name('main_hand') == 'micro_uzi' || query.get_equipped_item_name('main_hand') == 'micro_uzi_suppressor';",
+          "variable.assult = query.get_equipped_item_name('main_hand') == 'scar_h_sand'|| query.get_equipped_item_name('main_hand') == 'scar_h_black'|| query.get_equipped_item_name('main_hand') == 'flamethrower' || query.get_equipped_item_name('main_hand') == 'm416' || query.get_equipped_item_name('main_hand') == 'awm';",
+          "variable.assult_walking = query.get_equipped_item_name('main_hand') == 'scar_h_sand'|| query.get_equipped_item_name('main_hand') == 'scar_h_black'|| query.get_equipped_item_name('main_hand') == 'flamethrower' || query.get_equipped_item_name('main_hand') == 'm416' || query.get_equipped_item_name('main_hand') == 'awm';",
+          "variable.launcher = query.get_equipped_item_name('main_hand') == 'rpg_26';"
+        ],
+        "animate": [
+          "root",
+          //Zombie Apocalypes Addon
+          {
+            "crosshair_pistol": "variable.crosshair_pistol && variable.is_first_person"
+          },
+          {
+            "crosshair_submachine": "variable.crosshair_submachine && variable.is_first_person"
+          },
+          {
+            "crosshair_assult": "variable.crosshair_assult && variable.is_first_person"
+          },
+          {
+            "crosshair_launcher": "variable.crosshair_launcher && variable.is_first_person"
+          },
+          {
+            "crosshair_sniper": "variable.crosshair_sniper && variable.is_first_person"
+          },
+          {
+            "pistol_hold": "variable.pistol && !variable.is_first_person && !query.is_moving"
+          },
+          {
+            "submachine_hold": "variable.submachine && !variable.is_first_person && !query.is_moving"
+          },
+          {
+            "assult_hold": "variable.assult && !variable.is_first_person && !query.is_moving"
+          },
+          {
+            "assult_hold_walking": "variable.assult_walking && !variable.is_first_person && query.is_moving"
+          },
+          {
+            "launcher_hold": "variable.launcher && !variable.is_first_person"
+          },
+          //3D Combat Addon
+          "trial",
+          {
+            "hold_tp_control": "!variable.is_first_person && !variable.weaponslol && !variable.combat_mode"
+          },
+          {
+            "fp_controller": "variable.is_first_person && variable.weaponslol"
+          },
+          {
+            "longsword_control": "!variable.is_first_person"
+          },
+          {
+            "sword_control": "variable.sword"
+          },
+          {
+            "giant_mace_control": "!variable.is_first_person"
+          },
+          {
+            "spear_control": "!variable.is_first_person"
+          },
+          {
+            "spear_style2_control": "variable.spear && query.variant == 1 && !variable.is_first_person"
+          },
+          {
+            "bec_control": "!variable.is_first_person"
+          },
+          {
+            "axe_control": "variable.axe"
+          },
+          {
+            "dagger_control": "!variable.is_first_person"
+          },
+          {
+            "rapier_control": "variable.rapier && !variable.is_first_person"
+          },
+          {
+            "katar_control": "!variable.is_first_person"
+          },
+          {
+            "halberd_control": "!variable.is_first_person"
+          },
+          {
+            "zweihander_control": "variable.zweihander && !variable.is_first_person"
+          },
+          {
+            "glaive_control": "!variable.is_first_person"
+          },
+          {
+            "greatsword_control": "!variable.is_first_person"
+          },
+          {
+            "mace_control": "!variable.is_first_person"
+          },
+          {
+            "combat_mode": "!variable.is_first_person && !variable.weaponslol"
+          },
+          {
+            "pole_hammer_control": "!variable.is_first_person"
+          },
+          {
+            "lance_control": "!variable.is_first_person"
+          },
+          {
+            "longbow_control": "variable.longbow && !variable.is_first_person"
+          },
+          {
+            "odachi_control": "variable.odachi && !variable.is_first_person"
+          },
+          {
+            "katana_control": "variable.katana && !variable.wakizashi_oh && !variable.is_first_person"
+          },
+          {
+            "wakizashi_control": "variable.katana_wakizashi && !variable.wakizashi_oh && !variable.is_first_person"
+          },
+          {
+            "katana_dt_control": "variable.katana && variable.wakizashi_oh && !variable.is_first_person"
+          },
+          {
+            "saber_control": "variable.saber && !variable.is_first_person"
+          }
+        ]
+      },
+      "animations": {
+        "root": "controller.animation.player.root",
+        "base_controller": "controller.animation.player.base",
+        "hudplayer": "controller.animation.player.hudplayer",
+        "humanoid_base_pose": "animation.humanoid.base_pose",
+        "look_at_target": "controller.animation.humanoid.look_at_target",
+        "look_at_target_ui": "animation.player.look_at_target.ui",
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "look_at_target_inverted": "animation.player.look_at_target.inverted",
+        "cape": "animation.player.cape",
+        "move.arms": "animation.player.move.arms",
+        "move.legs": "animation.player.move.legs",
+        "swimming": "animation.player.swim",
+        "swimming.legs": "animation.player.swim.legs",
+        "riding.arms": "animation.player.riding.arms",
+        "riding.legs": "animation.player.riding.legs",
+        "holding": "animation.player.holding",
+        "brandish_spear": "animation.humanoid.brandish_spear",
+        "holding_spyglass": "animation.humanoid.holding_spyglass",
+        "charging": "animation.humanoid.charging",
+        "attack.positions": "animation.player.attack.positions",
+        "attack.rotations": "animation.player.attack.rotations",
+        "sneaking": "animation.custom.sneak",
+        "bob": "animation.player.bob",
+        "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+        "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        "use_item_progress": "animation.humanoid.use_item_progress",
+        "skeleton_attack": "animation.skeleton.attack",
+        "sleeping": "animation.player.sleeping",
+        "first_person_base_pose": "animation.player.first_person.base_pose",
+        "first_person_empty_hand": "animation.player.first_person.empty_hand",
+        "first_person_swap_item": "animation.player.first_person.swap_item",
+        "first_person_attack_controller": "controller.animation.player.first_person_attack",
+        "first_person_attack_rotation": "animation.player.first_person.attack_rotation",
+        "first_person_attack_rotation_item": "animation.player.first_person.attack_rotation_item",
+        "first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation",
+        "first_person_walk": "animation.player.first_person.walk",
+        "first_person_map_controller": "controller.animation.player.first_person_map",
+        "first_person_map_hold": "animation.player.first_person.map_hold",
+        "first_person_map_hold_attack": "animation.player.first_person.map_hold_attack",
+        "first_person_map_hold_off_hand": "animation.player.first_person.map_hold_off_hand",
+        "first_person_map_hold_main_hand": "animation.player.first_person.map_hold_main_hand",
+        "first_person_crossbow_equipped": "animation.player.first_person.crossbow_equipped",
+        "first_person_crossbow_hold": "animation.player.first_person.crossbow_hold",
+        "first_person_breathing_bob": "animation.player.first_person.breathing_bob",
+        "third_person_crossbow_equipped": "animation.player.crossbow_equipped",
+        "third_person_bow_equipped": "animation.player.bow_equipped",
+        "crossbow_hold": "animation.player.crossbow_hold",
+        "crossbow_controller": "controller.animation.player.crossbow",
+        "shield_block_main_hand": "animation.shield.block_0",
+        "shield_block_off_hand": "animation.shield.block_offhand",
+        "blink": "controller.animation.persona.blink",
+
+        //3D Combat Addon
+        "trial": "controller.animation.trail_default",
+        "notrail": "animation.katana.trail_none",
+
+        "bow_use": "animation.bow.use",
+        "crossbow_use": "animation.crossbow.use",
+        "item_throw": "animation.item.throw",
+        "item_eat": "animation.item.eat",
+
+        "shield_attack": "animation.shield.attack_stance0_0",
+        "shield_unsheathe_off": "animation.shield.unsheathe",
+        "shield_unsheathe_main": "animation.shield.unsheathe_main",
+        "shield_no_back": "animation.shield.no_back",
+
+        "no_offhand": "animation.offhand.sheathe",
+
+        "spear_control": "controller.animation.spear.attack",
+        "spear_no_back": "animation.spear.back_none",
+        "spear_unsheathe": "animation.spear.back_unsheathe",
+        "spear_move": "animation.spear.stance_move",
+        "spear_bob": "animation.spear.no_stance",
+        "spear_stance0": "animation.spear.stance_0",
+        "spear_slash0": "animation.spear.attack_slash",
+        "spear_slash1": "animation.spear.attack_slash2",
+        "spear_attack0": "animation.spear.attack_0",
+        "spear_attack_multiple": "animation.spear.attack_multiple",
+        "spear_attack1": "animation.spear.attack_1",
+        "spear_stance_shield": "animation.spear.stance_blocking_shield",
+        "spear_shield_move": "animation.spear.stance_blocking_shield_move",
+        "spear_attack_shield0": "animation.spear.attack_stance_1_0",
+        "spear_attack_shield1": "animation.spear.attack_stance_1_1",
+        "spear_sneak": "animation.spear.sneak",
+        "spear_sneak_move": "animation.spear.sneak_move",
+        "spear_sprint": "animation.spear.sprint",
+
+        //spear_style2
+        "spear_style2_control": "controller.animation.spear.style2",
+        "spear2_attack1": "animation.spear_style2.spear_attack1",
+        "spear2_attack2": "animation.spear_style2.strike2",
+        "spear2_attack3": "animation.spear_style2.strike3",
+        "spear2_stance0": "animation.spear_style2.hold",
+        "spear2_run": "animation.spear_style2.run",
+
+        //mace
+        "mace_control": "controller.animation.mace.attack",
+        "mace_sprint": "animation.mace.sprint",
+        "mace_move": "animation.mace.move",
+        "mace_stance0": "animation.mace.stance_0",
+        "mace_attack0": "animation.mace.attack_0",
+        "mace_attack1": "animation.mace.attack_1",
+        "mace_attack2": "animation.mace.attack_2",
+        "mace_heavy0": "animation.mace.upper_strike_0",
+        "mace_heavy1": "animation.mace.upper_strike_1",
+        "mace_unsheathe": "animation.mace.unsheathe",
+        "mace_no_back": "animation.mace.no_back",
+
+        //giant_mace
+        "giant_mace_control": "controller.animation.giant_mace.attack",
+        "gm_unsheathe": "animation.giant_mace.unsheathe",
+        "gm_no_back": "animation.giant_mace.no_back",
+        "gm_stance0": "animation.giant_mace.stance_0",
+        "gm_attack0_2": "animation.giant_mace.attack_stance0_2",
+        "gm_attack0_0": "animation.giant_mace.attack_stance0_0",
+        "gm_attack0_1": "animation.giant_mace.attack_stance0_1",
+
+        //longsword
+        "longsword_control": "controller.animation.longsword.attack",
+        "longsword_back_none": "animation.longsword.back_none",
+        "longsword_unsheathe_two": "animation.longsword.unsheathe",
+        "longsword_unsheathe": "animation.longsword.unsheathe_one",
+        "longsword_stance0": "animation.longsword.stance_0",
+        "longsword_stance0_attack0": "animation.longsword.attack_0",
+        "longsword_inbetween0": "animation.longsword.inbetween_0",
+        "longsword_stance1": "animation.longsword.stance_1",
+        "longsword_stance1_attack0": "animation.longsword.attack_1_0",
+        "longsword_stance1_attack1": "animation.longsword.attack_1_1",
+        "longsword_stance1_attack2": "animation.longsword.attack_1_2",
+        "longsword_inbetween1": "animation.longsword.inbetween_1",
+        "longsword_stance2": "animation.longsword.stance_2",
+        "longsword_stance2_attack0": "animation.longsword.attack_2_0",
+        "longsword_stance2_attack1": "animation.longsword.attack_2_1",
+        "longsword_stance2_attack2": "animation.longsword.attack_2_2",
+        "longsword_inbetween2": "animation.longsword.inbetween_2",
+        "longsword_stance3": "animation.longsword.stance_3",
+        "longsword_stance3_attack0": "animation.longsword.attack_3",
+        "longsword_inbetween3": "animation.longsword.inbetween_3",
+        "longsword_stance_horseback": "animation.longsword.stance_horseback",
+        "longsword_stance_horseback_attack0": "animation.longsword.attack_stance_horseback_0",
+        "longsword_stance_horseback_attack1": "animation.longsword.attack_stance_horseback_1",
+        "ls_shield_attack1": "animation.longsword.attack_shield2",
+        "ls_shield_attack2": "animation.longsword.attack_shield1",
+        "ls_shield_attack3": "animation.longsword.attack_shield0",
+        "ls_sneak": "animation.longsword.sneak",
+        "ls_sneak_dual": "animation.longsword.sneak_double",
+        "ls_sneak_move": "animation.longsword.sneak_move",
+        "ls_move": "animation.longsword.move",
+        "ls_move_dual": "animation.longsword.move_dual",
+        "ls_sprint": "animation.longsword.sprint",
+
+        //shield_longsword
+        "ls_shield_unsheathe": "animation.longsword.unsheathe_shield",
+        "ls_shield_stance": "animation.longsword.stance_shield",
+        "ls_shield_back": "animation.longsword.shield_back",
+        "ls_shield_move": "animation.longsword.stance_shield_move",
+        "ls_shield_sprint": "animation.longsword.stance_shield_sprint",
+
+        //dual_longsword
+        "dl_stance0": "animation.lonsword.dual_stance_0",
+        "dl_attack0": "animation.longsword.attack_dual_stance0_0",
+        "dl_attack1": "animation.longsword.attack_dual_stance0_1",
+        "dl_attack2": "animation.longsword.attack_dual_stance0_2",
+        "dl_attack3": "animation.longsword.attack_dual_stance0_3",
+        "dl_attack4": "animation.longsword.attack_dual_stance0_4",
+
+        //katar
+        "katar_control": "controller.animation.katar.attack",
+        "katar_dual_stance0": "animation.katar.dual_stance_0",
+        "katar_dual_attack0": "animation.katar.attack_dual_stance_0_0",
+        "katar_stance0": "animation.katar.stance_0",
+        "katar_attack0": "animation.katar.attack_stance_0_0",
+        "katar_attack1": "animation.katar.attack_stance_0_1",
+        "katar_unsheathe_one": "animation.katar.unsheathe_one",
+        "katar_unsheathe_two": "animation.katar.unsheathe_two",
+        "katar_unsheathe_dagger": "animation.katar.unsheathe_dagger",
+        "katar_stance_dagger": "animation.katar.dual_stance_dagger",
+        "katar_no_back": "animation.katar.no_back",
+        "katar_sneak_move": "animation.katar.sneak_with_move",
+        "katar_sneak": "animation.katar.sneak",
+
+        //lance
+        "lance_control": "controller.animation.lance.attack",
+        "lance_bob": "animation.lance.stance_bob",
+        "lance_no_back": "animation.lance.no_back",
+        "lance_unsheathe": "animation.lance.back_unsheathe",
+        "lance_stance0": "animation.lance.stance_0",
+        "lance_attack_0_0": "animation.lance.attack_stance_0_0",
+        "lance_stance1": "animation.lance.stance_1",
+        "lance_attack_1_0": "animation.lance.attack_stance_1_0",
+        "lance_stance2": "animation.lance.stance_2",
+        "lance_attack_2_0": "animation.lance.attack_stance_2_0",
+        "lance_shield": "animation.lance.stance_shield",
+        "lance_shield_move": "animation.lance.stance_shield_move",
+        "lance_attack_shield": "animation.lance.attack_shield0",
+        "lance_move": "animation.lance.move",
+        "lance_sprinrt": "animation.lance.sprint",
+        "lance_sneak": "animation.lance.sneak",
+        "lance_sneak_move": "animation.lance.sneak_move",
+
+        //katana_all
+        "katana_sheathed": "animation.katana.default",
+        "katana_unsheathed_0": "animation.katana.unsheathed_0",
+        "katana_unsheathed_1": "animation.katana.unsheathed_1",
+        "katana_unsheated_2": "animation.katana.unsheathed_2",
+        "katana_move": "animation.katana.move",
+        "katana_sprint": "animation.katana.sprint",
+        "katana_sneak": "animation.katana.sneak",
+        "katana_sneak_move": "animation.katana.sneak_move",
+        "odachi_sheathing": "animation.katana.odachi_sheath",
+        "katana_sheathing": "animation.katana.normal_sheath",
+        "unequip_sheath": "animation.katana.unequip_sheath",
+
+        //wakizashi
+        "wakizashi_control": "controller.animation.wakizashi.attack",
+        "wakizashi_stance0": "animation.katana.stance0",
+        "wakizashi_attack0_0": "animation.katana.attack_stance0_0",
+        "wakizashi_block1_0": "animation.katana.block_stance_1_0",
+        "wakizashi_block1_1": "animation.katana.block_stance_1_1",
+        "wakizashi_attack1_0": "animation.katana.attack_stance_1_0",
+        "wakizashi_attack1_1": "animation.katana.attack_stance_1_1",
+        "wakizashi_attack1_2": "animation.katana.attack_stance_1_2",
+        "wakizashi_attack1_3": "animation.katana.attack_stance_1_3",
+        "wakizashi_attack1_4": "animation.katana.attack_stance_1_4",
+        "wakizashi_attack1_5": "animation.katana.attack_stance_1_5",
+
+        //katana_long
+        "katana_control": "controller.animation.katana.attack",
+        "katana_stance0": "animation.katana.stance_2",
+        "katana_attack0_0": "animation.katana.attack_stance_2_0",
+        "katana_attack0_1": "animation.katana.attack_stance_2_1",
+        "katana_attack0_2": "animation.katana.attack_stance_2_2",
+        "katana_attack0_3": "animation.katana.attack_stance_2_3",
+        "katana_attack0_4": "animation.katana.attack_stance_2_4",
+        "katana_attack0_5": "animation.katana.attack_stance_2_5",
+        "katana_stance1": "animation.katana.stance_3",
+        "katana_attack1_0": "animation.katana.attack_stance_3_0",
+        "katana_attack1_1": "animation.katana.attack_stance_3_1",
+
+        //katana_wakizashi_dual_wield
+        "katana_dt_control": "controller.animation.katana_dt.attack",
+        "katana_dual_sheathed": "animation.katana.default_dual",
+        "katana_dual_unsheathed": "animation.katana.unsheathed_dual",
+        "katana_dual_stance0": "animation.katana.dual_stance_0",
+        "katana_dual_attack0": "animation.katana.attack_dual_stance0_0",
+        "katana_dual_attack2": "animation.katana.attack_dual_stance0_2",
+        "katana_dual_attack1": "animation.katana.attack_dual_stance0_1",
+        "katana_dual_attack3": "animation.katana.attack_dual_stance0_3",
+
+        //odachi
+        "odachi_control": "controller.animation.odachi.attack",
+        "odachi_initial": "animation.odachi.initial",
+        "odachi_crescent": "animation.katana.attack_odachi_crescent_strike",
+        "odachi_unsheath": "animation.katana.odachi_uinsheath",
+        "odachi_hold": "animation.katana.hold_odachi",
+        "odachi_attack0": "animation.katana.attack_odachi_0",
+        "odachi_attack1": "animation.katana.attack_odachi_1",
+        "odachi_attack2": "animation.katana.attack_odachi_2",
+        "odachi_attack3": "animation.katana.attack_odachi_3",
+        "odachi_attack4": "animation.katana.attack_odachi_4",
+        "odachi_attack5": "animation.katana.attack_odachi_5",
+
+        //halberd
+        "halberd_control": "controller.animation.halnew.attack",
+        "halberd_no_back": "animation.halberd.no_back",
+        "halberd_unsheathe": "animation.halberd.unsheathe",
+        "halberd_stance0": "animation.halberd.stance_0",
+        "halberd_attack0": "animation.halberd.attack_combo0_0",
+        "halberd_inbetween0": "animation.halberd.inbetween_combo0_0",
+        "halberd_attack1": "animation.halberd.attack_combo0_1",
+        "halberd_inbetween1": "animation.halberd.inbetween_combo0_1",
+        "halberd_attack2": "animation.halberd.attack_combo0_2",
+        "halberd_inbetween2": "animation.halberd.inbetween_combo0_2",
+        "halberd_attack3": "animation.halberd.attack_combo0_3",
+        "halberd_inbetween3": "animation.halberd.inbetween_combo0_3",
+        "halberd_attack4": "animation.halberd.attack_combo0_4",
+        "halberd_sneak": "animation.halberd.sneak",
+        "halberd_sneak_move": "animation.halberd.sneak_move",
+
+        //greatsword
+        "greatsword_control": "controller.animation.greatsword.attack",
+        "gs_unsheathe": "animation.greatsword.unsheathe",
+        "gs_no_back": "animation.greatsword.no_back",
+        "gs_stance0": "animation.greatsword.stance_0",
+        "gs_attack0_0": "animation.greatsword.attack_stance0_0",
+        "gs_inbetween0_0": "animation.greatsword.inbetween_stance0_0",
+        "gs_return0_0": "animation.greatsword.return_stance0_0",
+        "gs_attack0_1": "animation.greatsword.attack_stance0_1",
+        "gs_inbetween0_1": "animation.greatsword.inbetween_stance0_1",
+        "gs_return0_1": "animation.greatsword.return_stance0_1",
+        "gs_attack0_2": "animation.greatsword.attack_stance0_2",
+        "gs_return0_2": "animation.greatsword.return_stance0_2",
+        "gs_stance1": "animation.greatsword.stance_1",
+        "gs_attack1_0": "animation.greatsword.attack_stance1_0",
+        "gs_attack1_1": "animation.greatsword.attack_stance1_1",
+        "gs_attack1_2": "animation.greatsword.attack_stance1_2",
+        "gs_attack1_3": "animation.greatsword.attack_stance1_3",
+        "gs_attack1_4": "animation.greatsword.attack_stance1_4",
+        "gs_attack1_5": "animation.greatsword.attack_stance1_5",
+        "gs_attack1_6": "animation.greatsword.attack_stance1_6",
+        "gs_attack1_7": "animation.greatsword.attack_stance1_7",
+        "gs_stance2": "animation.greatsword.stance_2",
+        "gs_attack2_0": "animation.greatsword.attack_stance_2_0",
+
+        //zweihander
+        "zweihander_control": "controller.animation.zweihander.attack",
+        "zweihander_stance0": "animation.zweihander.stance_0",
+        "zweihander_attack0": "animation.zweihander.attack_combo_0_0",
+        "zweihander_attack1": "animation.zweihander.attack_combo_0_1",
+        "zweihander_attack2": "animation.zweihander.attack_combo_0_2",
+
+        //bec_de_corbin
+        "bec_control": "controller.animation.bec_de_corbin.attack",
+        "bdc_stance0": "animation.bec_de_corbin.stance_0",
+        "bdc_attack0_0": "animation.bec_de_corbin.attack_stance0_0",
+        "bdc_attack0_1": "animation.bec_de_crobin.attack_stance0_1",
+        "bdc_attack0_2": "animation.bec_de_corbin.attack_stance0_2",
+        "bdc_unsheathe": "animation.bec_de_corbin.unsheathe",
+        "bdc_no_back": "animation.bec_de_corbin.no_back",
+        "bdc_stance1": "animation.bec_de_corbin.stance_1",
+        "bdc_attack1_0": "animation.bec_de_corbin.attack_stance_1_0",
+        "bdc_attack1_2": "animation.bec_de_corbin.attack_stance_1_2",
+        "bdc_hammer": "animation.bec_de_corbin.side_1",
+
+        //saber
+        "saber_control": "controller.animation.saber.attack",
+        "saber_stance0": "animation.saber.stance_0",
+        "saber_attack1": "animation.saber.attack_stance0_1",
+        "saber_attack2": "animation.saber.attack_stance0_2",
+        "saber_attack0": "animation.saber.attack_stance0_0",
+        "saber_block0": "animation.saber.block_stance0_1",
+        "saber_no_back": "animation.saber.no_back",
+        "saber_unsheathe": "animation.saber.unsheathe",
+
+        //polehammer
+        "pole_hammer_control": "controller.animation.pole_hammer.attack",
+        "polham_stance0": "animation.pole_hammer.stance_0",
+        "polham_attack0": "animation.pole_hammer.attack_stance0_0",
+        "polham_attack2": "animation.pole_hammer.attack_stance0_2",
+        "polham_attack3": "animation.pole_hammer.attack_stance0_3",
+        "polham_attack1": "animation.pole_hammer.attack_stance0_1",
+        "polham_unsheathe": "animation.pole_hammer.unsheathe",
+        "polham_no_back": "animation.pole_hammer.no_back",
+
+        //glaive
+        "glaive_control": "controller.animation.glaive.attack",
+        "glaive_bob": "animation.glaive.stance_0_bob",
+        "glaive_no_back": "animation.glaive.back_none",
+        "glaive_unsheathe": "animation.glaive.back_unsheathe",
+        "glaive_sprint": "animation.glaive.stance_sprint",
+        "glaive_move": "animation.glaive.stance_move",
+        "glaive_sneak": "animation.glaive.sneak",
+        "glaive_sneak_move": "animation.glaive.sneak_move",
+        "glaive_stance0": "animation.glaive.stance_0",
+        "glaive_attack0": "animation.glaive.attack_stance_0_0",
+        "glaive_inbetween0": "animation.glaive.inbetween_stance_0_0",
+        "glaive_return0": "animation.glaive.return_stance_0_0",
+        "glaive_attack1": "animation.glaive.attack_stance_0_1",
+        "glaive_inbetween1": "animation.glaive.inbetween_stance_0_1",
+        "glaive_return1": "animation.glaive.return_stance_0_1",
+        "glaive_attack2": "animation.glaive.attack_stance_0_2",
+        "glaive_inbetween2": "animation.glaive.inbetween_stance_0_2",
+        "glaive_return2": "animation.glaive.return_stance_0_2",
+        "glaive_attack3": "animation.glaive.attack_stance_0_3",
+        "glaive_return3": "animation.glaive.return_stance_0_3",
+
+        //dagger
+        "dagger_control": "controller.animation.dagger.attack",
+        "dagger_unsheathe": "animation.dagger.unsheathe_two",
+        "dagger_no_back": "animation.dagger.no_back",
+        "dagger_stance0": "animation.dagger.stance_2",
+        "dagger_attack0": "animation.dagger.attack_stance2_0",
+        "dagger_inbetween0": "animation.dagger.inbetweeen_stance2_0",
+        "dagger_attack1": "animation.dagger.attack_stance2_1",
+        "dagger_inbetween1": "animation.dagger.inbetweeen_stance2_1",
+        "dagger_attack2": "animation.dagger.attack_stance2_2",
+        "dagger_inbetween2": "animation.dagger.inbetweeen_stance2_2",
+        "dagger_attack3": "animation.dagger.attack_stance2_3",
+        "dagger_sneak_move": "animation.dagger.sneak_with_move",
+        "dagger_sneak": "animation.dagger.sneak",
+
+        //double_dagger
+        "double_dagger_stance0": "animation.dagger.stance_3",
+        "double_dagger_attack0": "animation.dagger.attack_stance3_0",
+        "double_dagger_inbetween0": "animation.dagger.inbetweeen_stance3_0",
+        "double_dagger_attack1": "animation.dagger.attack_stance3_1",
+        "double_dagger_inbetween1": "animation.dagger.inbetweeen_stance3_1",
+        "double_dagger_attack2": "animation.dagger.attack_stance3_2",
+        "double_dagger_inbetween2": "animation.dagger.inbetweeen_stance3_2",
+        "double_dagger_attack3": "animation.dagger.attack_stance3_3",
+        "double_dagger_inbetween3": "animation.dagger.inbetweeen_stance3_3",
+        "double_dagger_attack4": "animation.dagger.attack_stance3_4",
+        "double_dagger_attack5": "animation.dagger.attack_stance3_5",
+
+        //rapier
+        "rapier_control": "controller.animation.rapier.attack",
+        "rapier_stance0": "animation.rapier.stance_0",
+        "rapier_attack0": "animation.rapier.attack_stance0_1",
+        "rapier_inbetween0": "animation.rapier.inbetween_stance0_1",
+        "rapier_attack1": "animation.rapier.attack_stance0_2",
+        "rapier_inbetween1": "animation.rapier.inbetween_stance0_2",
+        "rapier_attack2": "animation.rapier.attack_stance0_3",
+        "rapier_inbetween2": "animation.rapier.inbetween_stance0_3",
+        "rapier_attack3": "animation.rapier.attack_stance0_4",
+        "rapier_unsheathe": "animation.rapier.unsheathe",
+        "fp_rapier": "animation.rapier.trail_blazer",
+
+        //movement
+        "combat_mode": "controller.animation.combat_mode",
+        "custom_move_legs": "animation.custom.move_legs",
+        "custom_move_arms": "animation.custom.move_arms",
+        "sneak_move": "animation.custom.sneak_with_move",
+        "sneak": "animation.custom.sneak",
+        "swim": "animation.custom.swim",
+        "sprint_move": "animation.custom.move_sprint",
+        "sprint_land": "animation.custom.full_speed_land",
+        "sprint_on_air": "animation.custom.full_speed_fall",
+        "on_air": "animation.custom.on_air",
+        "sprint_kick": "animation.custom.full_speed_kick",
+        "sprint_kick2": "animation.custom.full_speed_kick2",
+        "full_speed_kick_right1": "animation.custom.full_speed_kick_right1",
+        "full_speed_kick_right2": "animation.custom.full_speed_kick_right2",
+        "full_speed_kick_left1": "animation.custom.full_speed_kick_left1",
+        "full_speed_kick_left2": "animation.custom.full_speed_kick_left2",
+        "attack_fist_right1": "animation.custom.attack_fist_right1",
+        "attack_fist_right2": "animation.custom.attack_fist_right2",
+        "attack_fist_left1": "animation.custom.attack_fist_left1",
+        "attack_fist_left2": "animation.custom.attack_fist_left2",
+        "attack_on_air1": "animation.custom.on_air_attack",
+        "attack_on_air2": "animation.custom.on_air_attack_smash",
+
+        //fp
+        "fp_controller": "controller.animation.fp_attack",
+        "odachi_fp": "animation.first_person.odachi_attack",
+        "saber_fp": "animation.first_person.saber_attack",
+        "mace_fp": "animation.first_person.mace_attack",
+        "wakizashi_fp": "animation.first_person.wakizashi_attack",
+        "katana_fp": "animation.first_person.katana_attack",
+        "greatsword_fp": "animation.first_person.greatsword_attack",
+        "halberd_fp": "animation.first_person.halberd_attack",
+        "lance_fp": "animation.first_person.lance_attack",
+        "rapier_fp": "animation.first_person.rapier_attack",
+        "attack_fp": "animation.custom.sword.attack_fp",
+        "hold_fp": "animation.weapons.first_person.hold",
+        "shield_fp": "animation.weapons.shield",
+        "hold_offhand_fp": "animation.weapons.first_person.offhand",
+
+        "hold_tp": "animation.weapons.third_person.hold",
+        "hold_tp_control": "controller.animation.third_person_hand",
+
+        //halberd_fp
+        "halberd_fp_attack0_0": "animation.halberd_fp.attack_combo0_0",
+        "halberd_fp_inbetween0_0": "animation.halberd_fp.inbetween_combo0_0",
+        "halberd_fp_return0_0": "animation.halberd_fp.return_combo0_0",
+        "halberd_fp_attack0_1": "animation.halberd_fp.attack_combo0_1",
+        "halberd_fp_inbetween0_1": "animation.halberd_fp.inbetween_combo0_1",
+        "halberd_fp_return0_1": "animation.halberd_fp.return_combo0_1",
+        "halberd_fp_attack0_2": "animation.halberd_fp.attack_combo0_2",
+        "halberd_fp_inbetween0_2": "animation.halberd_fp.inbetween_combo0_2",
+        "halberd_fp_return0_2": "animation.halberd_fp.return_combo0_2",
+        "halberd_fp_attack0_3": "animation.halberd_fp.attack_combo0_3",
+        "halberd_fp_inbetween0_3": "animation.halberd_fp.inbetween_combo0_3",
+        "halberd_fp_return0_3": "animation.halberd_fp.return_combo0_3",
+        "halberd_fp_attack0_4_1": "animation.halberd_fp.attack_combo0_4_1",
+        "halberd_fp_attack0_4": "animation.halberd_fp.attack_combo0_4",
+        "halberd_fp_stance0": "animation.halberd_fp.stance_0",
+        "halberd_fp_block": "animation.halberd_fp.block",
+        "halberd_fp_sneak": "animation.halberd_fp.sneak",
+        "halberd_fp_move": "animation.halberd_fp.move",
+        "halberd_fp_sprint": "animation.halberd_fp.sprint",
+        "halberd_fp_unsheathe": "animation.halberd_fp.unsheathe",
+        "halberd_fp_sneak_move": "animation.halberd_fp.sneak_move",
+
+        "gsfp_jump_attack": "animation.greatsword_fp.sprint_jump_attack",
+        "gsfp_stance0": "animation.greatsword.fp_stance_0",
+        "gsfp_attack0_0": "animation.greatsword_fp.attack_stance0_0",
+        "gsfp_inbetween0_0": "animation.greatsword_fp.inbetween_stance0_0",
+        "gsfp_return0_0": "animation.greatsword_fp.return_stance0_0",
+        "gsfp_attack0_1": "animation.greatsword_fp.attack_stance0_1",
+        "gsfp_inbetween0_1": "animation.greatsword_fp.inbetween_stance0_1",
+        "gsfp_return0_1": "animation.greatsword_fp.return_stance0_1",
+        "gsfp_attack0_2": "animation.greatsword_fp.attack_stance0_2",
+        "gsfp_return0_2": "animation.greatsword_fp.return_stance0_2",
+        "gsfp_unsheathe": "animation.greatsword_fp.unsheathe",
+        "gsfp_move": "animation.greatsword_fp.move",
+        "gsfp_sprint": "animation.greatsword_fp.sprint",
+        "spear_fp_stance0": "animation.spear_fp.stance_0",
+        "spear_fp_attack0_0": "animation.spear_fp.attack_0",
+        "spear_fp_inbetween0_0": "animation.spear_fp.attack_inbetween_0",
+        "spear_fp_attack1_0": "animation.spear_fp.attack_1_0",
+        "spear_fb_inbetween1_0": "animation.spear_fp.attack_inbetween_1",
+        "spear_fp_attack2_0": "animation.spear_fp.attack_2",
+        "spear_fp_shield0_0": "animation.spear_fp.stance_blocking_shield",
+        "spear_fp_shield_attack": "animation.spear_fp.stance_blocking_shield_attack",
+        "spear_fp_shield_attack_down": "animation.spear_fp.stance_blocking_shield_attack_down",
+        "spear_fp_sneak": "animation.spear_fp.sneak",
+        "spear_fp_sprint": "animation.spear_fp.sprint",
+        "spear_fp_unsheathe": "animation.spear_fp.back_unsheathe",
+        "spear_fp_sneak_move": "animation.spear_fp.sneak_move",
+        "spear_fp_stance_move": "animation.spear_fp.stance_move",
+        "lance_fp_stance_horseback": "animation.lance_fp.stance_horseback",
+        "lance_fp_move_hb": "animation.lance_fp.move_horseback",
+        "lance_fp_stance0": "animation.lance_fp.stance_0",
+        "lance_fp_attack0": "animation.lance_fp.attack_stance_0_0",
+        "lance_fp_stance1": "animation.lance_fp.stance_1",
+        "lance_fp_attack1_0": "animation.lance_fp.attack_stance_1_0",
+        "lance_fp_attack1_1": "animation.lance_fp.attack_stance_1_1",
+        "lance_fp_stance2": "animation.lance_fp.stance_2",
+        "lance_fp_attack2": "animation.lance_fp.attack_stance_2_0",
+        "lance_fp_stance_shield": "animation.lance_fp.stance_shield",
+        "lance_fp_shield_move": "animation.lance_fp.stance_shield_move",
+        "lance_fp_shield_attack": "animation.lance_fp.attack_shield0",
+        "lance_fp_unsheathe": "animation.lance_fp.back_unsheathe",
+        "lance_fp_move": "animation.lance_fp.move",
+        "lance_fp_sprint": "animation.lance_fp.sprint",
+        "lance_fp_sneak": "animation.lance_fp.sneak",
+        "lance_fp_sneak_move": "animation.lance_fp.sneak_move",
+        "mace_fp_stance0": "animation.mace_fp.stance_0",
+        "mace_fp_attack0": "animation.mace_fp.attack_0",
+        "mace_fp_inbetween0": "animation.mace_fp.inbetween_0",
+        "mace_fp_return0": "animation.macefp.return_0",
+        "mace_fp_attack1": "animation.mace_fp.attack_1",
+        "mace_fp_inbetween1": "animation.mace_fp.inbetween_1",
+        "mace_fp_return1": "animation.mace_fp.return_1",
+        "mace_fp_attack2": "animation.mace_fp.attack_2",
+        "mace_fp_return2": "animation.mace_fp.return_2",
+        "mace_fp_unsheathe": "animation.mace_fp.unsheathe",
+        "mace_fp_move": "animation.mace.move",
+        "mace_fp_sprint": "animation.mace.sprint",
+
+        "bec_de_corbin_fp_stance0": "animation.bec_de_corbin_fp.stance_0",
+        "bec_de_corbin_fp_attack_stance0_0": "animation.bec_de_corbin_fp.attack_stance0_0",
+        "bec_de_corbin_fp_inbetween_stance0_0": "animation.bec_de_corbin_fp.inbetween_stance0_0",
+        "bec_de_corbin_fp_attack_stance0_1": "animation.bec_de_crobin_fp.attack_stance0_1",
+        "bec_de_corbin_fp_inbetween_stance0_1": "animation.bec_de_crobin_fp.inbetween_stance0_1",
+        "bec_de_corbin_fp_inbetween_stance0_2": "animation.bec_de_corbin_fp.attack_stance0_2",
+        "bec_de_corbin_fp_stance1": "animation.bec_de_corbin_fp.stance_1",
+        "bec_de_corbin_fp_attack_stance1_0": "animation.bec_de_corbin_fp.attack_stance_1_0",
+        "bec_de_corbin_fp_inbetween_stance1_0": "animation.bec_de_corbin_fp.inbetween_stance_1_0",
+        "bec_de_corbin_fp_attack_stance1_2": "animation.bec_de_corbin_fp.attack_stance_1_2",
+        "bec_de_corbin_fp_inbetween_stance1_2": "animation.bec_de_corbin_fp.inbetween_stance_1_3",
+        "bec_de_corbin_fp_attack_stance1_3": "animation.bec_de_corbin_fp.attack_stance1_2",
+        "bec_de_corbin_fp_unsheathe": "animation.bec_de_corbin_fp.unsheathe",
+        "dagger_fp_stance_shield": "animation.dagger_fp.stance_shield",
+        "dagger_fp_stance_2": "animation.dagger_fp.stance_2",
+        "dagger_fp_attack_stance_2_0": "animation.dagger_fp.attack_stance2_0",
+        "dagger_fp_inbetween_stance_2_0": "animation.dagger_fp.inbetweeen_stance2_0",
+        "dagger_fp_attack_stance_2_1": "animation.dagger_fp.attack_stance2_1",
+        "dagger_fp_attack_stance_2_2": "animation.dagger_fp.attack_stance2_2",
+        "dagger_fp_inbetween_stance_2_1": "animation.dagger_fp.inbetweeen_stance2_1",
+        "dagger_fp_inbetween_stance_2_2": "animation.dagger_fp.inbetweeen_stance2_2",
+        "dagger_fp_attack_stance_2_3": "animation.dagger_fp.attack_stance2_3",
+        "dagger_fp_stance_3": "animation.dagger_fp.stance_3",
+        "dagger_fp_attack_stance_3_0": "animation.dagger_fp.attack_stance3_0",
+        "dagger_fp_inbetween_stance_3_0": "animation.dagger_fp.inbetweeen_stance3_0",
+        "dagger_fp_attack_stance_3_1": "animation.dagger_fp.attack_stance3_1",
+        "dagger_fp_inbetween_stance_3_1": "animation.dagger_fp.inbetweeen_stance3_1",
+        "dagger_fp_attack_stance_3_2": "animation.dagger_fp.attack_stance3_2",
+        "dagger_fp_inbetween_stance_3_2": "animation.dagger_fp.inbetweeen_stance3_2",
+        "dagger_fp_attack_stance_3_3": "animation.dagger_fp.attack_stance3_3",
+        "dagger_fp_inbetween_stance_3_3": "animation.dagger_fp.inbetweeen_stance3_3",
+        "dagger_fp_attack_stance_3_4": "animation.dagger_fp.attack_stance3_4",
+        "dagger_fp_attack_stance_3_5": "animation.dagger_fp.attack_stance3_5",
+        "dagger_fp_sneak": "animation.dagger_fp.sneak",
+        "dagger_fp_sneak_move": "animation.dagger_fp.sneak_with_move",
+        "dagger_fp_sprint": "animation.dagger_fp.sprint",
+        "dagger_fp_sprint_double": "animation.dagger_fp.sprint_double",
+        "dagger_fp_unsheathe": "animation.dagger_fp.unsheathe",
+        "dagger_fp_unsheathe_two": "animation.dagger_fp.unsheathe_two",
+        "giant_mace_fp_stance_0": "animation.giant_mace_fp.stance_0",
+        "giant_mace_fp_attack_stance_0_0": "animation.giant_mace_fp.attack_stance0_0",
+        "giant_mace_fp_inbetween_stance_0_0": "animation.giant_mace_fp.inbetween_stance0_0",
+        "giant_mace_fp_attack_stance_0_2": "animation.giant_mace_fp.attack_stance0_2",
+        "giant_mace_fp_attack_stance_0_1": "animation.giant_mace_fp.inbetween_stance0_1",
+        "giant_mace_fp_attack_stance_0_3": "animation.giant_mace_fp.attack_stance0_3",
+        "giant_mace_fp_inbetween_stance_0_2": "animation.giant_mace_fp.inbetween_stance0_2",
+        "giant_mace_fp_attack_stance_0_4": "animation.giant_mace_fp.attack_stance0_4",
+        "giant_mace_fp_unsheathe": "animation.giant_mace_fp.unsheathe",
+        "katar_fp_dual_stance_0": "animation.katar_fp.dual_stance_0",
+        "katar_fp_attack_dual_stance_0": "animation.katar_fp.attack_dual_stance_0_0",
+        "katar_fp_attack_dual_stance_1": "animation.katar_fp.attack_dual_test_0",
+        "katar_fp_attack_dual_stance_2": "animation.katar_fp.attack_dual_test_1",
+        "katar_fp_stance_0": "animation.katar_fp.stance_0",
+        "katar_fp_attack_stance_0": "animation.katar_fp.attack_stance_0_0",
+        "katar_fp_attack_stance_0_1": "animation.katar_fp.attack_stance_0_1",
+        "katar_fp_unsheathe": "animation.katar_fp.unsheathe_one",
+        "katar_fp_unsheathe_two": "animation.katar_fp.unsheathe_two",
+        "katar_fp_unsheathe_dagger": "animation.katar_fp.unsheathe_dagger",
+        "katar_fp_dual_stance_dagger": "animation.katar_fp.dual_stance_dagger",
+        "katar_fp_sneak_move": "animation.katar_fp.sneak_with_move",
+        "katar_fp_sneak": "animation.katar_fp.sneak",
+        "rapier_fp_stance0": "animation.rapier_fp.stance_0",
+        "rapier_fp_attack_stance0_0": "animation.rapier_fp.attack_stance0_0",
+        "rapier_fp_attack_stance0_1": "animation.rapier_fp.attack_stance0_1",
+        "rapier_fp_inbetween_stance0_1": "animation.rapier_fp.inbetween_stance0_1",
+        "rapier_fp_attack_stance0_2": "animation.rapier_fp.attack_stance0_2",
+        "rapier_fp_inbetween_stance0_2": "animation.rapier_fp.inbetween_stance0_2",
+        "rapier_fp_attack_stance0_3": "animation.rapier_fp.attack_stance0_3",
+        "rapier_fp_inbetween_stance0_3": "animation.rapier_fp.inbetween_stance0_3",
+        "rapier_fp_attack_stance0_4": "animation.rapier_fp.attack_stance0_4",
+        "rapier_fp_unsheathe": "animation.rapier_fp.unsheathe",
+        "glaive_fp_stance0": "animation.glaive_fp.stance_0",
+        "glaive_fp_attack_stance0_0": "animation.glaive_fp.attack_stance_0_0",
+        "glaive_fp_inbetween_stance0_0": "animation.glaive_fp.inbetween_stance_0_0",
+        "glaive_fp_return_stance0_0": "animation.glaive_fp.return_stance_0_0",
+        "glaive_fp_attack_stance0_1": "animation.glaive_fp.attack_stance_0_1",
+        "glaive_fp_inbetween_stance0_1": "animation.glaive_fp.inbetween_stance_0_1",
+        "glaive_fp_return_stance0_1": "animation.glaive_fp.return_stance_0_1",
+        "glaive_fp_attack_stance0_2": "animation.glaive_fp.attack_stance_0_2",
+        "glaive_fp_inbetween_stance0_2": "animation.glaive_fp.inbetween_stance_0_2",
+        "glaive_fp_return_stance0_2": "animation.glaive_fp.return_stance_0_2",
+        "glaive_fp_attack_stance0_3": "animation.glaive_fp.attack_stance_0_3",
+        "glaive_fp_return_stance0_3": "animation.glaive_fp.return_stance_0_3",
+        "glaive_fp_sprint": "animation.glaive_fp.stance_sprint",
+        "glaive_fp_move": "animation.glaive_fp.stance_move",
+        "katana_fp_sneak": "animation.katana_fp.sneak",
+        "katana_fp_stance0": "animation.katana_fp.stance0",
+        "katana_fp_sneak_move": "animation.katana_fp.sneak_move",
+        "katana_fp_attack_stance0_0": "animation.katana_fp.attack_stance0_0",
+        "katana_fp_stance2": "animation.katana_fp.stance_2",
+        "katana_fp_attack_stance2_0": "animation.katana_fp.attack_stance_2_0",
+        "katana_fp_attack_stance2_1": "animation.katana_fp.attack_stance_2_1",
+        "katana_fp_attack_stance2_2": "animation.katana_fp.attack_stance_2_2",
+        "katana_fp_attack_stance2_3": "animation.katana_fp.attack_stance_2_3",
+        "katana_fp_attack_stance2_4": "animation.katana_fp.attack_stance_2_4",
+        "katana_fp_attack_stance2_5": "animation.katana_fp.attack_stance_2_5",
+        "katana_fp_hold_odachi": "animation.katana_fp.hold_odachi",
+        "katana_fp_attack_odachi_1": "animation.katana_fp.attack_odachi_1",
+        "katana_fp_attack_odachi_2": "animation.katana_fp.attack_odachi_2",
+        "katana_fp_attack_odachi_3": "animation.katana_fp.attack_odachi_3",
+        "katana_fp_attack_odachi_4": "animation.katana_fp.attack_odachi_4",
+        "katana_fp_attack_odachi_5": "animation.katana_fp.attack_odachi_5",
+        "katana_fp_normal_sheath": "animation.katana_fp.normal_sheath",
+        "saber_fp_attack_stance_0_1": "animation.saber_fp.attack_stance0_1",
+        "saber_fp_attack_stance_0_2": "animation.saber_fp.attack_stance0_2",
+        "saber_fp_attack_stance_0_0": "animation.saber_fp.attack_stance0_0",
+        "saber_fp_stance_0": "animation.saber_fp.stance_0",
+        "saber_fp_unsheathe": "animation.saber_fp.unsheathe",
+        "saber_fp_block_stance0_1": "animation.saber_fp.block_stance0_1",
+        "ls_fp_stance_0": "animation.longsword_fp.stance_0",
+        "ls_fp_attack_0_0": "animation.longsword_fp.attack_0",
+        "ls_fp_inbetween_0": "animation.longsword_fp.inbetween_0",
+        "ls_fp_attack_1_0": "animation.longsword_fp.attack_1_0",
+        "ls_fp_attack_1_1": "animation.longsword_fp.attack_1_1",
+        "ls_fp_attack_1_2": "animation.longsword_fp.attack_1_2",
+        "ls_fp_inbetween_1": "animation.longsword_fp.inbetween_1",
+        "ls_fp_stance_2": "animation.longsword_fp.stance_2",
+        "ls_fp_attack_2_0": "animation.longsword_fp.attack_2_0",
+        "ls_fp_attack_2_1": "animation.longsword_fp.attack_2_1",
+        "ls_fp_attack_2_2": "animation.longsword_fp.attack_2_2",
+        "ls_fp_inbetween_2": "animation.longsword_fp.inbetween_2",
+        "ls_fp_stance_3": "animation.longsword_fp.stance_3",
+        "ls_fp_attack_3": "animation.longsword_fp.attack_3",
+        "ls_fp_inbetween_3": "animation.longsword_fp.inbetween_3",
+        "ls_fp_stance_4": "animation.longsword_fp.stance_4",
+        "ls_fp_attack_4_0": "animation.longsword_fp.attack_stance_4_0",
+        "ls_fp_attack_4_1": "animation.longsword_fp.attack_stance_4_1",
+        "ls_fp_stance_horseback": "animation.longsword_fp.stance_horseback",
+        "ls_fp_attack_horseback_0": "animation.longsword_fp.attack_stance_horseback_0",
+        "ls_fp_attack_horseback_1": "animation.longsword_fp.attack_stance_horseback_1",
+        "ls_fp_stance_dual_0": "animation.longsword_fp.dual_stance_0",
+        "ls_fp_attack_dual_0_0": "animation.longsword_fp.attack_dual_stance0_0",
+        "ls_fp_attack_dual_0_1": "animation.longsword_fp.attack_dual_stance0_1",
+        "ls_fp_attack_dual_0_2": "animation.longsword_fp.attack_dual_stance0_2",
+        "ls_fp_stance_shield": "animation.longsword_fp.stance_shield",
+        "ls_fp_stance_shield_move": "animation.longsword_fp.stance_shield_move",
+        "ls_fp_stance_shield_sprint": "animation.longsword_fp.stance_shield_sprint",
+        "ls_fp_attack_shield_2": "animation.longsword_fp.attack_shield2",
+        "ls_fp_attack_shield_1": "animation.longsword_fp.attack_shield1",
+        "ls_fp_attack_shield_0": "animation.longsword_fp.attack_shield0",
+        "ls_fp_unsheathe_two": "animation.longsword_fp.unsheathe",
+        "ls_fp_unsheathe_one": "animation.longsword_fp.unsheathe_one",
+        "ls_fp_unsheathe_shield": "animation.longsword_fp.unsheathe_shield",
+        "pole_hammer_fp_stance_0": "animation.pole_hammer_fp.stance_0",
+        "pole_hammer_fp_attack_0_0": "animation.pole_hammer_fp.attack_stance0_0",
+        "pole_hammer_fp_attack_0_2": "animation.pole_hammer_fp.attack_stance0_2",
+        "pole_hammer_fp_attack_0_3": "animation.pole_hammer_fp.attack_stance0_3",
+        "pole_hammer_fp_attack_0_1": "animation.pole_hammer_fp.attack_stance0_1",
+        "pole_hammer_fp_unsheathe": "animation.pole_hammer_fp.unsheathe",
+
+        //timer
+        "timer": "animation.timer.katana",
+        "timer_inbets": "animation.timer.inbets",
+        "timer_inbet_short": "animation.timer.inbetween_short"
+      },
+      "render_controllers": [
+        //3D Combat Addon
+        {
+          "controller.render.player.first_person": "variable.is_first_person && !variable.weaponslol"
+        },
+        {
+          "controller.render.player.first_person_hand": "variable.is_first_person && variable.weaponslol"
+        },
+        {
+          "controller.render.player.combat_mode": "!variable.is_first_person && !variable.map_face_icon"
+        },
+        {
+          "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon"
+        },
+        {
+          "controller.render.wakizashi_animator": "variable.katana_wakizashi"
+        },
+        {
+          "controller.render.katana_animator": "variable.katana||variable.odachi"
+        },
+        {
+          "controller.render.katana_dt_animator": "variable.katana && variable.wakizashi_oh"
+        },
+        {
+          "controller.render.longbow_animator": "variable.longbow"
+        },
+        {
+          "controller.render.rotator": "variable.glaive"
+        },
+        {
+          "controller.render.back_odachi_first_iron": "variable.odachi && !variable.no_odachi"
+        },
+        {
+          "controller.render.back_odachi_first_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_odachi')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_odachi')"
+        },
+        {
+          "controller.render.tsuba_oval": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_odachi_second_iron": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal2": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi')"
+        },
+        {
+          "controller.render.tsuba_oval2": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru2": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku2": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_odachi_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal3": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi')"
+        },
+        {
+          "controller.render.tsuba_oval3": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru3": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku3": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_iron": "variable.katana_wakizashi && !variable.no_waki"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_first_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi')"
+        },
+        {
+          "controller.render.tsuba_oval": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_wakizashi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_wooden": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_stone": "query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_iron": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_golden": "query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_diamond": "query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_second_netherite": "query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi')"
+        },
+        {
+          "controller.render.tsuba_oval2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_wakizashi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_wooden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_stone": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katana_wakizashi')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_iron": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_golden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_diamond": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_wakizashi_third_netherite": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal3": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi')"
+        },
+        {
+          "controller.render.tsuba_oval3": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_vltsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru3": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_rndtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku3": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katana_wakizashi_rdsmtsb')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katana_wakizashi_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_first_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana')"
+        },
+        {
+          "controller.render.back_katana_first_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana')"
+        },
+        {
+          "controller.render.back_katana_first_iron": "variable.katana && !variable.no_sheaths"
+        },
+        {
+          "controller.render.back_katana_first_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_first_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_first_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_first_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana')"
+        },
+        {
+          "controller.render.tsuba_oval": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rndtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_second_wooden": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana')"
+        },
+        {
+          "controller.render.back_katana_second_stone": "query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana')"
+        },
+        {
+          "controller.render.back_katana_second_iron": "query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_second_golden": "query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_second_diamond": "query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_second_netherite": "query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana')"
+        },
+        {
+          "controller.render.tsuba_oval2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rndtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku2": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_wooden": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana')"
+        },
+        {
+          "controller.render.back_katana_third_stone": "query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana')"
+        },
+        {
+          "controller.render.back_katana_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_golden": "query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_diamond": "query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_netherite": "query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_normal3": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana')"
+        },
+        {
+          "controller.render.tsuba_oval3": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb')"
+        },
+        {
+          "controller.render.tsuba_maru3": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku3": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_saber_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_saber') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_saber_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_saber') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_saber_iron": "query.is_item_name_any('slot.hotbar',0,'iron_saber:shield') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_saber_golden": "query.is_item_name_any('slot.hotbar',0,'golden_saber:shield') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_saber_diamond": "query.is_item_name_any('slot.hotbar',0,'diamond_saber:shield') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_saber_netherite": "query.is_item_name_any('slot.hotbar',0,'netherite_saber:shield') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_giant_mace": "query.is_item_name_any('slot.hotbar',0,'pixel:giant_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.saber_scabbard": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_saber')||query.is_item_name_any('slot.hotbar',0,'iron_saber:shield')||query.is_item_name_any('slot.hotbar',0,'golden_saber:shield')||query.is_item_name_any('slot.hotbar',0,'diamond_saber:shield')||query.is_item_name_any('slot.hotbar',0,'netherite_saber:shield')"
+        },
+        {
+          "controller.render.back_rapier_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_rapier') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_rapier_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_rapier') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_rapier_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_rapier') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_rapier_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_rapier') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_polehammer": "query.is_item_name_any('slot.hotbar',0,'pixel:pole_hammer') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_glaive_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_glaive') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_spear_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_spear') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_lance_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_lance') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_halberd_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_halberd') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.longsword_scabbard": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_longsword')"
+        },
+        {
+          "controller.render.back_longsword_offhand_wooden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_offhand_stone": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_offhand_iron": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_offhand_golden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_offhand_diamond": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_longsword_offhand_netherite": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_longsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.longsword_offhand_scabbard": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_longsword')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_longsword')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_longsword')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_longsword')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_longsword')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_longsword')"
+        },
+        {
+          "controller.render.back_greatsword_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_greatsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_greatsword_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_greatsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_greatsword_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_greatsword') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.dagger_scabbard": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_dagger')"
+        },
+        {
+          "controller.render.back_dagger_offhand_wooden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_offhand_stone": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_offhand_iron": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_offhand_golden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_offhand_diamond": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_dagger') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_dagger_offhand_netherite": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_dagger') && !variable.is_first_person && !variable.is_first_person"
+        },
+        {
+          "controller.render.shieldback": "query.is_item_name_any('slot.weapon.offhand',0,'minecraft:shield') && !variable.is_first_person||query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:shield') && !variable.is_first_person"
+        },
+        {
+          "controller.render.dagger_offhand_scabbard": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_dagger')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_dagger')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_dagger')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_dagger')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_dagger')||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_dagger')"
+        },
+        {
+          "controller.render.back_katar_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.katar_scabbard": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katar') && !variable.is_first_person||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katar') && !variable.is_first_person||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katar') && !variable.is_first_person||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katar') && !variable.is_first_person||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katar') && !variable.is_first_person||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_wooden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_stone": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_iron": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_golden": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_diamond": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_katar_offhand_netherite": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.katar_offhand_scabbard": "query.is_item_name_any('slot.weapon.offhand',0,'pixel:wooden_katar') && !variable.is_first_person||query.is_item_name_any('slot.weapon.offhand',0,'pixel:stone_katar') && !variable.is_first_person||query.is_item_name_any('slot.weapon.offhand',0,'pixel:iron_katar') && !variable.is_first_person||query.is_item_name_any('slot.weapon.offhand',0,'pixel:golden_katar') && !variable.is_first_person||query.is_item_name_any('slot.weapon.offhand',0,'pixel:diamond_katar') && !variable.is_first_person||query.is_item_name_any('slot.weapon.offhand',0,'pixel:netherite_katar') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_wooden": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_stone": "query.is_item_name_any('slot.hotbar',0,'pixel:stone_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_iron": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_golden": "query.is_item_name_any('slot.hotbar',0,'pixel:golden_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_diamond": "query.is_item_name_any('slot.hotbar',0,'pixel:diamond_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_mace_netherite": "query.is_item_name_any('slot.hotbar',0,'pixel:netherite_mace') && !variable.is_first_person"
+        },
+        {
+          "controller.render.back_bec_de_corbin": "query.is_item_name_any('slot.hotbar',0,'pixel:bec_de_corbin') && !variable.is_first_person"
+        },
+        {
+          "controller.render.gstrail": "variable.greatsword && !variable.is_first_person"
+        },
+        {
+          "controller.render.rapier_trail": "variable.rapier && !variable.is_first_person"
+        },
+        {
+          "controller.render.player.map": "variable.map_face_icon"
+        },
+
+        //Zombie Apocalypes Addon
+        {
+          "controller.render.crosshair_pistol": "variable.crosshair_pistol && variable.is_first_person"
+        },
+        {
+          "controller.render.crosshair_submachine": "variable.crosshair_submachine && variable.is_first_person"
+        },
+        {
+          "controller.render.crosshair_assult": "variable.crosshair_assult && variable.is_first_person"
+        },
+        {
+          "controller.render.crosshair_launcher": "variable.crosshair_launcher && variable.is_first_person"
+        },
+        {
+          "controller.render.crosshair_sniper": "variable.crosshair_sniper && variable.is_first_person && query.is_sneaking"
+        }
+      ],
+      "enable_attachables": true
+    }
+  }
+}

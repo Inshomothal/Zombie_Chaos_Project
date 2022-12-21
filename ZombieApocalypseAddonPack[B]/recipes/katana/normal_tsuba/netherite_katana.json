@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:netherite_katana"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#X"
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:diamond_katana"
+      },
+      "X": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:netherite_katana"
+    }
+  }
+}

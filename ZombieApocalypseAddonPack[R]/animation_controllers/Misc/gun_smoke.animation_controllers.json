@@ -1,0 +1,18 @@
+{
+   "format_version":"1.10.0",
+   "animation_controllers":{
+      "controller.animation.gun_smoke":{
+         "initial_state":"on",
+         "states":{
+            "on":{
+               "particle_effects":[
+                  {
+                     "effect":"gun_smoke",
+                     "locator":"smoke"
+                  }
+               ]
+            }
+         }
+      }
+   }
+}

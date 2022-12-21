@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "pixel:stone_mace",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/stone_mace",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "mainhand": "geometry.mace",
+        "offhand": "geometry.mace"
+      },
+      "animations": {
+        "defi": "controller.animation.mace.attack"
+      },
+      "scripts": {
+        "animate": [
+          { "defi": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name('main_hand') == 'stone_mace'"
+          }
+        ]
+      },
+      "render_controllers": [ { "controller.render.weaponk": "c.item_slot == 'main_hand'" } ]
+    }
+  }
+}

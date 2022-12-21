@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:diamond_longsword"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " D ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      },
+      "D": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "pixel:diamond_longsword"
+    }
+  }
+}

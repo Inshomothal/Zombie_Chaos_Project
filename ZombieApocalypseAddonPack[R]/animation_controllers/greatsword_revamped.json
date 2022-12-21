@@ -1,0 +1,200 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.greatsword.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.greatsword"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_greatsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_greatsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_greatsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_greatsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_greatsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_greatsword')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"greatsword": "variable.greatsword"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_greatsword')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_greatsword')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_greatsword')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_greatsword')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_greatsword')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_greatsword')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "gs_unsheathe",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.greatsword"
+						}
+					]
+				},
+				"greatsword": {
+					"animations": [
+				   	  "gs_stance0",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+					  {
+					    "no_offhand": "query.get_equipped_item_name('off_hand') != ''"
+					  },
+					  "gs_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting && variable.random == 0"
+						},
+						{
+							"default": "!variable.greatsword"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random == 1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword2": {
+					"animations": [
+				   	  "gs_stance0",
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+					  {
+					    "no_offhand": "query.get_equipped_item_name('off_hand') != ''"
+					  },
+					  "gs_no_back"
+					],
+					"transitions": [
+						{
+							"attack3": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 0"
+						},
+						{
+							"attack4": "variable.attack_time>0 && variable.random_3 == 1"
+						},
+						{
+							"attack5": "variable.attack_time>0 && variable.random_3 == 2"
+						},
+						{
+							"default": "!variable.greatsword"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  "gs_attack0_0",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"attack_02": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_02": {
+					"animations": [
+					  "gs_attack0_1",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword2": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+					  "gs_attack1_7",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword2": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack3": {
+					"animations": [
+					  "gs_attack1_0",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"attack3_2": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack3_2": {
+					"animations": [
+					  "gs_attack1_1",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack4": {
+					"animations": [
+					  "gs_attack1_2",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword2": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack5": {
+					"animations": [
+					  "gs_attack1_3",
+					  "gs_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"greatsword2": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

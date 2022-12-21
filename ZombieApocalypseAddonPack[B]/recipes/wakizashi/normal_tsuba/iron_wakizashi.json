@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_katana_wakizashi"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X",
+      "# "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "pixel:iron_wakizashi_blade"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_katana_wakizashi"
+    }
+  }
+}

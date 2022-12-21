@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "minecraft:smithingtable_diamond_lance_to_netherite_lance"
+    },
+
+
+    "tags": [ "smithing_table" ],
+    "priority": 2,
+    "ingredients": [
+      {
+        "item": "pixel:diamond_lance"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ],
+    "result": {
+      "item": "pixel:netherite_lance",
+      "count": 1
+    }
+  }
+  
+}

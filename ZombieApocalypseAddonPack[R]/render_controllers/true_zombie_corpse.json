@@ -1,0 +1,25 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.true_zombie_corpse":{
+         "arrays":{
+            "textures":{
+               "Array.variants":[
+                  "Texture.default",
+                  "Texture.rotting",
+                  "Texture.skeleton"
+               ]
+            }
+         },
+         "geometry":"Geometry.default",
+         "materials":[
+            {
+               "*":"Material.default"
+            }
+         ],
+         "textures":[
+            "Array.variants[query.variant]"
+         ]
+      }
+   }
+}

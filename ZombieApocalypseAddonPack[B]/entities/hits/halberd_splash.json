@@ -1,0 +1,135 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:halberd_splash",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+		"animate": [
+	      "run"
+		]
+      },
+	  "animations": {
+		"run": "controller.animation.static_movement"
+	  }
+    },
+    "component_groups": {
+      "despawn":{
+	    "minecraft:instant_despawn":{}
+      },
+      "shoot":{
+	    "minecraft:variant":{
+	      "value": 2
+	    }
+      },
+      "lance_horse":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 5,
+          "cause": "contact",
+          "entity_filter": {
+            "all_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+            ]
+          }
+        },
+	    "minecraft:timer":{
+	      "time": 0.1,
+	      "looping": true,
+	      "time_down_event":{
+	      "event": "remove_damage",
+	        "target": "self"
+	      }
+	    }
+      },
+      "lance_null":{
+	    "minecraft:timer":{
+	      "time": 0.05,
+	      "looping": true,
+	      "time_down_event":{
+	      "event": "remove_tag",
+	        "target": "self"
+	      }
+	    }
+      },
+      "nonshoot":{
+	    "minecraft:variant":{
+	      "value": 1
+	    }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+      "minecraft:type_family": {
+        "family": [ "attack" ]
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "add":{
+          "component_groups":[
+            "lance_horse"
+          ]
+        }
+      },
+      "non_shoot": {
+        "add":{
+          "component_groups":[
+            "nonshoot"
+          ]
+        }
+      },
+      "lance_horse": {
+        "add":{
+          "component_groups":[
+            "lance_horse"
+          ]
+        }
+      },
+      "remove_damage":{
+        "add": {
+          "component_groups":[
+            "lance_null"
+          ]
+        },
+        "remove":{
+          "component_groups":[
+            "lance_horse"
+          ]
+        }
+      },
+      "remove_tag":{
+        "run_command": {
+          "command": [
+            "execute as @a[tag=hevh] run tag @s remove hevh",
+            "event entity @s remove_katana"
+          ]
+        }
+      },
+      "remove_katana":{
+        "add":{
+          "component_groups":[
+               "despawn"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

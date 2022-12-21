@@ -1,0 +1,414 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.combat_mode": {
+			"states": {
+				"default": {
+					"animations": [
+						"unequip_sheath",
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+					    {
+						"custom_move_arms":"query.modified_move_speed && query.is_moving"
+					    },
+					    {
+						  "item_throw":"query.is_using_item && query.get_equipped_item_name != 'crossbow' && query.get_equipped_item_name != 'crossbow' && !query.is_eating"
+					    },
+					    {
+						  "item_eat":"query.is_eating"
+					    }
+					],
+					"transitions": [
+						{
+							"on_air": "!query.is_on_ground && !query.is_in_water"
+						},
+					    {
+						"sword":"variable.sword"
+					    },
+						{
+							"sprint": "query.is_sprinting && !query.is_in_water"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"swim": "query.is_swimming"
+						},
+						{
+							"attack": "variable.attack_time>0 && variable.random_4 == 0 && !variable.weaponslol"
+						},
+						{
+							"attack_left": "variable.attack_time>0 && variable.random_4 == 1 && !variable.weaponslol"
+						},
+						{
+							"attack_kick": "variable.attack_time>0 && variable.random_4 == 2 && !variable.weaponslol"
+						},
+						{
+							"attack_kick_left": "variable.attack_time>0 && variable.random_4 == 3 && !variable.weaponslol"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"on_air": {
+					"animations": [
+						"on_air",
+"unequip_sheath",
+					    					    {
+					    "no_offhand": "v.offhander"
+					    }
+					],
+					"transitions": [
+					    {
+						"sword":"variable.sword"
+					    },
+						{
+							"sprint_land": "query.is_on_ground"
+						},
+						{
+							"swim": "query.is_swimming"
+						},
+						{
+							"attack_on_air": "variable.attack_time>0 && variable.random == 0 && !variable.sword"
+						},
+						{
+							"attack_on_air2": "variable.attack_time>0 && variable.random >= 1 && !variable.sword"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attacksec": {
+					"transitions": [
+						{
+							"attack2": "variable.attack_time>0 && variable.random_4 == 0"
+						},
+						{
+							"on_air": "!query.is_on_ground"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						},
+						{
+							"attack_left2": "variable.attack_time>0 && variable.random_4 == 1"
+						},
+						{
+							"attack_kick2": "variable.attack_time>0 && variable.random_4 == 2"
+						},
+						{
+							"attack_kick_left2": "variable.attack_time>0 && variable.random_4 == 3"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					    "no_offhand", "attack_fist_right1",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"attacksec": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+					    "no_offhand",
+"unequip_sheath",
+"attack_fist_right2"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_left": {
+					"animations": [
+					    "no_offhand",
+					    "attack_fist_left1",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"attacksec": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_left2": {
+					"animations": [
+					    "no_offhand", "attack_fist_left2",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_kick": {
+					"animations": [
+					    "no_offhand",
+					    "full_speed_kick_right1",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"attacksec": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_kick2": {
+					"animations": [
+					    "no_offhand",
+					    "full_speed_kick_right2",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_kick_left": {
+					"animations": [
+					    "no_offhand",
+					    "full_speed_kick_left1",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"attacksec": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_kick_left2": {
+					"animations": [
+					    "no_offhand",
+					    "full_speed_kick_left2",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_on_air": {
+					"animations": [
+					    "no_offhand",
+					    "attack_on_air1",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_on_air2": {
+					"animations": [
+					    "no_offhand",
+					    "attack_on_air2",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint_attack": {
+					"animations": [
+					    "no_offhand",
+						"sprint_kick",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint_attack2": {
+					"animations": [
+					    "no_offhand",
+						"sprint_kick2",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint_fall": {
+					"animations": [
+					    "no_offhand",
+						"on_air",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"sprint_land": "query.is_on_ground"
+						},
+						{
+							"on_air": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint_land": {
+					"animations": [
+					    "no_offhand",
+						"sprint_land",
+"unequip_sheath"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						},
+						{
+							"default": "query.is_moving"
+						},
+						{
+							"attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint": {
+					"animations": [
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+"unequip_sheath",
+					  {
+						"sprint_move":"query.modified_move_speed && !variable.two_handed && query.is_moving"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sprinting"
+						},
+						{
+							"swim": "query.is_swimming"
+						},
+						{
+							"sprint_attack": "variable.attack_time>0 && variable.random == 0"
+						},
+						{
+							"sprint_attack2": "variable.attack_time>0 && variable.random == 1"
+						},
+						{
+							"sprint_fall": "!query.is_on_ground && !query.is_in_water"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sneak": {
+					"animations": [
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+"unequip_sheath",
+						{
+							"sneak": "!query.is_moving && !variable.weaponslol"
+						},
+						{
+							"katar_sneak_move": "query.is_moving && !variable.weaponslol"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sneaking"
+						},
+						{
+							"swim": "query.is_swimming"
+						}
+					]
+				},
+				"swim": {
+					"animations": [
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+"unequip_sheath",
+						"swim"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_swimming"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sneak_move": {
+					"animations": [
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+"unequip_sheath",
+						"sneak_move",
+					    {
+						"custom_move_legs":"query.modified_move_speed"
+					    }
+					],
+					"transitions": [
+						{
+							"sneak": "!query.is_moving"
+						},
+						{
+							"default": "!query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sword": {
+					"animations": [
+					    {
+					    "no_offhand": "v.offhander"
+					    },
+"unequip_sheath",
+					    {
+						"custom_move_legs":"query.modified_move_speed"
+					    },
+						{
+							"sprint_move": "query.is_sprinting && !query.is_in_water"
+						},
+						{
+							"swim": "query.is_swimming"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						}
+					],
+					"transitions": [
+					    {
+						"default":"!variable.sword"
+					    },
+						{
+							"on_air": "!query.is_on_ground && !query.is_in_water"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

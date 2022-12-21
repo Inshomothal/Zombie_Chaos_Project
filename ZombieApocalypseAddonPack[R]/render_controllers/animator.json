@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.katana_animator": {
+      "geometry": "Geometry.katana",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.wakizashi_animator": {
+      "geometry": "Geometry.katana_wakizashi",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.katana_dt_animator": {
+      "geometry": "Geometry.katana_dt",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.rotator": {
+      "geometry": "Geometry.rotator",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.longbow_animator": {
+      "geometry": "Geometry.longbow",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.gstrail": {
+      "geometry": "geometry.greatsword_trail",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.default" ]
+    },
+    "controller.render.rapier_trail": {
+      "geometry": "geometry.rapier_trail",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.default" ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:teen_cured",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/cured/teen_cured"
+         },
+         "geometry":{
+            "default":"geometry.generic_humanoid"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.generic_humanoid.stand",
+            "walk":"animation.generic_humanoid.walk",
+           
+            "true_zombie_controller":"controller.animation.true_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "true_zombie_controller"
+            ]
+         },
+         "spawn_egg":{
+            "texture":"cured_teen",
+            "texture_index":1
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ],
+         "enable_attachables":true
+      }
+   }
+}

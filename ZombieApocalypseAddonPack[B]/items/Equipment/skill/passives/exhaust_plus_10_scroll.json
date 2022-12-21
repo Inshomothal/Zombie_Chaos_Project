@@ -1,0 +1,49 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:exhaust_10_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "exhaust_ten_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:exhaust_10_scroll.name"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "condition": "query.scoreboard('exhaust_lim') < 500",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard players add @s exhaust_lim 10",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Added 10 exhaust\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

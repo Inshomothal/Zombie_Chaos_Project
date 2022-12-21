@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:diamond_katana_wakizashi_rdsmtsb"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " K ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:normal_tsuka"
+      },
+      "X": {
+        "item": "pixel:diamond_wakizashi_blade"
+      },
+      "K": {
+        "item": "pixel:kaku_gata_tsuba"
+      }
+    },
+    "result": {
+      "item": "pixel:diamond_katana_wakizashi_rdsmtsb"
+    }
+  }
+}

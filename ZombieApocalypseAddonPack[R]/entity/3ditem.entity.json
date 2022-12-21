@@ -1,0 +1,80 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pixel:3ditem",
+			"materials": {
+			  "default": "chicken_legs"
+			},
+			"textures": {
+			  "wooden_hammer": "textures/entity/wooden_hammer",
+			  "stone_hammer": "textures/entity/stone_hammer",
+			  "iron_hammer": "textures/entity/iron_hammer",
+			  "golden_hammer": "textures/entity/golden_hammer",
+			  "diamond_hammer": "textures/entity/diamond_hammer",
+			  "netherite_hammer": "textures/entity/netherite_hammer",
+			  "chaos_hammer": "textures/entity/chaos_hammer",
+			  "wooden_sickle": "textures/entity/wooden_sickle",
+			  "stone_sickle": "textures/entity/stone_sickle",
+			  "iron_sickle": "textures/entity/iron_sickle",
+			  "golden_sickle": "textures/entity/golden_sickle",
+			  "diamond_sickle": "textures/entity/diamond_sickle",
+			  "netherite_sickle": "textures/entity/netherite_sickle",
+			  "chaos_sickle": "textures/entity/chaos_sickle",
+			  "wooden_dagger": "textures/entity/wooden_dagger",
+			  "stone_dagger": "textures/entity/stone_dagger",
+			  "iron_dagger": "textures/entity/iron_dagger",
+			  "golden_dagger": "textures/entity/golden_dagger",
+			  "diamond_dagger": "textures/entity/diamond_dagger",
+			  "netherite_dagger": "textures/entity/netherite_dagger",
+			  "chaos_dagger": "textures/entity/chaos_dagger",
+			  "wooden_katana": "textures/entity/katana/wooden_dagger",
+			  "stone_katana": "textures/entity/katana/stone_katana",
+			  "iron_katana": "textures/entity/katana/iron_katana",
+			  "golden_katana": "textures/entity/katana/golden_katana",
+			  "diamond_katana": "textures/entity/katana/ranged/diamond_katana",
+			  "netherite_katana": "textures/entity/katana/ranged/netherite_katana",
+			  "chaos_katana": "textures/entity/katana/chaos_katana",
+			  "wooden_club": "textures/entity/wooden_baseball_bat",
+			  "stone_club": "textures/entity/stone_baseball_bat",
+			  "iron_club": "textures/entity/iron_baseball_bat",
+			  "golden_club": "textures/entity/golden_baseball_bat",
+			  "diamond_club": "textures/entity/diamond_baseball_bat",
+			  "netherite_club": "textures/entity/netherite_baseball_bat",
+			  "chaos_club": "textures/entity/chaos_steel_baseball_bat"
+			},
+			"geometry": {
+			  "mace": "geometry.mace",
+			  "giant_mace": "geometry.giant_mace",
+			  "saber_old": "geometry.saber_old",
+			  "saber": "geometry.saber",
+			  "dagger": "geometry.dagger",
+			  "katana": "geometry.katana",
+			  "spear": "geometry.spear",
+			  "glaive": "geometry.glaive",
+			  "katar": "geometry.katar",
+			  "lance": "geometry.lance",
+			  "longsword": "geometry.longsword",
+			  "rapier": "geometry.rapier",
+			  "halberd": "geometry.halberd",
+			  "wakizashi": "geometry.katana_wakizashi_player",
+			  "greatsword": "geometry.greatsword",
+			  "bec_de_corbin": "geometry.bec_de_corbin",
+			  "polehammer": "geometry.pole_hammer"
+			},
+			"animations": {
+				"rotate": "animation.item.rotate"
+			},
+			"scripts": {
+				"scale": "0.75",
+				"animate": [
+					"rotate"
+				]
+			},
+			"render_controllers": [
+				"controller.render.three"
+			],
+			"enable_attachables": true
+		}
+	}
+}

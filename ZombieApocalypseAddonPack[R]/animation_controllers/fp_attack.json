@@ -1,0 +1,1929 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.fp_attack": {
+			"states": {
+				"default": {
+					"animations": [
+				   	  "hold_fp",
+				   	  "fp_rapier",
+				   	  "hold_offhand_fp"
+					],
+					"transitions": [
+					    {
+				   	      "halberd_fp":"variable.halberd"
+					    },
+					    {
+				   	      "greatsword_fp":"variable.greatsword"
+					    },
+					    {
+				   	      "spear_fp":"variable.spear"
+					    },
+					    {
+				   	      "katana_fp":"variable.katana"
+					    },
+					    {
+				   	      "dagger_fp":"variable.dagger"
+					    },
+					    {
+				   	      "rapier_fp":"variable.rapier"
+					    },
+					    {
+				   	      "odachi_fp":"variable.odachi"
+					    },
+						{
+						    "katar_fp":"variable.katar && !variable.katar_left"
+						    
+						},
+						{
+						    "katar_dual_fp":"variable.katar && variable.katar_left"
+						    
+						},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+					    {
+				   	      "katana_fp":"variable.katana_wakizashi"
+					    },
+					    {
+				   	      "glaive_fp":"variable.glaive"
+					    },
+					    {
+				   	      "saber_fp":"variable.saber"
+					    },
+					    {
+				   	      "giant_mace_fp":"variable.giant_mace"
+					    },
+					    {
+				   	      "bec_de_corbin_fp":"variable.bec_de_corbin"
+					    },
+					    {
+				   	      "pole_hammer_fp":"variable.pole_hammer"
+					    },
+					    {
+				   	      "lance_fp":"variable.lance"
+					    },
+					    {
+				   	      "mace_fp":"variable.mace"
+					    }
+					],
+					"blend_transition": 0.1
+				},
+				"katar_fp": {
+					"animations": [
+				   	    "katar_fp_unsheathe"
+					],
+					"transitions": [
+						{"katar_hold":"query.any_animation_finished"},
+						{"default":"!variable.katar"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_hold": {
+					"animations": [
+				   	    "katar_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.katar"},
+						{"katar_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_attack0": {
+					"animations": [
+				   	    "katar_fp_attack_stance_0"
+					],
+					"transitions": [
+						{"default":"!variable.katar"},
+{"katar_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_inbetween0": {
+					"animations": [
+				   	    "katar_fp_stance0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katar"},
+{"katar_hold":"query.all_animations_finished"},
+						{"katar_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_attack1": {
+					"animations": [
+				   	    "katar_fp_attack_stance_0_1"
+					],
+					"transitions": [
+						{"default":"!variable.katar"},
+{"katar_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_fp": {
+					"animations": [
+				   	    "katar_fp_unsheathe_two"
+					],
+					"transitions": [
+						{"katar_hold":"variable.katar && !variable.katar_left"},
+						{"katar_dual_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_hold": {
+					"animations": [
+				   	    "katar_fp_dual_stance"
+					],
+					"transitions": [
+						{"katar_hold":"variable.katar && !variable.katar_left"},
+						{"default_hold":"!variable.katar"},
+						{"katar_dual_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_attack0": {
+					"animations": [
+				   	    "katar_fp_attack_dual_stance_0"
+					],
+					"transitions": [
+						{"katar_hold":"variable.katar && !variable.katar_left"},
+						{"default_hold":"!variable.katar"},
+{"katar_dual_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_inbetween0": {
+					"animations": [
+				   	    "katar_fp_dual_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katar"},
+{"katar_dual_hold":"query.all_animations_finished"},
+						{"katar_dual_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_attack1": {
+					"animations": [
+				   	    "katar_fp_attack_dual_stance_0_1"
+					],
+					"transitions": [
+						{"katar_hold":"!variable.katar_left"},
+						{"default_hold":"!variable.katar"},
+{"katar_dual_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_inbetween1": {
+					"animations": [
+				   	    "katar_fp_dual_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"katar_hold":"!variable.katar_left"},
+						{"default_hold":"!variable.katar"},
+{"katar_dual_hold":"query.all_animations_finished"},
+						{"katar_dual_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katar_dual_attack2": {
+					"animations": [
+				   	    "katar_fp_attack_dual_stance_0_2"
+					],
+					"transitions": [
+						{"katar_hold":"!variable.katar_left"},
+						{"default_hold":"!variable.katar"},
+{"katar_dual_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_fp": {
+					"transitions": [
+						{"odachi_hold":"variable.odachi"},
+						{"default":"!variable.odachi"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_hold": {
+					"animations": [
+				   	    "katana_fp_hold_odachi"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+						{"odachi_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack0": {
+					"animations": [
+				   	    "katana_fp_attack_odachi2"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_inbetween0": {
+					"animations": [
+				   	    "katana_fp_hold_odachi",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_hold":"query.all_animations_finished"},
+						{"odachi_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack1": {
+					"animations": [
+				   	    "katana_fp_attack_odachi_2"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_inbetween1": {
+					"animations": [
+				   	    "katana_fp_hold_odachi",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_hold":"query.all_animations_finished"},
+						{"odachi_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack2": {
+					"animations": [
+				   	    "katana_fp_attack_odachi_2"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"odachi_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_inbetween2": {
+					"animations": [
+				   	    "katana_fp_hold_odachi",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_hold":"query.all_animations_finished"},
+						{"odachi_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack3": {
+					"animations": [
+				   	    "katana_fp_attack_odachi_3"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_inbetween3":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_inbetween3": {
+					"animations": [
+				   	    "katana_fp_hold_odachi",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"odachi_hold":"query.all_animations_finished"},
+						{"odachi_attack4":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack4": {
+					"animations": [
+				   	    "katana_fp_attack_odachi_4"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_inbetween4":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_inbetween4": {
+					"animations": [
+				   	    "katana_fp_hold_odachi",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_hold":"query.all_animations_finished"},
+						{"odachi_attack5":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"odachi_attack5": {
+					"animations": [
+				   	    "katana_fp_attack_odachi_5"
+					],
+					"transitions": [
+						{"default":"!variable.odachi"},
+{"odachi_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_fp": {
+					"animations": [
+				   	    "dagger_fp_unsheathe"
+					],
+					"transitions": [
+						{"dagger_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_hold": {
+					"animations": [
+				   	    "dagger_fp_stance_2"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+						{"dagger_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_attack0": {
+					"animations": [
+				   	    "dagger_fp_attack_stance_2_0"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+{"dagger_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_inbetween0": {
+					"animations": [
+				   	    "dagger_fp_inbetween_stance_2_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+{"dagger_hold":"query.all_animations_finished"},
+						{"dagger_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_attack1": {
+					"animations": [
+				   	    "dagger_fp_attack_stance_2_1"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+{"dagger_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_inbetween1": {
+					"animations": [
+				   	    "dagger_fp_inbetween_stance_2_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+{"dagger_hold":"query.all_animations_finished"},
+						{"dagger_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"dagger_attack2": {
+					"animations": [
+				   	    "dagger_fp_attack_stance_2_2"
+					],
+					"transitions": [
+						{"default":"!variable.dagger"},
+{"dagger_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_fp": {
+					"animations": [
+				   	    "bec_de_corbin_fp_unsheathe"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+				{"bec_de_corbin_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_hold": {
+					"animations": [
+				   	    "bec_de_corbin_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+						{"bec_de_corbin_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack0": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack_stance0_0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_inbetween_stance0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_inbetween_stance0": {
+					"animations": [
+				   	    "bec_de_corbin_fp_inbetween0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"},
+						{"bec_de_corbin_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack1": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack_stance0_1"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_inbetween_stance1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_inbetween_stance1": {
+					"animations": [
+				   	    "bec_de_corbin_fp_inbetween0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"},
+						{"bec_de_corbin_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack2": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack_stance0_1"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_fp": {
+					"animations": [
+				   	    "halberd_fp_unsheathe"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+					{"halberd_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_hold": {
+					"animations": [
+				   	    "halberd_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+						{"halberd_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_attack0": {
+					"animations": [
+				   	    "halberd_fp_attack0_0"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_inbetween0": {
+					"animations": [
+				   	    "halberd_fp_inbetween0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_hold":"query.all_animations_finished"},
+						{"halberd_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_attack1": {
+					"animations": [
+				   	    "halberd_fp_attack0_1"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_inbetween1": {
+					"animations": [
+				   	    "halberd_fp_inbetween0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_hold":"query.all_animations_finished"},
+						{"halberd_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_attack2": {
+					"animations": [
+				   	    "halberd_fp_attack0_2"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_inbetween2": {
+					"animations": [
+				   	    "halberd_fp_inbetween0_2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_hold":"query.all_animations_finished"},
+						{"halberd_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"halberd_attack4": {
+					"animations": [
+				   	    "halberd_fp_attack0_4",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.halberd"},
+{"halberd_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_fp": {
+					"animations": [
+				   	    "gsfp_unsheathe"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+					{"greatsword_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_hold": {
+					"animations": [
+				   	    "gsfp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+						{"greatsword_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_attack0": {
+					"animations": [
+				   	    "gsfp_attack0_0"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+{"greatsword_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_inbetween0": {
+					"animations": [
+				   	    "gsfp_inbetween0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+{"greatsword_hold":"query.all_animations_finished"},
+						{"greatsword_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_attack1": {
+					"animations": [
+				   	    "gsfp_attack0_1"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+{"greatsword_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_inbetween1": {
+					"animations": [
+				   	    "gsfp_inbetween0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+{"greatsword_hold":"query.all_animations_finished"},
+						{"greatsword_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"greatsword_attack2": {
+					"animations": [
+				   	    "gsfp_attack0_2"
+					],
+					"transitions": [
+						{"default":"!variable.greatsword"},
+{"greatsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_fp": {
+					"animations": [
+				   	    "ls_fp_unsheathe_two"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_dual_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_hold": {
+					"animations": [
+				   	    "ls_fp_stance_dual"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_attack0": {
+					"animations": [
+				   	    "ls_fp_attack_dual_0_0"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_inbetween0":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_inbetween0": {
+					"animations": [
+				   	    "ls_fp_stance_dual",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+						{"longsword_dual_attack1":"variable.attack_time>0"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_attack1": {
+					"animations": [
+				   	    "ls_fp_attack_dual_0_1"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_inbetween1":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_inbetween1": {
+					"animations": [
+				   	    "ls_fp_stance_dual",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_attack2":"variable.attack_time>0"},
+						{"longsword_dual_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_dual_attack2": {
+					"animations": [
+				   	    "ls_fp_attack_dual_0_2"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_dual_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_fp": {
+					"animations": [
+				   	    "ls_fp_unsheathe_shield"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_hold": {
+					"animations": [
+				   	    "ls_fp_stance_shield"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_attack0": {
+					"animations": [
+				   	    "ls_fp_attack_shield_0"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_inbetween0":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_inbetween0": {
+					"animations": [
+				   	    "ls_fp_stance_shield",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+						{"longsword_shield_attack1":"variable.attack_time>0"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_attack1": {
+					"animations": [
+				   	    "ls_fp_attack_shield_1"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_inbetween1":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_inbetween1": {
+					"animations": [
+				   	    "ls_fp_stance_shield",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_dual_attack2":"variable.attack_time>0"},
+						{"longsword_dual_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield_attack2": {
+					"animations": [
+				   	    "ls_fp_attack_shield_2"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_fp":"variable.longsword && !variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+						{"longsword_shield_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_fp": {
+					"animations": [
+				   	    "ls_fp_unsheathe_one"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_hold": {
+					"animations": [
+				   	    "ls_fp_stance_0"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_attack0": {
+					"animations": [
+				   	    "ls_fp_attack_0_0"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_inbetween0":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_inbetween0": {
+					"animations": [
+				   	    "ls_fp_inbetween_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_attack1":"variable.attack_time>0"},
+						{"longsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_attack1": {
+					"animations": [
+				   	    "ls_fp_attack_1_1"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_inbetween1":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_inbetween1": {
+					"animations": [
+				   	    "ls_fp_inbetween_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_attack2":"variable.attack_time>0"},
+						{"longsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_attack2": {
+					"animations": [
+				   	    "ls_fp_attack_2_1"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_inbetween2":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_inbetween2": {
+					"animations": [
+				   	    "ls_fp_inbetween_2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_attack3":"variable.attack_time>0"},
+						{"longsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_attack3": {
+					"animations": [
+				   	    "ls_fp_attack_3"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_inbetween3":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_inbetween3": {
+					"animations": [
+				   	    "ls_fp_inbetween_3",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_attack4":"variable.attack_time>0"},
+						{"longsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_attack4": {
+					"animations": [
+				   	    "ls_fp_attack_4_0"
+					],
+					"transitions": [
+						{"default":"!variable.longsword"},
+					    {
+				   	      "longsword_dual_fp":"variable.longsword && variable.longswordoh && !variable.shield_off"
+					    },
+					    {
+				   	      "longsword_shield_fp":"variable.longsword && !variable.longswordoh && variable.shield_off"
+					    },
+						{"longsword_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				
+				"spear_fp": {
+					"animations": [
+				   	    "spear_fp_unsheathe"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+						{"spear_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_hold": {
+					"animations": [
+				   	    "spear_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+						{"spear_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_attack0": {
+					"animations": [
+				   	    "spear_fp_attack0_0"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+{"spear_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_inbetween0": {
+					"animations": [
+				   	    "spear_fp_inbetween0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+{"spear_hold":"query.all_animations_finished"},
+						{"spear_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_attack1": {
+					"animations": [
+				   	    "spear_fp_attack1_0"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+{"spear_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_inbetween1": {
+					"animations": [
+				   	    "spear_fp_inbetween1_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+{"spear_hold":"query.all_animations_finished"},
+						{"spear_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"spear_attack2": {
+					"animations": [
+				   	    "spear_fp_attack2_0"
+					],
+					"transitions": [
+						{"default":"!variable.spear"},
+{"spear_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_fp": {
+					"animations": [
+				   	    "lance_fp_unsheathe"
+					],
+					"transitions": [
+						{"lance_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_hold": {
+					"animations": [
+				   	    "lance_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+						{"lance_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_attack0": {
+					"animations": [
+				   	    "lance_fp_attack0"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+{"lance_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_inbetween0": {
+					"animations": [
+				   	    "lance_fp_stance1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+{"lance_hold":"query.all_animations_finished"},
+						{"lance_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_attack1": {
+					"animations": [
+				   	    "lance_fp_attack1_1"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+{"lance_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_inbetween1": {
+					"animations": [
+				   	    "lance_fp_stance1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+{"lance_hold":"query.all_animations_finished"},
+						{"lance_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_attack2": {
+					"animations": [
+				   	    "lance_fp_attack2_0"
+					],
+					"transitions": [
+						{"default":"!variable.lance"},
+{"lance_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_fp": {
+					"animations": [
+				   	    "mace_fp_unsheathe"
+					],
+					"transitions": [
+						{"mace_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_hold": {
+					"animations": [
+				   	    "mace_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+						{"mace_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_attack0": {
+					"animations": [
+				   	    "mace_fp_attack0"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+{"mace_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_inbetween0": {
+					"animations": [
+				   	    "mace_fp_inbetween0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+{"mace_hold":"query.all_animations_finished"},
+						{"mace_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_attack1": {
+					"animations": [
+				   	    "mace_fp_attack1"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+{"mace_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_inbetween1": {
+					"animations": [
+				   	    "mace_fp_inbetween1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+{"mace_hold":"query.all_animations_finished"},
+						{"mace_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"mace_attack2": {
+					"animations": [
+				   	    "mace_fp_attack2"
+					],
+					"transitions": [
+						{"default":"!variable.mace"},
+{"mace_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_fp": {
+					"animations": [
+				   	    "halberd_fp_unsheathe"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+						{"glaive_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.5
+				},
+				"glaive_hold": {
+					"animations": [
+				   	    "glaive_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+						{"glaive_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_attack0": {
+					"animations": [
+				   	    "glaive_fp_attack_stance0_0"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_inbetween0": {
+					"animations": [
+				   	    "glaive_fp_inbetween0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_hold":"query.all_animations_finished"},
+						{"glaive_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_attack1": {
+					"animations": [
+				   	    "glaive_fp_attack_stance0_1"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_inbetween1": {
+					"animations": [
+				   	    "glaive_fp_inbetween0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_hold":"query.all_animations_finished"},
+						{"glaive_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_attack2": {
+					"animations": [
+				   	    "glaive_fp_attack_stance0_2"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_inbetween2": {
+					"animations": [
+				   	    "glaive_fp_inbetween0_2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_hold":"query.all_animations_finished"},
+						{"glaive_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"glaive_attack3": {
+					"animations": [
+				   	    "glaive_fp_attack_stance0_3"
+					],
+					"transitions": [
+						{"default":"!variable.glaive"},
+{"glaive_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_fp": {
+					"animations": [
+				   	    "rapier_fp_unsheathe"
+					],
+					"transitions": [
+						{"rapier_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_hold": {
+					"animations": [
+				   	    "rapier_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+						{"rapier_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_attack0": {
+					"animations": [
+				   	    "rapier_fp_attack_stance0_1"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_inbetween0": {
+					"animations": [
+				   	    "rapier_fp_inbetween0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_hold":"query.all_animations_finished"},
+						{"rapier_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_attack1": {
+					"animations": [
+				   	    "rapier_fp_attack_stance0_2"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_inbetween1": {
+					"animations": [
+				   	    "rapier_fp_inbetween0_2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_hold":"query.all_animations_finished"},
+						{"rapier_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_attack2": {
+					"animations": [
+				   	    "rapier_fp_attack_stance0_3"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_inbetween2": {
+					"animations": [
+				   	    "rapier_fp_inbetween0_3",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_hold":"query.all_animations_finished"},
+						{"rapier_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"rapier_attack3": {
+					"animations": [
+				   	    "rapier_fp_attack_stance0_4"
+					],
+					"transitions": [
+						{"default":"!variable.rapier"},
+{"rapier_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_fp": {
+					"animations": [
+				   	    "saber_fp_unsheathe"
+					],
+					"transitions": [
+						{"saber_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_hold": {
+					"animations": [
+				   	    "saber_fp_stance_0"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+						{"saber_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_attack0": {
+					"animations": [
+				   	    "saber_fp_attack_stance_0_0"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+{"saber_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_inbetween0": {
+					"animations": [
+				   	    "saber_fp_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+{"saber_hold":"query.all_animations_finished"},
+						{"saber_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_attack1": {
+					"animations": [
+				   	    "saber_fp_attack_stance_0_1"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+{"saber_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_inbetween1": {
+					"animations": [
+				   	    "saber_fp_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+{"saber_hold":"query.all_animations_finished"},
+						{"saber_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"saber_attack2": {
+					"animations": [
+				   	    "saber_fp_attack_stance_0_2"
+					],
+					"transitions": [
+						{"default":"!variable.saber"},
+{"saber_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_fp": {
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+						{"katana_hold":"variable.katana||variable.katana_wakizashi"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_hold": {
+					"animations": [
+				   	    "katana_fp_stance2"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+						{"katana_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack0": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_0"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_inbetween0": {
+					"animations": [
+				   	    "katana_fp_stance2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"},
+						{"katana_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack1": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_3"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_inbetween1": {
+					"animations": [
+				   	    "katana_fp_stance2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"},
+						{"katana_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack2": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_1"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_inbetween2": {
+					"animations": [
+				   	    "katana_fp_stance2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"},
+						{"katana_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack3": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_4"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_inbetween3":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_inbetween3": {
+					"animations": [
+				   	    "katana_fp_stance2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"},
+						{"katana_attack4":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack4": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_2"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_inbetween4":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_inbetween4": {
+					"animations": [
+				   	    "katana_fp_stance2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"},
+						{"katana_attack5":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"katana_attack5": {
+					"animations": [
+				   	    "katana_fp_attack_stance2_5"
+					],
+					"transitions": [
+						{"default":"!variable.katana && !variable.katana_wakizashi"},
+{"katana_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_fp": {
+					"animations": [
+				   	    "giant_mace_fp_unsheathe"
+					],
+					"transitions": [
+						{"giant_mace_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_hold": {
+					"animations": [
+				   	    "giant_mace_fp_stance_0"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+						{"giant_mace_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_attack0": {
+					"animations": [
+				   	    "giant_mace_fp_attack_stance_0_0"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_inbetween0": {
+					"animations": [
+				   	    "giant_mace_fp_inbetween_0_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_hold":"query.all_animations_finished"},
+						{"giant_mace_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_attack1": {
+					"animations": [
+				   	    "giant_mace_fp_attack_stance_0_2"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"glaive_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_inbetween1": {
+					"animations": [
+				   	    "giant_mace_fp_inbetween_0_1",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_hold":"query.all_animations_finished"},
+						{"giant_mace_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_attack2": {
+					"animations": [
+				   	    "giant_mace_fp_attack_stance_0_2"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_inbetween2":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_inbetween2": {
+					"animations": [
+				   	    "giant_mace_fp_inbetween_0_2",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_hold":"query.all_animations_finished"},
+						{"giant_mace_attack3":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"giant_mace_attack3": {
+					"animations": [
+				   	    "giant_mace_fp_attack_stance_0_3"
+					],
+					"transitions": [
+						{"default":"!variable.giant_mace"},
+{"giant_mace_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_fp": {
+					"animations": [
+				   	    "pole_hammer_fp_unsheathe"
+					],
+					"transitions": [
+						{"pole_hammer_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_hold": {
+					"animations": [
+				   	    "pole_hammer_fp_stance_0"
+					],
+					"transitions": [
+						{"default":"!variable.pole_hammer"},
+						{"pole_hammer_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_attack0": {
+					"animations": [
+				   	    "pole_hammer_fp_attack_stance0_0"
+					],
+					"transitions": [
+						{"default":"!variable.pole_hammer"},
+{"pole_hammer_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_inbetween0": {
+					"animations": [
+				   	    "pole_hammer_fp_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.pole_hammer"},
+{"pole_hammer_hold":"query.all_animations_finished"},
+						{"pole_hammer_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_attack1": {
+					"animations": [
+				   	    "saber_fp_attack_stance0_1"
+					],
+					"transitions": [
+						{"default":"!variable.pole_hammer"},
+{"pole_hammer_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_inbetween1": {
+					"animations": [
+				   	    "pole_hammer_fp_stance_0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.pole_"},
+{"pole_hammer_hold":"query.all_animations_finished"},
+						{"pole_hammer_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"pole_hammer_attack2": {
+					"animations": [
+				   	    "pole_hammer_fp_attack_stance_0_2"
+					],
+					"transitions": [
+						{"default":"!variable.pole_hammer"},
+{"pole_hammer_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  {
+				   	    "odachi_fp":"variable.odachi"
+					  },
+					  {
+				   	    "odachi_fp":"variable.glaive"
+					  },
+					  {
+				   	    "saber_fp":"variable.saber"
+					  },
+					  {
+				   	    "saber_fp":"variable.longsword"
+					  },
+					  {
+				   	    "mace_fp":"variable.mace"
+					  },
+					  {
+				   	    "saber_fp":"variable.dagger"
+					  },
+					  {
+				   	    "katana_fp":"variable.katana"
+					  },
+					  {
+				   	    "greatsword_fp":"variable.greatsword"
+					  },
+					  {
+				   	    "halberd_fp":"variable.halberd"
+					  },
+					  {
+				   	    "halberd_fp":"variable.giant_mace"
+					  },
+					  {
+				   	    "halberd_fp":"variable.bec_de_corbin"
+					  },
+					  {
+				   	    "halberd_fp":"variable.bec_de_corbin_back"
+					  },
+					  {
+				   	    "halberd_fp":"variable.pole_hammer"
+					  },
+					  {
+				   	    "lance_fp":"variable.lance"
+					  },
+					  {
+				   	    "lance_fp":"variable.katar"
+					  },
+					  {
+				   	    "rapier_fp":"variable.rapier"
+					  },
+					  {
+				   	    "rapier_fp":"variable.spear"
+					  }
+					],
+					"transitions": [
+						{"default":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

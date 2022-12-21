@@ -1,0 +1,35 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:sentry_gun_loaded",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/sentry_gun/sentry_gun"
+         },
+         "geometry":{
+            "default":"geometry.sentry_gun_loaded"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.sentry_gun_loaded.stand",
+            "true_zombie_controller":"controller.animation.true_zombie",
+            "gun_smoke":"controller.animation.gun_smoke"
+         },
+         "scripts":{
+            "animate":[
+               "true_zombie_controller",
+               "gun_smoke"
+            ]
+         },
+         "particle_effects":{
+            "gun_smoke":"true:gun_smoke"
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ]
+      }
+   }
+}

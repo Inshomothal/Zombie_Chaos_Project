@@ -1,0 +1,32 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.true_zombie_cured":{
+         "arrays":{
+            "textures":{
+               "Array.variants":[
+                  "Texture.default",
+                  "Texture.lumberjack",
+                  "Texture.miner",
+                  "Texture.gang_member",
+                  "Texture.armored",
+                  "Texture.doctor",
+                  "Texture.sailor",
+                  "Texture.survivor",
+                  "Texture.special_forces",
+                  "Texture.trooper"
+               ]
+            }
+         },
+         "geometry":"Geometry.default",
+         "materials":[
+            {
+               "*":"Material.default"
+            }
+         ],
+         "textures":[
+            "Array.variants[query.variant]"
+         ]
+      }
+   }
+}

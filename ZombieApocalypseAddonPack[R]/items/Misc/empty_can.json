@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:empty_can",
+      "category": "nature"
+    },
+    
+    "components": {
+      "minecraft:icon": "empty_can"
+    }
+  }
+}

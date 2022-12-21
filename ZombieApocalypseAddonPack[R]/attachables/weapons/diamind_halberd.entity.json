@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "pixel:diamond_halberd",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/diamond_halberd",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "mainhand": "geometry.halberd",
+        "offhand": "geometry.halberd"
+      },
+      "render_controllers": [ { "controller.render.weaponk": "c.item_slot == 'main_hand'" }, { "controller.render.weapon_offhandk": "c.item_slot == 'off_hand'" } ]
+    }
+  }
+}

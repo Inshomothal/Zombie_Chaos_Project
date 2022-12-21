@@ -1,0 +1,67 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.greatsword",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightArm",
+					"pivot": [-6, 14, 0],
+					"cubes": [
+						{"origin": [-6.75, 12.75, 7], "size": [1.5, 2.5, 1], "inflate": 0.25, "uv": [6, 6]},
+						{"origin": [-6.5, 13, -5], "size": [1, 2, 12], "inflate": 0.25, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "lol",
+					"parent": "rightitem",
+					"pivot": [-6, 13.9875, -23.7227],
+					"cubes": [
+						{"origin": [-7, 10, -6], "size": [2, 8, 1], "inflate": 0.25, "uv": [0, 0]},
+						{"origin": [-6.75, 8, -6], "size": [1.5, 2, 1], "inflate": 0.25, "uv": [6, 0]},
+						{"origin": [-6.75, 18, -6], "size": [1.5, 2, 1], "inflate": 0.25, "uv": [6, 3]},
+						{"origin": [-6.5, 9.5, -37.75], "size": [1, 9, 32], "uv": [0, 0]},
+						{"origin": [-6.5, 18, -37.75], "size": [1, 1.5, 32], "inflate": -0.1, "uv": [0, 41]},
+						{"origin": [-6.5, 8.5, -37.75], "size": [1, 1.25, 32], "inflate": -0.1, "uv": [34, 9]},
+						{"origin": [-6.5, 16.47807, -42.67782], "size": [1, 1.25, 7.85], "inflate": -0.1, "pivot": [-6, 15.22807, -38.42782], "rotation": [45, 0, 0], "uv": [0, 22]},
+						{"origin": [-6.5, 12.81802, -42.16066], "size": [1, 4, 6.35], "pivot": [-6, 15.31802, -38.81066], "rotation": [45, 0, 0], "uv": [14, 0]},
+						{"origin": [-6.5, 11.18198, -42.16066], "size": [1, 4, 6.35], "pivot": [-6, 12.68198, -38.81066], "rotation": [-45, 0, 0], "uv": [10, 16]},
+						{"origin": [-6.5, 10.27193, -42.67782], "size": [1, 1.25, 7.85], "inflate": -0.1, "pivot": [-6, 12.77193, -38.42782], "rotation": [-45, 0, 0], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "trail",
+					"parent": "rightitem",
+					"pivot": [-6, 13.9875, -23.7227]
+				}
+			]
+		}
+	]
+}

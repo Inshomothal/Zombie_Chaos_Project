@@ -1,0 +1,388 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:heavy_hit",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": ["double_hand"]
+      },
+      "animations": {
+        "double_hand": "animation.attack.remover"
+      }
+    },
+    "component_groups": {
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "head_splitter": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 16,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              }
+            ]
+          }
+        }
+      },
+      "katar:iron": {
+        "minecraft:area_attack": {
+          "damage_range": 2,
+          "damage_per_tick": 6,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "wooden_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 6,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "stone_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 8,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "iron_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 10,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              },
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "blocking"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "diamond_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 12,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              },
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "blocking"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "netherite_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 14,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              },
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "blocking"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      },
+      "dual_iron_longsword": {
+        "minecraft:area_attack": {
+          "damage_range": 1,
+          "damage_per_tick": 16,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "hevh"
+              },
+              {
+                "test": "has_tag",
+                "subject": "other",
+                "operator": "!=",
+                "value": "blocking"
+              }
+            ]
+          }
+        },
+        "minecraft:timer": {
+          "time": [0.1, 0.1],
+          "looping": true,
+          "time_down_event": {
+            "event": "remove_katana",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:type_family": {
+        "family": ["attack"]
+      },
+      "minecraft:timer": {
+        "time": [0.1, 0.1],
+        "looping": true,
+        "time_down_event": {
+          "event": "remove_katana",
+          "target": "self"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+      "minecraft:area_attack": {
+        "damage_range": 1,
+        "damage_per_tick": 8,
+        "cause": "contact",
+        "entity_filter": {
+          "any_of": [
+            {
+              // This is the trial tester
+              "test": "has_tag",
+              "subject": "other",
+              "operator": "!=",
+              "value": "hevh"
+
+              /* This is the original tester
+              "test": "is_owner",
+              "subject": "other",
+              "operator": "!=",
+              "value": true
+              */
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "remove_damage": {
+        "remove": {
+          "component_groups": [
+            "head_splitter",
+            "damage:2",
+            "damage:3",
+            "damage:4",
+            "damage:5",
+            "damage:6",
+            "damage:7",
+            "damage:8",
+            "damage:9",
+            "damage:10",
+            "damage:11",
+            "damage:12",
+            "damage:13",
+            "damage:14",
+            "damage:15",
+            "damage:16",
+            "damage:17",
+            "damage:18",
+            "damage:19",
+            "damage:20",
+            "damage:21",
+            "damage:22",
+            "damage:23",
+            "damage:24",
+            "damage:25",
+            "damage:26",
+            "damage:27",
+            "damage:28",
+            "damage:29",
+            "damage:30",
+            "damage:31",
+            "damage:32",
+            "damage:33",
+            "damage:34",
+            "damage:35",
+            "despawn_adder"
+          ]
+        }
+      },
+      "remove_tag": {
+        "run_command": {
+          "command": [
+            "execute as @a[tag=jidder] run tag @s remove jidder",
+            "execute as @a[tag=hevh] run tag @s remove hevh"
+          ]
+        }
+      },
+      "remove_katana": {
+        "add": {
+          "component_groups": ["despawn"]
+        }
+      },
+      "katar:iron": {
+        "add": {
+          "component_groups": ["katar:iron"]
+        }
+      },
+      "head_splitter": {
+        "add": {
+          "component_groups": ["head_splitter"]
+        }
+      },
+      "iron_longsword": {
+        "add": {
+          "component_groups": ["iron_longsword"]
+        }
+      },
+      "wooden_longsword": {
+        "add": {
+          "component_groups": ["wooden_longsword"]
+        }
+      },
+      "stone_longsword": {
+        "add": {
+          "component_groups": ["stone_longsword"]
+        }
+      },
+      "golden_longsword": {
+        "add": {
+          "component_groups": ["stone_longsword"]
+        }
+      },
+      "diamond_longsword": {
+        "add": {
+          "component_groups": ["diamond_longsword"]
+        }
+      },
+      "netherite_longsword": {
+        "add": {
+          "component_groups": ["netherite_longsword"]
+        }
+      },
+      "dual_iron_longsword": {
+        "add": {
+          "component_groups": ["dual_iron_longsword"]
+        }
+      }
+    }
+  }
+}

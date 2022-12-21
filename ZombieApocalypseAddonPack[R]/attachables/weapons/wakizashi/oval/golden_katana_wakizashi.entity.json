@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "pixel:golden_katana_wakizashi_vltsb",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/golden_katana_wakizashi",
+        "tsuba": "textures/entity/katana/tsuba/oval",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "mainhand": "geometry.katana_wakizashi_player",
+        "offhand": "geometry.katana_wakizashi_off_hand",
+        "tsuba": "geometry.tsuba_oval"
+      },
+      "render_controllers": [ 
+        {
+          "controller.render.weaponk":"c.item_slot == 'main_hand'"
+        },
+        {
+          "controller.render.weapon_offhandk":"c.item_slot == 'off_hand'"
+        },
+      "controller.render.tsuba" ]
+    }
+  }
+}

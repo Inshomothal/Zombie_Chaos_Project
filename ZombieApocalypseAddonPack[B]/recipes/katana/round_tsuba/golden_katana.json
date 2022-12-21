@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:golden_katana_rndtsb"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " K ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:normal_tsuka"
+      },
+      "X": {
+        "item": "pixel:golden_katana_blade"
+      },
+      "K": {
+        "item": "pixel:maru_gata_tsuba"
+      }
+    },
+    "result": {
+      "item": "pixel:golden_katana_rndtsb"
+    }
+  }
+}

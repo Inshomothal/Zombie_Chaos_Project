@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.trail": {
+      "geometry": "geometry.trail",
+      "materials": [ { "*": "material.trail" } ],
+      "textures": [ "texture.trail" ]
+    },
+    "controller.render.trail_ofhand": {
+      "geometry": "geometry.offhand_trail",
+      "materials": [ { "*": "material.trail" } ],
+      "textures": [ "texture.trail_offhand" ]
+    },
+    "controller.render.trail_pierce": {
+      "geometry": "geometry.trail_pierce",
+      "materials": [ { "*": "material.trail" } ],
+      "textures": [ "texture.trail_pierce" ]
+    }
+  }
+}

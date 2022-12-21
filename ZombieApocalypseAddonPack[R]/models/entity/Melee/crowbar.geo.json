@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crowbar",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "crowbar",
+					"pivot": [0, 7, 0],
+					"rotation": [-10, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "Handle",
+					"parent": "crowbar",
+					"pivot": [0, -4, 0],
+					"cubes": [
+						{"origin": [-2, -7.5, -12], "size": [4, 24, 1], "uv": [0, 0]},
+						{"origin": [-2, 16.5, -12], "size": [4, 5, 1], "pivot": [0, 16.5, -11], "rotation": [65, 0, 0], "uv": [10, 9]},
+						{"origin": [-2, 18.35, -16.85], "size": [4, 3, 1], "pivot": [0, 21.5, -16], "rotation": [120, 0, 0], "uv": [20, 4]},
+						{"origin": [-2, 20.85, -14.3], "size": [4, 3, 1], "pivot": [0, 23.5, -13], "rotation": [90, 0, 0], "uv": [20, 0]},
+						{"origin": [0.5, 17.85, -14.3], "size": [1.5, 3, 1], "pivot": [0, 23.5, -13], "rotation": [90, 0, 0], "uv": [20, 14]},
+						{"origin": [-2, 17.85, -14.3], "size": [1.5, 3, 1], "pivot": [0, 23.5, -13], "rotation": [90, 0, 0], "uv": [14, 20]},
+						{"origin": [-2, 15.3, -17.05], "size": [4, 4, 1], "pivot": [0, 18.5, -16], "rotation": [180, 0, 0], "uv": [10, 15]},
+						{"origin": [-2, -15.5, -12], "size": [4, 8, 1], "pivot": [0, -7.5, -11], "rotation": [-20, 0, 0], "uv": [10, 0]},
+						{"origin": [-2, -20.5, -12], "size": [1.5, 5, 1], "pivot": [0, -7.5, -11], "rotation": [-20, 0, 0], "uv": [10, 20]},
+						{"origin": [0.5, -20.5, -12], "size": [1.5, 5, 1], "pivot": [0, -7.5, -11], "rotation": [-20, 0, 0], "uv": [20, 8]}
+					]
+				}
+			]
+		}
+	]
+}

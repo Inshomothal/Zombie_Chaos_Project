@@ -1,0 +1,41 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "pixel:longbow_arrow",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball"
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+		  "impact_damage": {
+		    "damage": 14,
+		    "knockback": true
+		  },
+          "remove_on_hit": {}
+        },
+        "power": 2.5,
+        "gravity": 0.025,
+        "anchor": 1
+      },
+	  "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+    }
+  }
+}

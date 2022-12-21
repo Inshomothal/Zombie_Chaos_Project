@@ -1,0 +1,55 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:long_hit",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "despawn":{
+	    "minecraft:instant_despawn":{}
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+	  "minecraft:timer":{
+	    "time": [0.1,0.1],
+	    "looping": true,
+	    "time_down_event":{
+	    "event": "remove_katana",
+	      "target": "self"
+	    }
+	  },
+      "minecraft:area_attack" : {
+        "damage_range": 2,
+        "damage_per_tick": 8,
+        "cause": "contact",
+        "entity_filter": {
+          "any_of": [
+            { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "remove_katana":{
+        "add":{
+          "component_groups":[
+               "despawn"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

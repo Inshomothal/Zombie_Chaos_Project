@@ -1,0 +1,44 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.lance_back",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "lance_back",
+					"parent": "waist",
+					"pivot": [0.24558, 18.68129, 3.22978],
+					"rotation": [0, 90, -125],
+					"cubes": [
+						{"origin": [-0.5, 17.5, 14], "size": [1, 2, 27], "uv": [8, 35]},
+						{"origin": [-1, 17, 38.5], "size": [2, 3, 1], "inflate": -0.2, "uv": [0, 5]},
+						{"origin": [-1, 17, 39], "size": [2, 3, 2], "inflate": -0.225, "uv": [0, 59]},
+						{"origin": [-1, 17, 40.5], "size": [2, 3, 2], "inflate": -0.325, "uv": [0, 59]},
+						{"origin": [-1, 17, 41.5], "size": [2, 3, 2], "inflate": -0.425, "uv": [0, 59]},
+						{"origin": [-1.5, 16.5, 14], "size": [3, 4, 1], "uv": [0, 0]},
+						{"origin": [-2, 16, 5.5], "size": [4, 5, 9.25], "inflate": -0.65, "uv": [0, 29]},
+						{"origin": [-1.5, 16.5, -3], "size": [3, 4, 10], "inflate": -0.5, "uv": [18, 19]},
+						{"origin": [-1.5, 16.75, -13.5], "size": [3, 3.5, 12], "inflate": -0.65, "uv": [0, 0]},
+						{"origin": [-1, 17.5, -24.25], "size": [2, 2, 12], "inflate": -0.4, "uv": [0, 15]}
+					]
+				}
+			]
+		}
+	]
+}

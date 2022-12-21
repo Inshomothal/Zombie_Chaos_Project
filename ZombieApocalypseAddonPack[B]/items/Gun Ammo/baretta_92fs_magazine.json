@@ -1,0 +1,25 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:baretta_92fs_magazine",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:max_stack_size":8,
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         },
+         "minecraft:display_name":{
+            "value":"§f§oBaretta_92FS Magazine"
+         },
+         "minecraft:icon":{
+            "texture":"baretta_92fs_magazine"
+         },
+         "minecraft:allow_off_hand":true,
+         "tag:true:baretta_92fs_magazine":{
+            
+         }
+      }
+   }
+}

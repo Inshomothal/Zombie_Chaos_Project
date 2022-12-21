@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.first_aid_bag.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"first_aid_bag": {
+					"rotation": [384.27596, 174.58155, -135.21639],
+					"position": [-5, 13, 5],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.first_aid_bag.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"first_aid_bag": {
+					"rotation": [384.27596, 174.58155, -135.21639],
+					"position": [-5, 13, 5],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.first_aid_bag.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"first_aid_bag": {
+					"rotation": [-31.66586, -104.45099, -30.19135],
+					"position": [0, 16, -3],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

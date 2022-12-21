@@ -1,0 +1,34 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_zombie_pig",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/zombies/pig/zombie_pig"
+         },
+         "geometry":{
+            "default":"geometry.true_zombie_pig"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.zombie_pig.stand",
+            "walk":"animation.zombie_pig.walk",
+            "animal_zombie_controller":"controller.animation.animal_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "animal_zombie_controller"
+            ]
+         },
+         "spawn_egg":{
+            "texture":"true_zombie"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

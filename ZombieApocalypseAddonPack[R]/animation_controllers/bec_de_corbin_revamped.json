@@ -1,0 +1,322 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bec_de_corbin.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.bec_de_corbin||variable.bec_de_corbin_back"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:bec_de_corbin_back') && !query.is_item_name_any('slot.hotbar',0,'pixel:bec_de_corbin')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"bec_de_corbin": "variable.bec_de_corbin||variable.bec_de_corbin_back"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:bec_de_corbin_back') && query.is_item_name_any('slot.hotbar',0,'pixel:bec_de_corbin')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "bdc_unsheathe",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin"
+						}
+					]
+				},
+				"bec_de_corbin": {
+					"animations": [
+					  "bdc_stance0",
+					  "no_offhand",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"halberd_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side": "variable.bec_de_corbin_back"
+						},
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin"
+						}
+					]
+				},
+				"side": {
+					"animations": [
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "no_offhand",
+					  "bdc_stance0",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"attack_back": "variable.attack_time>0 && !query.is_sprinting"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "bdc_attack0_0",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin2": "query.all_animations_finished"
+						}
+					]
+				},
+				"bec_de_corbin2": {
+					"animations": [
+					  "bdc_stance0",
+					  "no_offhand",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"halberd_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side": "variable.bec_de_corbin_back"
+						},
+						{
+							"attack2": "variable.attack_time>0 && !query.is_sprinting"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin"
+						}
+					]
+				},
+				"attack_2": {
+					"animations": [
+					  "bdc_attack0_1",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin3": "query.all_animations_finished"
+						}
+					]
+				},
+				"bec_de_corbin3": {
+					"animations": [
+					  "bdc_stance0",
+					  "no_offhand",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"halberd_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side": "variable.bec_de_corbin_back"
+						},
+						{
+							"attack3": "variable.attack_time>0 && !query.is_sprinting"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin"
+						}
+					]
+				},
+				"attack_3": {
+					"animations": [
+					  "bdc_attack0_2",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack_back": {
+					"animations": [
+					  "bdc_attack1_0",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side2": "query.all_animations_finished"
+						}
+					]
+				},
+				"side2": {
+					"animations": [
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "no_offhand",
+					  "bdc_stance0",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"attack_back_2": "variable.attack_time>0 && !query.is_sprinting"
+						}
+					]
+				},
+				"attack_back_2": {
+					"animations": [
+					  "bdc_attack1_1",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side3": "query.all_animations_finished"
+						}
+					]
+				},
+				"side3": {
+					"animations": [
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					  "no_offhand",
+					  "bdc_stance0",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"default": "!variable.bec_de_corbin && !variable.bec_de_corbin_back"
+						},
+						{
+							"attack_back_3": "variable.attack_time>0 && !query.is_sprinting"
+						}
+					]
+				},
+				"attack_back_3": {
+					"animations": [
+					  "bdc_attack1_2",
+					  "no_offhand",
+					  "bdc_no_back"
+					],
+					"transitions": [
+						{
+							"side": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack_lunge": {
+					"animations": [
+					  "no_offhand",
+					    "bec_charge"
+					],
+					"transitions": [
+						{
+							"bec_de_corbin": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack_lunge_back": {
+					"animations": [
+					  "no_offhand",
+					  "bec_charge"
+					],
+					"transitions": [
+						{
+							"side": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

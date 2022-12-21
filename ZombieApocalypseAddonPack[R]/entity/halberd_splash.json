@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pixel:halberd_splash",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/attack_area_double"
+      },
+      "geometry": {
+        "default": "geometry.attack_area_double"
+      },
+      "animations": {
+        "move": "animation.attack_area.halberd_spawn"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.shulker_bullet" ]
+    }
+  }
+}

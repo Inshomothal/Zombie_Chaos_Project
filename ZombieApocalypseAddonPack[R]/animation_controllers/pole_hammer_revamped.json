@@ -1,0 +1,211 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.pole_hammer.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.pole_hammer"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:pole_hammer')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"polham": "variable.pole_hammer"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:pole_hammer')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "polham_unsheathe",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"polham": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					]
+				},
+				"polham": {
+					"animations": [
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+					  "polham_stance0",
+					  "polham_no_back",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"polham2": {
+					"animations": [
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					  "polham_stance0",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"attack1": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"polham3": {
+					"animations": [
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					  "polham_stance0",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"attack2": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"polham4": {
+					"animations": [
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					  "polham_stance0",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"attack3": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  "polham_attack0",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"polham2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "polham_attack1",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"polham3": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					]
+				},
+				"attack2": {
+				    "animations":[
+					  "polham_attack2",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"polham4": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					]
+				},
+				"attack3": {
+				    "animations":[
+					  "polham_attack3",
+					  "no_offhand",
+					  "polham_no_back"
+					],
+					"transitions": [
+						{
+							"polham": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.pole_hammer"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.flare_gun.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"flare_gun": {
+					"rotation": [-98, -120, -45],
+					"position": [4, 26, 3],
+					"scale": 0.4
+				}
+			}
+		},
+		"animation.flare_gun.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"flare_gun": {
+					"rotation": [-98, -120, -45],
+					"position": [4, 26, 3],
+					"scale": 0.4
+				}
+			}
+		},
+		"animation.flare_gun.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"flare_gun": {
+					"rotation": [-90, 180, 0],
+					"position": [0, 19, -2],
+					"scale": 0.2
+				}
+			}
+		}
+	}
+}

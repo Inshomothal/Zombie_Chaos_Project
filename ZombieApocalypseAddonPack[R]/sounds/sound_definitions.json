@@ -1,0 +1,315 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    //3D Combat Addon
+    "mob.greatsword.swing": {
+      "category": "neutral",
+      "sounds": ["sounds/attacks/greatsword"]
+    },
+
+    //True Survival Zombie Apocalypse Addon
+    "loot_drop_open": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/loot_drop_open",
+          "volume": 1
+        }
+      ]
+    },
+    "zombie.mob.moan": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/zombie_moan"]
+    },
+    "zombie.mob.dead": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/zombie_dead"]
+    },
+    "zombie.mob.ice": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/ice_breaking",
+          "volume": 2
+        }
+      ]
+    },
+    "zombie.mob.pain": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/zombie_pain"]
+    },
+    "zombie.dead.flesh": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/dead_flesh"]
+    },
+    "zombie.dead.bone": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/dead_bone"]
+    },
+    "sentry_gun_loaded": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/sentry_gun_loaded",
+          "volume": 1
+        }
+      ]
+    },
+    "sentry_fire": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/sentry_fire",
+          "volume": 1
+        }
+      ]
+    },
+    "vortex_mixer": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/vortex_mixer",
+          "volume": 1
+        }
+      ]
+    },
+    "empty_gun": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/empty_gun",
+          "volume": 1
+        }
+      ]
+    },
+    "flamethrower_empty": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/flamethrower_empty",
+          "volume": 1
+        }
+      ]
+    },
+    "glock_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/glock_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "baretta_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/baretta_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "mac_11_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/mac_11_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "micro_uzi_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/micro_uzi_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "micro_uzi_suppressor_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/micro_uzi_suppressor_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "scar_h_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/scar_h_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "rpg_26_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/rpg_26_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "flamethrower_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/flamethrower",
+          "volume": 1
+        }
+      ]
+    },
+    "flare_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/flare_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "dbs_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/dbs_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "m416_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/m416_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "awm_shooting": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/guns/awm_shooting",
+          "volume": 1
+        }
+      ]
+    },
+    "zombie.mob.blood": {
+      "category": "neutral",
+      "sounds": ["sounds/entities/blood_collect"]
+    },
+    "bat.metal": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/entities/metal_bat",
+          "volume": 1
+        }
+      ]
+    },
+    "bat.wood": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/entities/wooden_bat",
+          "volume": 1
+        }
+      ]
+    },
+    "katana_hit": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/entities/katana",
+          "volume": 1
+        }
+      ]
+    },
+    "med_kit": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/entities/med_kit",
+          "volume": 2
+        }
+      ]
+    },
+    "player_hurt": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/player_hurt",
+          "volume": 2
+        }
+      ]
+    },
+    "pill_bottle": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/pill_bottle",
+          "volume": 1
+        }
+      ]
+    },
+    "true.death": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/death_scream",
+          "volume": 0.7
+        }
+      ]
+    },
+    "supply_crate_call": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/supply_crate_call",
+          "volume": 1
+        }
+      ]
+    },
+    "flashbang": {
+      "category": "neutral",
+      "min_distance": 16,
+      "sounds": [
+        {
+          "name": "sounds/sound_effects/flashbang",
+          "volume": 1
+        }
+      ]
+    }
+  }
+}

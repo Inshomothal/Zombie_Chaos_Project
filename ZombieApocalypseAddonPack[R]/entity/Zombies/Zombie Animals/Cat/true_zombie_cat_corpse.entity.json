@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_zombie_cat_corpse",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/zombies/cat/zombie_cat",
+            "rotting":"textures/entity/zombies/cat/zombie_cat_rotting",
+            "skeleton":"textures/entity/zombies/cat/skeleton"
+         },
+         "geometry":{
+            "default":"geometry.true_zombie_cat"
+         },
+         "animations":{
+            "stand":"animation.zombie_cat_corpse.stand",
+            "dead_zombie_controller":"controller.animation.dead_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "dead_zombie_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.true_zombie_corpse"
+         ]
+      }
+   }
+}

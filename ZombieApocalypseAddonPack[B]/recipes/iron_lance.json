@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_lance"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      "XXX",
+      "#X "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_lance"
+    }
+  }
+}

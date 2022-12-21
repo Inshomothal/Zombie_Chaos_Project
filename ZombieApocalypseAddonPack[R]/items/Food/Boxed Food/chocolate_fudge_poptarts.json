@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:chocolate_fudge_poptarts",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "chocolate_fudge_poptarts"
+    }
+  }
+}

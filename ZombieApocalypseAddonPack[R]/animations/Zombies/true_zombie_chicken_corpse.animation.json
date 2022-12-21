@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zombie_chicken_corpse.stand": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"bones": {
+				"zombie_chicken": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [0, 0, -90]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.52": [7, 3, 0]
+					}
+				},
+				"wing1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [0, 17.5, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [45, 0, 0]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [-27.5, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [-37.5, 32.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

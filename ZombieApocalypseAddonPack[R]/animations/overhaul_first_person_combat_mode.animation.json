@@ -1,0 +1,189 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.first_person.odachi_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightItem": {
+					"scale": [1, 1, 1]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-136.35699, -34.88151, 119.72362],
+						"0.16": [-136.35699, -34.88151, 119.72362],
+						"0.24": [53.71013, -19.72554, 119.18369]
+					}
+				}
+			}
+		},
+		"animation.first_person.saber_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-126.41607, -0.23155, 88.94617],
+						"0.16": [-126.41607, -0.23155, 88.94617],
+						"0.24": [28.34709, 7.0659, 100.49381]
+					}
+				}
+			}
+		},
+		"animation.first_person.mace_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-123.92723, -14.27394, 64.92219],
+						"0.16": [-123.92723, -14.27394, 64.92219],
+						"0.24": [-16.42723, -14.27394, 64.92219]
+					}
+				}
+			}
+		},
+		"animation.first_person.wakizashi_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-136.25148, -55.05184, 68.96904],
+						"0.16": [-136.25148, -55.05184, 68.96904],
+						"0.24": [55.39307, 11.19332, 97.63481]
+					}
+				}
+			}
+		},
+		"animation.first_person.katana_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-203.30238, -14.14562, -46.58045],
+						"0.16": [-203.30238, -14.14562, -46.58045],
+						"0.24": [-3.30238, -14.14562, -46.58045]
+					}
+				}
+			}
+		},
+		"animation.first_person.greatsword_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-250.28926, 10.87247, -112.89258],
+						"0.16": [-250.28926, 10.87247, -112.89258],
+						"0.24": [-18.114, -9.23596, -75.56909]
+					}
+				}
+			}
+		},
+		"animation.first_person.halberd_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [-87.5, 0, 0],
+						"0.12": [-180, 0, 0],
+						"0.28": [-180, 0, 0],
+						"0.36": [32.5, 0, 0]
+					}
+				},
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				}
+			}
+		},
+		"animation.first_person.lance_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [53.34346, -11.93542, 38.26565],
+						"0.28": [53.34346, -11.93542, 38.26565],
+						"0.36": [-50, 0, 0]
+					}
+				},
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightitem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-47.5, 0, 0],
+						"0.28": [-47.5, 0, 0],
+						"0.36": [50, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.first_person.rapier_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [29.80808, 1.99782, 96.33339],
+						"0.28": [29.80808, 1.99782, 96.33339],
+						"0.36": [-82.69192, 1.99782, 96.33339]
+					}
+				},
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"rightitem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-30, 0, 0],
+						"0.28": [-30, 0, 0],
+						"0.36": [77.5, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

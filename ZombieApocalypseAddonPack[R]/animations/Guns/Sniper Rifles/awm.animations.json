@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.awm.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"awm": {
+					"position": [5, 20, 30],
+					"rotation": [-90, -120, -45],
+					"scale": 0.4
+				}
+			}
+		},
+		"animation.awm.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"awm": {
+					"rotation": [-80, -120, -45],
+					"position": [-17, 87, 21],
+					"scale": 0.0
+				}
+			}
+		},
+		"animation.awm.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"awm": {
+					"position": [0, 20, 22],
+					"rotation": [90, 0, 180],
+					"scale": 0.15
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:zweihander"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      "XBX",
+      "#X "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:planks"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "pixel:zweihander"
+    }
+  }
+}

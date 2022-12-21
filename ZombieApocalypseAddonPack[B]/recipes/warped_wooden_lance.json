@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:wooden_lance_from_warped_planks"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      "XXX",
+      "#X "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "warped_planks"
+      }
+    },
+    "result": {
+      "item": "pixel:wooden_lance"
+    }
+  }
+}

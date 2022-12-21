@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.phantom_dagger",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "sword",
+					"parent": "root",
+					"pivot": [0, 0, 1],
+					"cubes": [
+						{"origin": [-0.5, -1, -2], "size": [1, 2, 4], "uv": [0, 0]},
+						{"origin": [-1, -3, -3.5], "size": [2, 6, 1.75], "inflate": -0.25, "uv": [8, 10]},
+						{"origin": [-0.5, -2, -6], "size": [1, 4, 3], "uv": [8, 3]},
+						{"origin": [-0.5, -2, -8.75], "size": [1, 4, 3], "inflate": -0.25, "uv": [0, 6]},
+						{"origin": [0, -1.5, -10.75], "size": [0, 3, 3], "uv": [0, 10]}
+					]
+				}
+			]
+		}
+	]
+}

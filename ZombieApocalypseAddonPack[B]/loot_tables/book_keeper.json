@@ -1,0 +1,31 @@
+{
+   "pools":[
+      {
+         "rolls":1,
+         "entries":[
+            {
+               "type":"item",
+               "name":"minecraft:book",
+               "weight":1,
+               "functions":[
+                  {
+                     "function":"enchant_randomly",
+                     "treasure":true
+                  }
+               ]
+            },
+            {
+               "type":"item",
+               "name":"minecraft:book",
+               "weight":1,
+               "functions":[
+                  {
+                     "function":"enchant_randomly",
+                     "treasure":true
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

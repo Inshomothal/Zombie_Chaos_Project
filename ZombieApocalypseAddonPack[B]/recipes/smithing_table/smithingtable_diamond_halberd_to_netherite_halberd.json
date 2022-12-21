@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "minecraft:smithingtable_diamond_halberd_to_netherite_halberd"
+    },
+
+
+    "tags": [ "smithing_table" ],
+    "priority": 2,
+    "ingredients": [
+      {
+        "item": "pixel:diamond_halberd"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ],
+    "result": {
+      "item": "pixel:netherite_halberd",
+      "count": 1
+    }
+  }
+  
+}

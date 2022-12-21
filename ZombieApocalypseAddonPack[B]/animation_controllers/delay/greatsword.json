@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.greatsword_charge": {
+			"states": {
+				"default": {
+					"transitions":[
+					  {
+					   "damn": "query.is_using_item && query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_greatsword') && query.scoreboard('greatsword_cd') < 2 && query.scoreboard('exhaust') >= 20"
+					  } 
+					]
+				},
+				"damn": {
+					"on_exit": [
+					  "@s greatsword_spin",
+	                  "/scoreboard players set @s greatsword_cd 40",
+	                  "/scoreboard players remove @s exhaust 40",
+	                  "/effect @s weakness 2 20"
+					],
+					"transitions":[
+					  {
+					   "default": "!query.is_using_item"
+					  } 
+					]
+				}
+			}
+		}
+	}
+}

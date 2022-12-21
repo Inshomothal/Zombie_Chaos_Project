@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pixel:wooden_longsword"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " D ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:planks"
+      },
+      "D": {
+        "item": "minecraft:log"
+      }
+    },
+    "result": {
+      "item": "pixel:wooden_longsword"
+    }
+  }
+}

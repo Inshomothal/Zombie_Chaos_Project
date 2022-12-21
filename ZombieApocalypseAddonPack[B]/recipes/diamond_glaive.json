@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:diamond_glaive"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " #X",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "pixel:diamond_glaive"
+    }
+  }
+}

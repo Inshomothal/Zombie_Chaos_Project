@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pixel:wooden_wakizashi_blade"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " X ",
+      "X  "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "pixel:wooden_wakizashi_blade"
+    }
+  }
+}

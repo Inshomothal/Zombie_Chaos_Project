@@ -1,0 +1,221 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.spear.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.spear"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_spear') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_spear') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_spear') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_spear') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_spear') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_spear')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"spear": "variable.spear"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_spear')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_spear')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_spear')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_spear')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_spear')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_spear')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "spear_unsheathe"
+					],
+					"transitions": [
+						{
+							"spear": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				},
+				"spear": {
+					"animations": [
+					  {
+				        "spear_stance0": "!query.is_moving"
+					  },
+					  {
+				        "spear_move": "query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					  },
+					  {
+				        "spear_sprint": "query.is_moving && query.is_sprinting && !query.is_sneaking"
+					  },
+					  {
+				        "spear_sneak": "!query.is_moving && query.is_sneaking"
+					  },
+					  {
+				        "spear_sneak_move": "query.is_moving && query.is_sneaking"
+					  },
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && query.get_equipped_item_name('off_hand') != 'shield'"
+						},
+						{
+							"default": "!variable.spear"
+						},
+						{
+							"shield": "query.get_equipped_item_name('off_hand') == 'shield'"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"shield": {
+				  "animations": [
+					  {
+				        "spear_stance_shield": "query.get_equipped_item_name('off_hand') == 'shield' && !query.is_moving"
+					  },
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  {
+				        "spear_shield_move": "query.get_equipped_item_name('off_hand') == 'shield' && query.is_moving"
+					  },
+					  {
+				        "spear_sneak": "!query.is_moving && query.is_sneaking"
+					  },
+					  {
+				        "spear_sneak_move": "query.is_moving && query.is_sneaking"
+					  },
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"attack_shield": "variable.attack_time>0 && !query.is_using_item"
+						},
+						{
+							"default": "!variable.spear"
+						},
+						{
+							"spear": "query.get_equipped_item_name('off_hand') != 'shield'"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"move": {
+					"animations": [
+					  {
+				        "spear_stance0": "query.is_moving && query.get_equipped_item_name('off_hand') != 'shield'"
+					  },
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && query.get_equipped_item_name('off_hand') != 'shield' && !query.is_using_item && query.is_sprinting"
+						},
+						{
+							"default": "!variable.spear"
+						},
+						{
+							"spear": "!query.is_moving"
+						},
+						{
+							"attack_shield": "variable.attack_time>0 && query.get_equipped_item_name('off_hand') != 'shield' && !query.is_using_item"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+				        "spear_attack0",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"attack_1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				},
+				"attack_1": {
+					"animations": [
+				        "spear_attack1",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"spear": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				},
+				"attack_slash": {
+					"animations": [
+				        "spear_slash0",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"attack_slash_1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				},
+				"attack_slash_1": {
+					"animations": [
+				        "spear_slash1",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"spear": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack_shield": {
+					"animations": [
+				        "spear_attack_shield0",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"spear": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				},
+				"attack_shield_1": {
+					"animations": [
+				        "spear_attack_shield1",
+                      "shield_no_back",
+					  "spear_no_back"
+					],
+					"transitions": [
+						{
+							"spear": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.spear"
+						}
+					]
+				}
+			}
+		}
+	}
+}

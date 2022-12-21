@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.normal_tsuba",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightArm",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "tsuba_rightitem",
+					"parent": "rightitem",
+					"pivot": [-6, 14, -3],
+					"cubes": [
+						{
+							"origin": [-7.3, 12.7, -3.5],
+							"size": [2.6, 2.6, 1],
+							"inflate": -0.25,
+							"pivot": [-6, 14, -3],
+							"rotation": [0, 0, 42.5],
+							"uv": {
+								"north": {"uv": [12, 17], "uv_size": [2, 2]},
+								"east": {"uv": [11, 17], "uv_size": [1, 2]},
+								"south": {"uv": [15, 17], "uv_size": [2, 2]},
+								"west": {"uv": [14, 17], "uv_size": [1, 2]},
+								"up": {"uv": [12, 16], "uv_size": [2, 1]},
+								"down": {"uv": [14, 17], "uv_size": [2, -1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

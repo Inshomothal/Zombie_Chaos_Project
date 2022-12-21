@@ -1,0 +1,469 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:iron_katana",
+      "category":"Equipment"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "iron_katana"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "tag:minecraft:is_katana":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:iron_katana.name"
+	  },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 325,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:iron_ingot" ],
+            "repair_amount": 280
+          },
+          {
+            "items": [ "pixel:repair_item" ],
+            "repair_amount": 250
+          },
+          {
+            "items": [ "pixel:iron_katana" ],
+            "repair_amount": "query.max_durability"
+          }
+        ]
+      },
+      "minecraft:mining_speed": 3,
+      "minecraft:damage": 7,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 15,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 10,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          }
+        ],
+		"on_dig": {
+		  "event": "minecraft:break",
+		  "target": "self"
+		}
+      },
+	  "minecraft:cooldown": {
+		"category": "katana",
+		"duration": 2
+	  },
+	  "minecraft:weapon": {
+		"on_hurt_entity": {
+		  "event": "minecraft:break"
+		}
+	  },
+      "minecraft:chargeable": {
+		"on_complete": {
+		  "event": "filter_the_shoot",
+		  "target": "self"
+		}
+	  },
+      "minecraft:on_use":{
+        "on_use":{
+          "event": "sword"    
+        }
+      }
+	},
+	"events": {
+      "shoot": {
+		"sequence": [
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('ktncmb') == 0 && query.scoreboard('mdmmstr') >= 0 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 10",
+	            "tag @s add onegai",
+	            "playanimation @s animation.katana.attack_ability_combo_0 default",
+	            "scoreboard objectives add ktncmb dummy",
+	            "scoreboard players set @s ktncmb 1"
+	          ]
+	        },
+			"shoot": {
+		      "projectile": "pixel:slash_crescent",
+		   	  "launch_power": 1.5
+		    },
+		     "damage": {
+		       "type": "durability",
+		       "amount": 1
+		    }
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('ktncmb') >= 1 && query.scoreboard('mdmmstr') >= 0 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "tag @s add kcharge",
+	            "playanimation @s animation.katana.attack_ability_combo1 default",
+	            "summon pixel:propel ^^^-1",
+	            "scoreboard players set @s ktncmb 0"
+	          ]
+	        },
+		    "shoot": {
+		      "projectile": "pixel:katana_damage",
+		   	  "launch_power": 0.5
+		    },
+		    "damage": {
+		      "type": "durability",
+		      "amount": 1
+		    }
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('ktnabltsnk') == 0 && query.scoreboard('mdmmstr') >= 0 && query.scoreboard('mdmmstr') < 500 && query.is_sneaking",
+		   "sequence":[
+		     {
+	           "run_command":{
+	             "command":[
+	               "scoreboard players remove @s exhaust 10",
+	               "tag @s add res",
+	               "playanimation @s animation.katana.ability_sonic_slash default"
+	             ]
+	           }
+		     },
+		     {
+	           "run_command":{
+	             "command":[
+	               "tp @s @e[c=1,r=6,tag=!res,type=!player,type=!pixel:slash_invisble]"
+	             ]
+	           }
+		     },
+		     {
+			   "shoot": {
+		         "projectile": "pixel:slash_invisble",
+		  	     "launch_power": 0.0
+		       }
+		     },
+		     {
+	           "run_command":{
+	             "command":[
+	               "tp @s ^^^0.5"
+	             ]
+	           }
+		     }
+		    ]
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('ktnsnkablt') == 1 && query.scoreboard('mdmmstr') >= 1000 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 10",
+	            "scoreboard objectives add hghmnd dummy",
+	            "scoreboard players set @s hghmnd 200",
+	            "tag @s add hghmnd",
+	            "gamerule randomtickspeed 420"
+	          ]
+	        }
+		  }
+		] 
+	  },
+	  "minecraft:break": {
+	    "sequence":[
+		  {
+		    "condition": "query.scoreboard('mdmmstr') >= 0 && query.scoreboard('mdmmstr') < 50",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 5,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('mdmmstr') >= 50 && query.scoreboard('mdmmstr') < 100",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 6,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('mdmmstr') >= 100 && query.scoreboard('mdmmstr') < 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('mdmmstr') >= 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 2
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+	      {
+		    "condition": "query.scoreboard('frctnstrk') > 0",
+		    "sequence":[
+	          {
+		        "damage": {
+		          "type": "fire_tick",
+		          "amount": 3,
+		          "target": "other"
+	            }
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') != 1 && query.scoreboard('dmndlng') != 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 3"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 4"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 3"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('dmndlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 0"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+	            "weight": 20,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 0
+	            }
+	          },
+	          {
+	            "weight": 5,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 2
+	            }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 15,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add mdmmstr dummy"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 20,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add mdmmstr dummy",
+	                "scoreboard players add @s mdmmstr 1"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 10,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add mdmmstr dummy",
+	                "scoreboard players add @s mdmmstr 2"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 2,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add mdmmstr dummy",
+	                "scoreboard players add @s mdmmstr 5"
+	              ]
+	            }
+	          }
+	        ]
+	      }
+	    ]
+	  }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ground_pound.lance_meteor": {
+			"animation_length": 1.08,
+			"bones": {
+				"main": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.08": [1.5, 1.5, 1.5]
+					}
+				},
+				"main2": {
+					"scale": {
+						"0.08": [0, 0, 0],
+						"0.16": [2, 2, 2]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "splode"
+				}
+			},
+			"particle_effects": {
+				"0.08": {
+					"effect": "smoker",
+					"locator": "pound"
+				}
+			}
+		}
+	}
+}

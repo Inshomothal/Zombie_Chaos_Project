@@ -1,0 +1,16 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.crosshair_submachine":{
+         "textures":[
+            "texture.crosshair_submachine"
+         ],
+         "geometry":"geometry.crosshair_submachine",
+         "materials":[
+            {
+               "*":"material.default"
+            }
+         ]
+      }
+   }
+}

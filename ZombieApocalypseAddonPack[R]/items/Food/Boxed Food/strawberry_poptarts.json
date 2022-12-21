@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:strawberry_poptarts",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "strawberry_poptarts"
+    }
+  }
+}

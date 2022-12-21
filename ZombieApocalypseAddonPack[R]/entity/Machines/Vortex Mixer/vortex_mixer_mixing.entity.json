@@ -1,0 +1,29 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:vortex_mixer_mixing",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/vortex_mixer/vortex_mixer_mixing"
+         },
+         "geometry":{
+            "default":"geometry.vortex_mixer"
+         },
+         "animations":{
+            "stand":"animation.vortex_mixer.stand",
+            "true_zombie_controller":"controller.animation.true_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "true_zombie_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ]
+      }
+   }
+}

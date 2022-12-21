@@ -1,0 +1,49 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:odachi_triple_slashes_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "triple_slashes_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:odachi_triple_slashes_scroll.name"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add dchablt dummy",
+		        "scoreboard players set @s dchablt 2",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Odachi strike ability changed to : Triple Crescent  Slashes\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

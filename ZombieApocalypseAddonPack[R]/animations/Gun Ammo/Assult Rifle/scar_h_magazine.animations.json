@@ -1,0 +1,81 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scar_h_magazine.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-98, -120, -45],
+					"position": [4, 19, 0],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [112.5, 0, 0],
+					"position": [2, -35, -21]
+				}
+			}
+		},
+		"animation.scar_h_magazine.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-98, -120, -45],
+					"position": [4, 19, 0],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [112.5, 0, 0],
+					"position": [2, -35, -21]
+				}
+			}
+		},
+		"animation.scar_h_magazine.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-190, 0, -180],
+					"position": [-1, 19, -3],
+					"scale": 0.2
+				}
+			}
+		},
+		"animation.scar_h_magazine.first_person_off_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-90, -120, 130],
+					"position": [5, 25, 10],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [-254.62381, -28.80781, -82.39852],
+					"position": [-16, 36, 34]
+				}
+			}
+		},
+		"animation.scar_h_magazine.first_person_sneaking_off_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-90, -120, 130],
+					"position": [5, 25, 10],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [-254.62381, -28.80781, -82.39852],
+					"position": [-16, 36, 34]
+				}
+			}
+		},
+		"animation.scar_h_magazine.third_person_off_hand": {
+			"loop": true,
+			"bones": {
+				"scar_h_magazine": {
+					"rotation": [-190, 0, -180],
+					"position": [-1, 19, -3],
+					"scale": 0.2
+				}
+			}
+		}
+	}
+}

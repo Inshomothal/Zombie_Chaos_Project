@@ -1,0 +1,74 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.zweihander": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+				        "zwei_hold": "!variable.is_first_person"
+					  },
+					  {
+				   	  "zwei_hold_fp": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting && !query.is_using_item"
+						},
+						{
+							"attack_lunge": "variable.attack_time>0 && query.is_sprinting && !query.is_using_item"
+						},
+						{
+							"throwing": "query.is_using_item"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  {
+				        "zwei_attack": "!variable.is_first_person"
+					  },
+					  {
+				   	  "zwei_attack_fp": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_lunge": {
+					"animations": [
+					  {
+				        "zwei_thrust": "!variable.is_first_person"
+					  },
+					  {
+				   	  "zwei_thrust_fp": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"throwing": {
+					"animations": [
+		    	"spear_throw"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_using_item"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

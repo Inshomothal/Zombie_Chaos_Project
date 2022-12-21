@@ -1,0 +1,142 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hit:heavy_mace",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "despawn":{
+	    "minecraft:instant_despawn":{}
+      },
+      "normal":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 7,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+            ]
+          }  
+        }
+      },
+      "medium":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 9,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+            ]
+          }  
+        }
+      },
+      "diamond":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 10,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+            ]
+          }  
+        }
+      },
+      "netherite":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 11,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+            ]
+          }  
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:mob_effect": {
+        "effect_range": 1,
+        "mob_effect": "slowness",
+        "effect_time": 6,
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "hevh" }
+          ] 
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+	  "minecraft:timer":{
+	    "time": [0.1,0.1],
+	    "looping": true,
+	    "time_down_event":{
+	    "event": "remove_katana",
+	      "target": "self"
+	    }
+	  }
+    },
+
+    "events": {
+      "normal":{
+        "add":{
+          "component_groups":[
+               "normal"
+          ]
+        }
+      },
+      "medium":{
+        "add":{
+          "component_groups":[
+               "medium"
+          ]
+        }
+      },
+      "diamond":{
+        "add":{
+          "component_groups":[
+               "diamond"
+          ]
+        }
+      },
+      "netherite":{
+        "add":{
+          "component_groups":[
+               "netherite"
+          ]
+        }
+      },
+      "remove_katana":{
+        "add":{
+          "component_groups":[
+               "despawn"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "execute as @a[tag=hevh] run tag @s remove hevh"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

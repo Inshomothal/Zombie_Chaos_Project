@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.blarry": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "dissing": "query.scoreboard('exhaust') <= 5"
+            }
+          ],
+          "on_entry": [
+            "/effect @s clear"
+          ]
+        },
+        "dissing": {
+          "transitions": [
+            {
+              "default": "query.scoreboard('exhaust') >= 6"
+            },
+            {
+              "pissing": "query.scoreboard('exhaust') <= 5"
+            }
+          ],
+          "on_entry": [
+            "/effect @s slowness 5 2 true",
+            "/effect @s weakness 5 20 true"
+          ]
+        },
+        "pissing": {
+          "transitions": [
+            {
+              "default": "query.scoreboard('exhaust') >= 6"
+            },
+            {
+              "dissing": "query.scoreboard('exhaust') <= 5"
+            }
+          ],
+          "on_entry": [
+            "/effect @s slowness 5 2 true",
+            "/effect @s weakness 5 20 true "
+          ]
+        }
+      }
+    },
+    "controller.animation.tp_damage": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "dissing": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/tp @s @p[tag=hild]"
+          ]
+        },
+        "dissing": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/tp @s @p[tag=hild]"
+          ]
+        }
+      }
+    }
+  }
+}

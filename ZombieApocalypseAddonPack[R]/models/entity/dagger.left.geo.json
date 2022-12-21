@@ -1,0 +1,48 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.dagger_left",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+                    "pivot": [ 5.0, 22.0, 0.0 ]
+				},
+				{
+					"name": "leftitem",
+					"parent": "leftArm",
+					"pivot": [6, 14, 0],
+					"cubes": [
+						{"origin": [5.5, 13, -3], "size": [1, 2, 4], "uv": [0, 0]},
+						{"origin": [5, 11, -4.5], "size": [2, 6, 1.75], "inflate": -0.25, "uv": [10, 0]},
+						{"origin": [5.5, 12, -7], "size": [1, 4, 3], "uv": [8, 8]},
+						{"origin": [5.5, 12, -9.75], "size": [1, 4, 3], "inflate": -0.25, "uv": [0, 6]},
+						{"origin": [6, 12.5, -11.75], "size": [0, 3, 3], "uv": [0, 10]}
+					]
+				}
+			]
+		}
+	]
+}

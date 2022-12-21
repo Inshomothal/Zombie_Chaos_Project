@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.stone_in_hand",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "stone_in_hand",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "base",
+					"parent": "stone_in_hand",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1.75, 0, -1], "size": [3, 3, 2], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

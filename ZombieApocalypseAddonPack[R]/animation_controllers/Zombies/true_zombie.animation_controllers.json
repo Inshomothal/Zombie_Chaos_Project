@@ -1,0 +1,50 @@
+{
+   "format_version":"1.10.0",
+   "animation_controllers":{
+      "controller.animation.true_zombie":{
+         "initial_state":"default",
+         "states":{
+            "default":{
+               "animations":[
+                  "stand",
+                  "look_at_target",
+                  {
+                     "walk":"query.modified_move_speed"
+                  }
+               ],
+               "blend_transition":0.1,
+               "blend_via_shortest_path":true,
+               "transitions":[
+                  {
+                     "attack":"variable.attack_time > 0.0"
+                  }
+               ]
+            },
+            "walk":{
+               "animations":[
+                  "walk"
+               ],
+               "blend_transition":0.1,
+               "blend_via_shortest_path":true,
+               "transitions":[
+                  {
+                     "walk":"query.modified_move_speed"
+                  }
+               ]
+            },
+            "attack":{
+               "animations":[
+                  "attack"
+               ],
+               "blend_transition":0.1,
+               "blend_via_shortest_path":true,
+               "transitions":[
+                  {
+                     "default":"variable.attack_time <= 0"
+                  }
+               ]
+            }
+         }
+      }
+   }
+}

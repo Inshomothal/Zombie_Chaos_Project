@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.generic_humanoid_baby.walk": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, -0.5, 0],
+						"0.24": [0, 0, 0],
+						"0.52": [0, -0.5, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.24": [-15, 0, 0],
+						"0.52": [15, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [-15, 0, 0],
+						"0.24": [15, 0, 0],
+						"0.52": [-15, 0, 0]
+					}
+				},
+				"rightLeg": {
+					"position": {
+						"0.0": [0, 0, -1],
+						"0.24": [0, 0, 1],
+						"0.52": [0, 0, -1]
+					}
+				},
+				"leftLeg": {
+					"position": {
+						"0.0": [0, 0, 1],
+						"0.24": [0, 0, -1],
+						"0.52": [0, 0, 1]
+					}
+				}
+			}
+		},
+		"animation.generic_humanoid_baby.stand": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, -0.5, 0],
+						"0.24": [0, 0, 0],
+						"0.52": [0, -0.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

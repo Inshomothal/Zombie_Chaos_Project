@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:pot_noodle_beef_cooked"
+    },
+
+    
+    "tags": ["furnace", "smoker"],
+    "input": "true:pot_noodle_beef_water",
+    "output": "true:pot_noodle_beef_hot"
+  }
+}

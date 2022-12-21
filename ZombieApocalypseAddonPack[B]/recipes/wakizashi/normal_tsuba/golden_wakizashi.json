@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:golden_katana_wakizashi"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X",
+      "# "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "pixel:golden_wakizashi_blade"
+      }
+    },
+    "result": {
+      "item": "pixel:golden_katana_wakizashi"
+    }
+  }
+}

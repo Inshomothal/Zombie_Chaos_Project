@@ -1,0 +1,31 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:smoke_grenade_thrown",
+         "materials":{
+            "default":"entity_alphatest"
+         },
+         "textures":{
+            "default":"textures/entity/handheld/smoke_grenade.png"
+         },
+         "geometry":{
+            "default":"geometry.smoke_grenade"
+         },
+         "animations":{
+            "smoke_grenade":"controller.animation.smoke_grenade"
+         },
+         "scripts":{
+            "animate":[
+               "smoke_grenade"
+            ]
+         },
+         "particle_effects":{
+            "smoke_grenade":"true:smoke_grenade"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

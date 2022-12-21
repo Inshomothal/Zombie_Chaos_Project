@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:bowl_of_tuna",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": "bowl_of_tuna"
+    }
+  }
+}

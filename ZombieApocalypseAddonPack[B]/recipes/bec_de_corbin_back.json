@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:bec_de_corbin_back"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:bec_de_corbin"
+      }
+    },
+    "result": {
+      "item": "pixel:bec_de_corbin_back"
+    }
+  }
+}

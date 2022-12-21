@@ -1,0 +1,33 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_zombie_armless",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/zombies/armless/zombie_armless"
+         },
+         "geometry":{
+            "default":"geometry.true_zombie_armless"
+         },
+         "animations":{
+            "stand":"animation.true_zombie.stand",
+            "walk":"animation.true_zombie.walk",
+            "armless_zombie_controller":"controller.animation.armless_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "armless_zombie_controller"
+            ]
+         },
+         "spawn_egg":{
+            "texture":"true_zombie"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

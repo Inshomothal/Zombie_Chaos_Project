@@ -1,0 +1,201 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.katana_dt.attack": {
+			"states": {
+				"default": {
+					"animations": [
+						"katana_sheathed",
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"katana": "variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						}
+					]
+				},
+				"katana": {
+					"animations": [
+						"katana_dual_sheathed"
+					],
+					"transitions": [
+						{
+							"dual_katana_attacks0": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"dual_katana_attacks0": {
+					"animations": [
+				"wakizashi_attack0_0"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.any_animation_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"unsheath": {
+					"animations": [
+					"katana_dual_unsheathed",	"katana_dual_stance0",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheath": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						},
+						{
+							"unsheath_attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sheath": {
+					"transitions": [
+						{
+							"katana": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					]
+				},
+				"unsheath_attack": {
+					"animations": [
+					  "katana_dual_attack0",
+					  "katana_dual_unsheathed"
+					],
+					"transitions": [
+						{
+							"stance2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance2": {
+					"animations": [
+					"katana_dual_unsheathed",	"katana_dual_stance0",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheath": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						},
+						{
+							"stance2_attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance2_attack": {
+					"animations": [
+					  "katana_dual_attack2",
+					  "katana_dual_unsheathed"
+					],
+					"transitions": [
+						{
+							"stance3": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance3": {
+					"animations": [
+					"katana_dual_unsheathed",	"katana_dual_stance0",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheath": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						},
+						{
+							"stance3_attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance3_attack": {
+					"animations": [
+					  "katana_dual_attack1",
+					  "katana_dual_unsheathed"
+					],
+					"transitions": [
+						{
+							"stance4": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance4": {
+					"animations": [
+					"katana_dual_unsheathed",	"katana_dual_stance0",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheath": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						},
+						{
+							"stance4_attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"stance4_attack": {
+					"animations": [
+					  "katana_dual_attack3",
+					  "katana_dual_unsheathed"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

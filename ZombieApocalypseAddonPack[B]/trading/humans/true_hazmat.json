@@ -1,0 +1,36 @@
+{
+   "tiers":[
+      {
+         "trades":[
+            {
+               "wants":[
+                  {
+                     "item":"true:o2_canister",
+                     "quantity":1
+                  }
+               ],
+               "gives":[
+                  {
+                     "item":"true:empty_vial",
+                     "quantity":16
+                  }
+               ]
+            },
+            {
+               "wants":[
+                  {
+                     "item":"true:o2_canister",
+                     "quantity":1
+                  }
+               ],
+               "gives":[
+                  {
+                     "item":"true:zombie_antidote",
+                     "quantity":1
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

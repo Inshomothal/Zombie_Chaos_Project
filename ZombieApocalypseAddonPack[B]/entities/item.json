@@ -1,0 +1,1220 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:item",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "3d_item"
+        ]
+      },
+      "animations": {
+        "3d_item": "controller.animation.3d_item"
+      }
+    },
+    "component_groups": {
+      "wooden_mace": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "wooden_mace"
+        }
+      },
+      "stone_mace": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "stone_mace"
+        }
+      },
+      "iron_mace": {
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "iron_mace"
+        }
+      },
+      "golden_mace": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "golden_mace"
+        }
+      },
+      "diamond_mace": {
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "diamond_mace"
+        }
+      },
+      "netherite_mace": {
+        "minecraft:mark_variant": {
+          "value": 6
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "netherite_mace"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "giant_mace": {
+        "minecraft:mark_variant": {
+          "value": 7
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "giant_mace"
+        }
+      },
+      "wooden_saber": {
+        "minecraft:mark_variant": {
+          "value": 8
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "wooden_saber"
+        }
+      },
+      "stone_saber": {
+        "minecraft:mark_variant": {
+          "value": 9
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "stone_saber"
+        }
+      },
+      "iron_saber": {
+        "minecraft:mark_variant": {
+          "value": 10
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "iron_saber"
+        }
+      },
+      "golden_saber": {
+        "minecraft:mark_variant": {
+          "value": 11
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "golden_saber"
+        }
+      },
+      "diamond_saber": {
+        "minecraft:mark_variant": {
+          "value": 12
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "diamond_saber"
+        }
+      },
+      "netherite_saber": {
+        "minecraft:mark_variant": {
+          "value": 13
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "netherite_saber"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "wooden_dagger": {
+        "minecraft:mark_variant": {
+          "value": 15
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "wooden_dagger"
+        }
+      },
+      "stone_dagger": {
+        "minecraft:mark_variant": {
+          "value": 16
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "stone_dagger"
+        }
+      },
+      "iron_dagger": {
+        "minecraft:mark_variant": {
+          "value": 17
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "iron_dagger"
+        }
+      },
+      "golden_dagger": {
+        "minecraft:mark_variant": {
+          "value": 18
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "golden_dagger"
+        }
+      },
+      "diamond_dagger": {
+        "minecraft:mark_variant": {
+          "value": 19
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "diamond_dagger"
+        }
+      },
+      "netherite_dagger": {
+        "minecraft:mark_variant": {
+          "value": 20
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "netherite_dagger"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "wooden_katana": {
+        "minecraft:mark_variant": {
+          "value": 22
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "wooden_katana"
+        }
+      },
+      "stone_katana": {
+        "minecraft:mark_variant": {
+          "value": 23
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "stone_katana"
+        }
+      },
+      "iron_katana": {
+        "minecraft:mark_variant": {
+          "value": 24
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "iron_katana"
+        }
+      },
+      "golden_katana": {
+        "minecraft:mark_variant": {
+          "value": 25
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "golden_katana"
+        }
+      },
+      "diamond_katana": {
+        "minecraft:mark_variant": {
+          "value": 26
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "diamond_katana"
+        }
+      },
+      "netherite_katana": {
+        "minecraft:mark_variant": {
+          "value": 27
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "netherite_katana"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        }
+      },
+      "wooden_club": {
+        "minecraft:mark_variant": {
+          "value": 29
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "wooden_club"
+        }
+      },
+      "stone_club": {
+        "minecraft:mark_variant": {
+          "value": 30
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "stone_club"
+        }
+      },
+      "iron_club": {
+        "minecraft:mark_variant": {
+          "value": 31
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "iron_club"
+        }
+      },
+      "golden_club": {
+        "minecraft:mark_variant": {
+          "value": 32
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "golden_club"
+        }
+      },
+      "diamond_club": {
+        "minecraft:mark_variant": {
+          "value": 33
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "diamond_club"
+        }
+      },
+      "netherite_club": {
+        "minecraft:mark_variant": {
+          "value": 34
+        },
+        "minecraft:addrider": {
+          "entity_type": "pixel:3ditem",
+          "spawn_event": "netherite_mace"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "3ditem"
+        ],
+        "seats": {
+          "position": [ 0.0, 0.0, 0.0 ]
+        }
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wdnMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "wooden_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stnMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "stone_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "irnMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 3
+                }
+              ]
+            },
+            "event": "iron_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gldnMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 4
+                }
+              ]
+            },
+            "event": "golden_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "dmndMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 5
+                }
+              ]
+            },
+            "event": "diamond_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "nthrMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 6
+                }
+              ]
+            },
+            "event": "netherite_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gntMace"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 7
+                }
+              ]
+            },
+            "event": "giant_mace"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wdnSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 8
+                }
+              ]
+            },
+            "event": "wooden_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stnSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 9
+                }
+              ]
+            },
+            "event": "stone_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "irnSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 10
+                }
+              ]
+            },
+            "event": "iron_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gldnSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 11
+                }
+              ]
+            },
+            "event": "golden_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "dmndSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 12
+                }
+              ]
+            },
+            "event": "diamond_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "nthrSaber"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 13
+                }
+              ]
+            },
+            "event": "netherite_saber"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wdndagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 15
+                }
+              ]
+            },
+            "event": "wooden_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stndagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 16
+                }
+              ]
+            },
+            "event": "stone_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "irndagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 17
+                }
+              ]
+            },
+            "event": "iron_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gldndagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 18
+                }
+              ]
+            },
+            "event": "golden_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "dmnddagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 19
+                }
+              ]
+            },
+            "event": "diamond_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "nthrdagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 20
+                }
+              ]
+            },
+            "event": "netherite_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "chsdagger"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 21
+                }
+              ]
+            },
+            "event": "chaos_dagger"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wdnkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 22
+                }
+              ]
+            },
+            "event": "wooden_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stnkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 23
+                }
+              ]
+            },
+            "event": "stone_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "irnkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 24
+                }
+              ]
+            },
+            "event": "iron_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gldnkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 25
+                }
+              ]
+            },
+            "event": "golden_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "dmndkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 26
+                }
+              ]
+            },
+            "event": "diamond_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "nthrkatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 27
+                }
+              ]
+            },
+            "event": "netherite_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "chskatana"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 28
+                }
+              ]
+            },
+            "event": "chaos_katana"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wdnclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 29
+                }
+              ]
+            },
+            "event": "wooden_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stnclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 30
+                }
+              ]
+            },
+            "event": "stone_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "irnclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 31
+                }
+              ]
+            },
+            "event": "iron_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gldnclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 32
+                }
+              ]
+            },
+            "event": "golden_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "dmndclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 33
+                }
+              ]
+            },
+            "event": "diamond_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "nthrclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 34
+                }
+              ]
+            },
+            "event": "netherite_club"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "chsclub"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 35
+                }
+              ]
+            },
+            "event": "chaos_club"
+          }
+        ]
+      }
+    },
+    "events": {
+      "wooden_mace": {
+        "add": {
+          "component_groups": [
+            "wooden_mace"
+          ]
+        }
+      },
+      "stone_mace": {
+        "add": {
+          "component_groups": [
+            "stone_mace"
+          ]
+        }
+      },
+      "iron_mace": {
+        "add": {
+          "component_groups": [
+            "iron_mace"
+          ]
+        }
+      },
+      "golden_mace": {
+        "add": {
+          "component_groups": [
+            "golden_mace"
+          ]
+        }
+      },
+      "diamond_mace": {
+        "add": {
+          "component_groups": [
+            "diamond_mace"
+          ]
+        }
+      },
+      "netherite_mace": {
+        "add": {
+          "component_groups": [
+            "netherite_mace"
+          ]
+        }
+      },
+      "chaos_mace": {
+        "add": {
+          "component_groups": [
+            "chaos_mace"
+          ]
+        }
+      },
+      "wooden_saber": {
+        "add": {
+          "component_groups": [
+            "wooden_saber"
+          ]
+        }
+      },
+      "stone_saber": {
+        "add": {
+          "component_groups": [
+            "stone_saber"
+          ]
+        }
+      },
+      "iron_saber": {
+        "add": {
+          "component_groups": [
+            "iron_saber"
+          ]
+        }
+      },
+      "golden_saber": {
+        "add": {
+          "component_groups": [
+            "golden_saber"
+          ]
+        }
+      },
+      "diamond_saber": {
+        "add": {
+          "component_groups": [
+            "diamond_saber"
+          ]
+        }
+      },
+      "netherite_saber": {
+        "add": {
+          "component_groups": [
+            "netherite_saber"
+          ]
+        }
+      },
+      "chaos_saber": {
+        "add": {
+          "component_groups": [
+            "chaos_saber"
+          ]
+        }
+      },
+      "wooden_dagger": {
+        "add": {
+          "component_groups": [
+            "wooden_dagger"
+          ]
+        }
+      },
+      "stone_dagger": {
+        "add": {
+          "component_groups": [
+            "stone_dagger"
+          ]
+        }
+      },
+      "iron_dagger": {
+        "add": {
+          "component_groups": [
+            "iron_dagger"
+          ]
+        }
+      },
+      "golden_dagger": {
+        "add": {
+          "component_groups": [
+            "golden_dagger"
+          ]
+        }
+      },
+      "diamond_dagger": {
+        "add": {
+          "component_groups": [
+            "diamond_dagger"
+          ]
+        }
+      },
+      "netherite_dagger": {
+        "add": {
+          "component_groups": [
+            "netherite_dagger"
+          ]
+        }
+      },
+      "chaos_dagger": {
+        "add": {
+          "component_groups": [
+            "chaos_dagger"
+          ]
+        }
+      },
+      "wooden_club": {
+        "add": {
+          "component_groups": [
+            "wooden_club"
+          ]
+        }
+      },
+      "stone_club": {
+        "add": {
+          "component_groups": [
+            "stone_club"
+          ]
+        }
+      },
+      "iron_club": {
+        "add": {
+          "component_groups": [
+            "iron_club"
+          ]
+        }
+      },
+      "golden_club": {
+        "add": {
+          "component_groups": [
+            "golden_club"
+          ]
+        }
+      },
+      "diamond_club": {
+        "add": {
+          "component_groups": [
+            "diamond_club"
+          ]
+        }
+      },
+      "netherite_club": {
+        "add": {
+          "component_groups": [
+            "netherite_club"
+          ]
+        }
+      },
+      "chaos_club": {
+        "add": {
+          "component_groups": [
+            "chaos_club"
+          ]
+        }
+      },
+      "wooden_katana": {
+        "add": {
+          "component_groups": [
+            "wooden_katana"
+          ]
+        }
+      },
+      "stone_katana": {
+        "add": {
+          "component_groups": [
+            "stone_katana"
+          ]
+        }
+      },
+      "iron_katana": {
+        "add": {
+          "component_groups": [
+            "iron_katana"
+          ]
+        }
+      },
+      "golden_katana": {
+        "add": {
+          "component_groups": [
+            "golden_katana"
+          ]
+        }
+      },
+      "diamond_katana": {
+        "add": {
+          "component_groups": [
+            "diamond_katana"
+          ]
+        }
+      },
+      "netherite_katana": {
+        "add": {
+          "component_groups": [
+            "netherite_katana"
+          ]
+        }
+      },
+      "chaos_katana": {
+        "add": {
+          "component_groups": [
+            "chaos_katana"
+          ]
+        }
+      }
+    }
+  }
+}

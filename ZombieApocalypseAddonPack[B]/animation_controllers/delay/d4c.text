@@ -1,0 +1,120 @@
+        "killing_wooden_katar_diamond": {
+          "transitions": [
+            {
+              "wooden_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_katar"
+          ]
+        },
+        "killing_stone_katar_diamond": {
+          "transitions": [
+            {
+              "stone_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_katar"
+          ]
+        },
+        "killing_iron_katar_diamond": {
+          "transitions": [
+            {
+              "iron_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katar"
+          ]
+        },
+        "killing_golden_katar_diamond": {
+          "transitions": [
+            {
+              "golden_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katar"
+          ]
+        },
+        "killing_diamond_katar_diamond": {
+          "transitions": [
+            {
+              "diamond_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katar"
+          ]
+        },
+        "killing_netherite_katar_diamond": {
+          "transitions": [
+            {
+              "netherite_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katar"
+          ]
+        }

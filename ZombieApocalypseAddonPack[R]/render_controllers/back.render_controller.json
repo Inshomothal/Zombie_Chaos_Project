@@ -1,0 +1,720 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.back_rapier_iron": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_rapier" ]
+    },
+    "controller.render.back_rapier_golden": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_rapier" ]
+    },
+    "controller.render.back_rapier_diamond": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_rapier" ]
+    },
+    "controller.render.back_rapier_netherite": {
+      "geometry": "geometry.back_rapier",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_rapier" ]
+    },
+    "controller.render.tsuba_kaku3": {
+      "geometry": "Geometry.back_tsuba_kaku3",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_kaku" ]
+    },
+    "controller.render.tsuba_oval3": {
+      "geometry": "Geometry.back_tsuba_oval3",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_oval" ]
+    },
+    "controller.render.tsuba_maru3": {
+      "geometry": "Geometry.back_tsuba_maru3",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_maru" ]
+    },
+    "controller.render.tsuba_normal3": {
+      "geometry": "Geometry.back_tsuba_normal3",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_normal" ]
+    },
+    "controller.render.tsuba_kaku2": {
+      "geometry": "Geometry.back_tsuba_kaku2",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_kaku" ]
+    },
+    "controller.render.tsuba_oval2": {
+      "geometry": "Geometry.back_tsuba_oval2",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_oval" ]
+    },
+    "controller.render.tsuba_maru2": {
+      "geometry": "Geometry.back_tsuba_maru2",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_maru" ]
+    },
+    "controller.render.tsuba_normal2": {
+      "geometry": "Geometry.back_tsuba_normal2",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_normal" ]
+    },
+    "controller.render.tsuba_kaku": {
+      "geometry": "Geometry.back_tsuba_kaku",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_kaku" ]
+    },
+    "controller.render.tsuba_oval": {
+      "geometry": "Geometry.back_tsuba_oval",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_oval" ]
+    },
+    "controller.render.tsuba_maru": {
+      "geometry": "Geometry.back_tsuba_maru",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_maru" ]
+    },
+    "controller.render.tsuba_normal": {
+      "geometry": "Geometry.back_tsuba_normal",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.tsuba_normal" ]
+    },
+    "controller.render.back_odachi_third_iron": {
+      "geometry": "Geometry.back_odachi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_odachi" ]
+    },
+    "controller.render.back_odachi_second_iron": {
+      "geometry": "Geometry.back_odachi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_odachi" ]
+    },
+    "controller.render.back_odachi_first_iron": {
+      "geometry": "Geometry.back_odachi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_odachi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_wooden": {
+      "geometry": "Geometry.back_katana_wakizashi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_stone": {
+      "geometry": "Geometry.back_katana_wakizashi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_iron": {
+      "geometry": "Geometry.back_katana_wakizashi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_golden": {
+      "geometry": "Geometry.back_katana_wakizashi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_diamond": {
+      "geometry": "Geometry.back_katana_wakizashi_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_third_netherite": {
+      "geometry": "geometry.back_katana_wakizashi_third",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_wooden": {
+      "geometry": "Geometry.back_katana_wakizashi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_stone": {
+      "geometry": "Geometry.back_katana_wakizashi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_iron": {
+      "geometry": "Geometry.back_katana_wakizashi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_golden": {
+      "geometry": "Geometry.back_katana_wakizashi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_diamond": {
+      "geometry": "Geometry.back_katana_wakizashi_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_second_netherite": {
+      "geometry": "geometry.back_katana_wakizashi_second",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_wooden": {
+      "geometry": "Geometry.back_katana_wakizashi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_stone": {
+      "geometry": "Geometry.back_katana_wakizashi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_iron": {
+      "geometry": "Geometry.back_katana_wakizashi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_golden": {
+      "geometry": "Geometry.back_katana_wakizashi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_diamond": {
+      "geometry": "Geometry.back_katana_wakizashi_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_wakizashi_first_netherite": {
+      "geometry": "geometry.back_katana_wakizashi_first",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana_wakizashi" ]
+    },
+    "controller.render.back_katana_third_wooden": {
+      "geometry": "Geometry.back_katana_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana" ]
+    },
+    "controller.render.back_katana_third_stone": {
+      "geometry": "Geometry.back_katana_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana" ]
+    },
+    "controller.render.back_katana_third_iron": {
+      "geometry": "Geometry.back_katana_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana" ]
+    },
+    "controller.render.back_katana_third_golden": {
+      "geometry": "Geometry.back_katana_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana" ]
+    },
+    "controller.render.back_katana_third_diamond": {
+      "geometry": "Geometry.back_katana_third",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana" ]
+    },
+    "controller.render.back_katana_third_netherite": {
+      "geometry": "geometry.back_katana_third",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana" ]
+    },
+    "controller.render.back_katana_second_wooden": {
+      "geometry": "Geometry.back_katana_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana" ]
+    },
+    "controller.render.back_katana_second_stone": {
+      "geometry": "Geometry.back_katana_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana" ]
+    },
+    "controller.render.back_katana_second_iron": {
+      "geometry": "Geometry.back_katana_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana" ]
+    },
+    "controller.render.back_katana_second_golden": {
+      "geometry": "Geometry.back_katana_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana" ]
+    },
+    "controller.render.back_katana_second_diamond": {
+      "geometry": "Geometry.back_katana_second",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana" ]
+    },
+    "controller.render.back_katana_second_netherite": {
+      "geometry": "geometry.back_katana_second",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana" ]
+    },
+    "controller.render.back_katana_first_wooden": {
+      "geometry": "Geometry.back_katana_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katana" ]
+    },
+    "controller.render.back_katana_first_stone": {
+      "geometry": "Geometry.back_katana_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katana" ]
+    },
+    "controller.render.back_katana_first_iron": {
+      "geometry": "Geometry.back_katana_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katana" ]
+    },
+    "controller.render.back_katana_first_golden": {
+      "geometry": "Geometry.back_katana_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katana" ]
+    },
+    "controller.render.back_katana_first_diamond": {
+      "geometry": "Geometry.back_katana_first",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katana" ]
+    },
+    "controller.render.back_katana_first_netherite": {
+      "geometry": "geometry.back_katana_first",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katana" ]
+    },
+    "controller.render.back_giant_mace": {
+      "geometry": "Geometry.back_giant_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.giant_mace" ]
+    },
+    "controller.render.back_mace_wooden": {
+      "geometry": "Geometry.back_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_mace" ]
+    },
+    "controller.render.back_mace_stone": {
+      "geometry": "Geometry.back_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_mace" ]
+    },
+    "controller.render.back_mace_iron": {
+      "geometry": "Geometry.back_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_mace" ]
+    },
+    "controller.render.back_mace_golden": {
+      "geometry": "Geometry.back_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_mace" ]
+    },
+    "controller.render.back_mace_diamond": {
+      "geometry": "Geometry.back_mace",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_mace" ]
+    },
+    "controller.render.back_mace_netherite": {
+      "geometry": "geometry.back_mace",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_mace" ]
+    },
+    "controller.render.back_bec_de_corbin": {
+      "geometry": "Geometry.back_bec_de_corbin",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.bec_de_corbin" ]
+    },
+    "controller.render.back_saber_wooden": {
+      "geometry": "Geometry.back_saber",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_saber" ]
+    },
+    "controller.render.back_saber_stone": {
+      "geometry": "Geometry.back_saber",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_saber" ]
+    },
+    "controller.render.back_saber_iron": {
+      "geometry": "Geometry.back_saber",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_saber" ]
+    },
+    "controller.render.back_saber_golden": {
+      "geometry": "Geometry.back_saber",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_saber" ]
+    },
+    "controller.render.back_saber_diamond": {
+      "geometry": "Geometry.back_saber",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_saber" ]
+    },
+    "controller.render.back_saber_netherite": {
+      "geometry": "geometry.back_saber",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_saber" ]
+    },
+    "controller.render.saber_scabbard": {
+      "geometry": "Geometry.saber_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_saber" ]
+    },
+    "controller.render.back_polehammer": {
+      "geometry": "Geometry.back_polehammer",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.polehammer" ]
+    },
+    "controller.render.back_katar_offhand_wooden": {
+      "geometry": "Geometry.back_katar_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katar" ]
+    },
+    "controller.render.back_katar_offhand_stone": {
+      "geometry": "Geometry.back_katar_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katar" ]
+    },
+    "controller.render.back_katar_offhand_iron": {
+      "geometry": "Geometry.back_katar_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katar" ]
+    },
+    "controller.render.back_katar_offhand_golden": {
+      "geometry": "Geometry.back_katar_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katar" ]
+    },
+    "controller.render.back_katar_offhand_diamond": {
+      "geometry": "Geometry.back_katar_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katar" ]
+    },
+    "controller.render.back_katar_offhand_netherite": {
+      "geometry": "geometry.back_katar_offhand",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katar" ]
+    },
+    "controller.render.back_katar_wooden": {
+      "geometry": "Geometry.back_katar",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_katar" ]
+    },
+    "controller.render.back_katar_stone": {
+      "geometry": "Geometry.back_katar",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_katar" ]
+    },
+    "controller.render.back_katar_iron": {
+      "geometry": "Geometry.back_katar",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_katar" ]
+    },
+    "controller.render.back_katar_golden": {
+      "geometry": "Geometry.back_katar",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_katar" ]
+    },
+    "controller.render.back_katar_diamond": {
+      "geometry": "Geometry.back_katar",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_katar" ]
+    },
+    "controller.render.back_katar_netherite": {
+      "geometry": "geometry.back_katar",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_katar" ]
+    },
+    "controller.render.medium_trail": {
+      "geometry": "Geometry.medium_trail",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.red_medium_trail" ]
+    },
+    "controller.render.katar_scabbard": {
+      "geometry": "Geometry.katar_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.red_katar_scabbard" ]
+    },
+    "controller.render.katar_offhand_scabbard": {
+      "geometry": "Geometry.katar_off_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.red_katar_scabbard" ]
+    },
+    "controller.render.back_glaive_wooden": {
+      "geometry": "Geometry.back_glaive",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_glaive" ]
+    },
+    "controller.render.back_glaive_stone": {
+      "geometry": "Geometry.back_glaive",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_glaive" ]
+    },
+    "controller.render.back_glaive_iron": {
+      "geometry": "Geometry.back_glaive",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_glaive" ]
+    },
+    "controller.render.back_glaive_golden": {
+      "geometry": "Geometry.back_glaive",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_glaive" ]
+    },
+    "controller.render.back_glaive_diamond": {
+      "geometry": "Geometry.back_glaive",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_glaive" ]
+    },
+    "controller.render.back_glaive_netherite": {
+      "geometry": "geometry.back_glaive",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_glaive" ]
+    },
+    "controller.render.back_halberd_wooden": {
+      "geometry": "Geometry.back_halberd",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_halberd" ]
+    },
+    "controller.render.back_halberd_stone": {
+      "geometry": "Geometry.back_halberd",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_halberd" ]
+    },
+    "controller.render.back_halberd_iron": {
+      "geometry": "Geometry.back_halberd",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_halberd" ]
+    },
+    "controller.render.back_halberd_golden": {
+      "geometry": "Geometry.back_halberd",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_halberd" ]
+    },
+    "controller.render.back_halberd_diamond": {
+      "geometry": "Geometry.back_halberd",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_halberd" ]
+    },
+    "controller.render.back_halberd_netherite": {
+      "geometry": "geometry.back_halberd",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_halberd" ]
+    },
+    "controller.render.back_dagger_offhand_wooden": {
+      "geometry": "Geometry.back_dagger_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_dagger" ]
+    },
+    "controller.render.back_dagger_offhand_stone": {
+      "geometry": "Geometry.back_dagger_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_dagger" ]
+    },
+    "controller.render.back_dagger_offhand_iron": {
+      "geometry": "Geometry.back_dagger_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_dagger" ]
+    },
+    "controller.render.back_dagger_offhand_golden": {
+      "geometry": "Geometry.back_dagger_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_dagger" ]
+    },
+    "controller.render.back_dagger_offhand_diamond": {
+      "geometry": "Geometry.back_dagger_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_dagger" ]
+    },
+    "controller.render.back_dagger_offhand_netherite": {
+      "geometry": "geometry.back_dagger_offhand",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_dagger" ]
+    },
+    "controller.render.back_dagger_wooden": {
+      "geometry": "Geometry.back_dagger",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_dagger" ]
+    },
+    "controller.render.back_dagger_stone": {
+      "geometry": "Geometry.back_dagger",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_dagger" ]
+    },
+    "controller.render.back_dagger_iron": {
+      "geometry": "Geometry.back_dagger",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_dagger" ]
+    },
+    "controller.render.back_dagger_golden": {
+      "geometry": "Geometry.back_dagger",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_dagger" ]
+    },
+    "controller.render.back_dagger_diamond": {
+      "geometry": "Geometry.back_dagger",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_dagger" ]
+    },
+    "controller.render.back_dagger_netherite": {
+      "geometry": "geometry.back_dagger",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_dagger" ]
+    },
+    "controller.render.dagger_scabbard": {
+      "geometry": "Geometry.dagger_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.brown_dagger_scabbard" ]
+    },
+    "controller.render.dagger_offhand_scabbard": {
+      "geometry": "Geometry.dagger_offhand_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.brown_dagger_scabbard" ]
+    },
+    "controller.render.greatsword_scabbard": {
+      "geometry": "Geometry.greatsword_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.black_greatsword_scabbard" ]
+    },
+    "controller.render.longsword_scabbard": {
+      "geometry": "Geometry.longsword_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.grey_longsword_scabbard" ]
+    },
+    "controller.render.longsword_offhand_scabbard": {
+      "geometry": "Geometry.longsword_offhand_scabbard",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.grey_longsword_scabbard" ]
+    },
+    "controller.render.back_longsword_offhand_wooden": {
+      "geometry": "Geometry.back_longsword_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_longsword" ]
+    },
+    "controller.render.back_longsword_offhand_stone": {
+      "geometry": "Geometry.back_longsword_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_longsword" ]
+    },
+    "controller.render.back_longsword_offhand_iron": {
+      "geometry": "Geometry.back_longsword_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_longsword" ]
+    },
+    "controller.render.back_longsword_offhand_golden": {
+      "geometry": "Geometry.back_longsword_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_longsword" ]
+    },
+    "controller.render.back_longsword_offhand_diamond": {
+      "geometry": "Geometry.back_longsword_offhand",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_longsword" ]
+    },
+    "controller.render.back_longsword_offhand_netherite": {
+      "geometry": "geometry.back_longsword_offhand",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_longsword" ]
+    },
+    "controller.render.back_longsword_wooden": {
+      "geometry": "Geometry.back_longsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_longsword" ]
+    },
+    "controller.render.back_longsword_stone": {
+      "geometry": "Geometry.back_longsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_longsword" ]
+    },
+    "controller.render.back_longsword_iron": {
+      "geometry": "Geometry.back_longsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_longsword" ]
+    },
+    "controller.render.back_longsword_golden": {
+      "geometry": "Geometry.back_longsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_longsword" ]
+    },
+    "controller.render.back_longsword_diamond": {
+      "geometry": "Geometry.back_longsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_longsword" ]
+    },
+    "controller.render.back_longsword_netherite": {
+      "geometry": "geometry.back_longsword",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_longsword" ]
+    },
+    "controller.render.back_greatsword_stone": {
+      "geometry": "Geometry.back_greatsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_greatsword" ]
+    },
+    "controller.render.back_greatsword_iron": {
+      "geometry": "Geometry.back_greatsword",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_greatsword" ]
+    },
+    "controller.render.back_greatsword_netherite": {
+      "geometry": "geometry.back_greatsword",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_greatsword" ]
+    },
+    "controller.render.back_lance_wooden": {
+      "geometry": "Geometry.back_lance",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_lance" ]
+    },
+    "controller.render.back_lance_stone": {
+      "geometry": "Geometry.back_lance",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_lance" ]
+    },
+    "controller.render.back_lance_iron": {
+      "geometry": "Geometry.back_lance",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_lance" ]
+    },
+    "controller.render.back_lance_golden": {
+      "geometry": "Geometry.back_lance",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_lance" ]
+    },
+    "controller.render.back_lance_diamond": {
+      "geometry": "Geometry.back_lance",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_lance" ]
+    },
+    "controller.render.back_lance_netherite": {
+      "geometry": "geometry.back_lance",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_lance" ]
+    },
+    "controller.render.back_spear_wooden": {
+      "geometry": "Geometry.back_spear",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.wooden_spear" ]
+    },
+    "controller.render.back_spear_stone": {
+      "geometry": "Geometry.back_spear",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.stone_spear" ]
+    },
+    "controller.render.back_spear_iron": {
+      "geometry": "Geometry.back_spear",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_spear" ]
+    },
+    "controller.render.back_spear_golden": {
+      "geometry": "Geometry.back_spear",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_spear" ]
+    },
+    "controller.render.back_spear_diamond": {
+      "geometry": "Geometry.back_spear",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_spear" ]
+    },
+    "controller.render.back_spear_netherite": {
+      "geometry": "geometry.back_spear",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_spear" ]
+    },
+    "controller.render.shieldback": {
+      "geometry": "Geometry.back_shield",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.shield_back" ]
+    }
+  }
+}

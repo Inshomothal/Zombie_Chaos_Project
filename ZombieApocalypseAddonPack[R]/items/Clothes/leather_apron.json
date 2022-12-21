@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:leather_apron",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "leather_apron"
+    }
+  }
+}

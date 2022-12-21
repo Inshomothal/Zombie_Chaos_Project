@@ -1,0 +1,935 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "carving_knife": {
+      "textures": "textures/items/icons/carving_knife"
+    },
+    "cleaver": {
+      "textures": "textures/items/icons/cleaver"
+    },
+    "iron_scrap": {
+      "textures": "textures/items/icons/iron_scrap"
+    },
+    "melted_copper": {
+      "textures": "textures/items/icons/melted_copper"
+    },
+    "charcoal_powder": {
+      "textures": "textures/items/icons/charcoal_powder"
+    },
+    "potassium_nitrate_powder": {
+      "textures": "textures/items/icons/potassium_nitrate_powder"
+    },
+    "pure_gunpowder": {
+      "textures": "textures/items/icons/pure_gunpowder"
+    },
+    "sulfur_powder": {
+      "textures": "textures/items/icons/sulfur_powder"
+    },
+    "empty_can": {
+      "textures": "textures/items/icons/empty_can"
+    },
+    "aspirin": {
+      "textures": "textures/items/medical/aspirin"
+    },
+    "ibuprofen": {
+      "textures": "textures/items/medical/ibuprofen"
+    },
+    "steroids": {
+      "textures": "textures/items/medical/steroids"
+    },
+    "first_aid_bag": {
+      "textures": "textures/items/medical/first_aid_bag"
+    },
+    "medical_kit": {
+      "textures": "textures/items/medical/medical_kit"
+    },
+    "glock17_magazine": {
+      "textures": "textures/items/gun_ammo/glock17_magazine"
+    },
+    "glock17_magazine_empty": {
+      "textures": "textures/items/gun_ammo/glock17_magazine_empty"
+    },
+    "glock19_magazine": {
+      "textures": "textures/items/gun_ammo/glock19_magazine"
+    },
+    "glock19_magazine_empty": {
+      "textures": "textures/items/gun_ammo/glock19_magazine_empty"
+    },
+    "baretta_92fs_magazine": {
+      "textures": "textures/items/gun_ammo/baretta_92fs_magazine"
+    },
+    "baretta_92fs_magazine_empty": {
+      "textures": "textures/items/gun_ammo/baretta_92fs_magazine_empty"
+    },
+    "mac_11_magazine": {
+      "textures": "textures/items/gun_ammo/mac_11_magazine"
+    },
+    "mac_11_magazine_empty": {
+      "textures": "textures/items/gun_ammo/mac_11_magazine_empty"
+    },
+    "micro_uzi_magazine": {
+      "textures": "textures/items/gun_ammo/micro_uzi_magazine"
+    },
+    "micro_uzi_magazine_empty": {
+      "textures": "textures/items/gun_ammo/micro_uzi_magazine_empty"
+    },
+    "scar_h_sand_magazine": {
+      "textures": "textures/items/gun_ammo/scar_h_sand_magazine"
+    },
+    "scar_h_sand_magazine_empty": {
+      "textures": "textures/items/gun_ammo/scar_h_sand_magazine_empty"
+    },
+    "scar_h_black_magazine": {
+      "textures": "textures/items/gun_ammo/scar_h_black_magazine"
+    },
+    "scar_h_black_magazine_empty": {
+      "textures": "textures/items/gun_ammo/scar_h_black_magazine_empty"
+    },
+    "m416_magazine": {
+      "textures": "textures/items/gun_ammo/scar_h_black_magazine"
+    },
+    "m416_magazine_empty": {
+      "textures": "textures/items/gun_ammo/scar_h_black_magazine_empty"
+    },
+    "dbs_shell_pack": {
+      "textures": "textures/items/gun_ammo/dbs_shell_pack"
+    },
+    "awm_magazine": {
+      "textures": "textures/items/gun_ammo/awm_magazine"
+    },
+    "awm_magazine_empty": {
+      "textures": "textures/items/gun_ammo/awm_magazine_empty"
+    },
+    "tin_of_beans": {
+      "textures": "textures/items/food/tin_of_beans"
+    },
+    "tin_of_spaghetti_hoops": {
+      "textures": "textures/items/food/tin_of_spaghetti_hoops"
+    },
+    "tin_of_tomato_soup": {
+      "textures": "textures/items/food/tin_of_tomato_soup"
+    },
+    "tin_of_chicken_soup": {
+      "textures": "textures/items/food/tin_of_chicken_soup"
+    },
+    "tin_of_vegetable_soup": {
+      "textures": "textures/items/food/tin_of_vegetable_soup"
+    },
+    "tin_of_mushroom_soup": {
+      "textures": "textures/items/food/tin_of_mushroom_soup"
+    },
+    "tin_of_oxtail_soup": {
+      "textures": "textures/items/food/tin_of_oxtail_soup"
+    },
+    "tin_of_tuna": {
+      "textures": "textures/items/food/tin_of_tuna"
+    },
+    "tin_of_custard": {
+      "textures": "textures/items/food/tin_of_custard"
+    },
+    "tin_of_beef_ravioli": {
+      "textures": "textures/items/food/tin_of_beef_ravioli"
+    },
+    "tin_of_macaroni_cheese": {
+      "textures": "textures/items/food/tin_of_macaroni_cheese"
+    },
+    "pot_noodle_chicken": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chicken"
+    },
+    "pot_noodle_chicken_water": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chicken_water"
+    },
+    "pot_noodle_chicken_hot": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chicken_hot"
+    },
+    "pot_noodle_chow_mein": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chow_mein"
+    },
+    "pot_noodle_chow_mein_water": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chow_mein_water"
+    },
+    "pot_noodle_chow_mein_hot": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_chow_mein_hot"
+    },
+    "pot_noodle_beef": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_beef"
+    },
+    "pot_noodle_beef_water": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_beef_water"
+    },
+    "pot_noodle_beef_hot": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_beef_hot"
+    },
+    "pot_noodle_curry": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_curry"
+    },
+    "pot_noodle_curry_water": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_curry_water"
+    },
+    "pot_noodle_curry_hot": {
+      "textures": "textures/items/food/pot_noodles/pot_noodle_curry_hot"
+    },
+    "chocolate_poptarts": {
+      "textures": "textures/items/food/chocolate_poptarts"
+    },
+    "chocolate_fudge_poptarts": {
+      "textures": "textures/items/food/chocolate_fudge_poptarts"
+    },
+    "strawberry_poptarts": {
+      "textures": "textures/items/food/strawberry_poptarts"
+    },
+    "cookies_n_creme_poptarts": {
+      "textures": "textures/items/food/cookies_n_creme_poptarts"
+    },
+    "rat_raw": {
+      "textures": "textures/items/food/rat_raw"
+    },
+    "rat_cooked": {
+      "textures": "textures/items/food/rat_cooked"
+    },
+    "crow_raw": {
+      "textures": "textures/items/food/crow_raw"
+    },
+    "crow_cooked": {
+      "textures": "textures/items/food/crow_cooked"
+    },
+    "red_bull": {
+      "textures": "textures/items/food/drinks/red_bull"
+    },
+    "monster": {
+      "textures": "textures/items/food/drinks/monster"
+    },
+    "coca_cola": {
+      "textures": "textures/items/food/drinks/coca_cola"
+    },
+    "cherry_coca_cola": {
+      "textures": "textures/items/food/drinks/cherry_coca_cola"
+    },
+    "pepsi": {
+      "textures": "textures/items/food/drinks/pepsi"
+    },
+    "evian": {
+      "textures": "textures/items/food/drinks/evian"
+    },
+    "bowl_of_beans": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_beans"
+    },
+    "bowl_of_beans_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_beans_hot"
+    },
+    "bowl_of_spaghetti_hoops": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_spaghetti_hoops"
+    },
+    "bowl_of_spaghetti_hoops_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_spaghetti_hoops_hot"
+    },
+    "bowl_of_mushroom_soup": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_mushroom_soup"
+    },
+    "bowl_of_mushroom_soup_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_mushroom_soup_hot"
+    },
+    "bowl_of_chicken_soup": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_chicken_soup"
+    },
+    "bowl_of_chicken_soup_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_chicken_soup_hot"
+    },
+    "bowl_of_tomato_soup": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_tomato_soup"
+    },
+    "bowl_of_tomato_soup_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_tomato_soup_hot"
+    },
+    "bowl_of_vegetable_soup": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_vegetable_soup"
+    },
+    "bowl_of_vegetable_soup_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_vegetable_soup_hot"
+    },
+    "bowl_of_tuna": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_tuna"
+    },
+    "bowl_of_tuna_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_tuna_hot"
+    },
+    "bowl_of_custard": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_custard"
+    },
+    "bowl_of_custard_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_custard_hot"
+    },
+    "bowl_of_oxtail_soup": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_oxtail_soup"
+    },
+    "bowl_of_oxtail_soup_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_oxtail_soup_hot"
+    },
+    "bowl_of_beef_ravioli": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_beef_ravioli"
+    },
+    "bowl_of_beef_ravioli_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_beef_ravioli_hot"
+    },
+    "bowl_of_macaroni_cheese": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_macaroni_cheese"
+    },
+    "bowl_of_macaroni_cheese_hot": {
+      "textures": "textures/items/food/bowls_of_food/bowl_of_macaroni_cheese_hot"
+    },
+    "lynx_africa_deodorant": {
+      "textures": "textures/items/trade_items/lynx_africa_deodorant"
+    },
+    "bar_of_dove_soap": {
+      "textures": "textures/items/trade_items/bar_of_dove_soap"
+    },
+    "colgate_toothpaste": {
+      "textures": "textures/items/trade_items/colgate_toothpaste"
+    },
+    "andrex_toiletroll": {
+      "textures": "textures/items/trade_items/andrex_toiletroll"
+    },
+    "lemon_original_source_shower_gel": {
+      "textures": "textures/items/trade_items/lemon_original_source_shower_gel"
+    },
+    "lime_original_source_shower_gel": {
+      "textures": "textures/items/trade_items/lime_original_source_shower_gel"
+    },
+    "tresemme_shampoo": {
+      "textures": "textures/items/trade_items/tresemme_shampoo"
+    },
+    "gillette_shaving_foam": {
+      "textures": "textures/items/trade_items/gillette_shaving_foam"
+    },
+    "pack_of_duracell_batteries": {
+      "textures": "textures/items/trade_items/pack_of_duracell_batteries"
+    },
+    "deck_of_cards": {
+      "textures": "textures/items/trade_items/deck_of_cards"
+    },
+    "o2_canister": {
+      "textures": "textures/items/trade_items/o2_canister"
+    },
+    "zombie_vaccine": {
+      "textures": "textures/items/vaccination/zombie_vaccine"
+    },
+    "zombie_antidote": {
+      "textures": "textures/items/vaccination/zombie_antidote"
+    },
+    "vial_of_blood": {
+      "textures": "textures/items/vaccination/vial_of_blood"
+    },
+    "empty_vial": {
+      "textures": "textures/items/vaccination/empty_vial"
+    },
+    "newspaper": {
+      "textures": "textures/items/interacting_items/newspaper"
+    },
+    "sma_gold_baby_milk": {
+      "textures": "textures/items/interacting_items/sma_gold_baby_milk"
+    },
+    "sma_pro_infant_milk": {
+      "textures": "textures/items/interacting_items/sma_pro_infant_milk"
+    },
+    "digiorno_pizza": {
+      "textures": "textures/items/interacting_items/digiorno_pizza"
+    },
+    "toblerone": {
+      "textures": "textures/items/interacting_items/toblerone"
+    },
+    "true_zombie": {
+      "textures": "textures/items/icons/true_zombie_spawn_egg"
+    },
+    "true_npc": {
+      "textures": "textures/items/icons/true_npc_spawn_egg"
+    },
+    "savage": {
+      "textures": "textures/items/icons/savage_spawn_egg"
+    },
+    "newspaper_stand_empty": {
+      "textures": "textures/items/icons/newspaper_stand_empty_spawn_egg"
+    },
+    "sentry_gun_legs": {
+      "textures": "textures/items/guns/sentry_gun_legs"
+    },
+    "sentry_gun_barrel": {
+      "textures": "textures/items/guns/sentry_gun_barrel"
+    },
+    "sentry_gun_turret": {
+      "textures": "textures/items/guns/sentry_gun_turret"
+    },
+    "sentry_gun_sensor": {
+      "textures": "textures/items/guns/sentry_gun_sensor"
+    },
+    "sentry_gun_bullet_case": {
+      "textures": "textures/items/guns/sentry_gun_bullet_case"
+    },
+    "glock17": {
+      "textures": "textures/items/guns/glock17"
+    },
+    "glock19": {
+      "textures": "textures/items/guns/glock19"
+    },
+    "baretta_92fs": {
+      "textures": "textures/items/guns/baretta_92fs"
+    },
+    "mac_11": {
+      "textures": "textures/items/guns/mac_11"
+    },
+    "micro_uzi": {
+      "textures": "textures/items/guns/micro_uzi"
+    },
+    "micro_uzi_suppressor": {
+      "textures": "textures/items/guns/micro_uzi_suppressor"
+    },
+    "scar_h_sand": {
+      "textures": "textures/items/guns/scar_h_sand"
+    },
+    "scar_h_black": {
+      "textures": "textures/items/guns/scar_h_black"
+    },
+    "m416": {
+      "textures": "textures/items/guns/m416"
+    },
+    "rpg_26": {
+      "textures": "textures/items/guns/rpg_26"
+    },
+    "dbs": {
+      "textures": "textures/items/guns/dbs"
+    },
+    "flamethrower": {
+      "textures": "textures/items/guns/flamethrower"
+    },
+    "awm": {
+      "textures": "textures/items/guns/awm"
+    },
+    "flare_gun": {
+      "textures": "textures/items/guns/flare_gun"
+    },
+    "sentry_gun": {
+      "textures": "textures/items/guns/sentry_gun_spawn_egg"
+    },
+    "pistol": {
+      "textures": "textures/items/guns/pistol"
+    },
+    "metal_bat": {
+      "textures": "textures/items/melee/metal_bat"
+    },
+    "black_metal_bat": {
+      "textures": "textures/items/melee/black_metal_bat"
+    },
+    "wooden_bat": {
+      "textures": "textures/items/melee/wooden_bat"
+    },
+    "lucille_bat": {
+      "textures": "textures/items/melee/lucille_bat"
+    },
+    "crowbar": {
+      "textures": "textures/items/melee/crowbar"
+    },
+    "sledge_hammer": {
+      "textures": "textures/items/melee/sledge_hammer"
+    },
+    "combat_knife": {
+      "textures": "textures/items/melee/combat_knife"
+    },
+    "saucepan": {
+      "textures": "textures/items/melee/saucepan"
+    },
+    "knuckle_duster": {
+      "textures": "textures/items/melee/knuckle_duster"
+    },
+    "katana_red": {
+      "textures": "textures/items/katanas/katana_red"
+    },
+    "katana_green": {
+      "textures": "textures/items/katanas/katana_green"
+    },
+    "katana_blue": {
+      "textures": "textures/items/katanas/katana_blue"
+    },
+    "katana_pink": {
+      "textures": "textures/items/katanas/katana_pink"
+    },
+    "katana_black": {
+      "textures": "textures/items/katanas/katana_black"
+    },
+    "backpack": {
+      "textures": "textures/items/backpacks/backpack"
+    },
+    "vortex_mixer": {
+      "textures": "textures/items/machines/vortex_mixer_spawn_egg"
+    },
+    "bicycle_green": {
+      "textures": "textures/items/vehicles/bicycle_green_spawn_egg"
+    },
+    "bicycle_yellow": {
+      "textures": "textures/items/vehicles/bicycle_yellow_spawn_egg"
+    },
+    "bicycle_blue": {
+      "textures": "textures/items/vehicles/bicycle_blue_spawn_egg"
+    },
+    "grenade": {
+      "textures": "textures/items/handheld/grenade"
+    },
+    "smoke_grenade": {
+      "textures": "textures/items/handheld/smoke_grenade"
+    },
+    "proximity_mine": {
+      "textures": "textures/items/handheld/proximity_mine"
+    },
+    "stone_in_hand": {
+      "textures": "textures/items/handheld/stone_in_hand"
+    },
+    "smoke_bomb": {
+      "textures": "textures/items/handheld/smoke_bomb"
+    },
+    "flash_light": {
+      "textures": "textures/items/handheld/flash_light"
+    },
+    "flashbang": {
+      "textures": "textures/items/handheld/flashbang"
+    },
+    "leather_apron": {
+      "textures": "textures/items/clothes/leather_apron"
+    },
+    "blue_dungarees": {
+      "textures": "textures/items/clothes/blue_dungarees"
+    },
+    "police_uniform": {
+      "textures": "textures/items/clothes/police_uniform"
+    },
+    "blue_waistcoat": {
+      "textures": "textures/items/clothes/blue_waistcoat"
+    },
+    "red_tweed_jacket": {
+      "textures": "textures/items/clothes/red_tweed_jacket"
+    },
+    "brown_leather_coat": {
+      "textures": "textures/items/clothes/brown_leather_coat"
+    },
+    "white_tshirt": {
+      "textures": "textures/items/clothes/white_tshirt"
+    },
+    "blue_hoodie": {
+      "textures": "textures/items/clothes/blue_hoodie"
+    },
+    "lab_coat": {
+      "textures": "textures/items/clothes/lab_coat"
+    },
+    "zombie_heart": {
+      "textures": "textures/items/icons/zombie_heart"
+    },
+    "tactical_body_armour": {
+      "textures": "textures/items/armor/tactical_body_armour"
+    },
+    "water_lung": {
+      "textures": "textures/items/armor/water_lung"
+    },
+    "bicycle_wheel": {
+      "textures": "textures/items/bicycle_parts/bicycle_wheel"
+    },
+    "bicycle_frame_green": {
+      "textures": "textures/items/bicycle_parts/bicycle_frame_green"
+    },
+    "bicycle_frame_blue": {
+      "textures": "textures/items/bicycle_parts/bicycle_frame_blue"
+    },
+    "bicycle_frame_yellow": {
+      "textures": "textures/items/bicycle_parts/bicycle_frame_yellow"
+    },
+    "bicycle_handle_bars_green": {
+      "textures": "textures/items/bicycle_parts/bicycle_handle_bars_green"
+    },
+    "bicycle_handle_bars_blue": {
+      "textures": "textures/items/bicycle_parts/bicycle_handle_bars_blue"
+    },
+    "bicycle_handle_bars_yellow": {
+      "textures": "textures/items/bicycle_parts/bicycle_handle_bars_yellow"
+    },
+
+    //3D Combat Addon
+    "katana_handle": {
+      "textures": "textures/items/katana_handle.png"
+    },
+    "repair_item": {
+      "textures": "textures/items/repair_item.png"
+    },
+    "bec_de_corbin": {
+      "textures": "textures/items/bec_de_corbin.png"
+    },
+    "zweihander": {
+      "textures": "textures/items/zweihander.png"
+    },
+    "giant_mace": {
+      "textures": "textures/items/giant_mace.png"
+    },
+    "flanged_mace": {
+      "textures": "textures/items/flanged_mace.png"
+    },
+    "gungnir_scroll": {
+      "textures": "textures/items/gungnir_scroll.png"
+    },
+    "master_parrying_scroll": {
+      "textures": "textures/items/master_parrying_scroll.png"
+    },
+    "knockout_scroll": {
+      "textures": "textures/items/knock_out_scroll.png"
+    },
+    "friction_strike_scroll": {
+      "textures": "textures/items/friction_strike_scroll.png"
+    },
+    "exhaust_ten_scroll": {
+      "textures": "textures/items/exhaust_ten_scroll.png"
+    },
+    "ground_slash_scroll": {
+      "textures": "textures/items/ground_slice_scroll.png"
+    },
+    "triple_slashes_scroll": {
+      "textures": "textures/items/triple_slashes_scroll.png"
+    },
+    "head_splitter_scroll": {
+      "textures": "textures/items/head_splitter_scroll.png"
+    },
+    "invisibility_dagger_scroll": {
+      "textures": "textures/items/invisible_dagger_scroll.png"
+    },
+    "poison_dagger_scroll": {
+      "textures": "textures/items/poison_dagger_scroll.png"
+    },
+    "fatal_dagger_scroll": {
+      "textures": "textures/items/fatal_dagger_scroll.png"
+    },
+    "iron_lung_scroll": {
+      "textures": "textures/items/iron_lung_scroll.png"
+    },
+    "diamond_lung_scroll": {
+      "textures": "textures/items/diamond_lung_scroll.png"
+    },
+    "higher_mind_scroll": {
+      "textures": "textures/items/higher_mind_scroll.png"
+    },
+    "roll_scroll": {
+      "textures": "textures/items/roll_scroll.png"
+    },
+    "spear_style2_scroll": {
+      "textures": "textures/items/spear_style2_scroll.png"
+    },
+    "pre_iron_odachi_blade": {
+      "textures": "textures/items/pre_iron_odachi_blade.png"
+    },
+    "pre_diamond_katana_blade": {
+      "textures": "textures/items/pre_diamond_katana_blade.png"
+    },
+    "pre_iron_katana_blade": {
+      "textures": "textures/items/pre_iron_katana_blade.png"
+    },
+    "pre_golden_katana_blade": {
+      "textures": "textures/items/pre_golden_katana_blade.png"
+    },
+    "pre_diamond_wakizashi_blade": {
+      "textures": "textures/items/pre_diamond_wakizashi_blade.png"
+    },
+    "pre_iron_wakizashi_blade": {
+      "textures": "textures/items/pre_iron_wakizashi_blade.png"
+    },
+    "pre_golden_wakizashi_blade": {
+      "textures": "textures/items/pre_golden_wakizashi_blade.png"
+    },
+    "normal_tsuka": {
+      "textures": "textures/items/normal_tsuka.png"
+    },
+    "normal_tsuba": {
+      "textures": "textures/items/normal_tsuba.png"
+    },
+    "hexagon_tsuba": {
+      "textures": "textures/items/haxagon_tsuba.png"
+    },
+    "round_tsuba": {
+      "textures": "textures/items/round_tsuba.png"
+    },
+    "oval_tsuba": {
+      "textures": "textures/items/oval_tsuba.png"
+    },
+    "iron_odachi": {
+      "textures": "textures/items/iron_odachi.png"
+    },
+    "iron_odachi_blade": {
+      "textures": "textures/items/iron_odachi_blade.png"
+    },
+    "diamond_katana_blade": {
+      "textures": "textures/items/diamond_katana_blade.png"
+    },
+    "iron_katana_blade": {
+      "textures": "textures/items/iron_katana_blade.png"
+    },
+    "golden_katana_blade": {
+      "textures": "textures/items/golden_katana_blade.png"
+    },
+    "stone_katana_blade": {
+      "textures": "textures/items/stone_katana_blade.png"
+    },
+    "wooden_katana_blade": {
+      "textures": "textures/items/wooden_katana_blade.png"
+    },
+    "diamond_wakizashi_blade": {
+      "textures": "textures/items/diamond_wakizashi_blade.png"
+    },
+    "iron_wakizashi_blade": {
+      "textures": "textures/items/iron_wakizashi_blade.png"
+    },
+    "golden_wakizashi_blade": {
+      "textures": "textures/items/golden_wakizashi_blade.png"
+    },
+    "stone_wakizashi_blade": {
+      "textures": "textures/items/stone_wakizashi_blade.png"
+    },
+    "wooden_wakizashi_blade": {
+      "textures": "textures/items/wooden_wakizashi_blade.png"
+    },
+    "netherite_wakizashi": {
+      "textures": "textures/items/netherite_wakizashi.png"
+    },
+    "diamond_wakizashi": {
+      "textures": "textures/items/diamond_wakizashi.png"
+    },
+    "iron_wakizashi": {
+      "textures": "textures/items/iron_wakizashi.png"
+    },
+    "golden_wakizashi": {
+      "textures": "textures/items/golden_wakizashi.png"
+    },
+    "stone_wakizashi": {
+      "textures": "textures/items/stone_wakizashi.png"
+    },
+    "wooden_wakizashi": {
+      "textures": "textures/items/wooden_wakizashi.png"
+    },
+    "longbow": {
+      "textures": "textures/items/longbow.png"
+    },
+    "pole_hammer": {
+      "textures": "textures/items/pole_hammer.png"
+    },
+    "stone_greatsword": {
+      "textures": "textures/items/stone_greatsword.png"
+    },
+    "iron_greatsword": {
+      "textures": "textures/items/iron_greatsword.png"
+    },
+    "netherite_greatsword": {
+      "textures": "textures/items/netherite_greatsword.png"
+    },
+    "netherite_katar": {
+      "textures": "textures/items/netherite_katar.png"
+    },
+    "netherite_rapier": {
+      "textures": "textures/items/netherite_rapier.png"
+    },
+    "netherite_saber": {
+      "textures": "textures/items/netherite_saber.png"
+    },
+    "netherite_lance": {
+      "textures": "textures/items/netherite_lance.png"
+    },
+    "netherite_mace": {
+      "textures": "textures/items/netherite_mace.png"
+    },
+    "netherite_glaive": {
+      "textures": "textures/items/netherite_glaive.png"
+    },
+    "netherite_halberd": {
+      "textures": "textures/items/netherite_halberd.png"
+    },
+    "netherite_spear": {
+      "textures": "textures/items/netherite_spear.png"
+    },
+    "netherite_longsword": {
+      "textures": "textures/items/netherite_longsword.png"
+    },
+    "netherite_hammer": {
+      "textures": "textures/items/netherite_hammer.png"
+    },
+    "netherite_dagger": {
+      "textures": "textures/items/netherite_dagger.png"
+    },
+    "netherite_katana": {
+      "textures": "textures/items/netherite_katana.png"
+    },
+    "diamond_katar": {
+      "textures": "textures/items/diamond_katar.png"
+    },
+    "diamond_rapier": {
+      "textures": "textures/items/diamond_rapier.png"
+    },
+    "diamond_saber": {
+      "textures": "textures/items/diamond_saber.png"
+    },
+    "diamond_mace": {
+      "textures": "textures/items/diamond_mace.png"
+    },
+    "diamond_glaive": {
+      "textures": "textures/items/diamond_glaive.png"
+    },
+    "diamond_halberd": {
+      "textures": "textures/items/diamond_halberd.png"
+    },
+    "diamond_lance": {
+      "textures": "textures/items/diamond_lance.png"
+    },
+    "diamond_spear": {
+      "textures": "textures/items/diamond_spear.png"
+    },
+    "diamond_longsword": {
+      "textures": "textures/items/diamond_longsword.png"
+    },
+    "diamond_hammer": {
+      "textures": "textures/items/diamond_hammer.png"
+    },
+    "diamond_dagger": {
+      "textures": "textures/items/diamond_dagger.png"
+    },
+    "diamond_katana": {
+      "textures": "textures/items/diamond_katana.png"
+    },
+    "golden_rapier": {
+      "textures": "textures/items/golden_rapier.png"
+    },
+    "golden_katar": {
+      "textures": "textures/items/golden_katar.png"
+    },
+    "golden_saber": {
+      "textures": "textures/items/golden_saber.png"
+    },
+    "golden_mace": {
+      "textures": "textures/items/golden_mace.png"
+    },
+    "golden_glaive": {
+      "textures": "textures/items/golden_glaive.png"
+    },
+    "golden_halberd": {
+      "textures": "textures/items/golden_halberd.png"
+    },
+    "golden_longsword": {
+      "textures": "textures/items/golden_longsword.png"
+    },
+    "golden_lance": {
+      "textures": "textures/items/golden_lance.png"
+    },
+    "golden_spear": {
+      "textures": "textures/items/golden_spear.png"
+    },
+    "golden_hammer": {
+      "textures": "textures/items/golden_hammer.png"
+    },
+    "golden_dagger": {
+      "textures": "textures/items/golden_dagger.png"
+    },
+    "golden_katana": {
+      "textures": "textures/items/golden_katana.png"
+    },
+    "iron_rapier": {
+      "textures": "textures/items/iron_rapier.png"
+    },
+    "iron_katar": {
+      "textures": "textures/items/iron_katar.png"
+    },
+    "iron_saber": {
+      "textures": "textures/items/iron_saber.png"
+    },
+    "iron_mace": {
+      "textures": "textures/items/iron_mace.png"
+    },
+    "iron_glaive": {
+      "textures": "textures/items/iron_glaive.png"
+    },
+    "iron_halberd": {
+      "textures": "textures/items/iron_halberd.png"
+    },
+    "iron_longsword": {
+      "textures": "textures/items/iron_longsword.png"
+    },
+    "iron_lance": {
+      "textures": "textures/items/iron_lance.png"
+    },
+    "iron_spear": {
+      "textures": "textures/items/iron_spear.png"
+    },
+    "iron_hammer": {
+      "textures": "textures/items/iron_hammer.png"
+    },
+    "iron_dagger": {
+      "textures": "textures/items/iron_dagger.png"
+    },
+    "iron_katana": {
+      "textures": "textures/items/iron_katana.png"
+    },
+    "stone_katar": {
+      "textures": "textures/items/stone_katar.png"
+    },
+    "stone_saber": {
+      "textures": "textures/items/stone_saber.png"
+    },
+    "stone_mace": {
+      "textures": "textures/items/stone_mace.png"
+    },
+    "stone_glaive": {
+      "textures": "textures/items/stone_glaive.png"
+    },
+    "stone_halberd": {
+      "textures": "textures/items/stone_halberd.png"
+    },
+    "stone_longsword": {
+      "textures": "textures/items/stone_longsword.png"
+    },
+    "stone_lance": {
+      "textures": "textures/items/stone_lance.png"
+    },
+    "stone_spear": {
+      "textures": "textures/items/stone_spear.png"
+    },
+    "stone_hammer": {
+      "textures": "textures/items/stone_hammer.png"
+    },
+    "stone_dagger": {
+      "textures": "textures/items/stone_dagger.png"
+    },
+    "stone_katana": {
+      "textures": "textures/items/stone_katana.png"
+    },
+    "wooden_katar": {
+      "textures": "textures/items/wooden_katar.png"
+    },
+    "wooden_saber": {
+      "textures": "textures/items/wooden_saber.png"
+    },
+    "wooden_mace": {
+      "textures": "textures/items/wooden_mace.png"
+    },
+    "wooden_glaive": {
+      "textures": "textures/items/wooden_glaive.png"
+    },
+    "wooden_halberd": {
+      "textures": "textures/items/wooden_halberd.png"
+    },
+    "wooden_longsword": {
+      "textures": "textures/items/wooden_longsword.png"
+    },
+    "wooden_lance": {
+      "textures": "textures/items/wooden_lance.png"
+    },
+    "wooden_spear": {
+      "textures": "textures/items/wooden_spear.png"
+    },
+    "wooden_hammer": {
+      "textures": "textures/items/wooden_hammer.png"
+    },
+    "wooden_dagger": {
+      "textures": "textures/items/wooden_dagger.png"
+    },
+    "wooden_katana": {
+      "textures": "textures/items/wooden_katana.png"
+    }
+  }
+}

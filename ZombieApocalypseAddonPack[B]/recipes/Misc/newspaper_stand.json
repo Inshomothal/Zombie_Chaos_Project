@@ -1,0 +1,26 @@
+{
+   "format_version":"1.12",
+   "minecraft:recipe_shaped":{
+      "description":{
+         "identifier":"true:newspaper_stand_empty"
+      },
+      "tags":[
+         "crafting_table"
+      ],
+      "pattern":[
+         "# #",
+         "###",
+         "# #"
+      ],
+      "key":{
+         "#":{
+            "item":"minecraft:planks",
+            "data":1
+         }
+      },
+      "result":{
+         "item":"true:newspaper_stand_empty_spawn_egg",
+         "count":1
+      }
+   }
+}

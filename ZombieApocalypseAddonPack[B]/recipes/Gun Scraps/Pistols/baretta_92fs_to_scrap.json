@@ -1,0 +1,20 @@
+{
+    "format_version":"1.12",
+    "minecraft:recipe_shapeless":{
+        "description":{
+            "identifier":"true:baretta_92fs_to_scrap"
+        },
+        "tags":[
+            "crafting_table"
+        ],
+        "ingredients":[
+            {
+                "item":"true:baretta_92fs"
+            }
+        ],
+        "result":{
+            "item":"minecraft:iron_ingot",
+            "count":1
+        }
+    }
+}

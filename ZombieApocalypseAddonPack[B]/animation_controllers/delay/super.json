@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.lance_hold": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "lance": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_lance') && query.scoreboard('pcharge') > 0"
+            }
+          ]
+        },
+        "lance": {
+          "transitions": [
+            {
+              "slash": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_lance')"
+            },
+            {
+              "slash": "query.scoreboard('pcharge') == 0"
+            }
+          ]
+        },
+        "slash": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/playanimation @s default default",
+            "/scoreboard players set @s pcharge 0",
+            "/tag @s remove pcharge",
+            "/execute as @s run kill @e[type=pixel:lance_charge,r=2]"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:diamond_spear"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  x",
+      " # ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "x": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "pixel:diamond_spear"
+    }
+  }
+}

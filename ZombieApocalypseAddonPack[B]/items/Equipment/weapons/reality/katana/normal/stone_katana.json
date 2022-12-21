@@ -1,0 +1,305 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:stone_katana",
+      "category":"Equipment"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "stone_katana"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "tag:minecraft:is_katana":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:stone_katana.name"
+	  },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 196,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:cobblestone" ],
+            "repair_amount": 20
+          },
+          {
+            "items": [ "pixel:repair_item" ],
+            "repair_amount": 250
+          },
+          {
+            "items": [ "pixel:stone_katana" ],
+            "repair_amount": "query.max_durability"
+          }
+        ]
+      },
+      "minecraft:mining_speed": 3,
+      "minecraft:damage": 6,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 15,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 10,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          }
+        ],
+		"on_dig": {
+		  "event": "minecraft:break",
+		  "target": "self"
+		}
+      },
+	  "minecraft:cooldown": {
+		"category": "katana",
+		"duration": 2
+	  },
+	  "minecraft:weapon": {
+		"on_hurt_entity": {
+		  "event": "minecraft:break"
+		}
+	  },
+      "minecraft:on_use":{
+        "on_use":{
+          "event": "shoot"    
+        }
+      }
+	},
+	"events": {
+      "shoot": {
+		"sequence": [
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('ktnablt') == 0 && query.scoreboard('ktnmstr') >= 0 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 10",
+	               "playanimation @s animation.katana.ability_iaido2 default",
+	               "tag @s add onegai"
+	          ]
+	        },
+			"shoot": {
+		      "projectile": "pixel:slash_crescent",
+		   	  "launch_power": 1.5
+		    },
+		     "damage": {
+		       "type": "durability",
+		       "amount": 1
+		    }
+		  }
+		] 
+	  },
+	  "minecraft:break": {
+	    "sequence":[
+		  {
+		    "condition": "query.scoreboard('ktnmstr') >= 0 && query.scoreboard('ktnmstr') < 50",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 5,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('ktnmstr') >= 50 && query.scoreboard('ktnmstr') < 100",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 6,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('ktnmstr') >= 100 && query.scoreboard('ktnmstr') < 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+		  {
+		    "condition": "query.scoreboard('ktnmstr') >= 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },  
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 2
+			        }
+	              }
+	            ]
+	          }
+		    ]
+		  },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+	            "weight": 20,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 0
+	            }
+	          },
+	          {
+	            "weight": 5,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 2
+	            }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 15,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add ktnmstr dummy"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 20,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add ktnmstr dummy",
+	                "scoreboard players add @s ktnmstr 1"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 10,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add ktnmstr dummy",
+	                "scoreboard players add @s ktnmstr 2"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 2,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add ktnmstr dummy",
+	                "scoreboard players add @s ktnmstr 5"
+	              ]
+	            }
+	          }
+	        ]
+	      }
+	    ]
+	  }
+    }
+  }
+}

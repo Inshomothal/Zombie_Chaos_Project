@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_rapier"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  H",
+      "HX ",
+      "#H "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      },
+      "H": {
+        "item": "minecraft:iron_nugget"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_rapier"
+    }
+  }
+}

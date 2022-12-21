@@ -1,0 +1,627 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:iron_odachi_vltsb",
+      "category":"Equipment"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "iron_odachi"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "tag:minecraft:is_odachi":{},
+	  "minecraft:allow_off_hand": true,
+	  "minecraft:display_name": {
+		"value": "item.pixel:iron_odachi_vltsb.name"
+	  },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 40,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:food": {
+        "can_always_eat": true
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:iron_ingot" ],
+            "repair_amount": "query.max_durability * 0.25"
+          },
+          {
+            "items": [ "minecraft:iron_sword" ],
+            "repair_amount": "query.max_durability"
+          },
+          {
+            "items": [ "pixel:iron_odachi_vltsb" ],
+            "repair_amount": "query.max_durability"
+          }
+        ]
+      },
+      "minecraft:mining_speed": 3,
+      "minecraft:damage": 12,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 15,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 10,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          }
+        ],
+		"on_dig": {
+		  "event": "minecraft:break",
+		  "target": "self"
+		}
+      },
+	  "minecraft:cooldown": {
+		"category": "odachi",
+		"duration": 3
+	  },
+	  "minecraft:weapon": {
+		"on_hurt_entity": {
+		  "event": "minecraft:break"
+		}
+	  },
+      "minecraft:on_use": {
+		"on_use": {
+		  "event": "shoot",
+		  "target": "self"
+		}
+	  }
+	},
+	"events": {
+      "shoot": {
+		"sequence": [
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 5 && query.scoreboard('dchablt') == 0 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 5",
+	            "playanimation @s animation.katana.attack_odachi_crescent_strike_no_extra default",
+	            "tag @s add onegai"
+	          ]
+	        },
+			"shoot": {
+		      "projectile": "pixel:slash_crescent",
+		   	  "launch_power": 1.5
+		    },
+		     "damage": {
+		       "type": "durability",
+		       "amount": 1
+		    }
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('dchablt') == 1 && !query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 10",
+	            "tag @s add slasher",
+	            "summon pixel:ground_slash ^^^1.5 splode",
+	            "playanimation @s animation.greatsword.ability_ground_slash2 default"
+	          ]
+	        },
+		    "damage": {
+		      "type": "durability",
+		      "amount": 1
+		    }
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.scoreboard('dchablt') == 2 && !query.is_sneaking",
+		   "sequence": [
+		     {
+	           "run_command":{
+	             "command":[
+	               "scoreboard players remove @s exhaust 10",
+	               "playanimation @s animation.katana.attack_odachi_crescent_strike_no_extra default",
+	               "tag @s add onegai"
+	             ]
+	           },
+		       "damage": {
+		         "type": "durability",
+		         "amount": 1
+		       }
+		     },
+		     {
+	     	   "shoot": {
+		         "projectile": "pixel:slash_crescent",
+		      	 "launch_power": 1.5
+		       }
+		     },
+		     {
+		   	   "shoot": {
+		         "projectile": "pixel:slash_crescent_random",
+		   	     "launch_power": 1.0
+		       }
+		     },
+		     {
+		   	   "shoot": {
+		         "projectile": "pixel:slash_crescent_random",
+		   	     "launch_power": 0.5
+		       }
+		     }
+		   ]
+		  },
+		  {
+		   "condition": "query.scoreboard('exhaust') >= 10 && query.is_sneaking",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players remove @s exhaust 10",
+	            "scoreboard objectives add odachi_combo dummy",
+	            "scoreboard players set @s odachi_combo 2",
+	            "playanimation @s animation.katana.odachi_uinsheath default"
+	          ]
+	        },
+		     "damage": {
+		       "type": "durability",
+		       "amount": 1
+		    }
+		  }
+		] 
+	  },
+	  "minecraft:break": {
+	    "sequence":[
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 0 && query.scoreboard('hvymstr') < 50",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 40",
+	                "effect @s weakness 2 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+		        "condition": "query.scoreboard('odachi_combo') == 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 10,
+                      "amplifier": 5
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+ 	          {
+		        "condition": "query.scoreboard('odachi_combo') == 1",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 20,
+                      "amplifier": 1
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 0"
+	                  ]
+	                }
+	              } 
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 5,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 50 && query.scoreboard('hvymstr') < 100",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 40",
+	                "effect @s weakness 2 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+		        "condition": "query.scoreboard('odachi_combo') == 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 11,
+                      "amplifier": 5
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+ 	          {
+		        "condition": "query.scoreboard('odachi_combo') == 1",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 22,
+                      "amplifier": 1
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 0"
+	                  ]
+	                }
+	              } 
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 6,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 100 && query.scoreboard('hvymstr') < 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy",
+	                "scoreboard players set @s katana_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+		        "condition": "query.scoreboard('odachi_combo') == 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 13,
+                      "amplifier": 5
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+ 	          {
+		        "condition": "query.scoreboard('odachi_combo') == 1",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 25,
+                      "amplifier": 1
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 0"
+	                  ]
+	                }
+	              } 
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 1
+			        }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add katana_cd dummy"
+	              ]
+	            },
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+		        "condition": "query.scoreboard('odachi_combo') == 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 15,
+                      "amplifier": 5
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+ 	          {
+		        "condition": "query.scoreboard('odachi_combo') == 1",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "slowness",
+                      "target": "other",
+                      "duration": 27,
+                      "amplifier": 1
+			        }
+	              },
+	              {
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players set @s odachi_combo 0"
+	                  ]
+	                }
+	              } 
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('katana_cd') < 2",
+	            "sequence":[
+	              {
+		            "add_mob_effect": {
+                      "effect": "wither",
+                      "target": "other",
+                      "duration": 7,
+                      "amplifier": 2
+			        }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('frctnstrk') > 0",
+		    "sequence":[
+	          {
+		        "damage": {
+		          "type": "fire_tick",
+		          "amount": 3,
+		          "target": "other"
+	            }
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') != 1 && query.scoreboard('dmndlng') != 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 3"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 0"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('dmndlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 0"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+	            "weight": 20,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 0
+	            }
+	          },
+	          {
+	            "weight": 5,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 2
+	            }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 15,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 20,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 1"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 10,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 2"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 2,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 5"
+	              ]
+	            }
+	          }
+	        ]
+	      }
+	    ]
+	  }
+    }
+  }
+}

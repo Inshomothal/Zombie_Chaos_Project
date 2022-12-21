@@ -1,0 +1,1154 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:wooden_longsword",
+      "category":"Equipment"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "wooden_longsword"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "tag:minecraft:is_longsword":{},
+	  "minecraft:allow_off_hand": true,
+	  "minecraft:display_name": {
+		"value": "item.pixel:wooden_longsword.name"
+	  },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 97,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:planks" ],
+            "repair_amount": 20
+          },
+          {
+            "items": [ "pixel:repair_item" ],
+            "repair_amount": 250
+          },
+          {
+            "items": [ "pixel:wooden_longsword" ],
+            "repair_amount": "query.max_durability"
+          }
+        ]
+      },
+      "minecraft:mining_speed": 1.5,
+      "minecraft:damage": 5,
+      "minecraft:enchantable": {
+        "value": 12,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 15,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 10,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          }
+        ],
+		"on_dig": {
+		  "event": "minecraft:break",
+		  "target": "self"
+		}
+      },
+	  "minecraft:cooldown": {
+		"category": "longsword",
+		"duration": 2
+	  },
+	  "minecraft:weapon": {
+		"on_hurt_entity": {
+		  "event": "minecraft:break"
+		}
+	  },
+      "minecraft:on_use":{
+        "on_use":{
+          "event": "ability"    
+        }
+      }
+    },
+	"events": {
+	  "ability": {
+	    "sequence":[
+	      {
+		   "condition": "!query.is_sneaking && !query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_longsword') && query.get_equipped_item_name !='shield' && query.scoreboard('ls_cd') < 2 && query.scoreboard('exhaust') >= 9",
+	        "run_command":{
+	          "command":[
+	            "scoreboard objectives add ls_cd dummy",
+	            "scoreboard players set @s ls_cd 40",
+	            "scoreboard players remove @s exhaust 9",
+	            "playanimation @s animation.longsword.ability_slash default",
+	            "tag @s add hevh",
+                "summon pixel:heavy_hit ^^^1.5 iron_longsword"
+	          ]
+	        },
+		    "damage": {
+		      "type": "durability",
+		      "amount": 2
+	        }
+	      },
+	      {
+		   "condition": "!query.is_sneaking && !query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_longsword') && query.get_equipped_item_name =='shield' && query.scoreboard('ls_cd') < 2 && query.scoreboard('exhaust') >= 8",
+	        "run_command":{
+	          "command":[
+	            "scoreboard players set @s ls_cd 80", 
+	            "effect @s swiftness 10 2",
+	            "scoreboard players remove @s exhaust 8",
+	            "scoreboard players remove @s exhaust 20",
+	            "tag @s add pcharge",
+	            "playanimation @s animation.longsword.shield_bash default"
+	          ]
+	        },
+		    "shoot": {
+		      "projectile": "pixel:heavy_hit",
+		   	  "launch_power": 0.1
+		    }
+	      },
+	      {
+		   "condition": "!query.is_sneaking && query.equipped_item_any_tag('slot.weapon.offhand','minecraft:is_longsword') && query.get_equipped_item_name !='shield' && query.scoreboard('ls_cd') < 2 && query.scoreboard('exhaust') >= 6",
+	        "run_command":{
+	          "command":[
+	            "scoreboard objectives add ls_cd dummy",
+	            "scoreboard players set @s ls_cd 40",
+	            "scoreboard players remove @s exhaust 6",
+	            "playanimation @s animation.longsword.ability_slash default",
+	            "tag @s add hevh",
+                "summon pixel:heavy_hit ^^^1.5 dual_iron_longsword"
+	          ]
+	        },
+		    "damage": {
+		      "type": "durability",
+		      "amount": 1
+	        }
+	      }
+	    ]
+	  },
+	  "minecraft:break": {
+	    "sequence":[
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 0 && query.scoreboard('hvymstr') < 100",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	            "scoreboard objectives add ls_cd dummy",
+	            "scoreboard players set @s ls_cd 40"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('exhaust') >= 3",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 4,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+		                "execute @s ~ ~ ~ tp @s ^ ^ ^2 true",
+	                    "scoreboard players remove @s exhaust 3"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "!query.is_on_ground && query.scoreboard('exhaust') >= 7",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 7,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 7"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 5 && query.mark_variant == 0",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 5",
+	                    "event entity @s combo_1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 1,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 4,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 5,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 6,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 4,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 7,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 6,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 100 && query.scoreboard('hvymstr') < 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	            "scoreboard objectives add ls_cd dummy",
+	            "scoreboard players set @s ls_cd 20"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('exhaust') >= 3",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 5,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+		                "execute @s ~ ~ ~ tp @s ^ ^ ^2 true",
+	                    "scoreboard players remove @s exhaust 3"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "!query.is_on_ground && query.scoreboard('exhaust') >= 7",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 8,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 7"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 5 && query.mark_variant == 0",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 4,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 5",
+	                    "event entity @s combo_1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 1,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 5,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 6,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 7,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 5,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 8,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 7,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	            "scoreboard objectives add ls_cd dummy",
+	            "scoreboard players set @s ls_cd 0"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('exhaust') >= 3",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 7,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+		                "execute @s ~ ~ ~ tp @s ^ ^ ^2 true",
+	                    "scoreboard players remove @s exhaust 3"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "!query.is_on_ground && query.scoreboard('exhaust') >= 7",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 10,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 7"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 5 && query.mark_variant == 0",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 6,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 5",
+	                    "event entity @s combo_1"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 2,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 1 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 3,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 3",
+	                    "event entity @s combo_2"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'wooden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 4,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'stone_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 5,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'iron_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 8,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'golden_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 6,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'diamond_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 9,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.scoreboard('exhaust') >= 3 && query.mark_variant == 2 && query.get_equipped_item_name('off_hand') == 'netherite_longsword'",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "entity_attack",
+		              "amount": 10,
+		              "target": "other"
+		            },
+	                "run_command":{
+	                  "command":[
+	                    "scoreboard players remove @s exhaust 6",
+	                    "event entity @s combo_0"
+	                  ]
+	                }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('frctnstrk') > 0",
+		    "sequence":[
+	          {
+		        "damage": {
+		          "type": "fire_tick",
+		          "amount": 3,
+		          "target": "other"
+	            }
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') != 1 && query.scoreboard('dmndlng') != 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 3"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 0"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('dmndlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 0"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 1"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+	            "weight": 20,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 0
+	            }
+	          },
+	          {
+	            "weight": 5,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 2
+	            }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 15,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 20,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 1"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 10,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 2"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 2,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 5"
+	              ]
+	            }
+	          }
+	        ]
+	      }
+	    ]
+	  }
+    }
+  }
+}

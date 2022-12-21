@@ -1,0 +1,23 @@
+{
+    "format_version":"1.12",
+    "minecraft:recipe_shapeless":{
+        "description":{
+            "identifier":"true:bowl_of_tuna"
+        },
+        "tags":[
+            "crafting_table"
+        ],
+        "ingredients":[
+            {
+                "item":"true:tin_of_tuna"
+            },
+            {
+                "item":"minecraft:bowl"
+            }
+        ],
+        "result":{
+            "item":"true:bowl_of_tuna",
+            "count":1
+        }
+    }
+}

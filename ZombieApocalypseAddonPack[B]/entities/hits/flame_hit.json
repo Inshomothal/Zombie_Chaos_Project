@@ -1,0 +1,609 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:flame_hit",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+		"animate": [
+	      "double_hand"
+		]
+      },
+	  "animations": {
+		"double_hand":"animation.attack.remover"
+	  }
+    },
+    "component_groups": {
+      "despawn":{
+	    "minecraft:instant_despawn":{}
+      },
+      "despawn_adder":{
+	    "minecraft:timer":{
+	      "time": [0.05,0.05],
+	      "looping": false,
+	      "time_down_event":{
+	      "event": "remove_tag",
+	        "target": "self"
+	      }
+	    }
+      },
+      "remove_katana":{
+	    "minecraft:timer":{
+	      "time": [1,1],
+	      "looping": false,
+	      "time_down_event":{
+	      "event": "remove_katana",
+	        "target": "self"
+	      }
+	    }
+      },
+      "kuroyami":{
+	    "minecraft:timer":{
+	      "time": [1,1],
+	      "looping": false,
+	      "time_down_event":{
+	      "event": "kuroyami",
+	        "target": "self"
+	      }
+	    }
+      },
+      "damage:1":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 1,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:2":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 2,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:3":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 3,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:4":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 4,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:5":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 5,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:6":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 6,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:7":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 7,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:8":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 8,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:9":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 9,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:10":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 8,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:11":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 11,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:12":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 12,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:13":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 13,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:14":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 14,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:15":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 15,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:16":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 16,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:17":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 17,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:18":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 18,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:19":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 19,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:20":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 20,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:21":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 21,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:22":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 22,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:23":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 23,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:24":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 24,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:25":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 25,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:26":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 26,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:27":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 27,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:28":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 28,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:29":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 29,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      },
+      "damage:30":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 30,
+          "cause": "fire_tick",
+          "entity_filter": {
+            "any_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "jidder" }
+            ]
+          }  
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      }
+    },
+
+    "events": {
+      "damage:low":{
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:1"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:2"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:3"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:4"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:5"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:6"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:7"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:8"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "damage:high":{
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:20"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:21"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:22"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:23"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:24"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:25"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:26"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "add":{
+                  "component_groups":[
+                    "damage:27"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "remove_damage":{
+        "remove":{
+          "component_groups":[
+            "damage:1",
+            "damage:2",
+            "damage:3",
+            "damage:4",
+            "damage:5",
+            "damage:6",
+            "damage:7",
+            "damage:8",
+            "damage:20",
+            "damage:21",
+            "damage:22",
+            "damage:23",
+            "damage:24",
+            "damage:25",
+            "damage:26",
+            "damage:27",
+            "despawn_adder"
+          ]
+        }
+      },
+      "remove_tag":{
+        "run_command": {
+          "command": [
+            "execute as @a[tag=jidder] run tag @s remove jidder"
+          ]
+        }
+      },
+      "remove_katana":{
+        "add":{
+          "component_groups":[
+               "despawn"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

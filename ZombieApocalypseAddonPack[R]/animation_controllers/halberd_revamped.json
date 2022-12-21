@@ -1,0 +1,231 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.halnew.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.halberd"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_halberd') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_halberd') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_halberd') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_halberd') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_halberd') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_halberd')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"halberd": "variable.halberd"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_halberd')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_halberd')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_halberd')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_halberd')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_halberd')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_halberd')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "halberd_unsheathe",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"halberd": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.halberd"
+						}
+					]
+				},
+				"halberd": {
+					"animations": [
+					  "halberd_stance0",
+					  {
+					    "no_offhand": "query.get_equipped_item_name('off_hand') != ''"
+					  },
+					  {
+				        "halberd_sneak": "!query.is_moving && query.is_sneaking"
+					  },
+					  {
+				        "halberd_sneak_move": "query.is_moving && query.is_sneaking"
+					  },
+					  {
+					  "halberd_no_move": "!query.is_moving"
+					  },
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting"
+						},
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"attack_lunge": "variable.attack_time>0 && query.is_sprinting"
+						}
+					]
+				},
+				"inbetween0": {
+					"animations": [
+					  "halberd_inbetween0",
+					  "timer_inbet_short",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"halberd": "query.all_animations_finished"
+						},
+						{
+							"attack1": "variable.attack_time>0"
+						}
+					]
+				},
+				"inbetween1": {
+					"animations": [
+					  "halberd_inbetween1",
+					  "timer_inbet_short",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"halberd": "query.all_animations_finished"
+						},
+						{
+							"attack2": "variable.attack_time>0"
+						}
+					]
+				},
+				"inbetween2": {
+					"animations": [
+					  "halberd_inbetween2",
+					  "timer_inbet_short",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"halberd": "query.all_animations_finished"
+						},
+						{
+							"attack3": "variable.attack_time>0"
+						}
+					]
+				},
+				"inbetween3": {
+					"animations": [
+					  "halberd_inbetween3",
+					  "timer_inbet_short",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"halberd": "query.all_animations_finished"
+						},
+						{
+							"attack4": "variable.attack_time>0"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "halberd_attack0",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"inbetween0": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "halberd_attack1",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"inbetween1": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+					  "halberd_attack2",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"inbetween2": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+					  "halberd_attack3",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"inbetween3": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack4": {
+					"animations": [
+					  "halberd_attack4",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"halberd": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack_lunge": {
+					"animations": [
+					  "halberd_attack2",
+					  "no_offhand",
+				      "halberd_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.halberd"
+						},
+						{
+							"inbetween2": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

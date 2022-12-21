@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:pot_noodle_chow_mein_cooked"
+    },
+
+    
+    "tags": ["furnace", "smoker"],
+    "input": "true:pot_noodle_chow_mein_water",
+    "output": "true:pot_noodle_chow_mein_hot"
+  }
+}

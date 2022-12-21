@@ -1,0 +1,32 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:baby_cured",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/cured/baby_cured"
+         },
+         "geometry":{
+            "default":"geometry.generic_humanoid_baby"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.generic_humanoid_baby.stand",
+            "walk":"animation.generic_humanoid_baby.walk",
+            "true_zombie_controller":"controller.animation.true_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "true_zombie_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ],
+         "enable_attachables":true
+      }
+   }
+}

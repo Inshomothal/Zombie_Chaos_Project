@@ -1,0 +1,48 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ground_pound.start": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.76,
+			"bones": {
+				"main": {
+					"scale": {
+						"0.0": [0.8, 0, 0.9],
+						"0.12": [1, 1, 1]
+					}
+				},
+				"main2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, -6, 0],
+						"0.28": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.16": [1, 0, 1],
+						"0.28": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "pixel:boom"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "ground_smoke",
+					"locator": "pound"
+				}
+			}
+		},
+		"animation.offhand.sheathe": {
+			"loop": true,
+			"bones": {
+				"leftitem": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

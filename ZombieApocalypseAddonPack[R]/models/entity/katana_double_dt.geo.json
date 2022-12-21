@@ -1,0 +1,73 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.katana_dt_animate",
+				"texture_width": 80,
+				"texture_height": 80,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "katana",
+					"parent": "waist",
+					"pivot": [4.25, 14, -2],
+					"rotation": [-25, 0, 0]
+				},
+				{
+					"name": "katana_left",
+					"parent": "waist",
+					"pivot": [4.5, 14, -2],
+					"rotation": [-25, 0, 0]
+				},
+				{
+					"name": "leftitem2",
+					"parent": "katana_left",
+					"pivot": [4.5, 13.95, -6]
+				},
+				{
+					"name": "swordright",
+					"parent": "katana",
+					"pivot": [-7.75, 14, -2]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightArm",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "rightitem2",
+					"parent": "rightArm",
+					"pivot": [-6, 14, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [6, 14, 0]
+				}
+			]
+		}
+	]
+}

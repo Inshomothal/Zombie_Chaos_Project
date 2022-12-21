@@ -1,0 +1,20 @@
+{
+    "format_version":"1.12",
+    "minecraft:recipe_shapeless":{
+        "description":{
+            "identifier":"true:m416_to_scrap"
+        },
+        "tags":[
+            "crafting_table"
+        ],
+        "ingredients":[
+            {
+                "item":"true:m416"
+            }
+        ],
+        "result":{
+            "item":"minecraft:iron_ingot",
+            "count":3
+        }
+    }
+}

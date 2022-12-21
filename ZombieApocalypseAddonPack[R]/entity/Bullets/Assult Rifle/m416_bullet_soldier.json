@@ -1,0 +1,33 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:m416_bullet_soldier",
+         "materials":{
+            "default":"skeleton"
+         },
+         "textures":{
+            "default":"textures/entity/guns/bullet"
+         },
+         "geometry":{
+            "default":"geometry.bullet"
+         },
+         "sound_effects":{
+            "shoot":"m416_shooting"
+         },
+        "animations":{
+            "bullet_fire":"controller.animation.bullet_fire"
+         },
+         "scripts":{
+            "animate":[
+               {
+                  "bullet_fire":"query.life_time <= 1"
+               }
+            ]
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

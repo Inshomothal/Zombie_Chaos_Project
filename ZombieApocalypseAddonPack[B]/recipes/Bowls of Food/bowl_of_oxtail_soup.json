@@ -1,0 +1,23 @@
+{
+    "format_version":"1.12",
+    "minecraft:recipe_shapeless":{
+        "description":{
+            "identifier":"true:bowl_of_oxtail_soup"
+        },
+        "tags":[
+            "crafting_table"
+        ],
+        "ingredients":[
+            {
+                "item":"true:tin_of_oxtail_soup"
+            },
+            {
+                "item":"minecraft:bowl"
+            }
+        ],
+        "result":{
+            "item":"true:bowl_of_oxtail_soup",
+            "count":1
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:bicycle_yellow",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/bicycles/bicycle_yellow"
+         },
+         "geometry":{
+            "default":"geometry.bicycle"
+         },
+         "animations":{
+            "walk":"animation.bicycle.walk",
+            "no_rider":"animation.bicycle.no_rider",
+            "bicycle_controller":"controller.animation.bicycle"
+         },
+         "scripts":{
+            "animate":[
+               "bicycle_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ],
+         "spawn_egg":{
+            "texture":"bicycle_yellow"
+         }
+      }
+   }
+}

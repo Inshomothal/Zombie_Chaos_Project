@@ -1,0 +1,196 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.slash": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "forward": "query.variant == 2"
+            }
+          ]
+        },
+        "forward": {
+          "on_entry": [
+            "/execute as @s run tp @s ^^^0.5"
+          ],
+          "transitions": [
+            {
+              "moving": "(1.0)"
+            }
+          ]
+        },
+        "moving": {
+          "on_entry": [
+            "/execute as @s run tp @s ^^^0.5"
+          ],
+          "transitions": [
+            {
+              "forward": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.static_movement": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "moving": "(1.0)"
+            }
+          ]
+        },
+        "forward": {
+          "on_entry": [
+            "/execute as @s run detect ~~-1~ air 0 tp @s ^^-1^",
+            "/execute as @s run detect run pixel:chaos_grass 0 tp @s ^^1^",
+            "/execute as @s run detect run grass_block 0 tp @s ^^1^",
+            "/execute as @s run detect run sand 0 tp @s ^^1^",
+            "/execute as @s run detect run dirt 0 tp @s ^^1^",
+            "/execute as @s run detect run stone 0 tp @s ^^1^"
+          ],
+          "transitions": [
+            {
+              "moving": "(1.0)"
+            }
+          ]
+        },
+        "moving": {
+          "transitions": [
+            {
+              "forward": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.pcharge": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=pcharge]"
+          ],
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=pcharge]"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.scharge": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=scharge]"
+          ],
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=scharge]"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.kcharge": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=kcharge]"
+          ],
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=kcharge]"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.spinner": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=spinner,c=1]"
+          ],
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=spinner,c=1]"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mstrprry": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=mstrprry]"
+          ],
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ]
+        },
+        "walking": {
+          "on_entry": [
+            "/execute as @s run tp @s @p[tag=mstrprry]"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

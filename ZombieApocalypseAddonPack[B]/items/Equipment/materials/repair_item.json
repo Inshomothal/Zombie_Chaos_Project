@@ -1,0 +1,25 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:repair_item",
+      "category":"Items"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "repair_item"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.repair_item"
+      },
+      "tag:minecraft:is_material":{},
+	  "minecraft:allow_off_hand": true,
+	  "minecraft:display_name": {
+		"value": "item.pixel:repair_item.name"
+	  },
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true
+    }
+  }
+}

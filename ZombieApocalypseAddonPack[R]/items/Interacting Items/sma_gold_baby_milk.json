@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:sma_gold_baby_milk",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "sma_gold_baby_milk"
+    }
+  }
+}

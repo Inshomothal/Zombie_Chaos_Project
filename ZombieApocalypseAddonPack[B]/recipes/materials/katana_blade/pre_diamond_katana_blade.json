@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:pre_diamond_katana_blade"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "CX",
+      "XC"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:clay_ball"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "pixel:pre_diamond_katana_blade"
+    }
+  }
+}

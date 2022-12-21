@@ -1,0 +1,16 @@
+{
+   "format_version":"1.10",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:bowl_of_tomato_soup_hot"
+      },
+      "components":{
+         "minecraft:use_duration":32.0,
+         "minecraft:food":{
+            "nutrition":18,
+            "saturation_modifier":"good",
+            "using_converts_to":"bowl"
+         }
+      }
+   }
+}

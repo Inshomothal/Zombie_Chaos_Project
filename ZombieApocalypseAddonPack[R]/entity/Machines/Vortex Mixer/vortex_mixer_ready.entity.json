@@ -1,0 +1,23 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:vortex_mixer_ready",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/vortex_mixer/vortex_mixer_ready"
+         },
+         "geometry":{
+            "default":"geometry.vortex_mixer"
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ],
+         "spawn_egg":{
+            "texture":"vortex_mixer"
+         }
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:cookies_n_creme_poptarts",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "cookies_n_creme_poptarts"
+    }
+  }
+}

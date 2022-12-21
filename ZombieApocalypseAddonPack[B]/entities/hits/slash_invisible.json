@@ -1,0 +1,136 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:slash_invisble",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:arrow",
+	  "scripts": {
+		"animate": [
+	      "double_hand"
+		]
+      },
+	  "animations": {
+		"double_hand":"animation.attack.remover"
+	  }
+    },
+    "component_groups": {
+      "despawn":{
+	    "minecraft:instant_despawn":{}
+      },
+      "shoot":{
+	    "minecraft:variant":{
+	      "value": 2
+	    }
+      },
+      "iaido_spin":{
+        "minecraft:area_attack" : {
+          "damage_range": 1,
+          "damage_per_tick": 20,
+          "cause": "contact",
+          "entity_filter": {
+            "all_of": [
+              { "test": "has_tag", "subject": "other", "operator": "!=" ,"value": "res" }
+            ]
+          }
+        },
+	    "minecraft:timer":{
+	      "time": 5.25,
+	      "looping": true,
+	      "time_down_event":{
+	      "event": "remove_damage",
+	        "target": "self"
+	      }
+	    }
+      },
+      "iaido_null":{
+	    "minecraft:timer":{
+	      "time": 0.05,
+	      "looping": true,
+	      "time_down_event":{
+	      "event": "remove_tag",
+	        "target": "self"
+	      }
+	    }
+      },
+      "nonshoot":{
+	    "minecraft:variant":{
+	      "value": 1
+	    }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+      "minecraft:type_family": {
+        "family": [ "attack" ]
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "add":{
+          "component_groups":[
+            "iaido_spin"
+          ]
+        }
+      },
+      "non_shoot": {
+        "add":{
+          "component_groups":[
+            "nonshoot"
+          ]
+        }
+      },
+      "iaido_spin": {
+        "add":{
+          "component_groups":[
+            "iaido_spin"
+          ]
+        }
+      },
+      "remove_damage":{
+        "add": {
+          "component_groups":[
+            "iaido_null"
+          ]
+        },
+        "remove":{
+          "component_groups":[
+            "iaido_spin"
+          ]
+        }
+      },
+      "remove_tag":{
+        "run_command": {
+          "command": [
+            "execute as @a[tag=res] run tag @s remove res",
+            "event entity @s remove_katana"
+          ]
+        }
+      },
+      "remove_katana":{
+        "add":{
+          "component_groups":[
+               "despawn"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+
+

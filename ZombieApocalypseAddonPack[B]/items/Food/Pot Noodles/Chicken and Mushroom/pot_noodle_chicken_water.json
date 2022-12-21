@@ -1,0 +1,15 @@
+{
+   "format_version":"1.10",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:pot_noodle_chicken_water"
+      },
+      "components":{
+         "minecraft:use_duration":32.0,
+         "minecraft:food":{
+            "nutrition":8,
+            "saturation_modifier":"normal"
+         }
+      }
+   }
+}

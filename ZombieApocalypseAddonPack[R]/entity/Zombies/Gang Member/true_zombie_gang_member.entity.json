@@ -1,0 +1,37 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_zombie_gang_member",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/zombies/gang_member/zombie_gang_member"
+           
+         },
+         "geometry":{
+            "default":"geometry.true_zombie"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.true_zombie.stand",
+            "walk":"animation.true_zombie.walk",
+            "attack":"animation.true_zombie.attack",
+            "sniff":"animation.true_zombie.sniff",
+            "generic_zombie_controller":"controller.animation.generic_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "generic_zombie_controller"
+            ]
+         },
+         "spawn_egg":{
+            "texture":"true_zombie"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

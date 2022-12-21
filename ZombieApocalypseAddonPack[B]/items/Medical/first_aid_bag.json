@@ -1,0 +1,39 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:first_aid_bag",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         },
+         "minecraft:max_stack_size":1,
+         "minecraft:display_name":{
+            "value":"First Aid Bag"
+         },
+         "minecraft:icon":{
+            "texture":"first_aid_bag"
+         },
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"use",
+               "target":"self"
+            }
+         }
+      },
+      "events":{
+         "use":{
+            "run_command":{
+               "command":[
+                  "replaceitem entity @s slot.weapon.mainhand 0 air",
+                  "effect @p regeneration 20 99 true",
+                  "effect @p slowness 20 2 true",
+                  "execute @p ~ ~ ~ playsound player_hurt"   
+               ]
+            }
+         }
+      }
+   }
+}

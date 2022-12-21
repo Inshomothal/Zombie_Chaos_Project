@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "loot_tables/chests/food_loot.json",
+          "weight": 85,
+          "quality": -1
+        }
+      ]
+    }
+  ]
+}

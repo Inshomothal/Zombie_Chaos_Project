@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.trail_default": {
+			"states": {
+				"default": {
+					"animations": [
+					  "notrail"
+					]
+				}
+			}
+		},
+		"controller.animation.third_person_hand": {
+			"states": {
+				"default": {
+					"animations": [
+					  "hold_tp"
+					]
+				}
+			}
+		}
+	}
+}

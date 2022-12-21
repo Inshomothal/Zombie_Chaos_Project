@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:stone_wakizashi_blade"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " X ",
+      "X  "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "pixel:stone_wakizashi_blade"
+    }
+  }
+}

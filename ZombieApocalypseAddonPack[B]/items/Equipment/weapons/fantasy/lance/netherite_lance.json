@@ -1,0 +1,483 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+	"description": {
+      "identifier": "pixel:netherite_lance",
+      "category":"Equipment"
+    },
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "netherite_lance"
+	  },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "tag:minecraft:is_lance":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:netherite_lance.name"
+	  },
+      "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 3600,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 2560,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "minecraft:netherite_scrap" ],
+            "repair_amount": 480
+          },
+          {
+            "items": [ "pixel:repair_item" ],
+            "repair_amount": 250
+          },
+          {
+            "items": [ "pixel:netherite_lance" ],
+            "repair_amount": "query.max_durability"
+          }
+        ]
+      },
+      "minecraft:mining_speed": 1.5,
+      "minecraft:damage": 14,
+      "minecraft:enchantable": {
+        "value": 12,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 15,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 10,
+			"on_dig": {
+			  "event": "minecraft:break"
+			}
+          }
+        ],
+		"on_dig": {
+		  "event": "minecraft:break",
+		  "target": "self"
+		}
+      },
+	  "minecraft:cooldown": {
+		"category": "lance",
+		"duration": 3
+	  },
+	  "minecraft:weapon": {
+		"on_hurt_entity": {
+		  "event": "minecraft:break"
+		}
+	  },
+      "minecraft:on_use":{
+        "on_use":{
+          "event": "charge"    
+        }
+      }
+	},
+	"events": {
+	  "charge": {
+	    "sequence":[
+	      {
+		   "condition": "query.is_on_ground && query.is_sneaking && !query.is_riding && query.scoreboard('lance_cd') < 2 && query.scoreboard('exhaust') >= 20",
+	        "run_command":{
+	          "command":[
+	            "scoreboard objectives add lance_cd dummy",
+	            "scoreboard players set @s lance_cd 200",
+	            "effect @s speed 10 2",
+	            "scoreboard players remove @s exhaust 20",
+	            "scoreboard objectives add pcharge dummy",
+	            "scoreboard players set @s pcharge 200",
+	            "tag @s add pcharge",
+	            "playanimation @s animation.lance.ability_charge default"
+	          ]
+	        },
+		    "shoot": {
+		      "projectile": "pixel:lance_charge",
+		   	  "launch_power": 0.1
+		    }
+	      },
+	      {
+		   "condition": "!query.is_on_ground && !query.is_sneaking && !query.is_riding && query.scoreboard('lance_cd') < 2 && query.scoreboard('hvymstr') >= 500 && query.scoreboard('exhaust') >= 20",
+	        "run_command":{
+	          "command":[
+	            "scoreboard objectives add lance_cd dummy",
+	            "scoreboard players set @s lance_cd 60",
+	            "scoreboard players remove @s exhaust 10",
+	            "effect @s feather_falling 20 2 true",
+	            "playanimation @s animation.lance.ability_throw default"
+	          ]
+	        },
+		    "shoot": {
+		      "projectile": "pixel:lance_meteor",
+		   	  "launch_power": 2.0
+		    }
+	      },
+	      {
+		   "condition": "!query.is_sneaking && query.is_riding && query.scoreboard('lance_cd') < 2 && query.scoreboard('exhaust') >= 20",
+		   "sequence":[
+		     {
+	           "run_command":{
+	             "command":[
+	               "effect @e[r=2] speed 10 2",
+	               "scoreboard objectives add lance_cd dummy",
+	               "scoreboard players set @s lance_cd 200",
+	               "scoreboard players remove @s exhaust 20",
+	               "tag @s add pcharge",
+	               "tag @e[family=horse,c=1,r=2] add pcharge",
+	               "playanimation @s animation.lance.ability_horseback_charge default",
+	               "playanimation @e[type=horse,r=2] animation.horse.v2.stand default"
+	             ]
+	           },
+		       "shoot": {
+		         "projectile": "pixel:lance_charge",
+		   	     "launch_power": 0.1
+		       }
+		     },
+		     {
+	           "run_command":{
+	             "command":[
+	               "event @e[type=pixel:lance_charge,r=2] lance_horse"
+	             ]
+	           }
+		     }
+		   ]
+	      },
+	      {
+		    "condition": "query.is_on_ground && !query.is_sneaking && !query.is_riding && query.scoreboard('lance_cd') < 2 && query.scoreboard('exhaust') >= 10",
+	        "run_command":{
+	          "command":[
+	            "scoreboard objectives add lance_cd dummy",
+	            "scoreboard players set @s lance_cd 20",
+	            "scoreboard players remove @s exhaust 10",
+	            "effect @s resistance 10 3"
+	          ]
+	        }
+	      }
+	    ]
+	  },
+	  "minecraft:break": {
+	    "sequence":[
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 0 && query.scoreboard('hvymstr') < 50",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add lance_cd dummy",
+	                "scoreboard players set @s lance_cd 85",
+	                "effect @s weakness 4 20"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 1,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.is_riding && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 2,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 50 && query.scoreboard('hvymstr') < 100",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add lance_cd dummy",
+	                "scoreboard players set @s lance_cd 50",
+	                "effect @s weakness 3 20"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 2,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.is_riding && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 4,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 100 && query.scoreboard('hvymstr') < 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add lance_cd dummy",
+	                "scoreboard players set @s lance_cd 20",
+	                "effect @s weakness 1 20"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 4,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.is_riding && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 8,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('hvymstr') >= 1000",
+		    "sequence":[
+	          {
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add lance_cd dummy",
+	                "scoreboard players set @s lance_cd 0"
+	              ]
+	            }
+	          },
+	          {
+		        "condition": "query.is_sprinting && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 5,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          },
+	          {
+		        "condition": "query.is_riding && query.scoreboard('lance_cd') < 2",
+	            "sequence":[
+	              {
+		            "damage": {
+		              "type": "magic",
+		              "amount": 10,
+		              "target": "other"
+		            }
+	              }
+	            ]
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('frctnstrk') > 0",
+		    "sequence":[
+	          {
+		        "damage": {
+		          "type": "fire_tick",
+		          "amount": 3,
+		          "target": "other"
+	            }
+	          }
+		    ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') != 1 && query.scoreboard('dmndlng') != 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 5"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 6"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 4"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('irnlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 5"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 5,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 4"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+		    "condition": "query.scoreboard('dmndlng') == 1",
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 2"
+		          ]
+		        }
+	          },
+	          {
+	            "weight": 20,
+		        "run_command": {
+		          "command":[
+	                "scoreboard players remove @s exhaust 3"
+		          ]
+		        }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 10,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 1
+	            }
+	          },
+	          {
+	            "weight": 20,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 0
+	            }
+	          },
+	          {
+	            "weight": 5,
+		        "damage": {
+		          "type": "durability",
+		          "amount": 2
+	            }
+	          }
+	        ]
+	      },
+	      {
+	        "randomize":[
+	          {
+	            "weight": 15,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 20,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 1"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 10,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 2"
+	              ]
+	            }
+	          },
+	          {
+	            "weight": 2,
+	            "run_command":{
+	              "command":[
+	                "scoreboard objectives add hvymstr dummy",
+	                "scoreboard players add @s hvymstr 5"
+	              ]
+	            }
+	          }
+	        ]
+	      }
+	    ]
+	  }
+    }
+  }
+}

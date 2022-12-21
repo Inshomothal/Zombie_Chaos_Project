@@ -1,0 +1,32 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.cured_human":{
+         "arrays":{
+            "textures":{
+               "Array.variants":[
+                  "Texture.default",
+                  "Texture.police_officer",
+                  "Texture.book_keeper",
+                  "Texture.explorer",
+                  "Texture.blacksmith",
+                  "Texture.farmer",
+                  "Texture.horse_handler",
+                  "Texture.civilian_1",
+                  "Texture.civilian_2",
+                  "Texture.scientist"
+               ]
+            }
+         },
+         "geometry":"Geometry.default",
+         "materials":[
+            {
+               "*":"Material.default"
+            }
+         ],
+         "textures":[
+            "Array.variants[query.variant]"
+         ]
+      }
+   }
+}

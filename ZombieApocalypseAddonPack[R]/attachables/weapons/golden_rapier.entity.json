@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "pixel:golden_rapier",
+      "item": "pixel:golden_rapier",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint",
+        "trail": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/golden_rapier_short",
+        "enchanted": "textures/misc/enchanted_item_glint",
+        "trail": "textures/entity/rapier_trail_normal",
+        "trail_pierce": "textures/entity/rapier_trail_pierce"
+      },
+      "geometry": {
+        "mainhand": "geometry.rapier",
+        "offhand": "geometry.rapier",
+        "trail": "geometry.rapier_trail_normal",
+        "trail_pierce": "geometry.rapier_trail_pierce"
+      },
+      "render_controllers": [ 
+        { 
+          "controller.render.weaponk": "c.item_slot == 'main_hand'" 
+        },
+        "controller.render.trail",
+        "controller.render.trail_pierce"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+   "tiers":[
+      {
+         "groups":[
+            {
+               "trades":[
+                  {
+                     "wants":[
+                        {
+                           "item":"true:gillette_shaving_foam",
+                           "quantity":6
+                        },
+                        {
+                           "item":"true:andrex_toiletroll",
+                           "quantity":3
+                        }
+                     ],
+                     "gives":[
+                        {
+                           "item":"true:tactical_body_armour",
+                           "quantity":1
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

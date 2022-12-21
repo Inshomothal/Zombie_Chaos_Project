@@ -1,0 +1,18 @@
+{
+   "format_version":"1.10.0",
+   "animation_controllers":{
+      "controller.animation.smoke_grenade":{
+         "initial_state":"on",
+         "states":{
+            "on":{
+               "particle_effects":[
+                  {
+                     "effect":"smoke_grenade",
+                     "locator":"smoke"
+                  }
+               ]
+            }
+         }
+      }
+   }
+}

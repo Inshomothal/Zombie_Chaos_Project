@@ -1,0 +1,632 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:3ditem",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "wooden_mace": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "stone_mace": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "iron_mace": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "golden_mace": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "diamond_mace": {
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "netherite_mace": {
+        "minecraft:variant": {
+          "value": 6
+        }
+      },
+      "giant_mace": {
+        "minecraft:variant": {
+          "value": 7
+        }
+      },
+      "wooden_saber": {
+        "minecraft:variant": {
+          "value": 8
+        }
+      },
+      "stone_saber": {
+        "minecraft:variant": {
+          "value": 9
+        }
+      },
+      "iron_saber": {
+        "minecraft:variant": {
+          "value": 10
+        }
+      },
+      "golden_saber": {
+        "minecraft:variant": {
+          "value": 11
+        }
+      },
+      "diamond_saber": {
+        "minecraft:variant": {
+          "value": 12
+        }
+      },
+      "netherite_saber": {
+        "minecraft:variant": {
+          "value": 13
+        }
+      },
+      "wooden_dagger": {
+        "minecraft:variant": {
+          "value": 14
+        }
+      },
+      "stone_dagger": {
+        "minecraft:variant": {
+          "value": 15
+        }
+      },
+      "iron_dagger": {
+        "minecraft:variant": {
+          "value": 16
+        }
+      },
+      "golden_dagger": {
+        "minecraft:variant": {
+          "value": 17
+        }
+      },
+      "diamond_dagger": {
+        "minecraft:variant": {
+          "value": 18
+        }
+      },
+      "netherite_dagger": {
+        "minecraft:variant": {
+          "value": 19
+        }
+      },
+      "wooden_katana": {
+        "minecraft:variant": {
+          "value": 20
+        }
+      },
+      "stone_katana": {
+        "minecraft:variant": {
+          "value": 21
+        }
+      },
+      "iron_katana": {
+        "minecraft:variant": {
+          "value": 22
+        }
+      },
+      "golden_katana": {
+        "minecraft:variant": {
+          "value": 23
+        }
+      },
+      "diamond_katana": {
+        "minecraft:variant": {
+          "value": 24
+        }
+      },
+      "netherite_katana": {
+        "minecraft:variant": {
+          "value": 25
+        }
+      },
+      "wooden_spear": {
+        "minecraft:variant": {
+          "value": 29
+        }
+      },
+      "stone_spear": {
+        "minecraft:variant": {
+          "value": 30
+        }
+      },
+      "iron_spear": {
+        "minecraft:variant": {
+          "value": 31
+        }
+      },
+      "golden_spear": {
+        "minecraft:variant": {
+          "value": 32
+        }
+      },
+      "diamond_spear": {
+        "minecraft:variant": {
+          "value": 33
+        }
+      },
+      "netherite_spear": {
+        "minecraft:variant": {
+          "value": 34
+        }
+      },
+      "wooden_glaive": {
+        "minecraft:variant": {
+          "value": 35
+        }
+      },
+      "stone_glaive": {
+        "minecraft:variant": {
+          "value": 36
+        }
+      },
+      "iron_glaive": {
+        "minecraft:variant": {
+          "value": 37
+        }
+      },
+      "golden_glaive": {
+        "minecraft:variant": {
+          "value": 38
+        }
+      },
+      "diamond_glaive": {
+        "minecraft:variant": {
+          "value": 39
+        }
+      },
+      "netherite_glaive": {
+        "minecraft:variant": {
+          "value": 40
+        }
+      },
+      "wooden_katar": {
+        "minecraft:variant": {
+          "value": 41
+        }
+      },
+      "stone_katar": {
+        "minecraft:variant": {
+          "value": 42
+        }
+      },
+      "iron_katar": {
+        "minecraft:variant": {
+          "value": 43
+        }
+      },
+      "golden_katar": {
+        "minecraft:variant": {
+          "value": 44
+        }
+      },
+      "diamond_katar": {
+        "minecraft:variant": {
+          "value": 45
+        }
+      },
+      "netherite_katar": {
+        "minecraft:variant": {
+          "value": 46
+        }
+      },     
+      "wooden_lance": {
+        "minecraft:variant": {
+          "value": 47
+        }
+      },
+      "stone_lance": {
+        "minecraft:variant": {
+          "value": 48
+        }
+      },
+      "iron_lance": {
+        "minecraft:variant": {
+          "value": 49
+        }
+      },
+      "golden_lance": {
+        "minecraft:variant": {
+          "value": 50
+        }
+      },
+      "diamond_lance": {
+        "minecraft:variant": {
+          "value": 51
+        }
+      },
+      "netherite_lance": {
+        "minecraft:variant": {
+          "value": 52
+        }
+      },
+      "iron_rapier": {
+        "minecraft:variant": {
+          "value": 53
+        }
+      },
+      "golden_rapier": {
+        "minecraft:variant": {
+          "value": 54
+        }
+      },
+      "diamond_rapier": {
+        "minecraft:variant": {
+          "value": 55
+        }
+      },
+      "netherite_rapier": {
+        "minecraft:variant": {
+          "value": 56
+        }
+      },
+      "wooden_longsword": {
+        "minecraft:variant": {
+          "value": 57
+        }
+      },
+      "stone_longsword": {
+        "minecraft:variant": {
+          "value": 58
+        }
+      },
+      "iron_longsword": {
+        "minecraft:variant": {
+          "value": 59
+        }
+      },
+      "golden_longsword": {
+        "minecraft:variant": {
+          "value": 60
+        }
+      },
+      "diamond_longsword": {
+        "minecraft:variant": {
+          "value": 61
+        }
+      },
+      "netherite_longsword": {
+        "minecraft:variant": {
+          "value": 62
+        }
+      },
+      "wooden_halberd": {
+        "minecraft:variant": {
+          "value": 63
+        }
+      },
+      "stone_halberd": {
+        "minecraft:variant": {
+          "value": 64
+        }
+      },
+      "iron_halberd": {
+        "minecraft:variant": {
+          "value": 65
+        }
+      },
+      "golden_halberd": {
+        "minecraft:variant": {
+          "value": 66
+        }
+      },
+      "diamond_halberd": {
+        "minecraft:variant": {
+          "value": 67
+        }
+      },
+      "netherite_halberd": {
+        "minecraft:variant": {
+          "value": 68
+        }
+      },
+      "wooden_wakizashi": {
+        "minecraft:variant": {
+          "value": 69
+        }
+      },
+      "stone_wakizashi": {
+        "minecraft:variant": {
+          "value": 70
+        }
+      },
+      "iron_wakizashi": {
+        "minecraft:variant": {
+          "value": 71
+        }
+      },
+      "golden_wakizashi": {
+        "minecraft:variant": {
+          "value": 72
+        }
+      },
+      "diamond_wakizashi": {
+        "minecraft:variant": {
+          "value": 73
+        }
+      },
+      "netherite_wakizashi": {
+        "minecraft:variant": {
+          "value": 74
+        }
+      },
+      "bec_de_corbin": {
+        "minecraft:variant": {
+          "value": 81
+        }
+      },
+      "stone_greatsword": {
+        "minecraft:variant": {
+          "value": 75
+        }
+      },
+      "iron_greatsword": {
+        "minecraft:variant": {
+          "value": 76
+        }
+      },
+      "polehammer": {
+        "minecraft:variant": {
+          "value": 79
+        }
+      },
+      "odachi": {
+        "minecraft:variant": {
+          "value": 80
+        }
+      },
+      "netherite_greatsword": {
+        "minecraft:variant": {
+          "value": 77
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "3ditem" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:despawn": {
+        "filters": {
+          "test": "is_riding",
+          "operator": "==",
+          "value": false
+        }
+      }
+    },
+    "events": {
+      "wooden_mace": {
+        "add": {
+          "component_groups": [
+            "wooden_mace"
+          ]
+        }
+      },
+      "stone_mace": {
+        "add": {
+          "component_groups": [
+            "stone_mace"
+          ]
+        }
+      },
+      "iron_mace": {
+        "add": {
+          "component_groups": [
+            "iron_mace"
+          ]
+        }
+      },
+      "golden_mace": {
+        "add": {
+          "component_groups": [
+            "golden_mace"
+          ]
+        }
+      },
+      "diamond_mace": {
+        "add": {
+          "component_groups": [
+            "diamond_mace"
+          ]
+        }
+      },
+      "netherite_mace": {
+        "add": {
+          "component_groups": [
+            "netherite_mace"
+          ]
+        }
+      },
+      "wooden_saber": {
+        "add": {
+          "component_groups": [
+            "wooden_saber"
+          ]
+        }
+      },
+      "stone_saber": {
+        "add": {
+          "component_groups": [
+            "stone_saber"
+          ]
+        }
+      },
+      "iron_saber": {
+        "add": {
+          "component_groups": [
+            "iron_saber"
+          ]
+        }
+      },
+      "golden_saber": {
+        "add": {
+          "component_groups": [
+            "golden_saber"
+          ]
+        }
+      },
+      "diamond_saber": {
+        "add": {
+          "component_groups": [
+            "diamond_saber"
+          ]
+        }
+      },
+      "netherite_saber": {
+        "add": {
+          "component_groups": [
+            "netherite_saber"
+          ]
+        }
+      },
+      "wooden_dagger": {
+        "add": {
+          "component_groups": [
+            "wooden_dagger"
+          ]
+        }
+      },
+      "stone_dagger": {
+        "add": {
+          "component_groups": [
+            "stone_dagger"
+          ]
+        }
+      },
+      "iron_dagger": {
+        "add": {
+          "component_groups": [
+            "iron_dagger"
+          ]
+        }
+      },
+      "golden_dagger": {
+        "add": {
+          "component_groups": [
+            "golden_dagger"
+          ]
+        }
+      },
+      "diamond_dagger": {
+        "add": {
+          "component_groups": [
+            "diamond_dagger"
+          ]
+        }
+      },
+      "netherite_dagger": {
+        "add": {
+          "component_groups": [
+            "netherite_dagger"
+          ]
+        }
+      },
+      "wooden_spear": {
+        "add": {
+          "component_groups": [
+            "wooden_spear"
+          ]
+        }
+      },
+      "stone_spear": {
+        "add": {
+          "component_groups": [
+            "stone_spear"
+          ]
+        }
+      },
+      "iron_spear": {
+        "add": {
+          "component_groups": [
+            "iron_spear"
+          ]
+        }
+      },
+      "golden_spear": {
+        "add": {
+          "component_groups": [
+            "golden_spear"
+          ]
+        }
+      },
+      "diamond_spear": {
+        "add": {
+          "component_groups": [
+            "diamond_spear"
+          ]
+        }
+      },
+      "netherite_spear": {
+        "add": {
+          "component_groups": [
+            "netherite_spear"
+          ]
+        }
+      },
+      "wooden_katana": {
+        "add": {
+          "component_groups": [
+            "wooden_katana"
+          ]
+        }
+      },
+      "stone_katana": {
+        "add": {
+          "component_groups": [
+            "stone_katana"
+          ]
+        }
+      },
+      "iron_katana": {
+        "add": {
+          "component_groups": [
+            "iron_katana"
+          ]
+        }
+      },
+      "golden_katana": {
+        "add": {
+          "component_groups": [
+            "golden_katana"
+          ]
+        }
+      },
+      "diamond_katana": {
+        "add": {
+          "component_groups": [
+            "diamond_katana"
+          ]
+        }
+      },
+      "netherite_katana": {
+        "add": {
+          "component_groups": [
+            "netherite_katana"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:never_missing_spear_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "gungnir_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:never_missing_spear_scroll.name"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+      "minecraft:food": {
+        "can_always_eat": true
+      },
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add sprablt dummy",
+		        "scoreboard players set @s sprablt 1",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Spear strike ability changed to : Never missing spear\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

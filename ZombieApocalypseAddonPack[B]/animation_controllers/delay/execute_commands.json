@@ -1,0 +1,1340 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.double_hand": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/function clear"
+          ],
+          "transitions": [
+            {
+            "killing_arrow_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'arrow'"
+            },
+            {
+            "killing_totem_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'totem'"
+            },
+            {
+            "killing_netherite_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katar'"
+            },
+            {
+            "killing_diamond_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katar'"
+            },
+            {
+            "killing_golden_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katar'"
+            },
+            {
+              "killing_wooden_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'wooden_katar'"
+            },
+            {
+            "killing_stone_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'stone_katar'"
+            },
+            {
+            "killing_iron_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katar'"
+            },
+            {
+            "killing_netherite_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_longsword'"
+            },
+            {
+            "killing_diamond_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_longsword'"
+            },
+            {
+            "killing_golden_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_longsword'"
+            },
+            {
+              "killing_wooden_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'wooden_longsword'"
+            },
+            {
+            "killing_stone_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'stone_longsword'"
+            },
+            {
+            "killing_iron_longsword_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_longsword'"
+            },
+            {
+            "killing_netherite_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_dagger'"
+            },
+            {
+            "killing_diamond_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_dagger'"
+            },
+            {
+            "killing_golden_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_dagger'"
+            },
+            {
+              "killing_wooden_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'wooden_dagger'"
+            },
+            {
+            "killing_stone_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'stone_dagger'"
+            },
+            {
+            "killing_iron_dagger_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_dagger'"
+            },
+            {
+            "killing_netherite_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana'"
+            },
+            {
+            "killing_diamond_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana'"
+            },
+            {
+            "killing_golden_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana'"
+            },
+            {
+              "killing_wooden_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'wooden_katana'"
+            },
+            {
+            "killing_stone_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'stone_katana'"
+            },
+            {
+            "killing_iron_katana_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana'"
+            },
+            {
+            "killing_netherite_katana_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_vltsb'"
+            },
+            {
+            "killing_diamond_katana_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_vltsb'"
+            },
+            {
+            "killing_golden_katana_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_vltsb'"
+            },
+            {
+            "killing_iron_katana_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_vltsb'"
+            },
+            {
+            "killing_netherite_katana_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_rdsmtsb'"
+            },
+            {
+            "killing_diamond_katana_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_rdsmtsb'"
+            },
+            {
+            "killing_golden_katana_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_rdsmtsb'"
+            },
+            {
+            "killing_iron_katana_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_rdsmtsb'"
+            },
+            {
+            "killing_netherite_katana_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_rndtsb'"
+            },
+            {
+            "killing_diamond_katana_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_rndtsb'"
+            },
+            {
+            "killing_golden_katana_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_rndtsb'"
+            },
+            {
+            "killing_iron_katana_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_rndtsb'"
+            },
+            {
+            "killing_netherite_wakizahsi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_wakizashi'"
+            },
+            {
+            "killing_diamond_wakizashi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_wakizashi'"
+            },
+            {
+            "killing_golden_wakizashi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_wakizashi'"
+            },
+            {
+              "killing_wooden_wakizashi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'wooden_katana'"
+            },
+            {
+            "killing_stone_wakizashi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'stone_katana'"
+            },
+            {
+            "killing_iron_wakizashi_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_wakizashi'"
+            },
+            {
+            "killing_netherite_wakizahsi_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_wakizashi_vltsb'"
+            },
+            {
+            "killing_diamond_wakizashi_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_wakizashi_vltsb'"
+            },
+            {
+            "killing_golden_wakizashi_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_wakizashi_vltsb'"
+            },
+            {
+            "killing_iron_wakizashi_vltsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_wakizashi_vltsb'"
+            },
+            {
+            "killing_netherite_wakizahsi_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_wakizashi_rdsmtsb'"
+            },
+            {
+            "killing_diamond_wakizashi_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_wakizashi_rdsmtsb'"
+            },
+            {
+            "killing_golden_wakizashi_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_wakizashi_rdsmtsb'"
+            },
+            {
+            "killing_iron_wakizashi_rdsmtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_wakizashi_rdsmtsb'"
+            },
+            {
+            "killing_netherite_wakizahsi_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'netherite_katana_wakizashi_rndtsb'"
+            },
+            {
+            "killing_diamond_wakizashi_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'diamond_katana_wakizashi_rndtsb'"
+            },
+            {
+            "killing_golden_wakizashi_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'golden_katana_wakizashi_rndtsb'"
+            },
+            {
+            "killing_iron_wakizashi_rndtsb_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'iron_katana_wakizashi_rndtsb'"
+            },
+            {
+              "killing_shield_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand') && query.get_equipped_item_name('off_hand') == 'shield'"
+            },
+            {
+              "killing_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ]
+        },
+        "killing_diamond": {
+          "transitions": [
+            {
+              "default": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "killing_shield_diamond": {
+          "transitions": [
+            {
+              "shield": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "shield": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 shield"
+          ]
+        },
+        "killing_totem_diamond": {
+          "transitions": [
+            {
+              "totem": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "totem": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 totem"
+          ]
+        },
+        "killing_arrow_diamond": {
+          "transitions": [
+            {
+              "arrow": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "arrow": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 arrow"
+          ]
+        },
+        "killing_wooden_katana_diamond": {
+          "transitions": [
+            {
+              "wooden_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_katana"
+          ]
+        },
+        "killing_stone_katana_diamond": {
+          "transitions": [
+            {
+              "stone_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_katana"
+          ]
+        },
+        "killing_iron_katana_diamond": {
+          "transitions": [
+            {
+              "iron_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana"
+          ]
+        },
+        "killing_golden_katana_diamond": {
+          "transitions": [
+            {
+              "golden_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana"
+          ]
+        },
+        "killing_diamond_katana_diamond": {
+          "transitions": [
+            {
+              "diamond_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana"
+          ]
+        },
+        "killing_netherite_katana_diamond": {
+          "transitions": [
+            {
+              "netherite_katana": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katana": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana"
+          ]
+        },
+        "killing_iron_katana_vltsb_diamond": {
+          "transitions": [
+            {
+              "iron_katana_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katana_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_vltsb"
+          ]
+        },
+        "killing_golden_katana_vltsb_diamond": {
+          "transitions": [
+            {
+              "golden_katana_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katana_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_vltsb"
+          ]
+        },
+        "killing_diamond_katana_vltsb_diamond": {
+          "transitions": [
+            {
+              "diamond_katana_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katana_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_vltsb"
+          ]
+        },
+        "killing_netherite_katana_vltsb_diamond": {
+          "transitions": [
+            {
+              "netherite_katana_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katana_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_vltsb"
+          ]
+        },
+        "killing_iron_katana_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "iron_katana_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katana_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_rdsmtsb"
+          ]
+        },
+        "killing_golden_katana_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "golden_katana_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katana_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_rdsmtsb"
+          ]
+        },
+        "killing_diamond_katana_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "diamond_katana_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katana_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_rdsmtsb"
+          ]
+        },
+        "killing_netherite_katana_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "netherite_katana_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katana_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_rdsmtsb"
+          ]
+        },
+        "killing_iron_katana_rndtsb_diamond": {
+          "transitions": [
+            {
+              "iron_katana_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katana_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_rndtsb"
+          ]
+        },
+        "killing_golden_katana_rndtsb_diamond": {
+          "transitions": [
+            {
+              "golden_katana_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katana_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_rndtsb"
+          ]
+        },
+        "killing_diamond_katana_rndtsb_diamond": {
+          "transitions": [
+            {
+              "diamond_katana_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katana_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_rndtsb"
+          ]
+        },
+        "killing_netherite_katana_rndtsb_diamond": {
+          "transitions": [
+            {
+              "netherite_katana_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katana_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_rndtsb"
+          ]
+        },
+        "killing_wooden_wakizashi_diamond": {
+          "transitions": [
+            {
+              "wooden_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_katana_wakizashi"
+          ]
+        },
+        "killing_stone_wakizashi_diamond": {
+          "transitions": [
+            {
+              "stone_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_katana_wakizashi"
+          ]
+        },
+        "killing_iron_wakizashi_diamond": {
+          "transitions": [
+            {
+              "iron_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_wakizashi"
+          ]
+        },
+        "killing_golden_wakizashi_diamond": {
+          "transitions": [
+            {
+              "golden_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_wakizashi"
+          ]
+        },
+        "killing_diamond_wakizashi_diamond": {
+          "transitions": [
+            {
+              "diamond_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_wakizashi"
+          ]
+        },
+        "killing_netherite_wakizashi_diamond": {
+          "transitions": [
+            {
+              "netherite_wakizashi": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_wakizashi": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_wakizashi"
+          ]
+        },
+        "killing_iron_wakizashi_vltsb_diamond": {
+          "transitions": [
+            {
+              "iron_wakizashi_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_wakizashi_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_wakizashi_vltsb"
+          ]
+        },
+        "killing_golden_wakizashi_vltsb_diamond": {
+          "transitions": [
+            {
+              "golden_wakizashi_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_wakizashi_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_wakizashi_vltsb"
+          ]
+        },
+        "killing_diamond_wakizashi_vltsb_diamond": {
+          "transitions": [
+            {
+              "diamond_wakizashi_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_wakizashi_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_wakizashi_vltsb"
+          ]
+        },
+        "killing_netherite_wakizashi_vltsb_diamond": {
+          "transitions": [
+            {
+              "netherite_wakizashi_vltsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_wakizashi_vltsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_wakizashi_vltsb"
+          ]
+        },
+        "killing_iron_wakizashi_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "iron_wakizashi_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_wakizashi_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_wakizashi_rdsmtsb"
+          ]
+        },
+        "killing_golden_wakizashi_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "golden_wakizashi_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_wakizashi_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_wakizashi_rdsmtsb"
+          ]
+        },
+        "killing_diamond_wakizashi_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "diamond_wakizashi_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_wakizashi_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_wakizashi_rdsmtsb"
+          ]
+        },
+        "killing_netherite_wakizashi_rdsmtsb_diamond": {
+          "transitions": [
+            {
+              "netherite_wakizashi_rdsmtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_wakizashi_rdsmtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_wakizashi_rdsmtsb"
+          ]
+        },
+        "killing_iron_wakizashi_rndtsb_diamond": {
+          "transitions": [
+            {
+              "iron_wakizashi_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_wakizashi_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katana_wakizashi_rndtsb"
+          ]
+        },
+        "killing_golden_wakizashi_rndtsb_diamond": {
+          "transitions": [
+            {
+              "golden_wakizashi_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_wakizashi_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katana_wakizashi_rndtsb"
+          ]
+        },
+        "killing_diamond_wakizashi_rndtsb_diamond": {
+          "transitions": [
+            {
+              "diamond_wakizashi_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_wakizashi_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katana_wakizashi_rndtsb"
+          ]
+        },
+        "killing_netherite_wakizashi_rndtsb_diamond": {
+          "transitions": [
+            {
+              "netherite_wakizashi_rndtsb": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_wakizashi_rndtsb": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katana_wakizashi_rndtsb"
+          ]
+        },
+        "killing_wooden_dagger_diamond": {
+          "transitions": [
+            {
+              "wooden_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_dagger"
+          ]
+        },
+        "killing_stone_dagger_diamond": {
+          "transitions": [
+            {
+              "stone_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_dagger"
+          ]
+        },
+        "killing_iron_dagger_diamond": {
+          "transitions": [
+            {
+              "iron_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_dagger"
+          ]
+        },
+        "killing_golden_dagger_diamond": {
+          "transitions": [
+            {
+              "golden_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_dagger"
+          ]
+        },
+        "killing_diamond_dagger_diamond": {
+          "transitions": [
+            {
+              "diamond_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_dagger"
+          ]
+        },
+        "killing_netherite_dagger_diamond": {
+          "transitions": [
+            {
+              "netherite_dagger": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_dagger": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_dagger"
+          ]
+        },
+        "killing_wooden_longsword_diamond": {
+          "transitions": [
+            {
+              "wooden_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_longsword"
+          ]
+        },
+        "killing_stone_longsword_diamond": {
+          "transitions": [
+            {
+              "stone_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_longsword"
+          ]
+        },
+        "killing_iron_longsword_diamond": {
+          "transitions": [
+            {
+              "iron_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_longsword"
+          ]
+        },
+        "killing_golden_longsword_diamond": {
+          "transitions": [
+            {
+              "golden_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_longsword"
+          ]
+        },
+        "killing_diamond_longsword_diamond": {
+          "transitions": [
+            {
+              "diamond_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_longsword"
+          ]
+        },
+        "killing_netherite_longsword_diamond": {
+          "transitions": [
+            {
+              "netherite_longsword": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_longsword": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_longsword"
+          ]
+        },
+        "killing_wooden_katar_diamond": {
+          "transitions": [
+            {
+              "wooden_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "wooden_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:wooden_katar"
+          ]
+        },
+        "killing_stone_katar_diamond": {
+          "transitions": [
+            {
+              "stone_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "stone_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:stone_katar"
+          ]
+        },
+        "killing_iron_katar_diamond": {
+          "transitions": [
+            {
+              "iron_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "iron_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:iron_katar"
+          ]
+        },
+        "killing_golden_katar_diamond": {
+          "transitions": [
+            {
+              "golden_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "golden_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:golden_katar"
+          ]
+        },
+        "killing_diamond_katar_diamond": {
+          "transitions": [
+            {
+              "diamond_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "diamond_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:diamond_katar"
+          ]
+        },
+        "killing_netherite_katar_diamond": {
+          "transitions": [
+            {
+              "netherite_katar": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_dual_hand')"
+            }
+          ],
+          "on_entry": [
+            "/function handblock"
+          ]
+        },
+        "netherite_katar": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/replaceitem entity @s slot.weapon.offhand 0 pixel:netherite_katar"
+          ]
+        }
+      }
+    }
+  }
+}

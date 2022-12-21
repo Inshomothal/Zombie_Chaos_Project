@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.medical_kit.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"medical_kit": {
+					"rotation": [384.27596, 174.58155, -135.21639],
+					"position": [-5, 13, 5],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.medical_kit.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"medical_kit": {
+					"rotation": [384.27596, 174.58155, -135.21639],
+					"position": [-5, 13, 5],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.medical_kit.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"medical_kit": {
+					"rotation": [-57.27471, -98.95876, -56.29657],
+					"position": [0, 12, -3],
+					"scale": 1
+				}
+			}
+		}
+	}
+}

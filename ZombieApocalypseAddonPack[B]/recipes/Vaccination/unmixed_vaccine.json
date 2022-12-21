@@ -1,0 +1,23 @@
+{
+   "format_version":"1.12",
+   "minecraft:recipe_shapeless":{
+      "description":{
+         "identifier":"true:zombie_vaccine_unmixed"
+      },
+      "tags":[
+         "crafting_table"
+      ],
+      "ingredients":[
+         {
+            "item":"true:zombie_antidote"
+         },
+         {
+            "item":"true:vial_of_blood"
+         }
+      ],
+      "result":{
+         "item":"true:zombie_vaccine_unmixed",
+         "count":1
+      }
+   }
+}

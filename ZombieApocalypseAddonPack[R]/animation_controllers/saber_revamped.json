@@ -1,0 +1,155 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.saber.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.saber"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_saber') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_saber') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_saber') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_saber') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_saber') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_saber')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"sabre": "variable.saber"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_saber')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_saber')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "saber_unsheathe"
+					],
+					"transitions": [
+						{
+							"sabre": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.saber"
+						}
+					]
+				},
+				"sabre": {
+				    "animations": [
+				      "saber_stance0",
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && !query.is_sneaking"
+					    },
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"ls_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+						"katana_unsheathed_0",
+                      "shield_no_back"
+				    ],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && variable.random_3 ==0"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random_3 >=1"
+						},
+						{
+							"default": "!variable.saber"
+						},
+						{
+							"attack3": "variable.attack_time>0 && variable.random_3 >=2"
+						},
+						{
+							"block": "query.is_sneaking"
+						}
+					]
+				},
+				"block": {
+					"animations": [
+				        "saber_block",
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving"
+					    },
+					  "katana_unsheathed_0",
+                      "shield_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && variable.random_3 ==0"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random_3 >=1"
+						},
+						{
+							"default": "!variable.saber"
+						},
+						{
+							"attack3": "variable.attack_time>0 && variable.random_3 >=2"
+						},
+						{
+							"sabre": "!query.is_sneaking"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "saber_attack0",
+					  "katana_unsheathed_0",
+                      "shield_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.saber"
+						},
+						{
+							"sabre": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+                      "shield_no_back",
+					  "katana_unsheathed_0",
+					  "saber_attack1"
+					],
+					"transitions": [
+						{
+							"default": "!variable.saber"
+						},
+						{
+							"sabre": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+                      "shield_no_back",
+					  "katana_unsheathed_0",
+					  "saber_attack2"
+					],
+					"transitions": [
+						{
+							"default": "!variable.saber"
+						},
+						{
+							"sabre": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

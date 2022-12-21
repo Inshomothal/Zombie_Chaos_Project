@@ -1,0 +1,68 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:iron_lung_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "iron_lung_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "Iron Lung Scroll\nReduces exhaustion rate"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "condition": "query.scoreboard('irnlng') < 1 && query.scoreboard('dmndlng') < 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add irnlng dummy",
+		        "scoreboard players set @s irnlng 1",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Passive: Iron lung applied\"}]}"
+		      ]
+	   	    }
+          },
+		  {
+		    "condition": "query.scoreboard('irnlng') >= 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+			    "tellraw @s {\"rawtext\":[{\"text\":\"You already have this passive\"}]}"
+		      ]
+	   	    }
+          },
+		  {
+		    "condition": "query.scoreboard('dmndlng') >= 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+			    "tellraw @s {\"rawtext\":[{\"text\":\"You already have a passive greater than this{§6diamond lung§r}\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

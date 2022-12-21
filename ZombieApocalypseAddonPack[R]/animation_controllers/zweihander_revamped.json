@@ -1,0 +1,120 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.zweihander.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.zweihander"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:zweihander')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"halberd": "variable.zweihander"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:zweihander')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "gs_unsheathe"
+					],
+					"transitions": [
+						{
+							"zweihander": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.zweihander"
+						}
+					]
+				},
+				"zweihander": {
+				    "animations":[
+				      {
+				        "zweihander_stance0": "!query.is_moving"
+				      },
+				      {
+				        "spear_move": "!query.is_sprinting && query.is_moving && !query.is_sneaking"
+				      },
+				      {
+				        "spear_sprint": "query.is_sprinting"
+				      },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						}
+				    ],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && variable.random_3 == 0"
+						},
+						{
+							"attack1": "variable.attack_time>0 && variable.random_3 == 1"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random_3 == 1"
+						},
+						{
+							"default": "!variable.zweihander"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+				        "zweihander_attack0"
+					],
+					"transitions": [
+						{
+							"zweihander": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.zweihander"
+						}
+					]
+				},
+				"attack_1": {
+					"animations": [
+				        "zweihander_attack1"
+					],
+					"transitions": [
+						{
+							"zweihander": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.zweihander"
+						}
+					]
+				},
+				"attack_2": {
+					"animations": [
+				        "zweihander_attack2"
+					],
+					"transitions": [
+						{
+							"zweihander": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.zweihander"
+						}
+					]
+				}
+			}
+		}
+	}
+}

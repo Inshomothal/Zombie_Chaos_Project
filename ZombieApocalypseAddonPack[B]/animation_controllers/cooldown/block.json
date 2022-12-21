@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.parry": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "killing": "query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_saber')&& query.is_sneaking"
+            }
+          ],
+          "on_entry": [
+            "@s remove_block"
+          ]
+        },
+        "killing": {
+          "transitions": [
+            {
+              "default": "!query.is_sneaking"
+            },
+            {
+              "default": "!query.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_saber')"
+            }
+          ],
+          "on_entry": [
+            "@s add_block"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:sentry_bullet",
+         "materials":{
+            "default":"skeleton"
+         },
+         "textures":{
+            "default":"textures/entity/guns/bullet"
+         },
+         "geometry":{
+            "default":"geometry.bullet"
+         },
+         "animations":{
+            "bullet_fire":"controller.animation.bullet_fire"
+         },
+         "scripts":{
+            "animate":[
+               {
+                  "bullet_fire":"query.life_time <= 1"
+               }
+            ]
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ],
+         "sound_effects":{
+            "fire":"sentry_fire"
+         }
+      }
+   }
+}

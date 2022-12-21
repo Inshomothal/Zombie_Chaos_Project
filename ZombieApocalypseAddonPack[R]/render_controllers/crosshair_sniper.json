@@ -1,0 +1,16 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.crosshair_sniper":{
+         "textures":[
+            "texture.crosshair_sniper"
+         ],
+         "geometry":"geometry.crosshair_sniper",
+         "materials":[
+            {
+               "*":"material.default"
+            }
+         ]
+      }
+   }
+}

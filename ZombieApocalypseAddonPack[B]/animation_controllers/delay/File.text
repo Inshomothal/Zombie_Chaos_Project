@@ -1,0 +1,18 @@
+            {
+            "killing_netherite_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'netherite_katar'"
+            },
+            {
+            "killing_diamond_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'diamond_katar'"
+            },
+            {
+            "killing_golden_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'golden_katar'"
+            },
+            {
+              "killing_wooden_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'wooden_katar'"
+            },
+            {
+            "killing_stone_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'stone_katar'"
+            },
+            {
+            "killing_iron_katar_diamond": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_halberd', 'minecraft:is_greatsword') && query.get_equipped_item_name('off_hand') == 'iron_katar'"
+            },

@@ -1,0 +1,635 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.longsword.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  },
+					  {
+					    "ls_shield_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.longsword && !variable.longswordoh"
+						},
+						{
+							"unsheathe_two": "variable.longsword && variable.longswordoh"
+						},
+						{
+							"unsheathe_shield": "variable.longsword && query.get_equipped_item_name('off_hand') == 'shield'"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_longsword') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_longsword')&&!query.is_item_name_any('slot.hotbar',0,'pixel:iron_longsword')&&!query.is_item_name_any('slot.hotbar',0,'pixel:golden_longsword')&&!query.is_item_name_any('slot.hotbar',0,'pixel:diamond_longsword')&&!query.is_item_name_any('slot.hotbar',0,'pixel:netherite_longsword')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"longsword": "variable.longsword && !variable.longswordoh"
+						},
+						{
+							"longsword_dual": "variable.longsword && variable.longswordoh"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_longsword')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_longsword')"
+						}
+					]
+				},
+				"unsheathe_two": {
+					"animations": [
+					  "longsword_unsheathe_two"
+					],
+					"transitions": [
+						{
+							"longsword_dual": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"unsheathe": "!variable.longswordoh"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "longsword_unsheathe"
+					],
+					"transitions": [
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"unsheathe_two": "variable.longsword_oh"
+						},
+						{
+							"unsheathe_shield": "query.get_equipped_item_name('off_hand') == 'shield'"
+						}
+					]
+				},
+				"unsheathe_shield": {
+					"animations": [
+					  "ls_shield_unsheathe"
+					],
+					"transitions": [
+						{
+							"longsword_shield": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"unsheathe_two": "variable.longsword_oh"
+						},
+						{
+							"unsheathe": "query.get_equipped_item_name('off_hand') != 'shield'"
+						}
+					]
+				},
+				"longsword_dual": {
+				    "animations":[
+				      {
+				        "dl_stance0": "!query.is_moving"
+				      },
+				      {
+				        "ls_move_dual": "query.is_moving && !query.is_sprinting"
+				      },
+				      {
+				        "ls_sprint": "query.is_moving && query.is_sprinting"
+				      },
+				      "longsword_back_none"
+				    ],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"dual_attack": "variable.attack_time>0 && query.mark_variant == 0"
+						},
+						{
+							"dualattack2": "variable.attack_time>0 && query.mark_variant == 1"
+						},
+						{
+							"dual_attack3": "variable.attack_time>0 && query.mark_variant == 2"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"dual_attack": {
+					"animations": [
+					    "dl_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword_dual": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"dual_attack2": {
+					"animations": [
+					    "dl_attack1",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword_dual": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"dual_attack3": {
+					"animations": [
+					    "dl_attack2",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword_dual": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword_shield": {
+					"animations": [
+"longsword_back_none",
+				      {
+				        "ls_sneak_move": "query.is_moving && query.is_sneaking"
+				      },
+				      {
+				        "ls_sneak_dual": "!query.is_moving && query.is_sneaking"
+				      },
+						{
+							"ls_shield_stance": "query.get_equipped_item_name('off_hand') == 'shield' && !query.is_moving && !query.is_sneaking"
+						},
+				        {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				        },
+						{
+							"ls_shield_move": "query.get_equipped_item_name('off_hand') == 'shield' && query.modified_move_speed && !query.is_sprinting && query.is_moving && !query.is_sneaking"
+						},
+						{
+							"ls_shield_sprint": "query.get_equipped_item_name('off_hand') == 'shield' && query.is_sprinting"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword": "!variable.longsword && query.get_equipped_item_name('off_hand') != 'shield'"
+						},
+						{
+							"attack_shield1": "variable.attack_time>0 && variable.random_3 == 0"
+						},
+						{
+							"attack_shield2": "variable.attack_time>0 && variable.random_3 == 1"
+						},
+						{
+							"attack_shield3": "variable.attack_time>0 && variable.random_3 == 2"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"attack_lunge": "variable.attack_time>0 && query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"longsword": {
+					"animations": [
+				      {
+				        "longsword_stance0": "!query.is_moving"
+				      },
+				      {
+				        "ls_move": "query.is_moving && !query.is_sprinting"
+				      },
+				      {
+				        "ls_sprint": "query.is_moving && query.is_sprinting"
+				      },
+"longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword_shield": "!variable.longsword && query.get_equipped_item_name('off_hand') == 'shield'"
+						},
+						{
+							"longsword_dual": "variable.longswordoh"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"attack_lunge": "variable.attack_time>0 && query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween_0": {
+					"animations": [
+				        "longsword_inbetween0",
+				        "timer_inbet_short",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"attack_1_0": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 0"
+						},
+						{
+							"attack_1_1": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 1"
+						},
+						{
+							"attack_1_2": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 2"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween_1": {
+					"animations": [
+				        "longsword_inbetween1",
+				        "timer_inbet_short",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"attack_2_0": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 0"
+						},
+						{
+							"attack_2_1": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 1"
+						},
+						{
+							"attack_2_2": "variable.attack_time>0 && !query.is_sprinting && variable.random_3 == 2"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween_2": {
+					"animations": [
+				        "longsword_inbetween2",
+				        "timer_inbet_short",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"attack_3": "variable.attack_time>0 && !query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween_3": {
+					"animations": [
+				        "longsword_inbetween3",
+				        "timer_inbet_short",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"attack": "variable.attack_time>0 && !query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sneak": {
+				    "animations":[
+				      {
+				        "ls_sneak": "!query.is_moving && !variable.longswordoh"
+				      },
+				      {
+				        "ls_sneak_dual": "!query.is_moving && variable.longswordoh"
+				      },
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+				      {
+				        "ls_sneak_move": "query.is_moving"
+				      },
+				      "longsword_back_none"
+				    ],
+					"transitions": [
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword": "!query.is_sneaking && !variable.longswordoh"
+						},
+						{
+							"longsword_dual": "!query.is_sneaking && variable.longswordoh"
+						},
+						{
+							"longsword_shield": "query.get_equipped_item_name('off_hand') == 'shield'"
+						},
+						{
+							"dual_attack": "variable.attack_time>0 && variable.longswordoh"
+						},
+						{
+							"attack": "variable.attack_time>0 && !variable.longswordoh"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"ride": {
+					"animations": [
+				     "longsword_stance_horseback",
+
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+"longsword_back_none"
+					],
+					"transitions": [
+						{
+							"attack_ride": "variable.attack_time>0 && variable.random == 0"
+						},
+						{
+							"default": "!variable.longsword"
+						},
+						{
+							"longsword": "!query.is_riding"
+						},
+						{
+							"attack_ride1": "variable.attack_time>0 && variable.random == 1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_ride": {
+					"animations": [
+					  "shield_no_back",
+				      "longsword_stance_horseback_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"ride": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_ride1": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance_horseback_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"ride": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_shield1": {
+					"animations": [
+				      "ls_shield_attack1",
+				      "longsword_back_none",
+				      "shield_no_back"
+					],
+					"transitions": [
+						{
+							"longsword_shield": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_shield2": {
+					"animations": [
+				      "ls_shield_attack2",
+				      "longsword_back_none",
+				      "shield_no_back"
+					],
+					"transitions": [
+						{
+							"longsword_shield": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_shield3": {
+					"animations": [
+				      "ls_shield_attack3",
+				      "longsword_back_none",
+				      "shield_no_back"
+					],
+					"transitions": [
+						{
+							"longsword_shield": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "shield_no_back",
+				      "longsword_stance0_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_0": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_1_0": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance1_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_1_1": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance1_attack1",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_1_2": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance1_attack2",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_2_0": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance2_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_2_1": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance2_attack1",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_2_2": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance2_attack2",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_3": {
+					"animations": [
+					  "shield_no_back",
+                      "longsword_stance3_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"inbetween_3": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				},
+				"attack_lunge": {
+					"animations": [
+					  "shield_no_back",
+					  "longsword_stance2_attack0",
+				      "longsword_back_none"
+					],
+					"transitions": [
+						{
+							"longsword": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.longsword"
+						}
+					]
+				}
+			}
+		}
+	}
+}

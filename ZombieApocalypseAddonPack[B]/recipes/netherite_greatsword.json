@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:netherite_greatswoed"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#X"
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:iron_greatsword"
+      },
+      "X": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:netherite_greatsword"
+    }
+  }
+}

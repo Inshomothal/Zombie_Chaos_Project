@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:pre_iron_wakizashi_blade"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CX",
+      "CXC",
+      "XC "
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:clay_ball"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:pre_iron_wakizashi_blade"
+    }
+  }
+}

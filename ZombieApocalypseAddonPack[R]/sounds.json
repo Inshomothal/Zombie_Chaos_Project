@@ -1,0 +1,956 @@
+{
+  "entity_sounds": {
+    "entities": {
+      //3D Combat Addon
+      "pixel:vnpc": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:farmer": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:fisherman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:librarian": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:cartographer": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:cleric": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:fletcher": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:leatherworker": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:toolsmith": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:weaponsmith": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:armorer": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:mason": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:nitwit": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:low_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:mid_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:high_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:samurai": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:batter": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:hammer_wielder": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.hammer_attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:knifesman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.small_attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:sickler": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.small_attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:axeman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmlow_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmmid_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmhigh_potential_warrior": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmsamurai": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmbatter": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmhammer_wielder": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.hammer_attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmknifesman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.small_attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fan_user": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.small_attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:fmaxeman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "attack": "mob.guard.attack",
+          "hurt": "mob.fmguard.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death"
+        }
+      },
+      "pixel:incubus_villager": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "pixel:gluttony": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.gluttony.idle",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.gluttony.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:humanoid_cdweller": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.chaos_dweller.move",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.chaos.move",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:wolf_cdweller": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.chaos_dweller.move",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.chaos.move",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:scorpion": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.scorpion.eat",
+          "attack": "mob.scorpion.sting",
+          "step": {
+            "sound": "mob.scorpion.move",
+            "volume": 0.65,
+            "pitch": [0.9, 1.1]
+          }
+        }
+      },
+      "pixel:living_puddle": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "attack": "mob.puddle.splash"
+        }
+      },
+      "pixel:corrupted_rune": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.runic.crackle"
+        }
+      },
+      "pixel:gem_bug": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.stone.fly",
+          "attack": "mob.scorpion.sting"
+        }
+      },
+      "pixel:gem_crab": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.stone.idle",
+          "step": {
+            "sound": "mob.stone.glide",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:eaten_cow": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.cow.say",
+          "hurt": "mob.cow.hurt",
+          "death": "mob.cow.hurt",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [0.9, 1.1]
+          }
+        }
+      },
+      "pixel:eaten_chicken": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.chicken.say",
+          "hurt": "mob.chicken.hurt",
+          "death": "mob.chicken.hurt",
+          "step": {
+            "sound": "mob.chicken.step",
+            "volume": 0.25,
+            "pitch": 1.0
+          },
+          "plop": "mob.chicken.plop"
+        }
+      },
+      "pixel:eaten_pig": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.pig.say",
+          "hurt": "mob.pig.say",
+          "death": "mob.pig.death",
+          "step": {
+            "sound": "mob.pig.step",
+            "volume": 0.2,
+            "pitch": 1.0
+          },
+          "boost": {
+            "sound": "mob.pig.boost",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "death.to.zombie": {
+            "sound": "mob.pig.death",
+            "volume": 2.0
+          }
+        }
+      },
+      "pixel:eaten_sheep": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.sheep.say",
+          "hurt": "mob.sheep.say",
+          "death": "mob.sheep.say",
+          "step": {
+            "sound": "mob.sheep.step",
+            "volume": 0.4,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:ancient_golem": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "step": {
+            "sound": "mob.golem.stand",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:ancient_golem_summoned": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "step": {
+            "sound": "mob.golem.stand",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "pixel:fvnpc": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmfarmer": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmweaver": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmfisherman": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmlibrarian": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmcleric": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmfletcher": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmleatherworker": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:fmcarthographer": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:pregnant": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:succubus_villager": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.fvnpc.idle",
+          "hurt": "mob.fvnpc.hurt",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.fvnpc.haggle",
+          "haggle.yes": "mob.fvnpc.yes",
+          "haggle.no": "mob.fvnpc.no"
+        }
+      },
+      "pixel:crow": {
+        "volume": 0.1,
+        "pitch": [0.76, 1.14],
+        "events": {
+          "ambient": "mob.crow.idle",
+          "hurt": {
+            "sound": "mob.parrot.hurt",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "death": {
+            "sound": "mob.parrot.death",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "step": "mob.parrot.step",
+          "eat": "mob.parrot.eat",
+          "fly": "mob.parrot.fly"
+        }
+      },
+      "pixel:ladybug": {
+        "volume": 0.1,
+        "pitch": [0.76, 1.14],
+        "events": {
+          "ambient": "mob.ladybug.fly"
+        }
+      },
+      "pixel:incubus": {
+        "volume": 0.1,
+        "pitch": [0.76, 1.14],
+        "events": {
+          "ambient": "mob.incubus.idle",
+          "hurt": {
+            "sound": "mob.incubus.hurt",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "death": {
+            "sound": "mob.incubus.hurt",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "fly": {
+            "sound": "mob.parrot.fly",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "step": "mob.parrot.step"
+        }
+      },
+      "pixel:succubus": {
+        "volume": 0.1,
+        "pitch": [0.76, 1.14],
+        "events": {
+          "ambient": "mob.succubus.idle",
+          "hurt": {
+            "sound": "mob.succubus.hurt",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "death": {
+            "sound": "mob.succubus.hurt",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "fly": {
+            "sound": "mob.parrot.fly",
+            "volume": 1.0,
+            "pitch": [0.8, 1.0]
+          },
+          "step": "mob.parrot.step"
+        }
+      },
+
+      //True Zombie Survival Addon
+      "true:true_generic_zombie": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_generic_zombie_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_armless": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_armless_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_frozen": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.ice",
+          "death": "zombie.mob.ice"
+        }
+      },
+      "true:true_zombie_gang_leader": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_gang_leader_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_gang_member": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_gang_member_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_hazmat": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_hazmat_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_katana_trader": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_katana_trader_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_old_hobo": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_old_hobo_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:true_zombie_soldier": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "ambient": "zombie.mob.moan",
+          "hurt": "zombie.mob.pain",
+          "death": "zombie.mob.dead"
+        }
+      },
+      "true:true_zombie_soldier_corpse": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "zombie.dead.flesh",
+          "tripod": "zombie.dead.bone"
+        }
+      },
+      "true:vortex_mixer": {
+        "volume": 1.0,
+        "pitch": [1.0, 1.0],
+        "events": {
+          "saddle": "vortex.mix.start"
+        }
+      },
+      "player": {
+        "events": {
+          "attack.nodamage": "game.player.attack.nodamage",
+          "attack.strong": "game.player.attack.strong",
+          "death": "true.death",
+          "death.in.water": "true.death",
+          "elderguardian.curse": {
+            "pitch": 1.0,
+            "sound": "mob.elderguardian.curse",
+            "volume": 1.0
+          },
+          "hurt": "game.player.hurt",
+          "hurt.in.water": "game.player.hurt",
+          "throw": {
+            "pitch": [0.33, 0.5],
+            "sound": "random.bow",
+            "volume": 0.5
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      }
+    }
+  }
+}

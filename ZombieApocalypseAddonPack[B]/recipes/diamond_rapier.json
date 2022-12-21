@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:diamond_rapier"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  H",
+      "HX ",
+      "#H "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      },
+      "H": {
+        "item": "minecraft:gold_nugget"
+      }
+    },
+    "result": {
+      "item": "pixel:diamond_rapier"
+    }
+  }
+}

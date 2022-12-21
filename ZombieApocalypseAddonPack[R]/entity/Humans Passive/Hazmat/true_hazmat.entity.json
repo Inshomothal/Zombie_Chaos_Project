@@ -1,0 +1,36 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_hazmat",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/humans_passive/hazmat/true_hazmat"
+         },
+         "geometry":{
+            "default":"geometry.true_human"
+         },
+         "animations":{
+            "look_at_target":"animation.common.look_at_target",
+            "stand":"animation.true_human.stand",
+            "walk":"animation.true_human.walk",
+            "attack":"animation.true_human.attack",
+            "true_human_controller":"controller.animation.true_human"
+         },
+         "scripts":{
+            "animate":[
+               "true_human_controller"
+            ]
+         },
+         "spawn_egg":{
+            "texture":"true_npc"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ],
+         "enable_attachables":true
+      }
+   }
+}

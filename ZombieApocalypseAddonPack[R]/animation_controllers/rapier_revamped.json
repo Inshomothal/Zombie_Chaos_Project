@@ -1,0 +1,180 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.rapier.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.rapier"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:iron_rapier') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_rapier') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_rapier') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_rapier')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"rapier": "variable.rapier"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:iron_rapier') && query.is_item_name_any('slot.hotbar',0,'pixel:golden_rapier') && query.is_item_name_any('slot.hotbar',0,'pixel:diamond_rapier') && query.is_item_name_any('slot.hotbar',0,'pixel:netherite_rapier')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "rapier_unsheathe"
+					],
+					"transitions": [
+						{
+							"rapier": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.rapier"
+						}
+					]
+				},
+				"rapier": {
+				    "animations": [
+				      "rapier_stance0",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"ls_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    },
+					    "katana_unsheathed_0"
+				    ],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"attack0": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween0": {
+				    "animations": [
+				      "rapier_inbetween0",
+				      "timer_inbets"
+				    ],
+					"transitions": [
+						{
+							"attack1": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"rapier": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween1": {
+				    "animations": [
+				      "rapier_inbetween1",
+				      "timer_inbets"
+				    ],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"attack2": "variable.attack_time>0"
+						},
+						{
+							"rapier": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween2": {
+				    "animations": [
+				      "rapier_inbetween2",
+				      "timer_inbets"
+				    ],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"attack3": "variable.attack_time>0"
+						},
+						{
+							"rapier": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack0": {
+					"animations": [
+					  "rapier_attack0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"inbetween0": "query.any_animation_finished"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "rapier_attack1"
+					],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"inbetween1": "query.any_animation_finished"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+					  "rapier_attack2"
+					],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"inbetween2": "query.any_animation_finished"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+					  "rapier_attack3"
+					],
+					"transitions": [
+						{
+							"default": "!variable.rapier"
+						},
+						{
+							"rapier": "query.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

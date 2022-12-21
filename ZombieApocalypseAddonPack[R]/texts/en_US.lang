@@ -1,0 +1,519 @@
+##3D Combat Addon
+item.pixel:longbow.name=Longbow
+item.pixel:skill_dodge.name=Dodge Scroll
+item.pixel:normal_tsuka.name=Katana Handle
+item.pixel:repair_item.name=Repair Item
+item.pixel:skill_dodge_2.name=Dodge Scroll x2
+item.pixel:iron_lung_scroll.name=Iron Lung Scroll
+item.pixel:diamond_lung_scroll.name=Diamond Lung Scroll
+item.pixel:exhaust_10_scroll.name=Add ten exhaustion
+item.pixel:spear_style2_scroll.name=Spear Style 2
+item.pixel:head_splitter_scroll.name=Head Splitter Scroll||§6Halberd
+item.pixel:knockout_mace_scroll.name=Knock Out Scroll||§6Mace
+item.pixel:master_parrying_scroll.name=Master Parrying Scroll||§6Saber
+item.pixel:odachi_ground_slash_scroll.name=Ground Slash Scroll||§6Odachi
+item.pixel:odachi_triple_slashes_scroll.name=Triple Slashes Scroll||§6Odachi
+item.pixel:greatsword_ground_slash_scroll.name=Ground Slash Scroll||§6Greatsword
+item.pixel:higher_mind_scroll.name=Higher Mind Scroll||§6Katana
+item.pixel:never_missing_spear_scroll.name=Gungnir Scroll||§6Spear
+item.pixel:poison_dagger_scroll.name=Poison Dagger Scroll||§6Dagger
+item.pixel:fatal_dagger_scroll.name=Bleeding Dagger Scroll||§6Dagger
+item.pixel:invisibility_dagger_scroll.name=Assasin Dagger Scroll||§6Dagger
+item.pixel:zweihander.name=Zweihander
+item.pixel:netherite_greatsword.name=Netherite Greatsword
+item.pixel:flanged_mace.name=Flanged Mace
+item.pixel:giant_mace.name=Giant Mace
+item.pixel:netherite_katar.name=Netherite Katar
+item.pixel:pre_iron_odachi_blade.name=Pre Iron Odachi Blade
+item.pixel:iron_odachi_blade.name=Iron Odachi Blade
+item.pixel:pre_diamond_katana_blade.name=Pre Diamond Katana Blade
+item.pixel:pre_golden_katana_blade.name=Pre Golden Katana Blade
+item.pixel:pre_iron_katana_blade.name=Pre Iron Katana Blade
+item.pixel:diamond_katana_blade.name=Diamond Katana Blade
+item.pixel:golden_katana_blade.name=Golden Katana Blade
+item.pixel:iron_katana_blade.name=Iron Katana Blade
+item.pixel:stone_katana_blade.name=Stone Katana Blade
+item.pixel:wooden_katana_blade.name=Wooden Katana Blade
+item.pixel:pre_diamond_wakizashi_blade.name=Pre Diamond Wakizashi Blade
+item.pixel:pre_golden_wakizashi_blade.name=Pre Golden Wakizashi Blade
+item.pixel:pre_iron_wakizashi_blade.name=Pre Iron Wakizashi Blade
+item.pixel:diamond_wakizashi_blade.name=Diamond Wakizashi Blade
+item.pixel:golden_wakizashi_blade.name=Golden Wakizashi Blade
+item.pixel:iron_wakizashi_blade.name=Iron Wakizashi Blade
+item.pixel:stone_wakizashi_blade.name=Stone Wakizashi Blade
+item.pixel:wooden_wakizashi_blade.name=Wooden Wakizashi Blade
+item.pixel:netherite_glaive.name=Netherite Glaive
+item.pixel:netherite_mace.name=Netherite Mace
+item.pixel:netherite_halberd.name=Netherite Halberd
+item.pixel:netherite_rapier.name=Netherite Rapier
+item.pixel:netherite_saber.name=Netherite Saber
+item.pixel:netherite_longsword.name=Netherite Lonsword
+item.pixel:netherite_spear.name=Netherite Spear
+item.pixel:netherite_dagger.name=Netherite Dagger
+item.pixel:netherite_katana.name=Netherite Katana
+item.pixel:netherite_katana_wakizashi.name=Netherite Katana Wakizashi
+item.pixel:netherite_lance.name=Netherite Lance
+item.pixel:diamond_katar.name=Diamond Katar
+item.pixel:diamond_glaive.name=Diamond Glaive
+item.pixel:diamond_mace.name=Diamond Mace
+item.pixel:diamond_halberd.name=Diamond Halberd
+item.pixel:diamond_rapier.name=Diamond Rapier
+item.pixel:diamond_saber.name=Diamond Saber
+item.pixel:diamond_longsword.name=Diamond Longsword
+item.pixel:diamond_spear.name=Diamond Spear
+item.pixel:diamond_dagger.name=Diamond Dagger
+item.pixel:diamond_katana.name=Diamond Katana
+item.pixel:diamond_katana_wakizashi.name=Diamond Katana Wakizashi
+item.pixel:diamond_lance.name=Diamond Lance
+item.pixel:golden_katar.name=Golden Katar
+item.pixel:golden_glaive.name=Golden Glaive
+item.pixel:golden_mace.name=Golden Mace
+item.pixel:golden_halberd.name=Golden Halberd
+item.pixel:golden_rapier.name=Golden Rapier
+item.pixel:golden_saber.name=Golden Saber
+item.pixel:golden_longsword.name=Golden Longsword
+item.pixel:golden_spear.name=Golden Spear
+item.pixel:golden_dagger.name=Golden Dagger
+item.pixel:golden_katana.name=Golden Katana
+item.pixel:golden_katana_wakizashi.name=Golden Katana Wakizashi
+item.pixel:golden_lance.name=Golden Lance
+item.pixel:iron_greatsword.name=Iron Greatsword
+item.pixel:iron_katar.name=Iron Katar
+item.pixel:iron_glaive.name=Iron Glaive
+item.pixel:iron_mace.name=Iron Mace
+item.pixel:iron_halberd.name=Iron Halberd
+item.pixel:iron_rapier.name=Iron Rapier
+item.pixel:iron_saber.name=Iron Saber
+item.pixel:iron_longsword.name=Iron Longsword
+item.pixel:iron_spear.name=Iron Spear
+item.pixel:iron_dagger.name=Iron Dagger
+item.pixel:iron_katana.name=Iron Katana
+item.pixel:iron_katana_wakizashi.name=Iron Katana Wakizashi
+item.pixel:iron_lance.name=Iron Lance
+item.pixel:stone_greatsword.name=Stone Greatsword
+item.pixel:stone_katar.name=Stone Katar
+item.pixel:stone_glaive.name=Stone Glaive
+item.pixel:stone_mace.name=Stone Mace
+item.pixel:stone_halberd.name=Stone Halberd
+item.pixel:stone_saber.name=Stone Saber
+item.pixel:stone_longsword.name=Stone Longsword
+item.pixel:stone_spear.name=Stone Spear
+item.pixel:stone_dagger.name=Stone Dagger
+item.pixel:stone_katana.name=Stone Katana
+item.pixel:stone_katana_wakizashi.name=Stone Katana Wakizashi
+item.pixel:stone_lance.name=Stone Lance
+item.pixel:wooden_katar.name=Wooden Katar
+item.pixel:wooden_glaive.name=Wooden Glaive
+item.pixel:wooden_mace.name=Wooden Mace
+item.pixel:wooden_halberd.name=Wooden Halberd
+item.pixel:wooden_saber.name=Wooden Saber
+item.pixel:wooden_longsword.name=Wooden Longsword
+item.pixel:wooden_spear.name=Wooden Spear
+item.pixel:wooden_dagger.name=Wooden Dagger
+item.pixel:wooden_katana.name=Wooden Katana
+item.pixel:wooden_katana_wakizashi.name=Wooden Katana Wakizashi
+item.pixel:wooden_lance.name=Wooden Lance
+item.pixel:bec_de_corbin.name=Bec De Corbin(spike)
+item.pixel:bec_de_corbin_back.name=Bec De Corbin(hammer)
+
+item.pixel:normal_tsuba.name=Normal Tsuba
+item.pixel:maru_gata_tsuba.name=Round Tsuba
+item.pixel:kaku_gata_tsuba.name=Hexagon Tsuba
+item.pixel:oval_gata_tsuba.name=Oval Tsuba
+
+item.golden_saber:shield.name=Golden Saber
+item.stone_saber:shield.name=Stone Saber
+item.iron_saber:shield.name=Iron Saber
+item.wooden_saber:shield.name=Wood Saber
+item.diamond_saber:shield.name=Diamond Saber
+item.netherite_saber:shield.name=Netherite Saber
+
+item.pixel:pole_hammer.name=Pole Hammer
+entity.pixel:smash.name=Smash
+entity.pixel:iaido.name=Iaido
+entity.pixel:halberd_splash.name=Halberd Splash
+entity.hit:heavy_mace.name=Mace Attack
+entity.pixel:hit.name=Attack
+entity.pixel:heavy_hit.name=Heavy Attack
+entity.pixel:slash_invisible.name=Katana Attack
+entity.pixel:greatsword_damage.name=Greatsword Ability
+entity.pixel:lance_charge.name=Lance Charge
+entity.pixel:slash_crescent.name=Slash Crescent
+entity.pixel:dagger_throw.name=Phantom Dagger
+entity.pixel:golden_spear_throw.name=Golden Spear
+entity.pixel:wooden_spear_throw.name=Wooden Spear
+entity.pixel:stone_spear_throw.name=Stone Spear
+entity.pixel:iron_spear_throw.name=Iron Spear
+entity.pixel:diamond_spear_throw.name=Diamond Spear
+entity.pixel:netherite_spear_throw.name=Netherite Spear
+
+item.pixel:iron_katana_rndtsb.name=Iron Katana(Round Tsuba)
+item.pixel:golden_katana_rndtsb.name=Golden Katana(Round Tsuba)
+item.pixel:diamond_katana_rndtsb.name=Diamond Katana(Round Tsuba)
+item.pixel:netherite_katana_rndtsb.name=Netherite Katana(Round Tsuba)
+
+item.pixel:iron_katana_rdsmtsb.name=Iron Katana(Hexagon Tsuba)
+item.pixel:golden_katana_rdsmtsb.name=Golden Katana(Hexagon Tsuba)
+item.pixel:diamond_katana_rdsmtsb.name=Diamond Katana(Hexagon Tsuba)
+item.pixel:netherite_katana_rdsmtsb.name=Netherite Katana(Hexagon Tsuba)
+
+item.pixel:iron_katana_vltsb.name=Iron Katana(Oval Tsuba)
+item.pixel:golden_katana_vltsb.name=Golden Katana(Oval Tsuba)
+item.pixel:diamond_katana_vltsb.name=Diamond Katana(Oval Tsuba)
+item.pixel:netherite_katana_vltsb.name=Netherite Katana(Oval Tsuba)
+
+item.pixel:iron_katana_wakizashi_rndtsb.name=Iron Katana Wakizashi(Round Tsuba)
+item.pixel:golden_katana_wakizashi_rndtsb.name=Golden Katana Wakizashi(Round Tsuba)
+item.pixel:diamond_katana_wakizashi_rndtsb.name=Diamond Katana Wakizashi(Round Tsuba)
+item.pixel:netherite_katana_wakizashi_rndtsb.name=Netherite Katana Wakizashi(Round Tsuba)
+
+item.pixel:iron_katana_wakizashi_rdsmtsb.name=Iron Katana Wakizashi(Hexagon Tsuba)
+item.pixel:golden_katana_wakizashi_rdsmtsb.name=Golden Katana Wakizashi(Hexagon Tsuba)
+item.pixel:diamond_katana_wakizashi_rdsmtsb.name=Diamond Katana Wakizashi(Hexagon Tsuba)
+item.pixel:netherite_katana_wakizashi_rdsmtsb.name=Netherite Katana Wakizashi(Hexagon Tsuba)
+
+item.pixel:iron_katana_wakizashi_vltsb.name=Iron Katana Wakizashi(Oval Tsuba)
+item.pixel:golden_katana_wakizashi_vltsb.name=Golden Katana Wakizashi(Oval Tsuba)
+item.pixel:diamond_katana_wakizashi_vltsb.name=Diamond Katana Wakizashi(Oval Tsuba)
+item.pixel:netherite_katana_wakizashi_vltsb.name=Netherite Katana Wakizashi(Oval Tsuba)
+
+item.pixel:iron_odachi.name=Iron Odachi(Normal Tsuba)
+item.pixel:iron_odachi_rndtsb.name=Iron Odachi(Round Tsuba)
+item.pixel:iron_odachi_rdsmtsb.name=Iron Odachi(Hexagon Tsuba)
+item.pixel:iron_odachi_vltsb.name=Iron Odachi(Oval Tsuba)
+
+##True Survival Zombie Apocalypse Addon
+
+##TINNED FOOD
+item.true:tin_of_beans.name=Tin Of Beans
+item.true:tin_of_spaghetti_hoops.name=Tin Of Spaghetti Hoops
+item.true:tin_of_tomato_soup.name=Tin Of Tomato Soup
+item.true:tin_of_vegetable_soup.name=Tin Of Vegetable Soup
+item.true:tin_of_chicken_soup.name=Tin Of Chicken Soup
+item.true:tin_of_mushroom_soup.name=Tin Of Mushroom Soup
+item.true:tin_of_tuna.name=Tin Of Tuna
+item.true:tin_of_custard.name=Tin Of Custard
+item.true:tin_of_oxtail_soup.name=Tin Of Oxtail Soup
+item.true:tin_of_beef_ravioli.name=Tin Of Beef Ravioli
+item.true:tin_of_macaroni_cheese.name=Tin Of Macaroni Cheese
+
+##BOXED FOOD
+item.true:chocolate_poptarts.name=Chocolate Pop Tarts
+item.true:chocolate_fudge_poptarts.name=Chocolate Fudge Pop Tarts
+item.true:strawberry_poptarts.name=Strawberry Pop Tarts
+item.true:cookies_n_creme_poptarts.name=Cookies & Creme Pop Tarts
+
+##NATURAL FOOD
+item.true:rat_raw.name=Raw Rat Meat
+item.true:rat_cooked.name=Cooked Rat Meat
+item.true:crow_raw.name=Raw Crow Meat
+item.true:crow_cooked.name=Cooked Crow Meat
+
+
+##POT NOODLES
+item.true:pot_noodle_chicken.name=Pot Noodle (Chicken & Mushroom)
+item.true:pot_noodle_chicken_water.name=Pot Noodle (Chicken & Mushroom) With Water
+item.true:pot_noodle_chicken_hot.name=Hot Pot Noodle (Chicken & Mushroom)
+item.true:pot_noodle_chow_mein.name=Pot Noodle (Chow Mein)
+item.true:pot_noodle_chow_mein_water.name=Pot Noodle (Chow Mein) With Water
+item.true:pot_noodle_chow_mein_hot.name=Hot Pot Noodle (Chow Mein)
+item.true:pot_noodle_beef.name=Pot Noodle (Beef & Tomato)
+item.true:pot_noodle_beef_water.name=Pot Noodle (Beef & Tomato) With Water
+item.true:pot_noodle_beef_hot.name=Hot Pot Noodle (Beef & Tomato)
+item.true:pot_noodle_curry.name=Pot Noodle (Orginal Curry)
+item.true:pot_noodle_curry_water.name=Pot Noodle (Orginal Curry) With Water
+item.true:pot_noodle_curry_hot.name=Hot Pot Noodle (Orginal Curry)
+
+
+##BOWLS OF FOOD
+item.true:bowl_of_beans.name=Bowl of Beans
+item.true:bowl_of_beans_hot.name=Hot Bowl of Beans
+item.true:bowl_of_spaghetti_hoops.name=Bowl of Spaghetti Hoops
+item.true:bowl_of_spaghetti_hoops_hot.name=Hot Bowl of Spaghetti Hoops
+item.true:bowl_of_mushroom_soup.name=Bowl of Mushroom Soup
+item.true:bowl_of_mushroom_soup_hot.name=Hot Bowl of Mushroom Soup
+item.true:bowl_of_chicken_soup.name=Bowl of Chicken Soup
+item.true:bowl_of_chicken_soup_hot.name=Hot Bowl of Chicken Soup
+item.true:bowl_of_tomato_soup.name=Bowl of Tomato Soup
+item.true:bowl_of_tomato_soup_hot.name=Hot Bowl of Tomato Soup
+item.true:bowl_of_vegetable_soup.name=Bowl of Vegetable Soup
+item.true:bowl_of_vegetable_soup_hot.name=Hot Bowl of Vegetable Soup
+item.true:bowl_of_tuna.name=Bowl of Tuna
+item.true:bowl_of_tuna_hot.name=Hot Bowl of Tuna
+item.true:bowl_of_custard.name=Bowl of Custard
+item.true:bowl_of_custard_hot.name=Hot Bowl of Custard
+item.true:bowl_of_oxtail_soup.name=Bowl of Oxtail Soup
+item.true:bowl_of_oxtail_soup_hot.name=Hot Bowl of Oxtail Soup
+item.true:bowl_of_beef_ravioli.name=Bowl of Beef Ravioli
+item.true:bowl_of_beef_ravioli_hot.name=Hot Bowl of Beef Ravioli
+item.true:bowl_of_macaroni_cheese.name=Bowl of Macaroni Cheese
+item.true:bowl_of_macaroni_cheese_hot.name=Hot Bowl of Macaroni Cheese
+
+
+##DRINKS
+item.true:red_bull.name=Can of Red Bull
+item.true:monster.name=Can of Monster
+item.true:coca_cola.name=Can of Coca-Cola
+item.true:cherry_coca_cola.name=Can of Cherry Coca-Cola
+item.true:pepsi.name=Can of Pepsi
+item.true:evian.name=Bottle of Evian Water
+
+
+##CLOTHES FOR THE CURED
+item.true:leather_apron.name=Leather Apron
+item.true:blue_dungarees.name=Blue Dungarees
+item.true:police_uniform.name=Police Uniform
+item.true:blue_waistcoat.name=Blue Waistcoat
+item.true:red_tweed_jacket.name=Red Tweed Jacket
+item.true:brown_leather_coat.name=Brown Leather Coat
+item.true:white_tshirt.name=White T-Shirt
+item.true:blue_hoodie.name=Blue Hoodie
+item.true:lab_coat.name=Lab Coat
+
+
+
+##TRADING ITEMS
+item.true:lynx_africa_deodorant.name=Lynx Africa Deodorant
+item.true:colgate_toothpaste.name=Colgate Toothpaste
+item.true:andrex_toiletroll.name=Andrex Toilet Roll
+item.true:lemon_original_source_shower_gel.name=Lemon Original Source Shower Gel
+item.true:lime_original_source_shower_gel.name=Lime Original Source Shower Gel
+item.true:tresemme_shampoo.name=Tresemme Shampoo
+item.true:o2_canister.name=O2 Canister
+item.true:deck_of_cards.name=Deck Of Cards
+item.true:gillette_shaving_foam.name=Gillette Shaving Foam
+item.true:pack_of_duracell_batteries.name=Pack Of Duracell AAA Batteries
+item.true:bar_of_dove_soap.name=Bar Of Dove Soap
+
+
+
+##CURED ITEMS
+item.true:toblerone.name=Bar of Toblerone
+item.true:sma_gold_baby_milk.name=SMA Gold Baby Milk
+item.true:sma_pro_infant_milk.name=SMA Pro Infant Milk
+item.true:digiorno_pizza.name=DiGiorno Pepperoni Pizza
+item.true:iron_scrap.name=Iron Scrap
+
+
+
+##VACCINATION ITEMS
+item.true:zombie_vaccine.name=Vial of CDCKP85 Zombie Vaccine
+item.true:zombie_vaccine_unmixed.name=Vial of CDCKP85 Zombie Vaccine (Unmixed)
+item.true:zombie_antidote.name=Vial of CDCKP85 Zombie Antidote
+item.true:vial_of_blood.name=Vial of Zombie Blood
+item.true:empty_vial.name=Empty Vial
+
+
+##MISC
+item.true:zombie_heart.name=Zombie Heart
+item.true:empty_can.name=Empty Can
+
+
+##NEWSPAPERS
+item.true:newspaper_1.name=§7§oOld Newspaper §o(Rising)
+item.true:newspaper_2.name=§7§oOld Newspaper §o(Emergency)
+item.true:newspaper_3.name=§7§oOld Newspaper §o(The End)
+item.true:newspaper_4.name=§7§oOld Newspaper §o(Missing)
+item.true:newspaper_5.name=§7§oOld Newspaper §o(Alert)
+item.true:newspaper_6.name=§7§oOld Newspaper §o(Homeless)
+item.true:newspaper_7.name=§7§oOld Newspaper §o(The Dead)
+item.true:newspaper_8.name=§7§oOld Newspaper §o(Scientists)
+
+
+
+##SENTRY GUN PARTS
+item.true:sentry_gun_legs.name=Sentry Legs
+item.true:sentry_gun_barrel.name=Sentry Barrel
+item.true:sentry_gun_turret.name=Sentry Turret
+item.true:sentry_gun_sensor.name=Sentry Sensor
+item.true:sentry_gun_bullet_case.name=Sentry Bullet Case
+
+
+##BULLET MAKING ITEMS
+item.true:pure_gunpowder.name=Pure Gunpowder
+item.true:sulfur_powder.name=Sulfur
+item.true:charcoal_powder.name=Charcoal Powder
+item.true:potassium_nitrate_powder.name=Potassium Nitrate
+item.true:melted_copper.name=Melted Copper
+
+
+
+#BICYCLE PARTS
+item.true:bicycle_wheel.name=Bicycle Wheel
+item.true:bicycle_frame_green.name=Bicycle Frame (Green)
+item.true:bicycle_frame_blue.name=Bicycle Frame (Blue)
+item.true:bicycle_frame_yellow.name=Bicycle Frame (Yellow)
+item.true:bicycle_handle_bars_green.name=Bicycle Handle Bars (Green)
+item.true:bicycle_handle_bars_blue.name=Bicycle Handle Bars (Blue)
+item.true:bicycle_handle_bars_yellow.name=Bicycle Handle Bars (Yellow)
+
+
+
+
+##ZOMBIE SPAWN EGGS
+item.spawn_egg.entity.true:true_generic_zombie.name=§2Zombie (Walker)
+item.spawn_egg.entity.true:true_generic_zombie_crawler.name=§2Zombie (Crawler)
+item.spawn_egg.entity.true:true_zombie_soldier.name=§2Zombie (Soldier)
+item.spawn_egg.entity.true:true_zombie_hazmat.name=§2Zombie (Hazmat Scientist)
+item.spawn_egg.entity.true:true_zombie_katana_trader.name=§2Zombie (Katana Trader)
+item.spawn_egg.entity.true:true_zombie_old_hobo.name=§2Zombie (Old Hobo)
+item.spawn_egg.entity.true:true_zombie_gang_leader.name=§2Zombie (Gang Leader)
+item.spawn_egg.entity.true:true_zombie_gang_member.name=§2Zombie (Gang Member)
+item.spawn_egg.entity.true:true_zombie_armless.name=§2Zombie (Armless)
+item.spawn_egg.entity.true:true_zombie_frozen.name=§2Zombie (Frozen)
+item.spawn_egg.entity.true:true_zombie_chicken.name=§2Zombie (Chicken)
+item.spawn_egg.entity.true:true_zombie_pig.name=§2Zombie (Pig)
+item.spawn_egg.entity.true:true_zombie_wolf.name=§2Zombie (Wolf)
+item.spawn_egg.entity.true:true_zombie_horse.name=§2Zombie (Horse)
+item.spawn_egg.entity.true:true_zombie_cat.name=§2Zombie (Cat)
+
+
+##ANIMAL SPAWN EGGS
+item.spawn_egg.entity.true:rat.name=Rat
+item.spawn_egg.entity.true:crow.name=Crow
+
+
+##HUMAN SPAWN EGGS
+item.spawn_egg.entity.true:true_soldier.name=§7Soldier
+item.spawn_egg.entity.true:true_hazmat.name=§7Hazmat Scientist
+item.spawn_egg.entity.true:true_katana_trader.name=§7Katana Trader
+item.spawn_egg.entity.true:true_old_hobo.name=§7Old Hobo
+item.spawn_egg.entity.true:true_gang_leader.name=§7Gang Leader
+item.spawn_egg.entity.true:true_gang_member.name=§7Gang Member
+item.spawn_egg.entity.true:true_camp_survivor.name=§7Camp Survivor
+
+
+
+##MISC SPAWN EGGS
+item.spawn_egg.entity.true:vortex_mixer_ready.name=Vortex Mixer
+item.spawn_egg.entity.true:supply_crate.name=Supply Crate
+item.spawn_egg.entity.true:proximity_mine.name=Proximity Mine
+item.spawn_egg.entity.true:sentry_gun.name=§7Sentry Gun
+item.spawn_egg.entity.true:newspaper_stand_empty.name=Newpaper Stand
+item.spawn_egg.entity.true:bicycle_green.name=Bicycle (Green)
+item.spawn_egg.entity.true:bicycle_blue.name=Bicycle (Blue)
+item.spawn_egg.entity.true:bicycle_yellow.name=Bicycle (Yellow)
+
+
+
+##ZOMBIES
+entity.true:true_generic_zombie.name=§2A Zombie Walker
+entity.true:true_generic_zombie_crawler.name=§2A Zombie Crawler
+entity.true:true_generic_zombie_corpse.name=§2A Zombie Corpse
+entity.true:true_zombie_soldier.name=§2A Zombie Soldier
+entity.true:true_zombie_soldier_corpse.name=§2A Zombie Soldier Corpse
+entity.true:true_zombie_hazmat.name=§2A Zombie Hazmat Scientist
+entity.true:true_zombie_hazmat_corpse.name=§2A Zombie Hazmat Scientist Corpse
+entity.true:true_zombie_katana_trader.name=§2A Zombie Katana Trader
+entity.true:true_zombie_katana_trader_corpse.name=§2A Zombie Katana Trader Corpse
+entity.true:true_zombie_old_hobo.name=§2A Zombie Old Hobo
+entity.true:true_zombie_old_hobo_corpse.name=§2A Zombie Old Hobo Corpse
+entity.true:true_zombie_gang_leader.name=§2A Zombie Gang Leader
+entity.true:true_zombie_gang_leader_corpse.name=§2A Zombie Gang Leader Corpse
+entity.true:true_zombie_gang_member.name=§2A Zombie Gang Member
+entity.true:true_zombie_gang_member_corpse.name=§2A Zombie Gang Member Corpse
+entity.true:true_zombie_armless.name=§2A Zombie Armless
+entity.true:true_zombie_armless_corpse.name=§2A Zombie Armless Corpse
+entity.true:true_zombie_frozen.name=§2A Zombie frozen
+entity.true:true_zombie_chicken.name=§2A Zombie Chicken
+entity.true:true_zombie_chicken_corpse.name=§2A Zombie Chicken Corpse
+entity.true:true_zombie_pig.name=§2A Zombie Pig
+entity.true:true_zombie_pig_corpse.name=§2A Zombie Pig Corpse
+entity.true:true_zombie_wolf.name=§2A Zombie Wolf
+entity.true:true_zombie_wolf_corpse.name=§2A Zombie Wolf Corpse
+entity.true:true_zombie_horse.name=§2A Zombie Horse
+entity.true:true_zombie_horse_corpse.name=§2A Zombie Horse Corpse
+entity.true:true_zombie_cat.name=§2A Zombie Cat
+entity.true:true_zombie_cat_corpse.name=§2A Zombie Cat Corpse
+
+
+##ANIMALS
+entity.true:rat.name=§7A Rat
+entity.true:crow.name=§7A Crow
+
+
+##HUMANS
+entity.true:true_soldier.name=§7A Soldier
+entity.true:true_soldier<>.name=A Stray Bullet
+entity.true:true_hazmat.name=§7A Hazmat Scientist
+entity.true:true_katana_trader.name=§7A Katana Trader
+entity.true:true_old_hobo.name=§7An Old Hobo
+entity.true:true_gang_leader.name=§7A Gang Leader
+entity.true:true_gang_member.name=§7A Gang Member
+entity.true:true_camp_survivor.name=§7A Camp Survivor
+
+
+##MISC
+entity.true:supply_crate.name=Supply Crate
+entity.true:land_mine.name=A Proximity Mine
+entity.true:sentry_gun_loaded<>.name=A Stray Bullet
+entity.true:newspaper_stand_empty.name=Newpaper Stand
+entity.true:vortex_mixer_ready.name=Vortex Mixer
+entity.true:bicycle_green.name=Bicycle (Green)
+entity.true:bicycle_blue.name=Bicycle (Blue)
+entity.true:bicycle_yellow.name=Bicycle (Yellow)
+
+
+
+##ACTIONS
+
+action.interact.loot=Loot Corpse
+action.interact.loot_skeleton=Loot Skeleton
+action.interact.vaccinate=Vaccinate
+action.interact.insert_vaccine=Insert Vaccine
+action.interact.load_sentry_gun=Load Bullets Case
+action.interact.open_loot_box=Open Supply Drop
+action.interact.place_paper=Place Newspaper
+action.interact.give_clothing=Give Clothing
+action.interact.give_cards=Give Deck of Cards
+action.hint.exit.true:bicycle_green=Crouch to get off the Bicycle
+action.hint.exit.true:bicycle_blue=Crouch to get off the Bicycle
+action.hint.exit.true:bicycle_yellow=Crouch to get off the Bicycle
+
+
+
+##TILES
+tile.true:razor_wire.name=Razor Wire
+tile.true:pure_gunpowder_block.name=Pure Gunpowder Block
+tile.true:potassium_nitrate_ore.name=Potassium Nitrate Ore
+tile.true:sulfur_ore.name=Sulfur Ore
+tile.true:red_metal_block.name=Red Metal Block
+tile.true:rusty_metal_block.name=Rusty Metal Block
+tile.true:rubbish_bag_black.name=Rubbish Bag (Black)
+tile.true:rubbish_bag_grey.name=Rubbish Bag (Grey)
+tile.true:rubbish_bag_white.name=Rubbish Bag (White)
+tile.true:rubbish_bag_green.name=Rubbish Bag (Green)
+tile.true:caution_tape.name=Caution Tape
+tile.true:forge_table.name=Forge Table
+tile.true:stones.name=Stones
+tile.true:small_table_stripped_oak.name=Small Table (Stripped Oak)
+tile.true:small_table_on_side_stripped_oak.name=Small Table Fallen (Stripped Oak)
+tile.true:picture_frame_tilted_dark_oak_1.name=Picture Frame Tilted 1 (Dark Oak)
+tile.true:picture_frame_tilted_dark_oak_2.name=Picture Frame Tilted 2 (Dark Oak)
+tile.true:picture_frame_tilted_dark_oak_3.name=Picture Frame Tilted 3 (Dark Oak)
+tile.true:picture_frame_broken_dark_oak_1.name=Picture Frame Broken 1 (Dark Oak)
+tile.true:picture_frame_broken_dark_oak_2.name=Picture Frame Broken 2 (Dark Oak)
+tile.true:picture_frame_broken_dark_oak_3.name=Picture Frame Broken 3 (Dark Oak)
+tile.true:radiator_left_side_brown.name=Radiator Brown (Left Side)
+tile.true:radiator_right_side_brown.name=Radiator Brown (Right Side)
+tile.true:bookshelf_tilted.name=Bookshelf (Turned)
+tile.true:shoe_box.name=Shoe Box
+tile.true:litter_tray.name=Litter Tray
+tile.true:wardrobe_bottom_left_dark_oak.name=Wardrobe Dark Oak (Bottom Left)
+tile.true:wardrobe_bottom_right_dark_oak.name=Wardrobe Dark Oak (Bottom Right)
+tile.true:wardrobe_top_left_dark_oak.name=Wardrobe Dark Oak (Top Left)
+tile.true:wardrobe_top_right_dark_oak.name=Wardrobe Dark Oak (Top Right)
+tile.true:sofa_left_side_dark_grey.name=Sofa Dark Grey (Left Side)
+tile.true:sofa_right_side_dark_grey.name=Sofa Dark Grey (Right Side)
+tile.true:sofa_middle_dark_grey.name=Sofa Dark Grey (middle)
+tile.true:bin_blue.name=Bin (Blue)
+tile.true:book_stack.name=Stack of Books
+tile.true:book_single_blue.name=Book (Blue)
+tile.true:rubix.name=Rubix Cube
+tile.true:letter_w_white.name=Letter W (White)
+tile.true:letter_a_white.name=Letter a (White)
+tile.true:letter_l_white.name=Letter l (White)
+tile.true:letter_m_tilted_white.name=Letter m Tilted (White)
+tile.true:letter_r_white.name=Letter r (White)
+tile.true:letter_t_white.name=Letter t (White)
+tile.true:walmart_logo.name=Walmart Logo

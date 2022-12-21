@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pill_bottle.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"pill_bottle": {
+					"rotation": [125, 0, 0],
+					"position": [0, 18, -1],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.pill_bottle.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"pill_bottle": {
+					"rotation": [125, 0, 0],
+					"position": [0, 18, -1],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.pill_bottle.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"pill_bottle": {
+					"position": [0, 16, -4],
+					"rotation": [90, 0, 0],
+					"scale": 0.3
+				}
+			}
+		}
+	}
+}

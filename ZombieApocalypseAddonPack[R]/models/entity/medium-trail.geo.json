@@ -1,0 +1,66 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.medium_trail",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "trail",
+					"pivot": [0, 18, 0]
+				},
+				{
+					"name": "center",
+					"parent": "trail",
+					"pivot": [26, 14, -20]
+				},
+				{
+					"name": "trailpart0",
+					"parent": "center",
+					"pivot": [26, 14, 5],
+					"cubes": [
+						{"origin": [19, 14, -2], "size": [14, 0, 14], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "trailpart1",
+					"parent": "center",
+					"pivot": [26, 14, -7],
+					"cubes": [
+						{"origin": [19, 14, -14], "size": [14, 0, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "trailpart2",
+					"parent": "center",
+					"pivot": [26, 14, -19],
+					"cubes": [
+						{"origin": [19, 14, -26], "size": [14, 0, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "trailpart3",
+					"parent": "center",
+					"pivot": [26, 14, -30],
+					"cubes": [
+						{"origin": [19, 14, -37], "size": [14, 0, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "trailpart4",
+					"parent": "center",
+					"pivot": [26, 14, -41],
+					"cubes": [
+						{"origin": [19, 14, -48], "size": [14, 0, 14], "uv": [0, 28]}
+					]
+				}
+			]
+		}
+	]
+}

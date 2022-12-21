@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.armory_crate",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "armory_crate",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-13, 0, 6], "size": [26, 8, 1], "uv": [0, 37]},
+						{"origin": [-13, 0, -6], "size": [26, 1, 12], "uv": [0, 15]},
+						{"origin": [-13, 1, -6], "size": [1, 7, 12], "uv": [26, 46]},
+						{"origin": [12, 1, -6], "size": [1, 7, 12], "uv": [0, 46]},
+						{"origin": [-13, 0, -7], "size": [26, 8, 1], "uv": [0, 28]},
+						{"origin": [13, 1, 6], "size": [1, 7, 1], "uv": [14, 46]},
+						{"origin": [-14, 1, 6], "size": [1, 7, 1], "uv": [4, 46]},
+						{"origin": [-14, 1, -7], "size": [1, 7, 1], "uv": [0, 46]},
+						{"origin": [13, 1, -7], "size": [1, 7, 1], "uv": [8, 46]},
+						{"origin": [-11.65328, 8, -10.74732], "size": [26, 1, 14], "pivot": [-12, 9, -3], "rotation": [0.78795, -17.48281, -2], "uv": [0, 0]},
+						{"origin": [9.34672, 8.5, -10.5], "size": [2, 1, 13.5], "pivot": [-12, 9, -3], "rotation": [0.78795, -17.48281, -2], "uv": [56, 47]},
+						{"origin": [-8.65328, 8.5, -10.5], "size": [2, 1, 13.5], "pivot": [-12, 9, -3], "rotation": [0.78795, -17.48281, -2], "uv": [39, 52]},
+						{"origin": [0.8, 8.5, -10.5], "size": [2, 1, 13.5], "pivot": [-12, 9, -3], "rotation": [0.78795, -17.48281, -2], "uv": [45, 33]},
+						{"origin": [-14, 0, -6], "size": [1, 9, 2], "uv": [6, 15]},
+						{"origin": [13, 0, -6], "size": [1, 9, 2], "uv": [6, 0]},
+						{"origin": [13, 0, 4], "size": [1, 9, 2], "uv": [0, 0]},
+						{"origin": [-14, 0, 4], "size": [1, 9, 2], "uv": [0, 15]}
+					]
+				}
+			]
+		}
+	]
+}

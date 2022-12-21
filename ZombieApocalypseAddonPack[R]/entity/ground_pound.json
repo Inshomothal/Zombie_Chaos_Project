@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pixel:ground_aftermath",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/grass_block"
+		 	},
+            "scripts": {
+             "animate": [
+                 "general"
+              ]
+            },
+			"geometry": {
+				"default": "geometry.ground_pound"
+			},
+			"animations": {
+				"general": "animation.ground_pound.start"
+			},
+			"render_controllers": [
+				"controller.render.warrior"
+			]
+		}
+	}
+}

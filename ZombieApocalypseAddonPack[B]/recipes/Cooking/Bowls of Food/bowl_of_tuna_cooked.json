@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:bowl_of_tuna_cooked"
+    },
+
+    
+    "tags": ["furnace", "smoker"],
+    "input": "true:bowl_of_tuna",
+    "output": "true:bowl_of_tuna_hot"
+  }
+}

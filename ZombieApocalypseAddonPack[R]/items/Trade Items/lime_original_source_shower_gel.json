@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:lime_original_source_shower_gel",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "lime_original_source_shower_gel"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Zombie Apocalypse Addon Combiner Pack [B]",
+    "description": "This will merge the addons together for my gameplay",
+    "uuid": "0230959d-e2af-46a1-b4a2-841acc8fdd4f",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 19, 20]
+  },
+  "modules": [
+    {
+      "description": "Script",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "74085ad2-d0e6-4868-b5d2-86986a9cf347",
+      "version": [0, 0, 1],
+      "entry": "scripts/main.js"
+    },
+    {
+      "description": "Data",
+      "type": "data",
+      "uuid": "64fab229-e2c8-4124-93cc-4c9d2d6ab7be",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5e099751-68a6-4aa1-961f-a9f8589606a2",
+      "version": [1, 9, 2]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.1.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-gametest",
+      "version": "1.1.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0-beta"
+    }
+  ],
+  "metadata": {
+    "authors": ["Pixeleddoki, Four Worlds Studios, ArtieTrey (Combiner)"]
+  }
+}

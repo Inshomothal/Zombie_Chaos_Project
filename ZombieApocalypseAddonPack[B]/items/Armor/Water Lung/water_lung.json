@@ -1,0 +1,37 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:water_lung",
+         "category":"Equipment"
+      },
+      "components":{
+         "minecraft:max_stack_size":1,
+         "minecraft:icon":{
+            "texture":"water_lung"
+         },
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.helmet"
+         },
+         "minecraft:display_name":{
+            "value":"Water Lung"
+         },
+         "minecraft:durability":{
+            "max_durability":120,
+            "damage_chance":{
+               "min":1,
+               "max":2
+            }
+         },
+         "minecraft:armor":{
+            "protection":1
+         },
+         "minecraft:wearable":{
+            "slot":"slot.armor.head"
+         }
+      },
+      "events":{
+         
+      }
+   }
+}

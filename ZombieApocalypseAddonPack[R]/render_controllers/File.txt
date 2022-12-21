@@ -1,0 +1,20 @@
+    "controller.render.back_rapier_iron": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.iron_rapier" ]
+    },
+    "controller.render.back_rapier_golden": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.golden_rapier" ]
+    },
+    "controller.render.back_rapier_diamond": {
+      "geometry": "Geometry.back_rapier",
+      "materials": [ { "*default": "Material.default" } ],
+      "textures": [ "Texture.diamond_rapier" ]
+    },
+    "controller.render.back_rapier_netherite": {
+      "geometry": "geometry.back_rapier",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "texture.netherite_rapier" ]
+    },

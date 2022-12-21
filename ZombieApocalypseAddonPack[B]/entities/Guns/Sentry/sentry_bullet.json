@@ -1,0 +1,51 @@
+{
+   "format_version":"1.12.0",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"true:sentry_bullet",
+         "is_spawnable":false,
+         "is_summonable":false,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:arrow"
+      },
+      "components":{
+         "minecraft:collision_box":{
+            "width":1.0,
+            "height":1.0
+         },
+         "minecraft:scale":{
+            "value":2.0
+         },
+         "minecraft:projectile":{
+            "on_hit":{
+               "impact_damage":{
+                  "damage":90.0,
+                  "knockback":true
+               },
+               "remove_on_hit":{
+                  
+               }
+            },
+            "power":4.00,
+            "gravity":0.02,
+            "inertia":1,
+            "uncertainty_base":0,
+            "uncertainty_multiplier":0,
+            "anchor":1,
+            "offset":[
+               0,
+               0.7,
+               0
+            ],
+            "reflect_on_hurt":false
+         },
+         "minecraft:physics":{
+            
+         },
+         "minecraft:pushable":{
+            "is_pushable":true,
+            "is_pushable_by_piston":true
+         }
+      }
+   }
+}

@@ -1,0 +1,42 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:smoke_grenade",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         },
+         "minecraft:max_stack_size":8,
+         "minecraft:display_name":{
+            "value":"Smoke Grenade"
+         },
+         "minecraft:icon":{
+            "texture":"smoke_grenade"
+         },
+         "minecraft:projectile":{
+            "projectile_entity":"true:smoke_grenade_thrown"
+         },
+         "minecraft:throwable":{
+            "do_swing_animation":true
+         },
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"throw",
+               "target":"self"
+            }
+         }
+      },
+      "events":{
+         "throw":{
+            "run_command":{
+               "command":[
+                  "execute @p ~ ~ ~ playsound throw.projectile"
+               ]
+            }
+         }
+      }
+   }
+}

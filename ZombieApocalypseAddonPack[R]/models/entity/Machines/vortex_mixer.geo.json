@@ -1,0 +1,56 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.vortex_mixer",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "vortex_mixer",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "vortex_mixer",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 0.5, -5], "size": [8, 1.5, 10], "uv": [0, 0]},
+						{"origin": [2.5, 0, 3], "size": [1, 1, 1], "uv": [4, 8]},
+						{"origin": [2.5, 0, -4], "size": [1, 1, 1], "uv": [0, 8]},
+						{"origin": [-3.5, 0, -4], "size": [1, 1, 1], "uv": [4, 6]},
+						{"origin": [-3.5, 0, 3], "size": [1, 1, 1], "uv": [6, 0]},
+						{"origin": [-3.9, 2, -4.9], "size": [7.8, 1, 9.8], "uv": [21, 14]},
+						{"origin": [-3.91, 2.85, -3.1], "size": [7.82, 4, 8], "uv": [0, 11]},
+						{"origin": [-1.5, 6, 0.9], "size": [3, 1, 3], "uv": [26, 4]},
+						{"origin": [-3.9, 3.045, -4.91], "size": [7.8, 4.24, 2.8], "pivot": [0, 3, -5], "rotation": [-25, 0, 0], "uv": [0, 23]},
+						{"origin": [-3.2, 3.3, -4.95], "size": [6.5, 3.5, 1], "pivot": [0, 3, -5], "rotation": [-25, 0, 0], "uv": [18, 24]}
+					]
+				},
+				{
+					"name": "mixer",
+					"parent": "vortex_mixer",
+					"pivot": [0, 8, 2.4],
+					"cubes": [
+						{"origin": [-1, 7, 1.4], "size": [2, 2, 2], "uv": [0, 0]},
+						{"origin": [-1.5, 7.5, 0.9], "size": [3, 1, 3], "uv": [26, 0]}
+					]
+				},
+				{
+					"name": "Vial",
+					"parent": "mixer",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 9, 1.95], "size": [1, 3, 1], "uv": [0, 4]},
+						{"origin": [-0.6, 12, 1.85], "size": [1.2, 1, 1.2], "uv": [4, 4]}
+					]
+				}
+			]
+		}
+	]
+}

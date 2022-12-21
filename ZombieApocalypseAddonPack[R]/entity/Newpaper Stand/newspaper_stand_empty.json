@@ -1,0 +1,23 @@
+{
+   "format_version":"1.8.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:newspaper_stand_empty",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/newspaper_stand/newspaper_stand_empty"
+         },
+         "geometry":{
+            "default":"geometry.newspaper_stand"
+         },
+         "spawn_egg":{
+            "texture":"newspaper_stand_empty"
+         },
+         "render_controllers":[
+            "controller.render.true_zombie"
+         ]
+      }
+   }
+}

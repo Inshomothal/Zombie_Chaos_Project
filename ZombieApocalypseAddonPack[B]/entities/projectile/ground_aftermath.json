@@ -1,0 +1,118 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "pixel:ground_aftermath",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+		"animate": [
+	      "double_hand"
+		]
+      },
+	  "animations": {
+		"double_hand":"animation.attack.ground"
+	  }
+    },
+    "component_groups": {
+      "pixel:despawn":{
+       "minecraft:instant_despawn":{
+        "remove_child_entities": false
+        }
+      },
+      "timer":{
+	    "minecraft:timer":{
+	      "time": 1,
+	      "looping": true,
+	      "time_down_event":{
+	        "event": "splode",
+	        "target": "self"
+	      }
+	    }
+      },
+      "splode":{
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 17,
+          "cause": "lava",
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "villager" },
+              { "test": "is_family", "subject": "other", "value": "mob" }
+            ]
+          },
+          "knockback": true
+        },
+        "minecraft:variant":{
+          "value": 1
+        },
+	    "minecraft:timer":{
+	      "time": 1,
+	      "looping": true,
+	      "time_down_event":{
+	        "event": "pixel:despawn",
+	        "target": "self"
+	      }
+	    }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "attack", "magic", "area" ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 8.0
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "timer"
+          ]
+        }
+      },
+      "splode": {
+        "add": {
+          "component_groups": [
+            "splode"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "timer"
+          ]
+        }
+      },
+      "pixel:despawn": {
+        "add": {
+          "component_groups": [
+            "pixel:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.katana.attack": {
+			"states": {
+				"default": {
+					"animations": [
+						"katana_sheathed",
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"katana": "variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						},
+						{
+							"katana": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb') && variable.katana||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb') && variable.katana"
+						}
+					]
+				},
+				"katana": {
+					"animations": [
+						"katana_sheathed",
+					{
+				        "katana_move": "query.modified_move_speed && query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					},
+					{
+				        "katana_sprint": "query.modified_move_speed && query.is_moving && query.is_sprinting && !query.is_sneaking"
+					},
+					{
+				        "katana_sneak_move": "query.modified_move_speed && query.is_moving && query.is_sneaking"
+					},
+					{
+				        "katana_sneak": "!query.is_moving && query.is_sneaking"
+					},
+					{
+				        "wakizashi_stance0": "!query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					},
+					  {
+					    "no_offhand": "query.get_equipped_item_name('off_hand') != ''"
+					  }
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.katana"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						"wakizashi_attack0_0"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.any_animation_finished"
+						}
+					]
+				},
+				"unsheath": {
+					"animations": [
+						"katana_stance0",
+"katana_unsheathed_0",
+					    "no_offhand",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheathing": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katana"
+						},
+					    {
+				            "un_move": "query.is_moving"
+					    },
+					    {
+				          "un_sneak": "query.is_sneaking"
+				    	},
+						{
+							"unsheath_attack": "variable.attack_time>0 && variable.random_3 ==0 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack2": "variable.attack_time>0 && variable.random_3 ==1 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack3": "variable.attack_time>0 && variable.random_3 ==2 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack_air": "variable.attack_time>0 && !query.is_on_ground"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"unsheath2": {
+					"animations": [
+						"katana_stance0",
+"katana_unsheathed_0",
+					    "no_offhand",
+						"timer"
+					],
+					"transitions": [
+						{
+							"sheathing": "query.all_animations_finished"
+						},
+					    {
+				            "un_move": "query.is_moving"
+					    },
+						{
+							"default": "!variable.katana"
+						},
+					    {
+				          "un_sneak": "query.is_sneaking"
+				    	},
+						{
+							"unsheath_attack4": "variable.attack_time>0 && variable.random_3 ==0 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack5": "variable.attack_time>0 && variable.random_3 ==1 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack6": "variable.attack_time>0 && variable.random_3 ==2 && !query.is_using_item && query.is_on_ground"
+						},
+						{
+							"unsheath_attack_air": "variable.attack_time>0 && !query.is_on_ground"
+						}
+					]
+				},
+				"un_move": {
+					"animations": [
+"katana_unsheathed",
+					  {
+				        "katana_move": "query.modified_move_speed && query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					  },
+					    "no_offhand",
+					  {
+				        "katana_sprint": "query.modified_move_speed && query.is_moving && query.is_sprinting && !query.is_sneaking"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheath": "!query.is_moving"
+						},
+						{
+							"default": "!variable.katana"
+						},
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"un_sneak": "query.is_sneaking"
+						}
+					]
+				},
+				"un_sneak": {
+					"animations": [
+"katana_sheathed",
+					    "no_offhand",
+					  {
+				        "katana_sneak_move": "query.modified_move_speed && query.is_moving && query.is_sneaking"
+					  },
+					  {
+				        "katana_sneak": "!query.is_moving && query.is_sneaking"
+					  }
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.katana"
+						},
+					    {
+							"unsheath": "!query.is_sneaking"
+						}
+					]
+				},
+				"unsheath_attack": {
+					"animations": [
+"katana_unsheathed_0",
+"katana_attack0_0",
+					    "no_offhand"
+					],
+					"transitions": [
+						{
+							"unsheath2": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack2": {
+					"animations": [
+					    "no_offhand",
+					    "katana_attack0_1",
+"katana_unsheathed_0"
+					],
+					"transitions": [
+						{
+							"unsheath2": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack3": {
+					"animations": [
+"katana_unsheathed_0",
+					    "no_offhand",
+"katana_attack0_2"
+					],
+					"transitions": [
+						{
+							"unsheath2": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack4": {
+					"animations": [
+"katana_unsheathed_0",
+					    "no_offhand",
+"katana_attack0_3"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack5": {
+					"animations": [
+"katana_unsheathed_0",
+					    "no_offhand",
+"katana_attack0_4"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack6": {
+					"animations": [
+"katana_unsheathed_0",
+					    "no_offhand",
+"katana_attack0_5"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					]
+				},
+				"unsheath_attack_air": {
+					"animations": [
+"katana_unsheathed_0",
+					    "no_offhand",
+"katana_attack1_0"
+					],
+					"transitions": [
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					]
+				},
+				"sheathing": {
+					"animations": [
+"katana_sheathing",
+					    "no_offhand"
+					],
+					"transitions": [
+						{
+							"katana": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

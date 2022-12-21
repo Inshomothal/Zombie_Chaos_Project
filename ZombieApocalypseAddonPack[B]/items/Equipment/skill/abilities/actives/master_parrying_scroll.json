@@ -1,0 +1,60 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:master_parrying_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "master_parrying_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:master_parrying_scroll.name"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "condition": "query.scoreboard('sbrmstr') >= 100",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add sbrsnkablt dummy",
+		        "scoreboard players set @s sbrsnkablt 1",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Saber focus ability changed to : Master Parrying\"}]}"
+		      ]
+	   	    }
+          },
+		  {
+		    "condition": "query.scoreboard('sbrmstr') < 100",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+			    "tellraw @s {\"rawtext\":[{\"text\":\"saber mastery not high enough:§b\"},{\"score\":{\"name\":\"@s\",\"objective\":\"sbrmstr\"}}]}",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"mastery needed:§b 100\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

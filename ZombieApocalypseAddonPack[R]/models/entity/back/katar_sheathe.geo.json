@@ -1,0 +1,41 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.katar_sheathe",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "katar_sheathe",
+					"parent": "waist",
+					"pivot": [2, 14, 0],
+					"cubes": [
+						{"origin": [-4.5, 11.1, -1.6], "size": [1, 1.4, 3.2], "inflate": -0.05, "uv": [0, 0]},
+						{"origin": [-4.5, 9.9, -1.4], "size": [1, 1.8, 2.8], "inflate": -0.05, "uv": [6, 9]},
+						{"origin": [-4.5, 9.25, -1], "size": [1, 1.25, 2], "inflate": -0.05, "uv": [8, 3]},
+						{"origin": [-4.5, 8.5, -1], "size": [1, 1.25, 2], "inflate": -0.05, "uv": [5, 0]},
+						{"origin": [-4.5, 7.75, -0.9], "size": [1, 1.25, 1.75], "inflate": -0.05, "uv": [10, 9]},
+						{"origin": [-4.5, 7.05, -0.6], "size": [1, 1.25, 1.25], "inflate": -0.05, "uv": [9, 0]},
+						{"origin": [-4.5, 6.37808, 0.12821], "size": [1, 6.5, 1], "inflate": -0.05, "pivot": [-4, 8.87808, 0.12821], "rotation": [-15, 0, 0], "uv": [4, 4]},
+						{"origin": [-4.5, 6.42808, -1.12821], "size": [1, 6.45, 1], "inflate": -0.05, "pivot": [-4, 8.87808, -0.12821], "rotation": [15, 0, 0], "uv": [0, 4]}
+					]
+				}
+			]
+		}
+	]
+}

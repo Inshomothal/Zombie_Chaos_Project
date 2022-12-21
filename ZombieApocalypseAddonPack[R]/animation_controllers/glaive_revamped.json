@@ -1,0 +1,292 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.glaive.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.glaive"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_glaive') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_glaive') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_glaive') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_glaive') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_glaive') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_glaive')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"heyt": "variable.glaive"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_glaive')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_glaive')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_glaive')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_glaive')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_glaive')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_glaive')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "glaive_unsheathe"
+					],
+					"transitions": [
+						{
+							"heyt": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						}
+					]
+				},
+				"heyt": {
+					"animations": [
+					  {
+					  "glaive_bob":"!query.is_moving && !query.is_sneaking"
+					  },
+					  {
+					  "glaive_move":"query.is_moving && !query.is_sneaking"
+					  },
+					  {
+					  "glaive_sneak":"!query.is_moving && query.is_sneaking"
+					  },
+					  {
+					  "glaive_sneak_move":"query.is_moving && query.is_sneaking"
+					  },
+					  "shield_no_back",
+					  "glaive_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						}
+					]
+				},
+				"sprint": {
+					"animations": [
+					  "glaive_sprint",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"heyt": "!query.is_sprinting"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  "glaive_attack0",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"inbetween": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"inbetween": {
+					"animations": [
+					  "timer_inbet_short",
+					  "glaive_inbetween0",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"return": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack1": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"return": {
+					"animations": [
+					  "glaive_return0",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"heyt": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack1": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack1": {
+					"animations": [
+					  "shield_no_back",
+					  "glaive_attack1",
+					  "glaive_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"inbetween1": "query.all_animations_finished"
+						}
+					]
+				},
+				"inbetween1": {
+					"animations": [
+					  "timer_inbet_short",
+					  "glaive_inbetween1",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"return1": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack2": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"return1": {
+					"animations": [
+					  "glaive_return1",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"heyt": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack2": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+					  "shield_no_back",
+					  "glaive_attack2",
+					  "glaive_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"inbetween2": "query.all_animations_finished"
+						}
+					]
+				},
+				"inbetween2": {
+					"animations": [
+					  "timer_inbet_short",
+					  "glaive_inbetween2",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"return2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack3": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"return2": {
+					"animations": [
+					  "glaive_return2",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"heyt": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack3": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack3": {
+					"animations": [
+					  "shield_no_back",
+					  "glaive_attack3",
+					  "glaive_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"return3": "query.all_animations_finished"
+						}
+					]
+				},
+				"return3": {
+					"animations": [
+					  "glaive_return2",
+					  "glaive_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"heyt": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.glaive"
+						},
+						{
+							"attack1": "variable.attack_time>0"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

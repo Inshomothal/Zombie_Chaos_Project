@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:kaku_gata_tsuba"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X",
+      "XCX",
+      " X "
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:wool"
+      },
+      "X": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:kaku_gata_tsuba"
+    }
+  }
+}

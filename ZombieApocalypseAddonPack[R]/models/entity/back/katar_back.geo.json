@@ -1,0 +1,48 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.katar_back",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "katar_back",
+					"parent": "waist",
+					"pivot": [2, 14, 0],
+					"cubes": [
+						{"origin": [-4.5, 16.25, -2.25], "size": [1, 1, 4.5], "inflate": -0.25, "uv": [0, 5]},
+						{"origin": [-4.5, 15.5, -2.5], "size": [1, 1, 4.75], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [-4.5, 12.40525, -0.40614], "size": [1, 1, 2.75], "pivot": [-4, 12.90525, 1.34386], "rotation": [-27.5, 0, 0], "uv": [13, 15]},
+						{"origin": [-4.5, 12.40525, -2.34386], "size": [1, 1, 2.75], "pivot": [-4, 12.90525, -1.34386], "rotation": [27.5, 0, 0], "uv": [15, 1]},
+						{"origin": [-4.5, 11.1, -1.6], "size": [1, 1.4, 3.2], "inflate": -0.25, "uv": [6, 5]},
+						{"origin": [-4.5, 9.9, -1.4], "size": [1, 1.8, 2.8], "inflate": -0.25, "uv": [11, 0]},
+						{"origin": [-4.5, 12, -1.6], "size": [1, 1.5, 3.45], "inflate": -0.25, "uv": [6, 0]},
+						{"origin": [-4.5, 9.25, -1], "size": [1, 1.25, 2], "inflate": -0.25, "uv": [15, 5]},
+						{"origin": [-4.5, 8.5, -1], "size": [1, 1.25, 2], "inflate": -0.25, "uv": [11, 4]},
+						{"origin": [-4.5, 7.75, -0.9], "size": [1, 1.25, 1.75], "inflate": -0.25, "uv": [0, 2]},
+						{"origin": [-4.5, 7.05, -0.6], "size": [1, 1.25, 1.25], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [-4.5, 6.37808, 0.12821], "size": [1, 6.5, 1], "inflate": -0.25, "pivot": [-4, 8.87808, 0.12821], "rotation": [-15, 0, 0], "uv": [4, 10]},
+						{"origin": [-4.5, 12, 2], "size": [1, 9, 1], "uv": [9, 9]},
+						{"origin": [-4.5, 12, -3], "size": [1, 9, 1], "uv": [0, 10]},
+						{"origin": [-4.5, 6.42808, -1.12821], "size": [1, 6.45, 1], "inflate": -0.25, "pivot": [-4, 8.87808, -0.12821], "rotation": [15, 0, 0], "uv": [13, 8]}
+					]
+				}
+			]
+		}
+	]
+}

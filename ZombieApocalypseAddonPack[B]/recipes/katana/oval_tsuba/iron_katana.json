@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_katana_vltsb"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  X",
+      " K ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "pixel:normal_tsuka"
+      },
+      "X": {
+        "item": "pixel:iron_katana_blade"
+      },
+      "K": {
+        "item": "pixel:oval_gata_tsuba"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_katana_vltsb"
+    }
+  }
+}

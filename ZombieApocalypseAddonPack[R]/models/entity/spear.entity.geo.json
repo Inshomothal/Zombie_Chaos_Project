@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spear_entity",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "sword",
+					"parent": "body",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -20], "size": [1, 2, 33], "uv": [0, 0]},
+						{"origin": [-0.5, -0.5, -21], "size": [1, 3, 1], "uv": [6, 0]},
+						{"origin": [0, 1.76961, -24.88658], "size": [0, 2, 4], "pivot": [0, 2.76961, -22.88658], "rotation": [7.5, 0, 0], "uv": [0, 9]},
+						{"origin": [0, -1.71935, -24.88658], "size": [0, 2, 4], "pivot": [0, -0.71935, -22.88658], "rotation": [-7.5, 0, 0], "uv": [8, 8]},
+						{"origin": [0, 0.03065, -24.88658], "size": [0, 2, 4], "uv": [0, 7]},
+						{"origin": [-0.5, -0.21935, -23.88658], "size": [1, 1.5, 4], "inflate": -0.25, "pivot": [0.25, 1.03065, -22.88658], "rotation": [-10, 0, 0], "uv": [6, 6]},
+						{"origin": [-0.5, 0.78065, -24.13658], "size": [1, 1.5, 4], "inflate": -0.25, "pivot": [0.25, 2.03065, -23.13658], "rotation": [10, 0, 0], "uv": [0, 5]},
+						{"origin": [-0.5, 0.28065, -24.13658], "size": [1, 1.5, 4], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [0, -0.68198, -27.35355], "size": [0, 3.5, 3.5], "pivot": [0, 0.31802, -25.35355], "rotation": [-45, 0, 0], "uv": [10, 0]},
+						{"origin": [-0.5, 2.25, -20.93301], "size": [1, 3, 1], "pivot": [0, 2.25, -20.43301], "rotation": [30, 0, 0], "uv": [0, 5]},
+						{"origin": [-0.5, -3.25, -20.93301], "size": [1, 3, 1], "pivot": [0, -0.25, -20.43301], "rotation": [-30, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

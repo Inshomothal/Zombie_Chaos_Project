@@ -1,0 +1,53 @@
+{
+    "format_version":"1.16.100",
+    "minecraft:item":{
+        "description":{
+            "identifier":"true:crowbar",
+            "category":"equipment"
+        },
+        "components":{
+            "minecraft:max_stack_size":1,
+            "minecraft:hand_equipped":true,
+            "minecraft:durability":{
+                "max_durability":100,
+                "damage_chance":{
+                    "min":2,
+                    "max":3
+                }
+            },
+            "minecraft:mining_speed":240,
+            "minecraft:damage":10,
+         
+            "minecraft:icon":{
+                "texture":"crowbar"
+            },
+            "minecraft:display_name":{
+                "value":"Crowbar"
+            },
+            "minecraft:weapon":{
+                "on_hurt_entity":{
+                    "event":"hurt"
+                },
+                "on_not_hurt_entity":{
+                    "event":"hurt"
+                },
+                "on_hit_block":{
+                    "event":"hurt"
+                }
+            },
+            "minecraft:creative_category":{
+                "parent":"itemGroup.name.equipment"
+            }
+          
+        },
+        "events":{
+            "hurt":{
+                "damage":{
+                    "type":"durability",
+                    "amount":1,
+                    "target":"self"
+                }
+            }
+        }
+    }
+}

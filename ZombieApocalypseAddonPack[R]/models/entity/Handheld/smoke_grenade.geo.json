@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.smoke_grenade",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "smoke_grenade",
+					"pivot": [0, 6, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "base",
+					"parent": "smoke_grenade",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-1.75, 1.3, -1], "size": [3, 8, 3], "uv": [0, 0]},
+						{"origin": [-2, 0, -1.25], "size": [3.5, 1.5, 3.5], "uv": [0, 11]},
+						{"origin": [-2, 8, -1.25], "size": [3.5, 1.5, 3.5], "uv": [9, 8]}
+					],
+					"locators": {
+						"smoke": [-0.2, 9, 0.5]
+					}
+				},
+				{
+					"name": "pin",
+					"parent": "smoke_grenade",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-0.9, 9, 0], "size": [1.3, 1.7, 1], "uv": [14, 12]},
+						{"origin": [-0.9, 10, 0], "size": [2, 1, 1], "uv": [12, 3]},
+						{"origin": [1.1, 8, 0], "size": [0, 3, 1], "pivot": [1.1, 11, 0], "rotation": [0, 0, -20], "uv": [0, 10]},
+						{"origin": [2.12, 2.18, 0], "size": [0, 6, 1], "pivot": [2.1, 8, 0], "rotation": [0, 0, 2.5], "uv": [12, 11]},
+						{"origin": [-1.9, 7.5, 0], "size": [3.5, 3.5, 0], "pivot": [0, 11, 0], "rotation": [-42.5, 0, 0], "uv": [9, 0]},
+						{"origin": [-1, 8.9, -0.1], "size": [1.5, 1, 1.2], "uv": [12, 5]}
+					]
+				}
+			]
+		}
+	]
+}

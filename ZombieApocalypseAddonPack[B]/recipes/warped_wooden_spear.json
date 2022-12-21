@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:wooden_spear_from_warped_planks"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  x",
+      " # ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "x": {
+        "item": "warped_planks"
+      }
+    },
+    "result": {
+      "item": "pixel:wooden_spear"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.spear.style2": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+				        "spear2_stance0": "!query.is_moving"
+					  }
+					],
+					"transitions": [
+						{
+							"attack1": "variable.attack_time>0 && query.mark_variant == 0"
+						},
+						{
+							"attack2": "variable.attack_time>0 && query.mark_variant == 1"
+						},
+						{
+							"attack3": "variable.attack_time>0 && query.mark_variant == 2"
+						},
+						{
+							"attack4": "variable.attack_time>0 && query.mark_variant == 3"
+						},
+						{
+							"attack5": "variable.attack_time>0 && query.mark_variant == 5"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack1": {
+					"animations": [
+					  {
+				        "spear2_attack1": "!variable.is_first_person"
+					  },
+					  {
+				   	  "spear2_attack1": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+					  {
+				        "spear2_attack2": "!variable.is_first_person"
+					  },
+					  {
+				   	  "spear2_attack2": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack3": {
+					"animations": [
+					  {
+				        "spear2_attack1": "!variable.is_first_person"
+					  },
+					  {
+				   	  "spear2_attack1": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack4": {
+					"animations": [
+					  {
+				        "spear2_attack3": "!variable.is_first_person"
+					  },
+					  {
+				   	  "spear2_attack3": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack5": {
+					"animations": [
+					  {
+				        "spear2_attack3": "!variable.is_first_person"
+					  },
+					  {
+				   	  "spear2_attack3": "variable.is_first_person"
+					  }
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint": {
+					"animations": [
+				        "spear2_run"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

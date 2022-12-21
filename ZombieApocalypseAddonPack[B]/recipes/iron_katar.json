@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_katar"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " I ",
+      "ISI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_katar"
+    }
+  }
+}

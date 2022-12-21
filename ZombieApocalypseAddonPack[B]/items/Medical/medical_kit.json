@@ -1,0 +1,39 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:medical_kit",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         },
+         "minecraft:max_stack_size":1,
+         "minecraft:display_name":{
+            "value":"Medical Kit"
+         },
+         "minecraft:icon":{
+            "texture":"medical_kit"
+         },
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"use",
+               "target":"self"
+            }
+         }
+      },
+      "events":{
+         "use":{
+            "run_command":{
+               "command":[
+                  "replaceitem entity @s slot.weapon.mainhand 0 air",
+                  "effect @p regeneration 40 99 true",
+                  "effect @p slowness 40 3 true",
+                  "execute @p ~ ~ ~ playsound player_hurt"   
+               ]
+            }
+         }
+      }
+   }
+}

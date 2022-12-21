@@ -1,0 +1,147 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.giant_mace.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.giant_mace"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:giant_mace')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"giant_mace": "variable.giant_mace"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:giant_mace')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "gm_unsheathe",
+					  "no_offhand"
+					],
+					"transitions": [
+						{
+							"giant_mace": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				},
+				"giant_mace": {
+					"animations": [
+					  "gm_stance0",
+					  "no_offhand",
+					  "gm_no_back",
+					    {
+					  	  "sprint_move":"query.modified_move_speed && query.is_moving && query.is_sprinting"
+					    },
+						{
+							"halberd_sneak": "!query.is_moving && query.is_sneaking"
+						},
+						{
+							"halberd_sneak_move": "query.is_moving && query.is_sneaking"
+						},
+					    {
+						"custom_move_legs":"query.modified_move_speed && query.is_moving && query.is_sneaking"
+					    }
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				},
+				"giant_mace2": {
+					"animations": [
+					  "gm_stance0",
+					  "no_offhand",
+					  "gm_no_back"
+					],
+					"transitions": [
+						{
+							"attack2": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				},
+				"giant_mace3": {
+					"animations": [
+					  "gm_stance0",
+					  "no_offhand",
+					  "gm_no_back"
+					],
+					"transitions": [
+						{
+							"attack3": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "gm_attack0_0",
+					  "no_offhand",
+					  "gm_no_back"
+					],
+					"transitions": [
+						{
+							"giant_mace2": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+					  "gm_attack0_1",
+					  "no_offhand",
+					  "gm_no_back"
+					],
+					"transitions": [
+						{
+							"giant_mace3": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+					  "gm_attack0_2",
+					  "no_offhand",
+					  "gm_no_back"
+					],
+					"transitions": [
+						{
+							"giant_mace": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.giant_mace"
+						}
+					]
+				}
+			}
+		}
+	}
+}

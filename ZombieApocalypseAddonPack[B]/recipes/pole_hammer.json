@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:pole_hammer"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      " S ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:planks"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:pole_hammer"
+    }
+  }
+}

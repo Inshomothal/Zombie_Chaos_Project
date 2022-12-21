@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:gillette_shaving_foam",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "gillette_shaving_foam"
+    }
+  }
+}

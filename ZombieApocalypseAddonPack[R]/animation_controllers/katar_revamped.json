@@ -1,0 +1,194 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.katar.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.katar && !variable.katar_left"
+						},
+						{
+							"unsheathe_two": "variable.katar && variable.katar_left"
+						},
+						{
+							"unsheathe_dagger": "variable.katar && variable.dagger_left"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katar') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_katar')&&!query.is_item_name_any('slot.hotbar',0,'pixel:iron_katar')&&!query.is_item_name_any('slot.hotbar',0,'pixel:golden_katar')&&!query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katar')&&!query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katar')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"katar": "variable.katar && !variable.katar_left"
+						},
+						{
+							"katar": "variable.katar && variable.katar_left"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_katar')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_katar')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_katar')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_katar')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_katar')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_katar')"
+						}
+					]
+				},
+				"unsheathe_two": {
+					"animations": [
+					  "katar_unsheathe_two"
+					],
+					"transitions": [
+						{
+							"katar": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"unsheathe": "!variable.katar_left"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "katar_unsheathe_one"
+					],
+					"transitions": [
+						{
+							"katar": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"unsheathe_two": "variable.katar_oh"
+						},
+						{
+							"unsheathe_shield": "query.get_equipped_item_name('off_hand') == 'shield'"
+						}
+					]
+				},
+				"unsheathe_dagger": {
+					"animations": [
+					  "katar_unsheathe_dagger"
+					],
+					"transitions": [
+						{
+							"katar": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"unsheathe_two": "variable.katar_oh"
+						},
+						{
+							"unsheathe": "query.get_equipped_item_name('off_hand') != 'shield'"
+						}
+					]
+				},
+				"katar": {
+					"animations": [
+					  {	
+					    "katar_dual_stance0": "!query.is_moving && variable.katar_left && !variable.is_first_person && !query.is_sneaking"
+				      },
+				      "katar_no_back",
+					  {	
+					    "katar_stance_dagger": "!query.is_moving && variable.dagger_left && !variable.is_first_person && !query.is_sneaking"
+				      },
+					  {	
+					    "katar_stance0": "!query.is_moving && !variable.katar_left && !variable.is_first_person && !query.is_sneaking"
+				      },
+					  {
+					  "katar_sneak":"!query.is_moving && query.is_sneaking"
+					  },
+					  {
+					  "katar_sneak_move":"query.is_moving && query.is_sneaking"
+					  }
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && !variable.katar_left"
+						},
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"double_attack": "variable.attack_time>0 && variable.katar_left"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+					  "katar_attack0",
+				      "katar_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"combo_2": "query.all_animations_finished"
+						}
+					]
+				},
+				"combo_2": {
+					"animations": [
+				      "katar_no_back",
+					  {	
+					    "katar_stance0": "!query.is_moving"
+				      }
+					],
+					"transitions": [
+						{
+							"attack2": "variable.attack_time>0 && !query.is_sneaking && !variable.katar_left"
+						},
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"double_attack": "variable.attack_time>0 && variable.katar_left"
+						},
+						{
+							"sprint": "query.is_sprinting && variable.katar_left"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+				      "katar_no_back",
+					  "katar_attack1"
+					],
+					"transitions": [
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"katar": "query.all_animations_finished"
+						}
+					]
+				},
+				"double_attack": {
+					"animations": [
+				      "katar_no_back",
+				      "katar_dual_attack0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.katar"
+						},
+						{
+							"katar": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

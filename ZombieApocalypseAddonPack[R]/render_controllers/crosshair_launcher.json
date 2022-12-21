@@ -1,0 +1,16 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.crosshair_launcher":{
+         "textures":[
+            "texture.crosshair_launcher"
+         ],
+         "geometry":"geometry.crosshair_launcher",
+         "materials":[
+            {
+               "*":"material.default"
+            }
+         ]
+      }
+   }
+}

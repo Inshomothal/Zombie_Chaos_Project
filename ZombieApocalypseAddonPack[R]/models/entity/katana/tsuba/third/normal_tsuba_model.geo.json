@@ -1,0 +1,58 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.normal_tsuba_third",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "katana3",
+					"parent": "waist",
+					"pivot": [4.5, 14, -2]
+				},
+				{
+					"name": "swordright3",
+					"parent": "katana3",
+					"pivot": [4.5, 13.975, -5.925]
+				},
+				{
+					"name": "tsuba_scabbard3",
+					"parent": "swordright3",
+					"pivot": [4.5, 13.975, -2.925],
+					"cubes": [
+						{
+							"origin": [3.2, 12.675, -3.425],
+							"size": [2.6, 2.6, 1],
+							"inflate": -0.25,
+							"pivot": [4.5, 13.975, -2.925],
+							"rotation": [0, 0, -42.5],
+							"uv": {
+								"north": {"uv": [17, 19], "uv_size": [-2, -2]},
+								"east": {"uv": [12, 19], "uv_size": [-1, -2]},
+								"south": {"uv": [14, 19], "uv_size": [-2, -2]},
+								"west": {"uv": [15, 19], "uv_size": [-1, -2]},
+								"up": {"uv": [14, 17], "uv_size": [2, -1]},
+								"down": {"uv": [12, 16], "uv_size": [2, 1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

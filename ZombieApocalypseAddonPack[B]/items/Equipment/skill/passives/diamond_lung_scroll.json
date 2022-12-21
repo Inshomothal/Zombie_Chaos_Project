@@ -1,0 +1,59 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:diamond_lung_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "diamond_lung_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "Diamond Lung Scroll\nReduces exhaustion rate greatly\nReplaces iron lung passive"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "condition": "query.scoreboard('dmndlng') < 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add dmndlng dummy",
+		        "scoreboard players set @s dmndlng 1",
+		        "scoreboard players set @s irnlng 0",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Passive: Diamond lung applied\"}]}"
+		      ]
+	   	    }
+          },
+		  {
+		    "condition": "query.scoreboard('dmndlng') >= 1",
+		    "run_command": {
+		      "command":[ 
+			    "tellraw @s {\"rawtext\":[{\"text\":\"You already have this passive\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,189 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.legs.normal": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": [-12.5, 0, 10]
+				},
+				"lowerrleg": {
+					"rotation": [15, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [-7.47178, -0.65182, -12.45744]
+				},
+				"lowerlleg": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		},
+		"animation.legs.halberd_side": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"lowerrleg": {
+					"rotation": [27.5, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [-20, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"lowerlleg": {
+					"rotation": [22.5, 0, 0]
+				}
+			}
+		},
+		"animation.legs.rider_leg": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": [-53.66086, 24.94169, 17.23442]
+				},
+				"lowerrleg": {
+					"rotation": [45, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [-56.98177, -23.92203, -8.994]
+				},
+				"lowerlleg": {
+					"rotation": [45, 0, 0]
+				}
+			}
+		},
+		"animation.legs.katana_stance_3": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": [-37.5, 0, 0]
+				},
+				"lowerrleg": {
+					"rotation": [17.5, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [124.35079, -64.07206, -170.5178],
+					"position": [0, 0, 1]
+				},
+				"lowerlleg": {
+					"rotation": [50, 0, 0]
+				}
+			}
+		},
+		"animation.legs.block": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"position": [0, -2, 0]
+				},
+				"rightleg": {
+					"rotation": [-45.96406, 8.34108, 12.81644]
+				},
+				"lowerrleg": {
+					"rotation": [50, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [-43.83812, -13.34104, -6.41366]
+				},
+				"lowerlleg": {
+					"rotation": [44.97766, 1.15408, -2.21783]
+				}
+			}
+		},
+		"animation.legs.block_move": {
+			"loop": true,
+			"animation_length": 1.04,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"position": [0, -1, 0]
+				},
+				"rightleg": {
+					"rotation": {
+						"0.0": [-41.939, -4.32526, 2.45341],
+						"0.52": [26.53845, -1.48094, 9.57881],
+						"1.04": [-41.939, -4.32526, 2.45341]
+					}
+				},
+				"lowerrleg": {
+					"rotation": {
+						"0.0": [37.5, 0, 0],
+						"0.52": [5, 0, 0],
+						"1.04": [37.5, 0, 0]
+					}
+				},
+				"leftleg": {
+					"rotation": {
+						"0.0": [29.1201, -15.06553, -8.28083],
+						"0.52": [-43.09982, 1.28245, 0.08428],
+						"1.04": [29.1201, -15.06553, -8.28083]
+					}
+				},
+				"lowerlleg": {
+					"rotation": {
+						"0.0": [7.47766, 1.15408, -2.21783],
+						"0.52": [44.31099, 1.15408, -2.21783],
+						"1.04": [7.47766, 1.15408, -2.21783]
+					}
+				}
+			}
+		},
+		"animation.legs.attack_katana": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": [-51.83416, 9.88744, 7.68615]
+				},
+				"lowerrleg": {
+					"rotation": [52.5, 0, 0]
+				},
+				"leftleg": {
+					"rotation": [34.76905, 4.29357, -6.15518]
+				}
+			}
+		},
+		"animation.legs.mace_attack0": {
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"rightleg": {
+					"rotation": {
+						"0.0": [-172.39078, 82.93343, -135.10922],
+						"0.12": [-37.5, 0, 0]
+					},
+					"position": {
+						"0.0": [1, 0, 2],
+						"0.12": [0, 0, 0]
+					}
+				},
+				"lowerrleg": {
+					"rotation": [30, 0, 0]
+				},
+				"leftleg": {
+					"rotation": {
+						"0.0": [-27.5, 0, -5],
+						"0.12": [20, 0, -5]
+					},
+					"position": {
+						"0.0": [0, 0, -2],
+						"0.12": [0, 0, 0]
+					}
+				},
+				"lowerlleg": {
+					"rotation": {
+						"0.0": [25, 0, 0],
+						"0.12": [45, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

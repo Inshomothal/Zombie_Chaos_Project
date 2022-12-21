@@ -1,0 +1,59 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.attack.remover": {
+      "timeline": {
+        "0.05": ["/event entity @s remove_damage"],
+        "0.10": [
+          "/event entity @s remove_katana"
+          /* This is the original
+					"/event entity @s remove_tag"
+					*/
+        ],
+        "0.15": [
+          "/event entity @s remove_tag"
+          /*This is the original
+					"/event entity @s remove_katana"
+					*/
+        ]
+      },
+      "animation_length": 1.5
+    },
+    "animation.attack.slower": {
+      "timeline": {
+        "0.05": [
+          "/event entity @s remove_damage",
+          "/execute @e[r=1.5,c=1,tag=!jidder] ~~~ effect @s slowness 5 20"
+        ],
+        "0.10": ["/event entity @s remove_tag"],
+        "0.15": ["/event entity @s remove_katana"]
+      },
+      "animation_length": 1.5
+    },
+    "animation.attack.ground": {
+      "timeline": {
+        "0.1": ["/event entity @s remove_damage"],
+        "0.25": ["/event entity @s remove_tag"],
+        "0.5": ["/event entity @s remove_katana"]
+      },
+      "animation_length": 1.5
+    },
+    "animation.attack.projectile": {
+      "timeline": {
+        "1.0": ["/event entity @s remove_tag"],
+        "1.25": ["/event entity @s remove_katana"]
+      },
+      "animation_length": 1.5
+    },
+    "animation.attack.gungnir": {
+      "timeline": {
+        "0.01": [
+          "/execute @s ~~~ tp @s ^^^0.5 facing @e[type=!pixel:gungnir_spear_throw,c=1]",
+          "/execute @s ~~~ tp @s ^0.25^^ facing @e[type=!pixel:gungnir_spear_throw,c=1]"
+        ]
+      },
+      "animation_length": 0.01,
+      "loop": true
+    }
+  }
+}

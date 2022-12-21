@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.weaponk": {
+      "geometry": "geometry.mainhand",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.default", "texture.enchanted" ]
+    },
+    "controller.render.katanas": {
+      "geometry": "geometry.sheath",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.default", "texture.enchanted" ]
+    },
+    "controller.render.weapon_offhandk": {
+      "geometry": "geometry.offhand",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.default", "texture.enchanted" ]
+    },
+    "controller.render.tsuba": {
+      "geometry": "geometry.tsuba",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "texture.tsuba", "texture.enchanted" ]
+    }
+  }
+}

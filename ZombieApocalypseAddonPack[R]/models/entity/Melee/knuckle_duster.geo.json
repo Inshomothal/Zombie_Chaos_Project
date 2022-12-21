@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.knuckle_duster",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "knuckle_duster",
+					"pivot": [0, 1, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-15.9, 14, 21], "size": [30, 4, 3], "uv": [0, 0]},
+						{"origin": [-15.9, 14, 18], "size": [3, 4, 3], "uv": [22, 7]},
+						{"origin": [11.1, 14, 18], "size": [3, 4, 3], "uv": [0, 22]},
+						{"origin": [7.1, 14, 24], "size": [4, 4, 3], "uv": [14, 18]},
+						{"origin": [-12.9, 14, 24], "size": [4, 4, 3], "uv": [0, 15]},
+						{"origin": [-6.4, 14, 24], "size": [4, 4, 3], "uv": [11, 11]},
+						{"origin": [0.5, 14, 24], "size": [4, 4, 3], "uv": [0, 7]}
+					]
+				}
+			]
+		}
+	]
+}

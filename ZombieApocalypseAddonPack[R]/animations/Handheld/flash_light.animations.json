@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.flash_light.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-98, -120, -45],
+					"position": [2, 24, 0],
+					"scale": 0.35
+				}
+			}
+		},
+		"animation.flash_light.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-98, -120, -45],
+					"position": [2, 24, 0],
+					"scale": 0.35
+				}
+			}
+		},
+		"animation.flash_light.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-90, 180, 0],
+					"position": [0, 20, -11],
+					"scale": 0.1
+				},
+				"Trigger": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.flash_light.first_person_off_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-90, -120, 130],
+					"position": [5, 25, 10],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [-254.62381, -28.80781, -82.39852],
+					"position": [-16, 36, 34]
+				}
+			}
+		},
+		"animation.flash_light.first_person_sneaking_off_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-90, -120, 130],
+					"position": [5, 25, 10],
+					"scale": 0.4
+				},
+				"magazine": {
+					"rotation": [-254.62381, -28.80781, -82.39852],
+					"position": [-16, 36, 34]
+				}
+			}
+		},
+		"animation.flash_light.third_person_off_hand": {
+			"loop": true,
+			"bones": {
+				"flash_light": {
+					"rotation": [-190, 0, -180],
+					"position": [-1, 19, -3],
+					"scale": 0.2
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:iron_halberd"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XX#",
+      "X#X",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "pixel:iron_halberd"
+    }
+  }
+}

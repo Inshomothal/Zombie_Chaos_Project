@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:bicycle_handle_bars_blue",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "bicycle_handle_bars_blue"
+    }
+  }
+}

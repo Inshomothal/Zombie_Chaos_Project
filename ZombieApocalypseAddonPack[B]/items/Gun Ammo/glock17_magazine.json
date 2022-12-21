@@ -1,0 +1,25 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:glock17_magazine",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:max_stack_size":8,
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         },
+         "minecraft:display_name":{
+            "value":"§f§oGlock17 Magazine"
+         },
+         "minecraft:icon":{
+            "texture":"glock17_magazine"
+         },
+         "minecraft:allow_off_hand":true,
+         "tag:true:glock17_magazine":{
+            
+         }
+      }
+   }
+}

@@ -1,0 +1,59 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:friction_strike_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "friction_strike_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "Friction Stike Scroll\nAdds Extra fire damage to your attacks"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "condition": "query.scoreboard('frctnstr') < 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add frctnstr dummy",
+		        "scoreboard players set @s frctnstr 1",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Passive: Friction Strike applied\"}]}"
+		      ]
+	   	    }
+          },
+		  {
+		    "condition": "query.scoreboard('frctnstr') >= 1",
+		    "decrement_stack":{},
+		    "run_command": {
+		      "command":[ 
+			    "tellraw @s {\"rawtext\":[{\"text\":\"You already have this passive\"}]}"
+		      ]
+	   	    }
+          }
+		]
+	  }
+	}
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "pixel:shilder",
+      "item": "minecraft:shield",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/shield_back",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "scripts":{
+        "animate":[
+          {
+            "main":"c.item_slot == 'main_hand' && v.is_first_person"
+          },
+          {
+            "off":"c.item_slot == 'off_hand' && v.is_first_person"
+          }
+        ]
+      },
+      "animations":{
+		"main":"animation.shield.fp_mainhand",
+		"off":"animation.shield.fp_offhand"
+      },
+      "geometry": {
+        "mainhand": "geometry.shield_mainhand",
+        "offhand": "geometry.shield_offhand"
+      },
+      "render_controllers": [ { "controller.render.weaponk": "c.item_slot == 'main_hand'" }, { "controller.render.weapon_offhandk": "c.item_slot == 'off_hand'" } ]
+    }
+  }
+}

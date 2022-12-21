@@ -1,0 +1,20 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:grenade_from_launcher",
+         "materials":{
+            "default":"entity_alphatest"
+         },
+         "textures":{
+            "default":"textures/entity/guns/grenade_from_launcher.png"
+         },
+         "geometry":{
+            "default":"geometry.grenade_from_launcher"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

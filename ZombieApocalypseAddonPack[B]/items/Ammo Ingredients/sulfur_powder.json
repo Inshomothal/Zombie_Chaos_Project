@@ -1,0 +1,24 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:item":{
+      "description":{
+         "identifier":"true:sulfur_powder",
+         "category":"equipment"
+      },
+      "components":{
+         "minecraft:max_stack_size":64,
+         "minecraft:icon":{
+            "texture":"sulfur_powder"
+         },
+         "minecraft:display_name":{
+            "value":"Sulfur Powder"
+         },
+         "minecraft:fuel":{
+            "duration":40.0
+         },
+         "minecraft:creative_category":{
+            "parent":"itemGroup.name.equipment"
+         }
+      }
+   }
+}

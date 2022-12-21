@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:bicycle_frame_blue",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "bicycle_frame_blue"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pixel:wooden_mace"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      " #X",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "pixel:wooden_mace"
+    }
+  }
+}

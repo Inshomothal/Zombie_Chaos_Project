@@ -1,0 +1,84 @@
+        {
+          "controller.render.back_katana_third_wooden": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana')"
+        },
+        {
+          "controller.render.back_katana_third_stone": "query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana')"
+        },
+        {
+          "controller.render.back_katana_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana')"
+        },
+        {
+          "controller.render.back_katana_third_golden": "query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana')"
+        },
+        {
+          "controller.render.back_katana_third_diamond": "query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana')"
+        },
+        {
+          "controller.render.back_katana_third_netherite": "query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana')"
+        },
+        {
+          "controller.render.tsuba_normal": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana')"
+        },
+        {
+          "controller.render.back_katana_third_wooden": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_stone": "query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_golden": "query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_diamond": "query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_netherite": "query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb')"
+        },
+        {
+          "controller.render.tsuba_oval": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_vltsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_vltsb')"
+        },
+        {
+          "controller.render.back_katana_third_wooden": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_stone": "query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_golden": "query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_diamond": "query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_netherite": "query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.tsuba_kaku": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rdsmtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rdsmtsb')"
+        },
+        {
+          "controller.render.back_katana_third_wooden": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_stone": "query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_iron": "query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_golden": "query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_diamond": "query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb')"
+        },
+        {
+          "controller.render.back_katana_third_netherite": "query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb')"
+        },
+        {
+          "controller.render.tsuba_maru": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:stone_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:iron_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:golden_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_katana_rndtsb')||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_katana_rndtsb')"
+        },

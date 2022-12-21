@@ -1,0 +1,88 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "pixel:dagger_throw",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:ender_pearl"
+    },
+
+    "component_groups": {
+      "minecraft:no_spawn": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "remove_on_hit": { }
+          },
+          "power": 1.5,
+          "gravity": 0.025,
+          "angle_offset": 0.0,
+          "inertia": 1,
+          "liquid_inertia": 1
+        }
+      },
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 1,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+		"impact_damage": {
+	       "damage": [ 5, 8 ]},
+        "remove_on_hit": { },
+        "definition_event": {
+          "affect_projectile": true,
+          "event_trigger": {
+            "event": "minecraft:explode",
+            "target": "self"
+          }
+        },
+        "mob_effect": {
+          "effect": "slowness",
+          "durationeasy": 0,
+          "durationnormal": 300,
+          "durationhard": 900,
+          "amplifier": 3
+        }
+      },
+        "power": 2.5,
+        "gravity": 0.025,
+          "anchor": 1
+      },
+	    "minecraft:physics": {
+      },
+	  "minecraft:damage_sensor": {
+	    "triggers": {
+		   "cause": "any",
+		   "deals_damage": false
+		  }
+	   },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": [
+            "minecraft:exploding"
+          ]
+        }
+      }
+    }
+  }
+}

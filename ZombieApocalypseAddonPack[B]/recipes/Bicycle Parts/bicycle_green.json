@@ -1,0 +1,31 @@
+{
+   "format_version":"1.12",
+   "minecraft:recipe_shaped":{
+      "description":{
+         "identifier":"true:bicycle_green"
+      },
+      "tags":[
+         "crafting_table"
+      ],
+      "pattern":[
+         "",
+         " AB",
+         "# #"
+      ],
+      "key":{
+         "#":{
+            "item":"true:bicycle_wheel"
+         },
+         "A":{
+            "item":"true:bicycle_frame_green"
+         },
+         "B":{
+            "item":"true:bicycle_handle_bars_green"
+         }
+      },
+      "result":{
+         "item":"true:bicycle_green_spawn_egg",
+         "count":1
+      }
+   }
+}

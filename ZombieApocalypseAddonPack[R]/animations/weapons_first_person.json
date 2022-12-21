@@ -1,0 +1,126 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.weapons.first_person.hold": {
+"override_previous_animation": true,
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-90, 10, 0],
+					"position": [0, 0, 0]
+				},
+				"trail": {
+					"scale": [0, 0, 0]
+				},
+				"trail_pierce": {
+					"scale": [0, 0, 0]
+				},
+				"trailfire": {
+					"scale": [0, 0, 0]
+				},
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				}
+			}
+		},
+		"animation.weapons.third_person.hold": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [0, 0,0],
+					"position": [0, 0,0]
+				}
+			}
+		},
+		"animation.weapons.shield": {
+"override_previous_animation": true,
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, -8, 0],
+					"scale": [1, 1, 1]
+				}
+			}
+		},
+		"animation.weapons.first_person.offhand": {
+"override_previous_animation": true,
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [2, -3, 12]
+				},
+				"leftArm": {
+					"rotation": [-90, 10, 0],
+					"position": [6, 0, 6]
+				}
+			}
+		},
+		"animation.custom.sword.attack_fp": {
+			"animation_length": 0.52,
+			"override_previous_animation": true,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [10, 35, 0],
+						"0.24": [10, 35, 0],
+						"0.32": [10, -27.5, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-2.5, 0, -12.5],
+						"0.24": [-2.5, 0, -12.5],
+						"0.32": [40, -5, -77.5],
+						"0.4": [10, 0, -47.5]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-2.5, 0, 12.5],
+						"0.08": [-47.5, 25, -10],
+						"0.24": [-47.5, 25, -10],
+						"0.32": [-42.5, 0, -60],
+						"0.4": [-35, 0, -42.5]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.08": [0, 0, 0],
+						"0.24": [0, 0, 0],
+						"0.32": [0, 0, -2]
+					}
+				},
+				"sword": {
+					"rotation": [0, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [0, -32.5, 0],
+						"0.24": [0, -32.5, 0],
+						"0.32": [0, 25, 0]
+					}
+				},
+				"lowerlarm": {
+					"rotation": [-15, 0, 0]
+				},
+				"lowerrarm": {
+					"rotation": {
+						"0.0": [-27.5, 0, 0],
+						"0.08": [-75, -2.5, -5.62],
+						"0.24": [-75, -2.5, -5.62],
+						"0.32": [0, -2.5, 0]
+					}
+				},
+				"root": {
+					"rotation": ["(math.cos(query.life_time * 100.0) * 0.200) + 0.200", 180, 0],
+					"position": [-2, -1, 5]
+				}
+			}
+		}
+	}
+}

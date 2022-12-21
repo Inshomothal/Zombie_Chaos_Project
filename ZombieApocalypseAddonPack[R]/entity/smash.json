@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pixel:smash",
+      "materials": {
+        "default": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/smash"
+      },
+      "geometry": {
+        "default": "geometry.smash"
+      },
+      "animations": {
+        "move": "animation.smash.spawn"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "particle_effects": {
+        "smash": "pixel:smash"
+      },
+      "render_controllers": [ "controller.render.shulker_bullet" ]
+    }
+  }
+}

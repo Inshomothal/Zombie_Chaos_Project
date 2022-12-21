@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mac_11.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"mac_11": {
+					"rotation": [-98, -120, -45],
+					"position": [2, 24, 0],
+					"scale": 0.3
+				}
+			}
+		},
+		"animation.mac_11.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"mac_11": {
+					"rotation": [-98, -120, -45],
+					"position": [2, 24, 0],
+					"scale": 0.3
+				}
+			}
+		},
+		"animation.mac_11.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"mac_11": {
+					"rotation": [-90, 180, 0],
+					"position": [0, 19, -2],
+					"scale": 0.2
+				}
+			}
+		}
+	}
+}

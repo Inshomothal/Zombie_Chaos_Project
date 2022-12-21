@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:bicycle_handle_bars_green_to_ingot"
+    },
+
+    
+    "tags": ["furnace"],
+    "input": "true:bicycle_handle_bars_green",
+    "output": "minecraft:iron_ingot"
+  }
+}

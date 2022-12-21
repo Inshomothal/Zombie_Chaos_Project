@@ -1,0 +1,20 @@
+{
+    "format_version":"1.12",
+    "minecraft:recipe_shapeless":{
+        "description":{
+            "identifier":"true:flare_gun_to_scrap"
+        },
+        "tags":[
+            "crafting_table"
+        ],
+        "ingredients":[
+            {
+                "item":"true:flare_gun"
+            }
+        ],
+        "result":{
+            "item":"minecraft:iron_ingot",
+            "count":2
+        }
+    }
+}

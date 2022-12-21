@@ -1,0 +1,30 @@
+//bridge-file-version: #0
+[
+	{
+		"flipbook_texture": "textures/blocks/lantern_02",
+		"atlas_tile": "lantern_02",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9
+		]
+	},
+	{
+		"flipbook_texture": "textures/test",
+		"atlas_tile": "test",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		]
+	},
+]

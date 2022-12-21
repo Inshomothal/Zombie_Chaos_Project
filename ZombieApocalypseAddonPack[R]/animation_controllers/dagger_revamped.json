@@ -1,0 +1,253 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.dagger.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.dagger"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_dagger') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_dagger') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_dagger') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_dagger') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_dagger') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_dagger')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"dagger": "variable.dagger"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_dagger')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_dagger')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "dagger_unsheathe"
+					],
+					"transitions": [
+						{
+							"dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"dagger": {
+				    "animations": [
+				      "dagger_stance0",
+				      "dagger_no_back",
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      }
+				    ],
+					"transitions": [
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"attack0": "variable.attack_time>0 && variable.random_4 == 0"
+						},
+						{
+							"attack1": "variable.attack_time>0 && variable.random_4 == 1"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random_4 == 2"
+						},
+						{
+							"default": "!variable.dagger"
+						},
+						{
+							"attack3": "variable.attack_time>0 && variable.random_4 == 3"
+						},
+						{
+							"double_dagger": "variable.dagger_left"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"double_dagger": {
+				    "animations": [
+				      "double_dagger_stance0",
+				      "dagger_no_back"
+				    ],
+					"transitions": [
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"attack_double0": "variable.attack_time>0 && variable.random_4 == 0"
+						},
+						{
+							"attack_double1": "variable.attack_time>0 && variable.random_4 == 1"
+						},
+						{
+							"attack_double2": "variable.attack_time>0 && variable.random_4 == 2"
+						},
+						{
+							"default": "!variable.dagger"
+						},
+						{
+							"attack_double3": "variable.attack_time>0 && variable.random_4 == 3"
+						},
+						{
+							"dagger": "!variable.dagger_left"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sneak": {
+				    "animations": [
+				      "dagger_no_back",
+				      {
+				          "dagger_sneak": "!query.is_moving"
+				      },
+				      {
+				          "dagger_sneak_move": "query.is_moving && query.modified_move_speed"
+				      }
+				    ],
+					"transitions": [
+						{
+							"dagger": "!query.is_sneaking && !variable.dagger_left"
+						},
+						{
+							"attack0": "variable.attack_time>0 && variable.random_4 == 0"
+						},
+						{
+							"attack1": "variable.attack_time>0 && variable.random_4 == 1"
+						},
+						{
+							"attack2": "variable.attack_time>0 && variable.random_4 == 2"
+						},
+						{
+							"default": "!variable.dagger"
+						},
+						{
+							"attack3": "variable.attack_time>0 && variable.random_4 == 3"
+						},
+						{
+							"double_dagger": "!query.is_sneaking && variable.dagger_left"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_double0": {
+					"animations": [
+					  "double_dagger_attack0",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"double_dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"attack_double1": {
+					"animations": [
+					  "double_dagger_attack1"
+					],
+					"transitions": [
+						{
+							"double_dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"attack_double2": {
+					"animations": [
+					  "double_dagger_attack2",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"double_dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"attack_double3": {
+					"animations": [
+					  "double_dagger_attack3",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"double_dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"attack0": {
+					"animations": [
+					  "dagger_attack0",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"dagger": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "dagger_attack1",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"dagger": "query.all_animations_finished"
+						},
+						{
+							"default": "!variable.dagger"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+					  "dagger_attack2",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.dagger"
+						},
+						{
+							"dagger": "query.all_animations_finished"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+					  "dagger_attack3",
+				      "dagger_no_back"
+					],
+					"transitions": [
+						{
+							"default": "!variable.dagger"
+						},
+						{
+							"dagger": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

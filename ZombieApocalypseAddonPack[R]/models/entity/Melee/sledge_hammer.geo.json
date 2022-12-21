@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sledge_hammer",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 2.5, 0]
+			},
+			"bones": [
+				{
+					"name": "sledge_hammer",
+					"pivot": [0, 11, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "Handle",
+					"parent": "sledge_hammer",
+					"pivot": [0, 6, -14.3],
+					"cubes": [
+						{"origin": [-0.59674, -8.5, -17], "size": [1.19347, 75, 6], "pivot": [0, 6, -14], "rotation": [0, 45, 0], "uv": [56, 0]},
+						{"origin": [-0.59674, -8.5, -17], "size": [1.19347, 75, 6], "pivot": [0, 6, -14], "rotation": [0, 22.5, 0], "uv": [42, 0]},
+						{"origin": [-0.59674, -8.5, -17], "size": [1.19347, 75, 6], "uv": [28, 0]},
+						{"origin": [-0.59674, -8.5, -17], "size": [1.19347, 75, 6], "pivot": [0, 6, -14], "rotation": [0, -22.5, 0], "uv": [14, 0]},
+						{"origin": [-0.59674, -8.5, -17], "size": [1.19347, 75, 6], "pivot": [0, 6, -14], "rotation": [0, -45, 0], "uv": [0, 0]},
+						{"origin": [-3, -8.5, -14.59674], "size": [6, 75, 1.19347], "pivot": [0, 6, -14], "rotation": [0, 22.5, 0], "uv": [0, 81]},
+						{"origin": [-3, -8.5, -14.59674], "size": [6, 75, 1.19347], "uv": [70, 76]},
+						{"origin": [-3, -8.5, -14.59674], "size": [6, 75, 1.19347], "pivot": [0, 6, -14], "rotation": [0, -22.5, 0], "uv": [70, 0]}
+					]
+				},
+				{
+					"name": "Hammer",
+					"parent": "sledge_hammer",
+					"pivot": [0, -18, 0],
+					"cubes": [
+						{"origin": [-8, 66, -20], "size": [16, 16, 12], "uv": [14, 81]},
+						{"origin": [-7, 67, -31], "size": [14, 14, 11], "uv": [84, 25]},
+						{"origin": [-7, 67, -9], "size": [14, 14, 11], "uv": [84, 0]}
+					]
+				}
+			]
+		}
+	]
+}

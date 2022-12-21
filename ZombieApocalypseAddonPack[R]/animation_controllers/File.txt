@@ -1,0 +1,73 @@
+				"bec_de_corbin_fp": {
+					"animations": [
+				   	    "bec_de_corbin_fp_unsheathe"
+					],
+					"transitions": [
+						{"bec_de_corbin_hold":"query.any_animation_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_hold": {
+					"animations": [
+				   	    "bec_de_corbin_fp_stance0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+						{"bec_de_corbin_attack0":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack0": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_inbetween0":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_inbetween0": {
+					"animations": [
+				   	    "bec_de_corbin_fp_inbetween0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"},
+						{"bec_de_corbin_attack1":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack1": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_inbetween1":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_inbetween1": {
+					"animations": [
+				   	    "bec_de_corbin_fp_inbetween0",
+				   	    "timer_inbet_short"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"},
+						{"bec_de_corbin_attack2":"variable.attack_time>0"}
+					],
+					"blend_transition": 0.1
+				},
+				"bec_de_corbin_attack2": {
+					"animations": [
+				   	    "bec_de_corbin_fp_attack0"
+					],
+					"transitions": [
+						{"default":"!variable.bec_de_corbin"},
+{"bec_de_corbin_hold":"query.all_animations_finished"}
+					],
+					"blend_transition": 0.1
+				},

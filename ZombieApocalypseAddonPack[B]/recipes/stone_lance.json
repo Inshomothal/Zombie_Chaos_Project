@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "new:stone_lance"
+    },  
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      "XXX",
+      "#X "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "pixel:stone_lance"
+    }
+  }
+}

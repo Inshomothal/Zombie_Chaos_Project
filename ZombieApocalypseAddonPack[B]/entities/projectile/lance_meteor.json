@@ -1,0 +1,92 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+	"description": {
+	  "identifier": "pixel:lance_meteor",
+	  "runtime_identifier": "minecraft:arrow",
+	  "is_spawnable": false,
+	  "is_summonable": false,
+	  "is_experimental": false
+	},
+	"component_groups": {
+      "wakaranai": {
+	    "minecraft:timer":{
+	      "time": 0.5,
+	      "looping": true,
+	      "time_down_event":{
+	        "event": "pixel:despawn",
+	        "target": "self"
+	      }
+	    }
+      },
+      "despawn":{
+        "minecraft:instant_despawn":{
+        }
+      }
+	},
+	"components": {
+	  "minecraft:type_family": {
+		"family": [
+		  "ice_projectile"
+		]
+	  },
+	  "minecraft:collision_box": {
+		 "width": 1.2,
+		 "height": 0.5
+	  },
+	  "minecraft:projectile": {
+		"on_hit": {
+		  "impact_damage": {
+			"damage": 7,
+			"knockback": false
+		  },
+		  "particle_on_hit": {
+			"particle_type": "smoke",
+			"num_particles": 6,
+			"on_entity_hit": true,
+			"on_other_hit": true
+		  },
+		  "stick_on_ground":{
+		    "shake_time": 0
+		  },
+	      "definition_event": {
+			"affect_projectile": true,
+			"event_trigger": {
+			  "event": "wakaranai",
+			  "target": "self"
+		    }
+		  }
+	    },
+	    "catch_fire": true,
+		"power": 1.5,
+		"gravity": 0.03,
+		"angle_offset": 0
+	  },
+	  "minecraft:physics": {
+	    "has_gravity": false
+	  },
+	  "minecraft:pushable": {
+		"is_pushable": true,
+		"is_pushable_by_piston": true
+	  }
+	},
+	"events": {
+	  "wakaranai":{
+	    "add": {
+	      "component_groups":["wakaranai"]
+	    },
+	    "run_command": {
+	      "command":[
+	        "execute @s[tag=!spawned] ~~~ summon pixel:ground_aftermath",
+	        "execute @s[tag=!spawned] ~~~ tag @s add spawned"
+	      ]
+	    }
+	  },
+	  "pixel:despawn":{
+	    "add": {
+	      "component_groups":["despawn"]
+	    }
+	  }
+	}
+  }
+}

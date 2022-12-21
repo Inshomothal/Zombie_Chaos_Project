@@ -1,0 +1,152 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zombie_wolf.stand": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"0.52": [0, 0, 0],
+						"1.0": [0, 0.5, 0]
+					}
+				},
+				"upperBody": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"0.52": [0, 0, 0],
+						"1.0": [0, 0.5, 0]
+					}
+				}
+			}
+		},
+		"animation.zombie_wolf.walk": {
+			"loop": true,
+			"animation_length": 0.52,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"0.24": [0, 0, 0],
+						"0.52": [0, 0.5, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"0.24": [0, 0, 0],
+						"0.52": [0, 0.5, 0]
+					}
+				},
+				"upperBody": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"0.24": [0, 0, 0],
+						"0.52": [0, 0.5, 0]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [35, 0, 0],
+						"0.24": [-30, 0, 0],
+						"0.52": [35, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [35, 0, 0],
+						"0.24": [-30, 0, 0],
+						"0.52": [35, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [-35, 0, 0],
+						"0.24": [30, 0, 0],
+						"0.52": [-35, 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [-37.5, 0, 0],
+						"0.24": [30, 0, 0],
+						"0.52": [-37.5, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [115, 0, 0],
+						"0.24": [80, 0, 0],
+						"0.52": [115, 0, 0]
+					},
+					"position": [0, -1, -1]
+				}
+			}
+		},
+		"animation.zombie_wolf.attack": {
+			"loop": true,
+			"animation_length": 0.1,
+			"bones": {
+				"head": {
+					"rotation": [-15, 0, 0],
+					"position": [0, 2, 1]
+				},
+				"body": {
+					"rotation": [-12.5, 0, 0]
+				},
+				"upperBody": {
+					"rotation": [-12.5, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [-70, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"leg3": {
+					"rotation": [-70, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"tail": {
+					"rotation": [110, 0, 0],
+					"position": [0, -2, -1]
+				}
+			}
+		},
+		"animation.zombie_wolf.sitting": {
+			"loop": true,
+			"animation_length": 0.3,
+			"bones": {
+				"head": {
+					"position": [0, 0, 2]
+				},
+				"body": {
+					"rotation": [-30, 0, 0],
+					"position": [0, -4, 0]
+				},
+				"upperBody": {
+					"rotation": [-30, 0, 0],
+					"position": [0, -3, -1]
+				},
+				"leg0": {
+					"rotation": [-90, 45, 0],
+					"position": [0, -7, -2]
+				},
+				"leg1": {
+					"rotation": [-90, -45, 0],
+					"position": [0, -7, -2]
+				},
+				"leg2": {
+					"position": [-1, 0, 1]
+				},
+				"leg3": {
+					"position": [1, 0, 1]
+				},
+				"tail": {
+					"rotation": [60, 0, 0],
+					"position": [0, -8, 0]
+				}
+			}
+		}
+	}
+}

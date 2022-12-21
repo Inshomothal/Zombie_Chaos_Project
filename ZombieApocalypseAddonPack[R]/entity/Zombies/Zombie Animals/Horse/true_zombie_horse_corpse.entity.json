@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:true_zombie_horse_corpse",
+         "materials":{
+            "default":"entity_emissive_alpha"
+         },
+         "textures":{
+            "default":"textures/entity/zombies/horse/zombie_horse",
+            "rotting":"textures/entity/zombies/horse/zombie_horse_rotting",
+            "skeleton":"textures/entity/zombies/horse/skeleton"
+         },
+         "geometry":{
+            "default":"geometry.true_zombie_horse"
+         },
+         "animations":{
+            "stand":"animation.true_zombie_horse_corpse.stand",
+            "dead_zombie_controller":"controller.animation.dead_zombie"
+         },
+         "scripts":{
+            "animate":[
+               "dead_zombie_controller"
+            ]
+         },
+         "render_controllers":[
+            "controller.render.true_zombie_corpse"
+         ]
+      }
+   }
+}

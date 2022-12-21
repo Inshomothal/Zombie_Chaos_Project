@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:deck_of_cards",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "deck_of_cards"
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.exhaust_indicator": {
+			"states": {
+				"default": {
+					"transitions":[
+					  {
+					   "damn": "!q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_katana','minecraft:is_halberd','minecraft:is_spear','minecraft:is_katar','minecraft:is_mace','minecraft:is_lance','minecraft:is_longsword','minecraft:is_dagger','minecraft:is_saber','minecraft:is_glaive','minecraft:is_greatsword','minecraft:is_scythe','minecraft:is_warbow','minecraft:is_hammer')"
+					  },
+					  {
+					   "katana": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_katana','minecraft:is_odachi')"
+					  },
+					  {
+					   "katana": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_wakizashi')"
+					  },
+					  {
+					   "mace": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_mace')"
+					  },
+					  {
+					   "longsword": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_longsword')"
+					  },
+					  {
+					   "halberd": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_halberd')"
+					  },
+					  {
+					   "spear": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_spear')"
+					  },
+					  {
+					   "saber": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_saber')"
+					  },
+					  {
+					   "glaive": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_glaive')"
+					  },
+					  {
+					   "katar": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_katar')"
+					  },
+					  {
+					   "lance": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_lance')"
+					  },
+					  {
+					   "dagger": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_dagger')"
+					  },
+					  {
+					   "greatsword": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_greatsword')"
+					  },
+					  {
+					   "scythe": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_scythe')"
+					  },
+					  {
+					   "bow": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_warbow')"
+					  },
+					  {
+					   "hammer": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_hammer')"
+					  }
+					]
+				},
+				"damn": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"katana": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"ktn_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"mace": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"mc_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"longsword": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"lngswrd_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"halberd": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"hld_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"spear": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"spr_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"saber": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"sbr_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"glaive": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"glv_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"katar": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"ktr_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"lance": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"lnc_tm\"}}]}",
+                      "/effect @s slowness 2 1 true"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"dagger": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"dgr_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"greatsword": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"grtswrd_tm\"}}]}",
+                      "/effect @s slowness 2 1 true"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"scythe": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6cd:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"bdc_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"bow": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6ch:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"lngbch\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				},
+				"hammer": {
+					"on_entry": [
+                      "/execute @s ~ ~ ~ titleraw @s actionbar {\"rawtext\":[{\"text\":\"§3ex:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust\"}},{\"text\":\"§r/\"},{\"score\":{\"name\":\"@s\",\"objective\":\"exhaust_lim\"}},{\"text\":\" §6ch:\"},{\"score\":{\"name\":\"@s\",\"objective\":\"ph_tm\"}}]}"
+					],
+					"transitions":[
+					  {
+					   "default": "(1.0)"
+					  } 
+					]
+				}
+			}
+		}
+	}
+}

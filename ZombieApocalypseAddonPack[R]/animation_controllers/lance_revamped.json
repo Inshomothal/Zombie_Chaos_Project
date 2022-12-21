@@ -1,0 +1,252 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.lance.attack": {
+			"states": {
+				"default": {
+					"animations": [
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"unsheathe": "variable.lance"
+						},
+						{
+							"undefault": "!query.is_item_name_any('slot.hotbar',0,'pixel:wooden_lance') && !query.is_item_name_any('slot.hotbar',0,'pixel:stone_lance') && !query.is_item_name_any('slot.hotbar',0,'pixel:iron_lance') && !query.is_item_name_any('slot.hotbar',0,'pixel:golden_lance') && !query.is_item_name_any('slot.hotbar',0,'pixel:diamond_lance') && !query.is_item_name_any('slot.hotbar',0,'pixel:netherite_lance')"
+						}
+					]
+				},
+				"undefault": {
+					"transitions": [
+						{
+							"lance": "variable.lance"
+						},
+						{
+							"lance_shield": "query.get_equipped_item_name('off_hand') == 'shield' && variable.lance"
+						},
+						{
+							"default": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_lance')||query.is_item_name_any('slot.hotbar',0,'pixel:stone_lance')||query.is_item_name_any('slot.hotbar',0,'pixel:iron_lance')||query.is_item_name_any('slot.hotbar',0,'pixel:golden_lance')||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_lance')||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_lance')"
+						}
+					]
+				},
+				"unsheathe": {
+					"animations": [
+					  "lance_unsheathe"
+					],
+					"transitions": [
+						{
+							"lance": "query.all_animations_finished && query.get_equipped_item_name('off_hand') != 'shield'"
+						},
+						{
+							"lance_shield": "query.all_animations_finished && query.get_equipped_item_name('off_hand') == 'shield'"
+						},
+						{
+							"default": "!variable.lance"
+						}
+					]
+				},
+				"lance": {
+					"animations": [
+					  "lance_bob",
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"lance_shield": "query.get_equipped_item_name('off_hand') == 'shield'"
+						},
+						{
+							"move": "query.is_moving"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"lance_shield": {
+					"animations": [
+				      {
+				          "lance_shield": "!query.is_moving"
+				      },
+				      {
+				          "lance_shield_move": "query.is_moving"
+				      },
+					  "lance_no_back",
+					  "shield_no_back"
+					],
+					"transitions": [
+						{
+							"shield_attack": "variable.attack_time>0"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"ride": "query.is_riding"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"move": {
+					"animations": [
+					  {
+				   	  "lance_move": "query.modified_move_speed && !variable.is_first_person"
+					  },
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"lance": "!query.is_moving"
+						},
+						{
+							"sneak": "query.is_sneaking"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"sprint": "query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sneak": {
+					"animations": [
+					  {
+				   	  "lance_sneak": "!query.is_moving"
+					  },
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  {
+				   	  "lance_sneak_move": "query.is_moving && query.modified_move_speed"
+					  },
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"lance": "!query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"sprint": {
+					"animations": [
+					  {
+				   	  "lance_sprinrt": "query.modified_move_speed"
+					  },
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"attack_ride": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"lance": "!query.is_sprinting"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"ride": {
+					"animations": [
+					  "lance_stance2",
+				      {
+				          "shield_no_back": "query.get_equipped_item_name('off_hand') == 'shield'"
+				      },
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"attack_ride": "variable.attack_time>0"
+						},
+						{
+							"default": "!variable.lance"
+						},
+						{
+							"lance": "!query.is_riding"
+						}
+					]
+				},
+				"shield_attack": {
+					"animations": [
+					  "lance_attack_shield",
+					  "shield_no_back",
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"lance_shield": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+					  "lance_attack_1_0",
+					  "shield_no_back",
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"lance": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack_ride": {
+					"animations": [
+					  "lance_attack_2_0",
+					  "shield_no_back",
+					  "lance_no_back"
+					],
+					"transitions": [
+						{
+							"ride": "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

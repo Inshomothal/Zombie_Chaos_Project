@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:coca_cola",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "coca_cola"
+    }
+  }
+}

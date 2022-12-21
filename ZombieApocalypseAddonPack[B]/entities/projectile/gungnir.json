@@ -1,0 +1,98 @@
+{
+  "format_version": "1.17.0",
+	"minecraft:entity": {
+    "description": {
+      "identifier": "pixel:gungnir_spear_throw",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:arrow",
+	  "scripts": {
+		"animate": [
+	      "double_hand"
+		]
+      },
+	  "animations": {
+		"double_hand":"animation.attack.gungnir"
+	  }
+        },
+		"component_groups":{
+		  "despawn":{
+		    "minecraft:instant_despawn": {
+			  "remove_child_entities": false
+			}
+		  }
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 14,
+						"knockback": true,
+						"semi_random_diff_damage": false,
+						"destroy_on_hit": false
+					},
+					"stick_in_ground": {
+						"shake_time" : 0.1
+					}
+				},
+				"liquid_inertia": 0.99,
+				"hit_sound": "item.arrow.hit",
+				"hit_ground_sound": "item.arrow.hit_ground",
+				"power": 4,
+				"gravity": 0.10,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 0,
+				"stop_on_hurt": true,
+				"anchor": 1,
+				"should_bounce": true,
+				"multiple_targets": false,
+				"offset": [ 0, -0.1, 0 ]
+			},
+            "minecraft:entity_sensor": {
+              "sensor_range": 0.5,
+              "event_filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "despawn"
+            },
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.35
+			},
+			"minecraft:physics": {
+			},
+	        "minecraft:timer":{
+	          "time": [10,10],
+	          "looping": true,
+	          "time_down_event":{
+	            "event": "despawn",
+	            "target": "self"
+	          }
+	        },
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events":{
+		  "despawn":{
+		    "add":{
+		      "component_groups":[
+		        "despawn"
+		      ]
+		    }
+		  }
+		}
+	}
+}

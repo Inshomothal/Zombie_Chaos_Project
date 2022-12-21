@@ -1,0 +1,49 @@
+{
+ "format_version": "1.16.100",
+ "minecraft:item": {
+	"description": {
+		"identifier": "pixel:invisibility_dagger_scroll",
+        "category":"Equipment"
+	},
+	"components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.fan"
+      },
+	  "minecraft:icon": {
+		"texture": "invisibility_dagger_scroll"
+	  },
+	  "tag:minecraft:is_skill":{},
+	  "minecraft:display_name": {
+		"value": "item.pixel:invisibility_dagger_scroll.name"
+	  },
+	  "minecraft:max_stack_size": 1,
+	  "minecraft:hand_equipped": true,
+	  "minecraft:cooldown": {
+		"category": "skill",
+		"duration": 2
+	  },
+      "minecraft:use_duration": 3600,
+	  "minecraft:on_use": {
+		"on_use": {
+	      "event": "fan"
+		}
+      }
+    },
+	"events": {
+      "fan": {
+		"sequence": [
+		  {
+		    "run_command": {
+		      "command":[ 
+		        "scoreboard objectives add dgrabltsnk dummy",
+		        "scoreboard players set @s dgrabltsnk 3",
+			    "tellraw @s {\"rawtext\":[{\"text\":\"Dagger focus ability changed to : Assasin`s Dagger\"}]}"
+		      ]
+	   	    },
+		    "decrement_stack":{}
+          }
+		]
+	  }
+	}
+  }
+}

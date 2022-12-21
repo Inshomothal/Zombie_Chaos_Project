@@ -1,0 +1,20 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:stone_in_hand_thrown",
+         "materials":{
+            "default":"entity_alphatest"
+         },
+         "textures":{
+            "default":"textures/entity/handheld/stone_in_hand.png"
+         },
+         "geometry":{
+            "default":"geometry.stone_in_hand"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

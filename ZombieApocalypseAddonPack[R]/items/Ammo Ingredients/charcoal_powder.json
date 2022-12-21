@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:charcoal_powder",
+      "category": "nature"
+    },
+    
+    "components": {
+      "minecraft:icon": "charcoal_powder"
+    }
+  }
+}

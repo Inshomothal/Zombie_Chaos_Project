@@ -1,0 +1,20 @@
+{
+   "format_version":"1.16.100",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:flashbang_thrown",
+         "materials":{
+            "default":"entity_alphatest"
+         },
+         "textures":{
+            "default":"textures/entity/handheld/flashbang.png"
+         },
+         "geometry":{
+            "default":"geometry.smoke_grenade"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

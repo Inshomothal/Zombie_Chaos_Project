@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "This will combine necessary files together for addon pack.",
+    "name": "Zombie Apocalypse Addon Combiner Pack [R]",
+    "uuid": "5e099751-68a6-4aa1-961f-a9f8589606a2",
+    "version": [0, 0, 1]
+  },
+  "modules": [
+    {
+      "description": "This is the resource pack",
+      "type": "resources",
+      "uuid": "17ef36b8-523e-42b7-9970-cf588f9ae839",
+      "version": [0, 0, 1]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.odachi.attack": {
+			"states": {
+				"default": {
+					"animations": [
+						"katana_sheathed",
+					  {
+					    "no_offhand": "v.offhander"
+					  }
+					],
+					"transitions": [
+						{
+							"odachi": "variable.odachi"
+						},
+						{
+							"odachi": "query.is_item_name_any('slot.hotbar',0,'pixel:wooden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:stone_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:golden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:golden_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:golden_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:iron_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:golden_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:diamond_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',0,'pixel:netherite_odachi_rdsmtsb') && variable.odachi"
+						},
+						{
+							"odachi": "query.is_item_name_any('slot.hotbar',1,'pixel:wooden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:stone_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:golden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:golden_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:golden_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:iron_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:golden_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:diamond_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',1,'pixel:netherite_odachi_rdsmtsb') && variable.odachi"
+						},
+						{
+							"odachi": "query.is_item_name_any('slot.hotbar',2,'pixel:wooden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:stone_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:golden_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_odachi') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:golden_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_odachi_vltsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:golden_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_odachi_rndtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:iron_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:golden_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:diamond_odachi_rdsmtsb') && variable.odachi||query.is_item_name_any('slot.hotbar',2,'pixel:netherite_odachi_rdsmtsb') && variable.odachi"
+						}
+					]
+				},
+				"odachi": {
+					"animations": [
+					"katana_sheathed",
+					{
+				        "katana_move": "query.modified_move_speed && query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					},
+					{
+				        "katana_sprint": "query.modified_move_speed && query.is_moving && query.is_sprinting && !query.is_sneaking"
+					},
+					{
+				        "katana_sneak_move": "query.modified_move_speed && query.is_moving && query.is_sneaking"
+					},
+					{
+				        "katana_sneak": "!query.is_moving && query.is_sneaking"
+					},
+					{
+				        "wakizashi_stance0": "!query.is_moving && !query.is_sprinting && !query.is_sneaking"
+					}
+					],
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0 && !query.is_using_item && variable.random_4 == 0"
+						},
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"attack1": "variable.attack_time>0 && !query.is_using_item && variable.random_4 == 1"
+						},
+						{
+							"attack2": "variable.attack_time>0 && !query.is_using_item && variable.random_4 == 2"
+						},
+						{
+							"attack3": "variable.attack_time>0 && !query.is_using_item && variable.random_4 == 3"
+						},
+						{
+							"slash": "query.is_using_item && query.is_sneaking"
+						},
+						{
+							"unsheath_use": "query.is_using_item && !query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"slash": {
+					"animations": [
+						"odachi_crescent"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"unsheath_use": {
+					"animations": [
+						"odachi_unsheath"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack": {
+					"animations": [
+						"odachi_attack0",
+					  "katana_unsheathed_0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack1": {
+					"animations": [
+						"odachi_attack1",
+					  "katana_unsheathed_0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack2": {
+					"animations": [
+						"odachi_attack3",
+					  "katana_unsheathed_0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"attack3": {
+					"animations": [
+						"odachi_attack4",
+					  "katana_unsheathed_0"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"unsheath": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"unsheath": {
+					"animations": [
+						"odachi_hold",
+"katana_unsheathed_0",
+						"timer"
+					],
+					"transitions": [
+						{
+							"default": "!variable.odachi"
+						},
+						{
+							"odachi": "query.all_animations_finished"
+						},
+						{
+							"attack": "variable.attack_time>0 && !query.is_using_item && variable.random_3 == 0"
+						},
+						{
+							"attack1": "variable.attack_time>0 && !query.is_using_item && variable.random_3 == 1"
+						},
+						{
+							"attack2": "variable.attack_time>0 && !query.is_using_item && variable.random_3 == 2"
+						},
+						{
+							"unsheath_use": "query.is_using_item && !query.is_sneaking"
+						},
+						{
+							"slash": "query.is_using_item && query.is_sneaking"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}
