@@ -6,4 +6,4 @@ This project will combine the efforts of other modders to create a fun and chall
 
 **pixeleddoki** - *[3D Combat Addon](https://mcpedl.com/3d-combat-addon/)*
 
-**ArtieTrey (a.k.a. Inshomothal)** - *Addon Pack Merger*
+**ArtieTrey (a.k.a. Inshomothal)** - *[Addon Pack Merger](https://github.com/Inshomothal)*
