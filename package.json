@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "This is my combination addon for my Zombie Chaos addonpack project.",
   "scripts": {
-    "test": "run"
+    "test": "run",
+    "enablemcloopback": "CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436",
+    "enablemcpreviewloopback": "CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476"
   },
   "repository": {
     "type": "git",
@@ -29,13 +31,15 @@
     "@minecraft/server-gametest": "^1.0.0-beta.11940b24",
     "@minecraft/server-net": "^1.0.0-beta.11940b24",
     "@minecraft/server-ui": "^1.0.0-beta.11940b24",
-    "gulp-babel": "^8.0.0",
+    "decode-uri-component": "^0.4.1",
     "typescript": "^4.9.4"
   },
   "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
     "child_process": "^1.0.2",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
